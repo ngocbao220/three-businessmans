@@ -68,7 +68,7 @@ try:
                 item_count += 1  # Đếm số lần chạy
 
                 # Khi đạt đến 2 lần, nhấp vào nút phân trang
-                if item_count == 2:
+                if item_count == 31:
                     break  # Thoát vòng lặp và chuyển trang
 
             # Kiểm tra nếu có nút "Trang tiếp theo" hoặc xác định số trang kế tiếp bằng pid

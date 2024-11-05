@@ -21,11 +21,8 @@ try:
     def get_property_details():
         # KHU VỰC
         try:
-            area_elements = driver.find_elements(By.CLASS_NAME, 're__link-se')
-            if len(area_elements) >= 3:
-                area = area_elements[2].text.strip()  # Lấy chữ từ thẻ thứ 3
-            else:
-                area = "Không tìm thấy đủ khu vực"
+            area_element = driver.find_element(By.CLASS_NAME, 're__pr-short-description')
+            area = area_element.text.strip()  # Lấy thông tin khu vực từ thẻ <span>
         except Exception as e:
             area = "Không tìm thấy khu vực"
         print("Khu vực: ", area)

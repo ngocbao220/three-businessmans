@@ -5,54 +5,59 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.action_chains import ActionChains
+import os
 import time
 
-# Khởi tạo trình duyệt với ChromeDriver
+# Ensure the data directory exists
+if not os.path.exists('Data'):
+    os.makedirs('Data')
+
+# Initialize the Chrome driver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-# Tạo một DataFrame rỗng với các cột tiêu đề
+# Create an empty DataFrame with column headers
 df = pd.DataFrame(columns=['Khu vực', 'Chủ đầu tư', 'Diện tích', 'Mức giá', 'Số phòng', 'Pháp lý', 'Nội thất', 'Thông tin khác'])
 
+# Write the header only once at the beginning
+df.to_csv('Data/data_original.csv', mode='w', index=False, encoding='utf-8-sig')
+
 try:
-    # URL của trang bất động sản
+    # URL of the real estate website
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
 
-    # Đợi trang tải
+    # Wait for the page to load
     wait = WebDriverWait(driver, 10)
 
-    # Hàm để lấy thông tin bất động sản từ trang chi tiết
-    # Hàm để lấy thông tin bất động sản từ trang chi tiết
+    # Function to scrape property details
+
     def get_property_details():
         try:
-            # KHU VỰC
             area_element = driver.find_element(By.CLASS_NAME, 're__pr-short-description')
-            area = area_element.text.strip()  # Lấy thông tin khu vực từ thẻ <span>
-        except Exception as e:
+            area = area_element.text.strip()
+        except:
             area = "Không tìm thấy khu vực"
 
         try:
-            # CHỦ ĐẦU TƯ
             investor = driver.find_element(By.XPATH, "//div[@class='re__row-item re__footer-content']//span[@class='re__long-text']")
             investor_name = investor.text
         except:
             investor_name = "Không có thông tin"
 
-        # Các thông tin chi tiết
-        details = {'Diện tích': 'Không có thông tin', 'Mức giá': 'Không có thông tin',
-                'Số tầng': 'Không có thông tin', 'Số phòng ngủ': 'Không có thông tin',
-                'Số toilet': 'Không có thông tin', 'Pháp lý': 'Không có thông tin',
-                'Nội thất': 'Không có thông tin'}
+        details = {
+            'Diện tích': 'Không có thông tin', 'Mức giá': 'Không có thông tin',
+            'Số tầng': 'Không có thông tin', 'Số phòng ngủ': 'Không có thông tin',
+            'Số toilet': 'Không có thông tin', 'Pháp lý': 'Không có thông tin',
+            'Nội thất': 'Không có thông tin'
+        }
         other_info = []
 
-        # Thu thập thông tin đặc điểm
         specs_items = driver.find_elements(By.CLASS_NAME, 're__pr-specs-content-item')
         for item in specs_items:
             try:
                 spec_title = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-title').text
                 spec_value = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-value').text
-
-                # Kiểm tra và lưu thông tin vào các mục phù hợp
                 if spec_title in details:
                     details[spec_title] = spec_value
                 else:
@@ -60,10 +65,7 @@ try:
             except:
                 continue
 
-        # Tạo chuỗi gộp "Số phòng"
         room_info = f"Số tầng: {details['Số tầng']}, Số phòng ngủ: {details['Số phòng ngủ']}, Số toilet: {details['Số toilet']}"
-
-        # Thêm dữ liệu vào DataFrame tạm thời và ghi vào CSV ngay lập tức
         new_row = pd.DataFrame([{
             'Khu vực': area,
             'Chủ đầu tư': investor_name,
@@ -74,16 +76,17 @@ try:
             'Nội thất': details['Nội thất'],
             'Thông tin khác': "; ".join(other_info)
         }])
+        new_row.to_csv('Data/data_original.csv', mode='a', index=False, header=False, encoding='utf-8-sig')
 
-        # Ghi vào file CSV ngay lập tức
-        new_row.to_csv('Data/data_ogirinal.csv', mode='a', index=False, header=False, encoding='utf-8-sig')
-
-    # Hàm để duyệt phân trang
+        # Hàm để duyệt phân trang
     def navigate_pagination():
         page_number = 1
+        current_page_url = driver.current_url  # Lưu URL của trang đầu tiên
+
         while True:
-            # Lấy danh sách các liên kết đến bất động sản từ trang chính
+            # Lấy danh sách các liên kết đến bất động sản từ trang hiện tại
             property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
+            # Lấy các URL từ các liên kết đã được lọc
             property_urls = [link.get_attribute('href') for link in property_links]
 
             # Duyệt qua từng liên kết bất động sản
@@ -91,22 +94,24 @@ try:
                 driver.get(property_url)  # Truy cập vào trang chi tiết của bất động sản
                 time.sleep(0.5)  # Đợi trang chi tiết tải
                 get_property_details()  # Gọi hàm lấy chi tiết
-                driver.back()  # Quay lại trang chính
-                time.sleep(1)  # Đợi trang chính tải lại
 
-            # Kiểm tra nếu có nút "Trang tiếp theo"
+            driver.get(current_page_url)  # Quay lại URL của trang hiện tại
+            time.sleep(0.5)  # Đợi trang hiện tại tải lại
+
+            # Chuyển trang tiếp theo
             try:
                 page_number += 1
-                next_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(@class, 're__pagination-icon') and @pid]")))
+                next_button = wait.until(EC.element_to_be_clickable((By.XPATH, f"//a[@pid='{page_number}']")))
                 next_button.click()
-                time.sleep(1)  # Đợi trang tải lại
+                    
+                # Cập nhật URL của trang hiện tại sau khi chuyển trang
+                current_page_url = driver.current_url
             except:
-                print("Đã duyệt hết tất cả các trang hoặc không tìm thấy nút phân trang tiếp theo.")
+                print("Đã duyệt hết tất cả các trang")
                 break
 
     # Chạy hàm duyệt phân trang
     navigate_pagination()
 
 finally:
-    # Đóng trình duyệt
     driver.quit()

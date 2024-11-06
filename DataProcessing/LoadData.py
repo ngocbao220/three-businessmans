@@ -110,6 +110,3 @@ try:
 finally:
     # Đóng trình duyệt
     driver.quit()
-
-# Ghi dữ liệu vào file CSV
-df.to_csv('data_ogirinal.csv', index=False, encoding='utf-8-sig')

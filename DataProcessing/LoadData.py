@@ -22,6 +22,7 @@ try:
     wait = WebDriverWait(driver, 10)
 
     # Hàm để lấy thông tin bất động sản từ trang chi tiết
+    # Hàm để lấy thông tin bất động sản từ trang chi tiết
     def get_property_details():
         try:
             # KHU VỰC
@@ -39,9 +40,9 @@ try:
 
         # Các thông tin chi tiết
         details = {'Diện tích': 'Không có thông tin', 'Mức giá': 'Không có thông tin',
-                   'Số tầng': 'Không có thông tin', 'Số phòng ngủ': 'Không có thông tin',
-                   'Số toilet': 'Không có thông tin', 'Pháp lý': 'Không có thông tin',
-                   'Nội thất': 'Không có thông tin'}
+                'Số tầng': 'Không có thông tin', 'Số phòng ngủ': 'Không có thông tin',
+                'Số toilet': 'Không có thông tin', 'Pháp lý': 'Không có thông tin',
+                'Nội thất': 'Không có thông tin'}
         other_info = []
 
         # Thu thập thông tin đặc điểm
@@ -62,9 +63,8 @@ try:
         # Tạo chuỗi gộp "Số phòng"
         room_info = f"Số tầng: {details['Số tầng']}, Số phòng ngủ: {details['Số phòng ngủ']}, Số toilet: {details['Số toilet']}"
 
-        # Thêm dữ liệu vào DataFrame
-        global df
-        df = pd.concat([df, pd.DataFrame([{
+        # Thêm dữ liệu vào DataFrame tạm thời và ghi vào CSV ngay lập tức
+        new_row = pd.DataFrame([{
             'Khu vực': area,
             'Chủ đầu tư': investor_name,
             'Diện tích': details['Diện tích'],
@@ -73,7 +73,10 @@ try:
             'Pháp lý': details['Pháp lý'],
             'Nội thất': details['Nội thất'],
             'Thông tin khác': "; ".join(other_info)
-        }])], ignore_index=True)
+        }])
+
+        # Ghi vào file CSV ngay lập tức
+        new_row.to_csv('Data/data_ogirinal.csv', mode='a', index=False, header=False, encoding='utf-8-sig')
 
     # Hàm để duyệt phân trang
     def navigate_pagination():
@@ -109,4 +112,4 @@ finally:
     driver.quit()
 
 # Ghi dữ liệu vào file CSV
-df.to_csv('batdongsan_data.csv', index=False, encoding='utf-8-sig')
+df.to_csv('data_ogirinal.csv', index=False, encoding='utf-8-sig')

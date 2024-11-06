@@ -1,12 +1,11 @@
 import pandas as pd
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.action_chains import ActionChains
-import os
 import time
 
 # Ensure the data directory exists
@@ -17,9 +16,7 @@ if not os.path.exists('Data'):
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 # Create an empty DataFrame with column headers
-df = pd.DataFrame(columns=['Khu vực', 'Chủ đầu tư', 'Diện tích', 'Mức giá', 'Số phòng', 'Pháp lý', 'Nội thất', 'Thông tin khác'])
-
-# Write the header only once at the beginning
+df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Chủ đầu tư', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Thông tin khác'])
 df.to_csv('Data/data_original.csv', mode='w', index=False, encoding='utf-8-sig')
 
 try:
@@ -31,13 +28,20 @@ try:
     wait = WebDriverWait(driver, 10)
 
     # Function to scrape property details
-
     def get_property_details():
         try:
             area_element = driver.find_element(By.CLASS_NAME, 're__pr-short-description')
             area = area_element.text.strip()
+            
+            # Tách thông tin xã/phường và quận/huyện từ chuỗi area
+            area_parts = area.split(", ")
+            if len(area_parts) >= 2:
+                xa_phuong = area_parts[-3]  # Xã/Phường là phần trước quận/huyện
+                quan_huyen = area_parts[-2]  # Quận/Huyện là phần cuối
+            else:
+                xa_phuong, quan_huyen = "Không tìm thấy", "Không tìm thấy"
         except:
-            area = "Không tìm thấy khu vực"
+            xa_phuong, quan_huyen = "Không tìm thấy", "Không tìm thấy"
 
         try:
             investor = driver.find_element(By.XPATH, "//div[@class='re__row-item re__footer-content']//span[@class='re__long-text']")
@@ -65,52 +69,58 @@ try:
             except:
                 continue
 
-        room_info = f"Số tầng: {details['Số tầng']}, Số phòng ngủ: {details['Số phòng ngủ']}, Số toilet: {details['Số toilet']}"
+        # Tách riêng số phòng ngủ và số toilet
+        so_phong_ngu = details['Số phòng ngủ']
+        so_toilet = details['Số toilet']
+
         new_row = pd.DataFrame([{
-            'Khu vực': area,
+            'Xã/Phường': xa_phuong,
+            'Quận/Huyện': quan_huyen,
             'Chủ đầu tư': investor_name,
             'Diện tích': details['Diện tích'],
             'Mức giá': details['Mức giá'],
-            'Số phòng': room_info,
+            'Số phòng ngủ': so_phong_ngu,
+            'Số toilet': so_toilet,
             'Pháp lý': details['Pháp lý'],
             'Nội thất': details['Nội thất'],
             'Thông tin khác': "; ".join(other_info)
         }])
+
+        # Append data to the CSV file
         new_row.to_csv('Data/data_original.csv', mode='a', index=False, header=False, encoding='utf-8-sig')
 
-        # Hàm để duyệt phân trang
+    # Function to navigate pagination
     def navigate_pagination():
         page_number = 1
-        current_page_url = driver.current_url  # Lưu URL của trang đầu tiên
+        current_page_url = driver.current_url  # Save the URL of the current page
 
         while True:
-            # Lấy danh sách các liên kết đến bất động sản từ trang hiện tại
+            # Retrieve the list of property links on the current page
             property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
-            # Lấy các URL từ các liên kết đã được lọc
             property_urls = [link.get_attribute('href') for link in property_links]
 
-            # Duyệt qua từng liên kết bất động sản
+            # Visit each property link
             for property_url in property_urls:
-                driver.get(property_url)  # Truy cập vào trang chi tiết của bất động sản
-                time.sleep(0.5)  # Đợi trang chi tiết tải
-                get_property_details()  # Gọi hàm lấy chi tiết
+                driver.get(property_url)
+                time.sleep(0.5)
+                get_property_details()
+                driver.back()
+                time.sleep(0.5)
 
-            driver.get(current_page_url)  # Quay lại URL của trang hiện tại
-            time.sleep(0.5)  # Đợi trang hiện tại tải lại
+            driver.get(current_page_url)
+            time.sleep(0.5)
 
-            # Chuyển trang tiếp theo
+            # Move to the next page
             try:
                 page_number += 1
                 next_button = wait.until(EC.element_to_be_clickable((By.XPATH, f"//a[@pid='{page_number}']")))
                 next_button.click()
-                    
-                # Cập nhật URL của trang hiện tại sau khi chuyển trang
                 current_page_url = driver.current_url
             except:
                 print("Đã duyệt hết tất cả các trang")
                 break
 
-    # Chạy hàm duyệt phân trang
+    # Run the pagination navigation
     navigate_pagination()
 
 finally:

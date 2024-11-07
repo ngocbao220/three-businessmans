@@ -23,6 +23,7 @@ try:
     # URL of the real estate website
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
+    time.sleep(15)
 
     # Wait for the page to load
     wait = WebDriverWait(driver, 10)

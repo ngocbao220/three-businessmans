@@ -13,11 +13,12 @@ import time
 if not os.path.exists('Data'):
     os.makedirs('Data')
 
+data_Path = 'Data/data_original.csv'
 # Initialize the Chrome driver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 # Create an empty DataFrame with column headers
-df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Chủ đầu tư', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Thông tin khác', 'Lịch sử giá'])
+df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Thông tin khác', 'Lịch sử giá'])
 df.to_csv('Data/data_original.csv', mode='w', index=False, encoding='utf-8-sig')
 
 try:
@@ -65,7 +66,7 @@ try:
             step = max(0.85, int(canvas_width / 25))  # Approximate 25 points across two years
             
             # Iterate over the canvas with safe bounds
-            for x in range(0, canvas_width - 10, step):  # Start 10px in from each edge
+            for x in range(0, canvas_width - 10, step):  
                 try:
                     # Move to position on canvas and wait for tooltip to appear
                     action.move_to_element_with_offset(canvas, x - 320, canvas_height // 2).perform()
@@ -75,8 +76,8 @@ try:
                     tooltip = driver.find_element(By.ID, 'chartjs-tooltip')
                     period = tooltip.find_element(By.XPATH, ".//span[@class='txt-left color']").text
                     price = tooltip.find_element(By.XPATH, ".//span[@class='txt-right color']").text
-                    price_history.append(f"{period}: {price}")
-                    print(f"Data at x={x}: {period} - {price}")
+                    price_history.append(f"{period} {price}")
+                    #print(f"Data at x={x}: {period} - {price}")
 
                 except Exception as e:
                     print(f"Tooltip not found at position {x}: {e}")
@@ -93,7 +94,7 @@ try:
     def get_property_details():
         try:
             click_price_history_button()
-            # Ensure '2 năm' tab is selected
+            
             try:
                 wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__tab-box-group')))
                 two_years_tab = driver.find_element(By.XPATH, "//li[@data-val='7bd57ad3dfa6ce4b']")
@@ -116,30 +117,39 @@ try:
                 print(f"Không thể chuyển sang tab '2 năm': {e}")
 
             # Tiếp tục lấy thông tin từ trang bất động sản
+
             area_element = driver.find_element(By.CLASS_NAME, 're__pr-short-description')
             area = area_element.text.strip()
             area_parts = area.split(", ")
             xa_phuong = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
             quan_huyen = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
+            tinh_thanh = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
             
             investor = driver.find_element(By.XPATH, "//div[@class='re__row-item re__footer-content']//span[@class='re__long-text']")
             investor_name = investor.text if investor else "Không có thông tin"
+            
+            project = driver.find_element(By.CLASS_NAME, 're__project-title')
+            project_name = project.text if project else "Không có thông tin"
+            
+            details = {'Diện tích': 'Không có thông tin', 
+                       'Mức giá': 'Không có thông tin', 
+                       'Số phòng ngủ': 'Không có thông tin', 
+                       'Số toilet': 'Không có thông tin', 
+                       'Pháp lý': 'Không có thông tin', 
+                       'Nội thất': 'Không có thông tin', 
+                       'Mặt tiền': 'Không có thông tin', 
+                       'Hướng nhà': 'Không có thông tin' 
+            }
 
-            details = { 'Diện tích': 'Không có thông tin', 'Mức giá': 'Không có thông tin', 'Số phòng ngủ': 'Không có thông tin', 'Số toilet': 'Không có thông tin', 'Pháp lý': 'Không có thông tin', 'Nội thất': 'Không có thông tin' }
             other_info = []
             specs_items = driver.find_elements(By.CLASS_NAME, 're__pr-specs-content-item')
-            mat_tien = "Không có thông tin"
-            huong_nha = "Không có thông tin"
             
             for item in specs_items:
                 try:
                     spec_title = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-title').text
                     spec_value = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-value').text
-                    if spec_title == "Mặt tiền":
-                        mat_tien = spec_value
-                    elif spec_title == "Hướng nhà":
-                        huong_nha = spec_value
-                    elif spec_title in details:
+                
+                    if spec_title in details:
                         details[spec_title] = spec_value
                     else:
                         other_info.append(f"{spec_title}: {spec_value}")
@@ -152,21 +162,23 @@ try:
             new_row = pd.DataFrame([{
                 'Xã/Phường': xa_phuong,
                 'Quận/Huyện': quan_huyen,
+                'Tỉnh/Thành phố': tinh_thanh,
                 'Chủ đầu tư': investor_name,
+                'Tên dự án': project_name,
                 'Diện tích': details['Diện tích'],
                 'Mức giá': details['Mức giá'],
                 'Số phòng ngủ': details['Số phòng ngủ'],
                 'Số toilet': details['Số toilet'],
                 'Pháp lý': details['Pháp lý'],
                 'Nội thất': details['Nội thất'],
-                'Mặt tiền': mat_tien,
-                'Hướng nhà': huong_nha,
+                'Mặt tiền': details['Mặt tiền'],
+                'Hướng nhà': details['Hướng nhà'],
                 'Thông tin khác': "; ".join(other_info),
                 'Lịch sử giá': price_history
             }])
 
             # Append data to the CSV file
-            new_row.to_csv('Data/data_original.csv', mode='a', index=False, header=False, encoding='utf-8-sig')
+            new_row.to_csv(data_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
 
         except Exception as e:
             print(f"Lỗi khi lấy thông tin bất động sản: {e}")
@@ -182,7 +194,7 @@ try:
 
             for property_url in property_urls:
                 driver.get(property_url)
-                time.sleep(0.5)
+                time.sleep(1)
                 get_property_details()
                 driver.back()
                 time.sleep(0.5)

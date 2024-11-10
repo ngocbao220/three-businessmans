@@ -217,7 +217,7 @@ try:
                 print(col) '''
 
             # Ghi dữ liệu vào file CSV
-            if (investor_name != "Không có thông tin" and price_history != "Không có dữ liệu lịch sử giá"):
+            if (investor_name != "Không có thông tin"):
                 # File CSV dự án và có lịch sử giá
                 new_row.to_csv(data_Project_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
             # File CSV basic

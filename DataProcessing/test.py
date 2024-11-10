@@ -32,7 +32,7 @@ try:
 
     # Function to scrape price history details
     def click_price_history_button():
-        try:
+        """try:
             # Use a specific selector to target the inner div with class `re__block-ldp-pricing-cta`
             price_history_button = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.re__clearfix.clear .re__block-ldp-pricing-cta')))
             
@@ -41,9 +41,16 @@ try:
             time.sleep(1)  # Wait for scroll to complete
             driver.execute_script("arguments[0].click();", price_history_button)  # Click using JavaScript
             print("Successfully clicked on the price history button.")
-            
         except Exception as e:
-            print(f"Could not click on the price history button: {e}")
+            print(f"Could not click on the price history button: {e}")"""
+        
+        try:
+            price_history_button = driver.find_element(By.CSS_SELECTOR, '.re__clearfix.clear .re__block-ldp-pricing-cta')
+            price_history_button.click()
+            return 1
+        except:
+            print("Không tìm thấy nút lịch sử giá.")
+            return 0
 
     def get_price_history():
         try:
@@ -93,7 +100,6 @@ try:
     # Function to scrape property details
     def get_property_details():
         try:
-            click_price_history_button()
             
             try:
                 wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__tab-box-group')))

@@ -13,12 +13,13 @@ import time
 if not os.path.exists('Data'):
     os.makedirs('Data')
 
+# Đường dẫn tới file data csv basic và project
 data_Path = 'Data/data_original.csv'
 data_Project_Path = 'Data/data_project.csv'
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-# Tạo 1 dataframe
+# Tạo 1 dataframe chứa các cột của data
 df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
 df.to_csv(data_Path, mode='w', index=False, encoding='utf-8-sig')
 df.to_csv(data_Project_Path, mode='w', index=False, encoding='utf-8-sig')
@@ -27,10 +28,10 @@ try:
     # URL của trang web bất động sản
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
-    time.sleep(20)
+    time.sleep(20) # Sleep để login bằng cơm
     
     # Chờ load xong trang
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 7)
 
     # Hàm ấnh nút lịch sử giá
     def click_price_history_button():        
@@ -48,7 +49,7 @@ try:
             canvas = wait.until(EC.visibility_of_element_located((By.ID, 'chart-canvas')))
             
             driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", canvas)
-            time.sleep(1)  
+            time.sleep(0.5)  
 
             canvas_width = canvas.size['width']
             canvas_height = canvas.size['height']
@@ -102,22 +103,36 @@ try:
         try:
             price_history = 'Không có dữ liệu lịch sử giá'
             price_spread_history = 'Không có dữ liệu lịch sử khoảng giá'
+            investor_name = "Không có thông tin"
+            project_name = "Không có thông tin"
+
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__pr-short-description')))
 
             area_element = driver.find_element(By.CLASS_NAME, 're__pr-short-description')
             area = area_element.text.strip()
             area_parts = area.split(", ")
+
             xa_phuong = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
             quan_huyen = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
             tinh_thanh = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
-            
-            wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
-            investor = driver.find_element(By.XPATH, "//div[@class='re__row-item re__footer-content']//span[@class='re__long-text']")
-            investor_name = investor.text if investor else "Không có thông tin"
-            
-            project = driver.find_element(By.CLASS_NAME, 're__project-title')
-            project_name = project.text if project else "Không có thông tin"
 
-            print(investor_name +" - "+ project_name)
+            #print(xa_phuong + " - " + quan_huyen + " - " + tinh_thanh)
+
+            
+            try:
+                wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
+
+                # Lấy thông tin cđt, vì cùng class name với cái khác nên phải dùng css selector
+                investor = driver.find_element(By.CSS_SELECTOR, ".re__footer-content .re__long-text")
+                investor_name = investor.text if investor else "Không có thông tin"
+
+                # Lấy thông tin dự án
+                project = driver.find_element(By.CLASS_NAME, 're__project-title')
+                project_name = project.text if project else "Không có thông tin"
+            except:
+                
+                print("Không có thông tin cđt và dự án bất động sản")
+                
             
             details = {'Diện tích': 'Không có thông tin', 
                        'Mức giá': 'Không có thông tin', 
@@ -199,11 +214,13 @@ try:
 
             ''' In từng lịch sử giá từng tháng
             for col in price_history.split("; "):
-                print(col)'''
+                print(col) '''
 
             # Ghi dữ liệu vào file CSV
-            if (price_history != "Không có dữ liệu lịch sử giá"):
+            if (investor_name != "Không có thông tin" and price_history != "Không có dữ liệu lịch sử giá"):
+                # File CSV dự án và có lịch sử giá
                 new_row.to_csv(data_Project_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+            # File CSV basic
             new_row.to_csv(data_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
 
         except Exception as e:
@@ -220,7 +237,7 @@ try:
 
             for property_url in property_urls:
                 driver.get(property_url)
-                time.sleep(1)
+                time.sleep(0.5)
                 get_property_details()
                 driver.back()
                 time.sleep(0.5)

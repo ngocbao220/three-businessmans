@@ -1,55 +1,70 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from xgboost import XGBRegressor
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-import joblib
+import numpy as np
+import copy, math
 
-# Bước 1: Đọc dữ liệu
-data = pd.read_csv("../DataProcessing/cleaned_data.csv")
+class modelML:
+    def __init__(self, X, Y):
+        self.X_train = X
+        self.Y_train = Y
+        self.w = np.zeros(X.shape[1])
+        self.b = 0
 
-# Kiểm tra dữ liệu có bị rỗng không và loại bỏ các dòng rỗng (nếu cần)
-data = data.dropna()
+    def compute_cost(self, X, Y, w, b):
+        m = X.shape[0]
+        cost = 0.0
+        for i in range(m):
+            f_wb_i = np.dot(X[i], w) + b
+            cost = cost + (f_wb_i - Y[i])**2
+        cost = cost / (2 * m)
 
-# Bước 2: Chọn đặc trưng (features) và biến mục tiêu (target)
-X = data[['Xã/Phường', 'Quận/Huyện', 'Chủ đầu tư', 'Tên dự án', 'Diện tích', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà']]
-y = data['Mức giá']
+        return cost
+    
+    def compute_gradient(self, X, Y, w, b):
+        m, n = X.shape
+        dj_dw = np.zeros((n,))
+        dj_db = 0.0
 
-# Bước 3: Chia dữ liệu thành tập huấn luyện và tập kiểm tra
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        for i in range(m):
+            err = (np.dot(X[i], w) + b) - Y[i]
+            for j in range(n):
+                dj_dw[j] += err * X[i, j]
+            dj_db += err
+        dj_dw = dj_dw / m
+        dj_db = dj_db / m
+        
+        return dj_db, dj_dw
+    
+    def gradient_descent(self, X, y, w_in, b_in, alpha, num_iters): 
+        J_history = []
+        w = copy.deepcopy(w_in)
+        b = b_in
+        
+        for i in range(num_iters):
+            dj_db, dj_dw = self.compute_gradient(X, y, w, b)
 
-# Bước 4: Định nghĩa các cột phân loại và số để xử lý
-categorical_features = ['Xã/Phường', 'Quận/Huyện', 'Chủ đầu tư', 'Tên dự án', 'Pháp lý', 'Nội thất', 'Hướng nhà']
-numerical_features = ['Diện tích', 'Số phòng ngủ', 'Số toilet', 'Mặt tiền']
+            # Cập nhật tham số w, b
+            w = w - alpha * dj_dw
+            b = b - alpha * dj_db
 
-# Bước 5: Tạo các bước xử lý dữ liệu trong pipeline
-preprocessor = ColumnTransformer(
-    transformers=[
-        ('num', StandardScaler(), numerical_features),
-        ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features)
-    ]
-)
+            # Lưu chi phí tại mỗi lần lặp
+            if i < 100000:
+                J_history.append(self.compute_cost(X, y, w, b))
 
-# Bước 6: Xây dựng pipeline cho mô hình với XGBRegressor
-model = Pipeline(steps=[
-    ('preprocessor', preprocessor),
-    ('regressor', XGBRegressor(n_estimators=100, learning_rate=0.1, max_depth=6, random_state=42))
-])
+            # In chi phí sau mỗi khoảng nhất định
+            if i % math.ceil(num_iters / 10) == 0:
+                print(f"Iteration {i:4d}: Cost {J_history[-1]:8.2f}")
+            
+        return w, b, J_history
+    
+X_train = np.array([[1, 2], [3, 4], [5, 6]])  # Ví dụ giả sử bạn có 100 mẫu và 3 đặc trưng
+y_train = np.array([2, 4, 6])     # Ví dụ giả sử mục tiêu có 100 giá trị
 
-# Bước 7: Huấn luyện mô hình
-model.fit(X_train, y_train)
+modelML = modelML(X_train, y_train)
+w_init = np.zeros(X_train.shape[1])
+b_init = 0
+alpha = 0.01
+iterations = 1000
 
-# Bước 8: Dự đoán giá trên tập kiểm tra
-y_pred = model.predict(X_test)
-
-# Bước 9: Tính toán độ chính xác của mô hình (MAE và RMSE)
-mae = mean_absolute_error(y_test, y_pred)
-rmse = mean_squared_error(y_test, y_pred, squared=False)
-
-print("Mean Absolute Error (MAE):", mae)
-print("Root Mean Squared Error (RMSE):", rmse)
-
-# Bước 10: Lưu mô hình đã huấn luyện (nếu cần thiết)
-joblib.dump(model, 'real_estate_price_predictor.pkl')
+w_final, b_final, J_history = modelML.gradient_descent(X_train, y_train, w_init, b_init, alpha, iterations)
+print(w_final)
+print(b_final)

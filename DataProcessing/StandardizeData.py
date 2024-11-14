@@ -3,11 +3,11 @@ import pandas as pd
 # path_data_original = 'Data/cleanedData/cleaned_data_project.csv'
 # path_data_goal = 'Data/standardizedData/standardized_data_project.csv'
 
-path_data_original = 'Data/cleanedData/cleaned_data.csv'
-path_data_goal = 'Data/standardizedData/standardized_data.csv'
+path_data_original = '../Data/cleanedData/cleaned_data.csv'
+path_data_goal = '../Data/standardizedData/standardized_data.csv'
 
-month_price_path = 'Data/priceData/month_price.csv'
-quarter_price_path = 'Data/priceData/quarter_price.csv'
+month_price_path = '../Data/priceData/month_price.csv'
+quarter_price_path = '../Data/priceData/quarter_price.csv'
 
 data = pd.read_csv(path_data_original).copy()
 
@@ -58,3 +58,5 @@ data.rename(columns={"Lịch sử giá" : "Mã lịch sử giá"}, inplace=True)
 data.to_csv(path_data_goal, index=False)
 month_price.to_csv(month_price_path, index=True, index_label="index")
 quarter_price.to_csv(quarter_price_path, index=True, index_label="index")
+
+month_price.describe

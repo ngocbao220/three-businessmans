@@ -14,6 +14,7 @@ if not os.path.exists('Data'):
     os.makedirs('Data')
 
 # Đường dẫn tới file data csv basic và project
+page_Path = 'Data/page_number.txt'
 data_Path = 'Data/data_original.csv'
 data_Project_Path = 'Data/data_project.csv'
 # Tạo trình điều khiển Chrome
@@ -21,17 +22,17 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 # Tạo 1 dataframe chứa các cột của data
 df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
-df.to_csv(data_Path, mode='w', index=False, encoding='utf-8-sig')
-df.to_csv(data_Project_Path, mode='w', index=False, encoding='utf-8-sig')
+df.to_csv(data_Path, mode='a', index=False, encoding='utf-8-sig')
+df.to_csv(data_Project_Path, mode='a', index=False, encoding='utf-8-sig')
 
 try:
     # URL của trang web bất động sản
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
     time.sleep(20) # Sleep để login bằng cơm
-    
+
     # Chờ load xong trang
-    wait = WebDriverWait(driver, 7)
+    wait = WebDriverWait(driver, 5)
 
     # Hàm ấnh nút lịch sử giá
     def click_price_history_button():        
@@ -43,6 +44,7 @@ try:
             print("Không tìm thấy nút lịch sử giá.")
             return 0
         
+    # Hàm lấy lịch sử giá, trả về lịch sử giá và lịch sử khoảng giá
     def get_price_history():
         try:
             # Chờ tới khi biểu đồ lịch sử giá hiển thị
@@ -91,7 +93,7 @@ try:
 
         
         except Exception as e:
-            print(f"Lỗi khi lấy dữ liệu lịch sử giá: {e}")
+            print(f"Lỗi khi lấy dữ liệu lịch sử giá")
             return ("Không có dữ liệu lịch sử giá",
                     "Không có dữ liệu lịch sử khoảng giá"
                     )
@@ -176,10 +178,10 @@ try:
 
                     # Kiểm tra xem tab đã được chọn chưa, nếu chưa thì click vào
                     if 're__tab-box--active' not in two_years_tab.get_attribute('class'):
-                        print("Tab '2 năm' chưa được chọn, tiến hành click")
+                        #print("Tab '2 năm' chưa được chọn, tiến hành click")
                         # Sử dụng JavaScriptExecutor để click nếu thao tác click bình thường không thành công
                         two_years_tab.click()
-                        print("Đã chuyển sang tab '2 năm'")
+                        #print("Đã chuyển sang tab '2 năm'")
                     else:
                         print("Tab '2 năm' đã được chọn")
                     time.sleep(1)  # Đợi một chút sau khi nhấp vào tab
@@ -190,7 +192,7 @@ try:
                     price_spread_history = get_price_history_data[1]
 
                 except Exception as e:
-                    print(f"Không thể chuyển sang tab '2 năm': {e}")
+                    print(f"Không thể chuyển sang tab '2 năm'")
                 
             new_row = pd.DataFrame([{
                 'Xã/Phường': xa_phuong,
@@ -224,14 +226,23 @@ try:
             new_row.to_csv(data_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
 
         except Exception as e:
-            print(f"Lỗi khi lấy thông tin bất động sản: {e}")
+            print(f"Lỗi khi lấy thông tin bất động sản")
 
-    # Hàm phân trang
+    # Hàm duyệt trang
     def navigate_pagination():
-        page_number = 1
-        current_page_url = driver.current_url
+        '''with open(page_Path, "r") as file:
+            content = file.read()
+            print(content[0])'''
+                
+        with open(page_Path, "r") as file:
+            number_of_pages = int(file.read()) + 1
+        
+        url_page = 'https://batdongsan.com.vn/nha-dat-ban/p' + str(number_of_pages)
+        driver.get(url_page)
 
         while True:
+            with open(page_Path, "w", encoding="utf-8") as file:
+                file.write(str(number_of_pages))
             property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
             property_urls = [link.get_attribute('href') for link in property_links]
 
@@ -239,22 +250,19 @@ try:
                 driver.get(property_url)
                 time.sleep(0.5)
                 get_property_details()
-                driver.back()
-                time.sleep(0.5)
 
-            driver.get(current_page_url)
-            time.sleep(0.5)
+            number_of_pages += 1
+        
 
             try:
-                page_number += 1
-                next_button = wait.until(EC.element_to_be_clickable((By.XPATH, f"//a[@pid='{page_number}']")))
-                next_button.click()
-                current_page_url = driver.current_url
+                url_page = 'https://batdongsan.com.vn/nha-dat-ban/p' + str(number_of_pages)
+                driver.get(url_page)
+                time.sleep(0.5)
             except:
                 print("Đã duyệt hết tất cả các trang")
                 break
 
-    # Chạy hàm phân trang
+    # Chạy hàm duyệt trang
     navigate_pagination()
 
 finally:

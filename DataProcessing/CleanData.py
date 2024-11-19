@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 
-path_data_original = 'Data/originalData/data_project.csv'
-path_data_goal = 'Data/cleanedData/cleaned_data_project.csv'
+# path_data_original = 'Data/originalData/data_project.csv'
+# path_data_goal = 'Data/cleanedData/cleaned_data_project.csv'
 
-# path_data_original = 'Data/originalData/data_original.csv'
-# path_data_goal = 'Data/cleanedData/cleaned_data.csv'
+path_data_original = 'Data/originalData/data_original.csv'
+path_data_goal = 'Data/cleanedData/cleaned_data.csv'
 
 # Drop elements
 data = pd.read_csv(path_data_original).copy()
@@ -72,14 +72,18 @@ furniture = data['Nội thất']
 wrong_form = furniture.str.contains('.', case=False, na=False)
 data.loc[wrong_form, 'Nội thất'] = data.loc[wrong_form, 'Nội thất'].str.replace('.', '')
 
-wrong_form = furniture.str.contains(r'Cao cấp|đẹp|ngoại|semi|hiện đại', case=False, na=False)
+wrong_form = furniture.str.contains(r'Cao cấp|cáo cấp|đẹp|ngoại|semi|hiện đại|sang|nhập khẩu|xịn|châu âu|tâm huyết|hien dai', case=False, na=False)
 data.loc[wrong_form, 'Nội thất'] = 'Cao cấp'
 
-wrong_form = furniture.str.contains(r'cơ bản|nguyên bản|nhà mới|điều|mới', case=False, na=False)
+wrong_form = furniture.str.contains(r'cơ bản|nguyên bản|nhà mới|điều|mới|thang máy|kèm nội thất|41518075|hầm chìm', case=False, na=False)
 data.loc[wrong_form, 'Nội thất'] = 'Cơ bản'
 
-wrong_form = furniture.str.contains(r'Đầy đủ|full|toàn bộ|liên tường', case=False, na=False)
-data.loc[wrong_form, 'Nội thất'] = 'Đầy đủ' 
+wrong_form = furniture.str.contains(r'Đầy đủ|full|toàn bộ|liên tường|liền tường|đủ|cẩn thận|hoàn thiện nội thất', case=False, na=False)
+data.loc[wrong_form, 'Nội thất'] = 'Đầy đủ'
+
+wrong_form = furniture.str.contains(r'Xây thô|Thô', case=False, na=False)
+data.loc[wrong_form, 'Nội thất'] = 'Không nội thất' 
+
 
 # Clean project
 project_name = data['Tên dự án']
@@ -95,10 +99,10 @@ cleaned_data = pd.DataFrame({
     'Quận/Huyện': data['Quận/Huyện'],
     'Chủ đầu tư': data['Chủ đầu tư'],
     'Tên dự án': data['Tên dự án'],
-    'Diện tích (m²)': area,
-    'Mức giá (triệu/m²)': price,
-    'Số phòng ngủ (phòng)': bed_room,
-    'Số toilet (phòng)': toilet_room,
+    'Diện tích': area,
+    'Mức giá': price,
+    'Số phòng ngủ': bed_room,
+    'Số toilet': toilet_room,
     'Pháp lý': legal,
     'Nội thất': furniture,
     'Lịch sử giá': data['Lịch sử giá'],

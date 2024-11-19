@@ -20,10 +20,12 @@ data_Project_Path = 'Data/data_project.csv'
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
+'''
 # Tạo 1 dataframe chứa các cột của data
 df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
 df.to_csv(data_Path, mode='a', index=False, encoding='utf-8-sig')
 df.to_csv(data_Project_Path, mode='a', index=False, encoding='utf-8-sig')
+'''
 
 try:
     # URL của trang web bất động sản

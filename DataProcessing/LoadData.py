@@ -90,16 +90,12 @@ try:
                     "; ".join(price_spread_history) if  price_spread_history 
                                                     else "Không có dữ liệu lịch sử khoảng giá"
                     )
-
-        
         except Exception as e:
             print(f"Lỗi khi lấy dữ liệu lịch sử giá")
             return ("Không có dữ liệu lịch sử giá",
                     "Không có dữ liệu lịch sử khoảng giá"
                     )
         
-
-
     # Hàm lấy thông tin bất động sản
     def get_property_details():
         try:
@@ -114,12 +110,9 @@ try:
             area = area_element.text.strip()
             area_parts = area.split(", ")
 
-            xa_phuong = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
-            quan_huyen = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
-            tinh_thanh = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
-
-            #print(xa_phuong + " - " + quan_huyen + " - " + tinh_thanh)
-
+            commune_ward = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
+            district = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
+            province_city = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
             
             try:
                 wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
@@ -132,7 +125,6 @@ try:
                 project = driver.find_element(By.CLASS_NAME, 're__project-title')
                 project_name = project.text if project else "Không có thông tin"
             except:
-                
                 print("Không có thông tin cđt và dự án bất động sản")
                 
             
@@ -195,9 +187,9 @@ try:
                     print(f"Không thể chuyển sang tab '2 năm'")
                 
             new_row = pd.DataFrame([{
-                'Xã/Phường': xa_phuong,
-                'Quận/Huyện': quan_huyen,
-                'Tỉnh/Thành phố': tinh_thanh,
+                'Xã/Phường': commune_ward,
+                'Quận/Huyện': district,
+                'Tỉnh/Thành phố': province_city,
                 'Chủ đầu tư': investor_name,
                 'Tên dự án': project_name,
                 'Diện tích': details['Diện tích'],
@@ -230,10 +222,8 @@ try:
 
     # Hàm duyệt trang
     def navigate_pagination():
-        '''with open(page_Path, "r") as file:
-            content = file.read()
-            print(content[0])'''
-                
+        
+        # Đọc số trang đã duyệt và lưu trong file txt
         with open(page_Path, "r") as file:
             number_of_pages = int(file.read()) + 1
         
@@ -241,8 +231,10 @@ try:
         driver.get(url_page)
 
         while True:
+            # Lưu số trang dã duyệt qua với file txt
             with open(page_Path, "w", encoding="utf-8") as file:
                 file.write(str(number_of_pages))
+
             property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
             property_urls = [link.get_attribute('href') for link in property_links]
 

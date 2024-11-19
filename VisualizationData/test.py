@@ -1,9 +1,9 @@
 import pandas as pd
 
-month_price_path = '../Data/priceData/month_price.csv'
-quarter_price_path = '../Data/priceData/quarter_price.csv'
+month_price_path = 'Data/priceData/month_price.csv'
+quarter_price_path = 'Data/priceData/quarter_price.csv'
 
-data = pd.read_csv('../Data/standardizedData/standardized_data.csv')
+data = pd.read_csv('Data/standardizedData/standardized_data.csv')
 month_price = pd.read_csv(month_price_path)
 quarter_price = pd.read_csv(quarter_price_path)
 

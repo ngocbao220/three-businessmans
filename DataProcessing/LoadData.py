@@ -15,8 +15,8 @@ if not os.path.exists('Data'):
 
 # Đường dẫn tới file data csv basic và project
 page_Path = 'Data/page_number.txt'
-data_Path = 'Data/data_original.csv'
-data_Project_Path = 'Data/data_project.csv'
+data_Path = 'Data/originalData/data_original.csv'
+data_Project_Path = 'Data/originalData/data_project.csv'
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 

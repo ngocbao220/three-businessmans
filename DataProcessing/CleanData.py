@@ -1,13 +1,13 @@
 import pandas as pd
 import numpy as np
 
-# path_data_original = 'Data/originalData/data_project.csv'
-# path_data_goal = 'Data/cleanedData/cleaned_data_project.csv'
+path_data_original = 'Data/originalData/data_project.csv'
+path_data_goal = 'Data/cleanedData/cleaned_data_project.csv'
 
-path_data_original = 'Data/originalData/data_original.csv'
-path_data_goal = 'Data/cleanedData/cleaned_data.csv'
+# path_data_original = 'Data/originalData/data_original.csv'
+# path_data_goal = 'Data/cleanedData/cleaned_data.csv'
 
-# Drop duplicate elements
+# Drop elements
 data = pd.read_csv(path_data_original).copy()
 data = data.drop(columns=['Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác'])
 data = data.drop_duplicates()
@@ -20,29 +20,26 @@ data = data[~data['Số toilet'].str.contains('Không có thông tin', case=Fals
 data = data[~data['Pháp lý'].str.contains('Không có thông tin', case=False, na=False)].reset_index(drop=True)
 data = data[~data['Nội thất'].str.contains('Không có thông tin', case=False, na=False)].reset_index(drop=True)
 
-# Clean quận huyện xã phường
+# Clean Area
 data['Quận/Huyện'] = data['Quận/Huyện'].str.replace(r'Quận|Huyện', '', regex=True).str.strip()
 data['Xã/Phường'] = data['Xã/Phường'].str.replace(r'Xã|Phường|Thị trấn', '', regex=True).str.strip()
 
-# Clean area Data
+# Clean Square Data
 area = data['Diện tích']
 area = area.str.replace(' m²', '').str.replace('.', '').str.replace(',', '.').astype(np.float32)
 
-# Clean price Data
-
+# Clean Price Data
 price = data['Mức giá']
 
 wrong_form = price.str.contains('/m²', case=False, na=False)
 cleaned_wrong_form = data.loc[wrong_form, 'Mức giá'].str.replace('/m²', '').str.replace(',', '.')
 data.loc[wrong_form, 'Mức giá'] = cleaned_wrong_form
 
-# Convert to price per square
 price_area = price.str.contains('tỷ', case=False, na=False)
 cleaned_price_area = data.loc[price_area, 'Mức giá'].str.replace(' tỷ', '').str.replace(',', '.').astype(np.float32)*1000
 price_per_square = (cleaned_price_area / area[price_area])
 data.loc[price_area, 'Mức giá'] = price_per_square
 
-# Clean form
 wrong_form = price.str.contains(' triệu', case=False, na=False)
 cleaned_wrong_form = data.loc[wrong_form, 'Mức giá'].str.replace(' triệu', '').str.replace(',', '.').astype(np.float32)
 data.loc[wrong_form, 'Mức giá'] = cleaned_wrong_form
@@ -50,12 +47,10 @@ data.loc[wrong_form, 'Mức giá'] = cleaned_wrong_form
 # Clean room
 bed_room = data['Số phòng ngủ']
 bed_room = bed_room.str.replace(' phòng', '').astype(np.float32)
-
 toilet_room = data['Số toilet']
 toilet_room = toilet_room.str.replace(' phòng', '').astype(np.float32)
 
 # Clean legal
-
 legal = data['Pháp lý']
 wrong_form = legal.str.contains('HĐMB', case=False, na=False)
 data.loc[wrong_form, 'Pháp lý'] = data.loc[wrong_form, 'Pháp lý'].str.replace('HĐMB', "Hợp đồng mua bán")
@@ -63,19 +58,21 @@ data.loc[wrong_form, 'Pháp lý'] = data.loc[wrong_form, 'Pháp lý'].str.replac
 wrong_form = legal.str.contains('.', case=False, na=False)
 data.loc[wrong_form, 'Pháp lý'] = data.loc[wrong_form, 'Pháp lý'].str.replace('.', '')
 
+wrong_form = legal.str.contains('hợp đồng', case=False, na=False)
+data.loc[wrong_form, 'Pháp lý'] = "Hợp đồng mua bán"
+
 wrong_form = legal.str.contains('đang chờ sổ', case=False, na=False)
 data.loc[wrong_form, 'Pháp lý'] = "Chưa có"
 
-wrong_form = legal.str.contains(r'sổ|đầy đủ', case=False, na=False)
+wrong_form = legal.str.contains(r'sổ|so|Sổ đỏ/ Sổ hồng|đầy đủ', case=False, na=False)
 data.loc[wrong_form, 'Pháp lý'] = 'Đầy đủ'
 
 # Clean furniture
-
 furniture = data['Nội thất']
 wrong_form = furniture.str.contains('.', case=False, na=False)
 data.loc[wrong_form, 'Nội thất'] = data.loc[wrong_form, 'Nội thất'].str.replace('.', '')
 
-wrong_form = furniture.str.contains(r'Cao cấp|đẹp|ngoại|semi', case=False, na=False)
+wrong_form = furniture.str.contains(r'Cao cấp|đẹp|ngoại|semi|hiện đại', case=False, na=False)
 data.loc[wrong_form, 'Nội thất'] = 'Cao cấp'
 
 wrong_form = furniture.str.contains(r'cơ bản|nguyên bản|nhà mới|điều|mới', case=False, na=False)
@@ -108,25 +105,12 @@ cleaned_data = pd.DataFrame({
     'Khoảng giá': data['Khoảng giá']
 })
 
-cleaned_data.to_csv(path_data_goal, index=False)
-
-# PRICE
-
-
-# path_data_original = 'Data/cleanedData/cleaned_data_project.csv'
-# path_data_goal = 'Data/standardizedData/standardized_data_project.csv'
-
-path_data_original = 'Data/cleanedData/cleaned_data.csv'
-path_data_goal = 'Data/standardizedData/standardized_data.csv'
-
+# PRICE Encoding
 month_price_path = 'Data/priceData/month_price.csv'
 quarter_price_path = 'Data/priceData/quarter_price.csv'
 
-data = pd.read_csv(path_data_original).copy()
-
-# standardization Price
 history_price = pd.DataFrame(index=data.index)
-price_data = data[['Lịch sử giá', 'Khoảng giá']].copy()
+price_data = cleaned_data[['Lịch sử giá', 'Khoảng giá']].copy()
 
 for idx, (history, price_range_str) in price_data.iterrows():
     entries = history.split('; ')
@@ -160,13 +144,13 @@ month_indices = month_price.index
 quarter_indices = quarter_price.index
 none_indices = none_price.index
 
-data.loc[month_indices, 'Lịch sử giá'] = 'M'
-data.loc[quarter_indices, 'Lịch sử giá'] = 'Q'
-data.loc[none_indices, 'Lịch sử giá'] = 'N'
+cleaned_data.loc[month_indices, 'Lịch sử giá'] = 'M'
+cleaned_data.loc[quarter_indices, 'Lịch sử giá'] = 'Q'
+cleaned_data.loc[none_indices, 'Lịch sử giá'] = 'N'
 
-data.drop(columns=['Khoảng giá'], inplace=True)
-data.rename(columns={"Lịch sử giá" : "Mã lịch sử giá"}, inplace=True)
+cleaned_data.drop(columns=['Khoảng giá'], inplace=True)
+cleaned_data.rename(columns={"Lịch sử giá" : "Mã lịch sử giá"}, inplace=True)
 
-data.to_csv(path_data_goal, index=False)
+cleaned_data.to_csv(path_data_goal, index=False)
 month_price.to_csv(month_price_path, index=True, index_label="index")
 quarter_price.to_csv(quarter_price_path, index=True, index_label="index")

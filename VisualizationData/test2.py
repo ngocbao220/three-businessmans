@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Đọc file CSV
-data = pd.read_csv('../Data/cleanedData/cleaned_data.csv')
+data = pd.read_csv('../Data/cleanedData/cleaned_data_project.csv')
 
 # Tách các cột lịch sử giá theo từng tháng
 data['Lịch sử giá'] = data['Lịch sử giá'].fillna("")  # Xử lý các giá trị trống nếu có

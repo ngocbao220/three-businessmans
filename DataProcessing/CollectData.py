@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -6,111 +7,253 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
-import os
 import time
 
-# Ensure the data directory exists
+# Chắc chắn là thư mục data tồn tại
 if not os.path.exists('Data'):
     os.makedirs('Data')
 
-# Initialize the Chrome driver
+# Đường dẫn tới file data csv basic và project
+page_Path = 'Data/page_number.txt'
+data_Path = 'Data/originalData/data_original1.csv'
+data_Project_Path = 'Data/originalData/data_project1.csv'
+# Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-# Create an empty DataFrame with column headers
-df = pd.DataFrame(columns=['Khu vực', 'Chủ đầu tư', 'Diện tích', 'Mức giá', 'Số phòng', 'Pháp lý', 'Nội thất', 'Thông tin khác'])
-
-# Write the header only once at the beginning
-df.to_csv('Data/data_original.csv', mode='w', index=False, encoding='utf-8-sig')
-
 try:
-    # URL of the real estate website
+    # URL của trang web bất động sản
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
+    time.sleep(20) # Sleep để login bằng cơm
 
-    # Wait for the page to load
-    wait = WebDriverWait(driver, 10)
+    # Chờ load xong trang
+    wait = WebDriverWait(driver, 5)
 
-    # Function to scrape property details
+    # Hàm ấnh nút lịch sử giá
+    def click_price_history_button():        
+        try:
+            price_history_button = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.re__clearfix.clear .re__block-ldp-pricing-cta')))
+            price_history_button.click()
+            return 1
+        except:
+            print("Không tìm thấy nút lịch sử giá.")
+            return 0
+        
+    # Hàm lấy lịch sử giá, trả về lịch sử giá và lịch sử khoảng giá
+    def get_price_history():
+        try:
+            # Chờ tới khi biểu đồ lịch sử giá hiển thị
+            canvas = wait.until(EC.visibility_of_element_located((By.ID, 'chart-canvas')))
+            
+            driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", canvas)
+            time.sleep(0.5)  
 
+            canvas_width = canvas.size['width']
+            canvas_height = canvas.size['height']
+
+            action = ActionChains(driver)
+            price_history = []
+            price_spread_history = []
+            
+            # Tính khoảng cách giữa các điểm
+            step = max(0.85, int(canvas_width / 25))  
+            
+            # Chạy từng điểm trên biểu đồ giá
+            for x in range(0, canvas_width - 10, step):  
+                try:
+                    action.move_to_element_with_offset(canvas, x - 320, canvas_height // 2).perform()
+                    time.sleep(0.1)  # Chờ tới khi tooltip hiển thị
+
+                    # Tìm tooltip và lấy dữ liệu lịch sử giá
+                    tooltip = driver.find_element(By.ID, 'chartjs-tooltip')
+                    period = tooltip.find_element(By.XPATH, ".//span[@class='txt-left color']").text
+                    price = tooltip.find_element(By.XPATH, ".//span[@class='txt-right color']").text
+                    price_history.append(f"{period} {price}")
+                    #print(f"Data at x={x}: {period} - {price}")
+
+                    price_spread = tooltip.find_element(By.XPATH, ".//span[@class='txt-right']").text
+                    lowest_price = (price_spread.split()[0])
+                    highest_price = (price_spread.split()[2])
+                    price_spread_history.append(f"{lowest_price} {highest_price}")
+                    #print(f"Data at x={x}: {lowest_price} - {highest_price}")
+
+                except Exception as e:
+                    continue  
+
+            return ("; ".join(price_history) if price_history 
+                                            else "Không có dữ liệu lịch sử giá",
+                    "; ".join(price_spread_history) if  price_spread_history 
+                                                    else "Không có dữ liệu lịch sử khoảng giá"
+                    )
+        except Exception as e:
+            print(f"Lỗi khi lấy dữ liệu lịch sử giá")
+            return ("Không có dữ liệu lịch sử giá",
+                    "Không có dữ liệu lịch sử khoảng giá"
+                    )
+        
+    # Hàm lấy thông tin bất động sản
     def get_property_details():
         try:
+            price_history = 'Không có dữ liệu lịch sử giá'
+            price_spread_history = 'Không có dữ liệu lịch sử khoảng giá'
+            investor_name = "Không có thông tin"
+            project_name = "Không có thông tin"
+
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__pr-short-description')))
+
             area_element = driver.find_element(By.CLASS_NAME, 're__pr-short-description')
             area = area_element.text.strip()
-        except:
-            area = "Không tìm thấy khu vực"
+            area_parts = area.split(", ")
 
-        try:
-            investor = driver.find_element(By.XPATH, "//div[@class='re__row-item re__footer-content']//span[@class='re__long-text']")
-            investor_name = investor.text
-        except:
-            investor_name = "Không có thông tin"
-
-        details = {
-            'Diện tích': 'Không có thông tin', 'Mức giá': 'Không có thông tin',
-            'Số tầng': 'Không có thông tin', 'Số phòng ngủ': 'Không có thông tin',
-            'Số toilet': 'Không có thông tin', 'Pháp lý': 'Không có thông tin',
-            'Nội thất': 'Không có thông tin'
-        }
-        other_info = []
-
-        specs_items = driver.find_elements(By.CLASS_NAME, 're__pr-specs-content-item')
-        for item in specs_items:
+            commune_ward = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
+            district = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
+            province_city = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
+            
             try:
-                spec_title = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-title').text
-                spec_value = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-value').text
-                if spec_title in details:
-                    details[spec_title] = spec_value
-                else:
-                    other_info.append(f"{spec_title}: {spec_value}")
+                wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
+
+                # Lấy thông tin cđt, vì cùng class name với cái khác nên phải dùng css selector
+                investor = driver.find_element(By.CSS_SELECTOR, ".re__footer-content .re__long-text")
+                investor_name = investor.text if investor else "Không có thông tin"
+
+                # Lấy thông tin dự án
+                project = driver.find_element(By.CLASS_NAME, 're__project-title')
+                project_name = project.text if project else "Không có thông tin"
             except:
-                continue
+                print("Không có thông tin cđt và dự án bất động sản")
+                
+            
+            details = {'Diện tích': 'Không có thông tin', 
+                       'Mức giá': 'Không có thông tin', 
+                       'Số phòng ngủ': 'Không có thông tin', 
+                       'Số toilet': 'Không có thông tin', 
+                       'Pháp lý': 'Không có thông tin', 
+                       'Nội thất': 'Không có thông tin', 
+                       'Mặt tiền': 'Không có thông tin', 
+                       'Hướng nhà': 'Không có thông tin',
+                       'Hướng ban công': 'Không có thông tin',
+                       'Đường vào' : 'Không có thông tin',
+                       'Số tầng' : 'Không có thông tin',
+            }
 
-        room_info = f"Số tầng: {details['Số tầng']}, Số phòng ngủ: {details['Số phòng ngủ']}, Số toilet: {details['Số toilet']}"
-        new_row = pd.DataFrame([{
-            'Khu vực': area,
-            'Chủ đầu tư': investor_name,
-            'Diện tích': details['Diện tích'],
-            'Mức giá': details['Mức giá'],
-            'Số phòng': room_info,
-            'Pháp lý': details['Pháp lý'],
-            'Nội thất': details['Nội thất'],
-            'Thông tin khác': "; ".join(other_info)
-        }])
-        new_row.to_csv('Data/data_original.csv', mode='a', index=False, header=False, encoding='utf-8-sig')
+            other_info = []
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__pr-specs-content-item')))
+            specs_items = driver.find_elements(By.CLASS_NAME, 're__pr-specs-content-item')
 
-        # Hàm để duyệt phân trang
+            
+            for item in specs_items:
+                try:
+                    spec_title = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-title').text
+                    spec_value = item.find_element(By.CLASS_NAME, 're__pr-specs-content-item-value').text
+                
+                    if spec_title in details:
+                        details[spec_title] = spec_value
+                    else:
+                        other_info.append(f"{spec_title}: {spec_value}")
+                except:
+                    continue
+            if(len(other_info) == 0):
+                other_info.append("Không có thông tin")
+
+            # Kiểm tra xem có lịch sử giá không
+            if (click_price_history_button()):
+                try:
+                    wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__tab-box-group')))
+                    two_years_tab = driver.find_element(By.XPATH, "//li[@data-val='7bd57ad3dfa6ce4b']")
+                    
+                    # Cuộn trang đến tab để đảm bảo phần tử này hiển thị trên màn hình
+                    driver.execute_script("arguments[0].scrollIntoView(true);", two_years_tab)
+                    time.sleep(1)  # Đợi một chút sau khi cuộn
+
+                    # Kiểm tra xem tab đã được chọn chưa, nếu chưa thì click vào
+                    if 're__tab-box--active' not in two_years_tab.get_attribute('class'):
+                        #print("Tab '2 năm' chưa được chọn, tiến hành click")
+                        # Sử dụng JavaScriptExecutor để click nếu thao tác click bình thường không thành công
+                        two_years_tab.click()
+                        #print("Đã chuyển sang tab '2 năm'")
+                    else:
+                        print("Tab '2 năm' đã được chọn")
+                    time.sleep(1)  # Đợi một chút sau khi nhấp vào tab
+
+                    # Gọi hàm để lấy giá và khoảng giá trong lịch sử
+                    get_price_history_data = get_price_history()
+                    price_history = get_price_history_data[0]
+                    price_spread_history = get_price_history_data[1]
+
+                except Exception as e:
+                    print(f"Không thể chuyển sang tab '2 năm'")
+                
+            new_row = pd.DataFrame([{
+                'Xã/Phường': commune_ward,
+                'Quận/Huyện': district,
+                'Tỉnh/Thành phố': province_city,
+                'Chủ đầu tư': investor_name,
+                'Tên dự án': project_name,
+                'Diện tích': details['Diện tích'],
+                'Mức giá': details['Mức giá'],
+                'Số phòng ngủ': details['Số phòng ngủ'],
+                'Số toilet': details['Số toilet'],
+                'Pháp lý': details['Pháp lý'],
+                'Nội thất': details['Nội thất'],
+                'Mặt tiền': details['Mặt tiền'],
+                'Hướng nhà': details['Hướng nhà'],
+                'Hướng ban công': details['Hướng ban công'],
+                'Đường vào' : details['Đường vào'],
+                'Số tầng' : details['Số tầng'],
+                'Thông tin khác': "; ".join(other_info),
+                'Lịch sử giá': price_history,
+                'Khoảng giá': price_spread_history
+            }])
+
+            ''' In từng lịch sử giá từng tháng
+            for col in price_history.split("; "):
+                print(col) '''
+
+            # Ghi dữ liệu vào file CSV
+            if (investor_name != "Không có thông tin"):
+                # File CSV dự án và có lịch sử giá
+                new_row.to_csv(data_Project_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+            # File CSV basic
+            new_row.to_csv(data_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+
+        except Exception as e:
+            print(f"Lỗi khi lấy thông tin bất động sản")
+
+    # Hàm duyệt trang
     def navigate_pagination():
-        page_number = 1
-        current_page_url = driver.current_url  # Lưu URL của trang đầu tiên
+        
+        # Đọc số trang đã duyệt và lưu trong file txt
+        with open(page_Path, "r") as file:
+            number_of_pages = int(file.read()) + 1
+        
+        url_page = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi/p' + str(number_of_pages)
+        driver.get(url_page)
 
         while True:
-            # Lấy danh sách các liên kết đến bất động sản từ trang hiện tại
+            # Lưu số trang dã duyệt qua với file txt
+            with open(page_Path, "w", encoding="utf-8") as file:
+                file.write(str(number_of_pages))
+
             property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
-            # Lấy các URL từ các liên kết đã được lọc
             property_urls = [link.get_attribute('href') for link in property_links]
 
-            # Duyệt qua từng liên kết bất động sản
             for property_url in property_urls:
-                driver.get(property_url)  # Truy cập vào trang chi tiết của bất động sản
-                time.sleep(0.5)  # Đợi trang chi tiết tải
-                get_property_details()  # Gọi hàm lấy chi tiết
+                driver.get(property_url)
+                time.sleep(0.5)
+                get_property_details()
 
-            driver.get(current_page_url)  # Quay lại URL của trang hiện tại
-            time.sleep(0.5)  # Đợi trang hiện tại tải lại
+            number_of_pages += 1
+        
 
-            # Chuyển trang tiếp theo
             try:
-                page_number += 1
-                next_button = wait.until(EC.element_to_be_clickable((By.XPATH, f"//a[@pid='{page_number}']")))
-                next_button.click()
-                    
-                # Cập nhật URL của trang hiện tại sau khi chuyển trang
-                current_page_url = driver.current_url
+                url_page = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi/p' + str(number_of_pages)
+                driver.get(url_page)
+                time.sleep(0.5)
             except:
                 print("Đã duyệt hết tất cả các trang")
                 break
 
-    # Chạy hàm duyệt phân trang
+    # Chạy hàm duyệt trang
     navigate_pagination()
 
 finally:

@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 
-# path_data_original = 'Data/originalData/data_project.csv'
-# path_data_goal = 'Data/cleanedData/cleaned_data_project.csv'
+path_data_original = 'Data/originalData/data_project.csv'
+path_data_goal = 'Data/cleanedData/cleaned_data_project.csv'
 
-path_data_original = 'Data/originalData/data_original.csv'
-path_data_goal = 'Data/cleanedData/cleaned_data.csv'
+# path_data_original = 'Data/originalData/data_original.csv'
+# path_data_goal = 'Data/cleanedData/cleaned_data.csv'
 
 # Drop elements
 data = pd.read_csv(path_data_original).copy()

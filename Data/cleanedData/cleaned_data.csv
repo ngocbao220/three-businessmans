@@ -1,190 +1,639 @@
-Xã/Phường,Quận/Huyện,Chủ đầu tư,Tên dự án,Diện tích,Mức giá,Số phòng ngủ,Số toilet,Pháp lý,Nội thất,Mặt tiền,Hướng nhà,Hướng ban công,Mã lịch sử giá
-Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,54.0,138.88888549804688,7.0,6.0,Chưa có,Không nội thất,"4,5 m",Đông - Bắc,Đông - Bắc,M
-Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,128.0,312.5,5.0,7.0,Hợp đồng mua bán,Cơ bản,6 m,Tây - Bắc,Đông - Nam,M
-Kim Chung,Hoài Đức,Tư nhân,Tư nhân,80.0,187.5,25.0,25.0,Đầy đủ,Cơ bản,18 m,Đông - Nam,Đông - Nam,M
-Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,208.0,302.8846130371094,5.0,4.0,Đầy đủ,Đầy đủ,16 m,Tây - Bắc,Tây - Bắc,M
-Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,230.0,273.9130554199219,4.0,4.0,Đầy đủ,Đầy đủ,"11,5 m",Tây - Bắc,Tây - Bắc,M
-Hòa Thạch,Quốc Oai,Tư nhân,Tư nhân,2499.7,13.0,1.0,1.0,Đầy đủ,Cơ bản,50 m,Đông - Nam,Nam,N
-La Khê,Hà Đông,Công ty CP Phát triển Đô thị Quốc tế Việt Nam,The Mansions,154.0,340.9090881347656,5.0,5.0,Đầy đủ,Cơ bản,7 m,Tây,Đông,Q
-Long Biên,Long Biên,Tư nhân,Tư nhân,32.0,178.125,3.0,3.0,Đầy đủ,Cơ bản,4 m,Đông - Nam,Đông - Nam,M
-Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,170.0,158.8235321044922,5.0,5.0,Đầy đủ,Không nội thất,9 m,Đông - Nam,Đông - Nam,N
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,70.0,192.85714721679688,4.0,5.0,Đầy đủ,Đầy đủ,5 m,Tây - Nam,Tây - Nam,M
-Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,212.0,160.0,4.0,5.0,Đầy đủ,Không nội thất,"8,5 m",Tây - Nam,Đông - Bắc,N
-Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,30.0,206.6666717529297,4.0,4.0,Đầy đủ,Cơ bản,"3,5 m",Tây - Bắc,Tây - Bắc,M
-Minh Khai,Hai Bà Trưng,Tư nhân,Tư nhân,51.2,224.609375,11.0,11.0,Đầy đủ,Đầy đủ,7 m,Nam,Nam,M
-Phương Liên,Đống Đa,Tư nhân,Tư nhân,130.0,172.3076934814453,2.0,2.0,Đầy đủ,Cơ bản,"3,6 m",Đông - Nam,Đông - Nam,M
-Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,135.0,50.0,4.0,4.0,Hợp đồng mua bán,Cơ bản,6 m,Đông - Bắc,Đông - Bắc,M
-Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,246.0,380.081298828125,4.0,4.0,Đầy đủ,Cơ bản,"12,5 m",Đông - Bắc,Tây - Nam,M
-Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,400.0,4.0,5.0,Đầy đủ,Cơ bản,5 m,Tây - Nam,Đông - Bắc,M
-Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,212.0,155.66036987304688,6.0,6.0,Đầy đủ,Không nội thất,9 m,Tây - Nam,Tây - Nam,N
-Văn Chương,Đống Đa,Tư nhân,Tư nhân,50.0,470.0,5.0,6.0,Đầy đủ,Đầy đủ,7 m,Đông - Bắc,Đông - Bắc,Q
-Ngọc Hồi,Thanh Trì,Tư nhân,Tư nhân,38.0,123.15789794921875,3.0,3.0,Đầy đủ,Đầy đủ,"4,5 m",Đông - Nam,Đông - Nam,Q
-Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,126.0,360.0,4.0,4.0,Đầy đủ,Đầy đủ,8 m,Đông - Bắc,Đông - Bắc,M
-Xuân La,Tây Hồ,Công ty TNHH Phát triển T.H.T,KĐT Tây Hồ Tây - Starlake Hà Nội,195.5,590.0,5.0,5.0,Đầy đủ,Cơ bản,8 m,Đông,Đông,Q
-Mỗ Lao,Hà Đông,Công ty TSQ Việt Nam,Làng Việt Kiều Châu Âu Euroland,253.0,250.0,5.0,4.0,Đầy đủ,Đầy đủ,15 m,Nam,Nam,M
-Quang Minh,Mê Linh,Công Ty CP Đầu Tư Xây dựng Long Việt,Long Việt Riverside,70.0,127.14286041259766,6.0,4.0,Hợp đồng mua bán,Đầy đủ,5 m,Đông - Bắc,Đông - Bắc,Q
-Phú La,Hà Đông,Công ty CP Đầu tư Văn Phú - Invest,Khu đô thị mới Văn Phú,96.0,166.6666717529297,4.0,4.0,Đầy đủ,Không nội thất,"4,5 m",Đông - Nam,Đông - Nam,M
-Vĩnh Quỳnh,Thanh Trì,Tư nhân,Tư nhân,90.0,65.0,5.0,4.0,Đầy đủ,Cơ bản,"5,2 m",Đông - Nam,Đông - Nam,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,36.0,173.61111450195312,3.0,5.0,Đầy đủ,Cơ bản,"3,3 m",Đông - Nam,Đông - Nam,M
-Đức Giang,Long Biên,Tư nhân,Tư nhân,56.0,136.60714721679688,4.0,3.0,Đầy đủ,Cơ bản,4 m,Bắc,Bắc,M
-Đồng Mai,Hà Đông,Tư nhân,Tư nhân,32.0,89.0625,3.0,3.0,Đầy đủ,Cơ bản,5 m,Đông - Bắc,Đông - Bắc,M
-Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,255.0,280.0,6.0,6.0,Đầy đủ,Cơ bản,20 m,Tây - Bắc,Đông - Nam,M
-Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,62.0,491.93548583984375,5.0,5.0,Đầy đủ,Đầy đủ,15 m,Tây - Nam,Tây - Nam,M
-Biên Giang,Hà Đông,Tư nhân,Tư nhân,30.0,73.33333587646484,3.0,2.0,Đầy đủ,Cơ bản,"4,6 m",Đông - Nam,Đông - Nam,M
-Đức Giang,Long Biên,Cen Group,Bình Minh Garden,82.0,210.97561645507812,8.0,5.0,Đầy đủ,Cơ bản,5 m,Đông - Nam,Đông - Nam,N
-Kiêu Kỵ,Gia Lâm,Tư nhân,Tư nhân,180.0,82.77777862548828,6.0,6.0,Đầy đủ,Cơ bản,113 m,Đông - Nam,Nam,Q
-Phúc Đồng,Long Biên,Công ty Cổ phần Đầu tư Bất động sản Song Lộc,The Diamond Point,130.7,321.3465881347656,6.0,4.0,Đầy đủ,Không nội thất,"7,5 m",Đông - Bắc,Đông - Bắc,Q
-Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,57.0,227.8947296142578,4.0,4.0,Đầy đủ,Đầy đủ,"4,5 m",Đông - Nam,Đông - Nam,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,31.0,154.83871459960938,3.0,3.0,Đầy đủ,Cơ bản,"4,3 m",Đông - Bắc,Đông - Bắc,M
-Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,31.0,206.4516143798828,4.0,3.0,Đầy đủ,Cơ bản,6 m,Đông - Nam,Đông - Nam,M
-Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,55.0,354.5454406738281,6.0,4.0,Đầy đủ,Cơ bản,"3,8 m",Tây - Bắc,Tây - Bắc,M
-Yên Nghĩa,Hà Đông,Tư nhân,Tư nhân,36.0,104.16666412353516,5.0,4.0,Đầy đủ,Đầy đủ,4 m,Đông - Nam,Đông - Nam,M
-Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,46.0,278.2608642578125,5.0,5.0,Đầy đủ,Đầy đủ,4 m,Tây,Tây,M
-Di Trạch,Hoài Đức,Tư nhân,Tư nhân,33.0,137.8787841796875,3.0,3.0,Đầy đủ,Cơ bản,8 m,Đông,Bắc,M
-Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,66.0,469.69696044921875,5.0,5.0,Đầy đủ,Đầy đủ,15 m,Đông - Nam,Đông - Nam,M
-Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,41.5,160.48193359375,6.0,3.0,Đầy đủ,Cơ bản,"4,1 m",Đông,Đông,M
-Việt Hưng,Long Biên,Tập đoàn Vingroup,Vinhomes The Harmony,90.2,354.7671813964844,4.0,3.0,Đầy đủ,Cơ bản,6 m,Đông - Nam,Đông - Nam,M
-Đội Cấn,Ba Đình,Tư nhân,Tư nhân,36.0,191.6666717529297,3.0,4.0,Đầy đủ,Đầy đủ,"5,24 m",Tây - Nam,Tây - Nam,M
-Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,42.2,552.1326904296875,5.0,5.0,Đầy đủ,Đầy đủ,4 m,Đông - Nam,Đông - Nam,M
-Dương Nội,Hà Đông,Tư nhân,Tư nhân,46.0,123.91304016113281,5.0,3.0,Đầy đủ,Đầy đủ,7 m,Đông,Đông,M
-Dương Nội,Hà Đông,Tư nhân,Tư nhân,46.0,123.91304016113281,5.0,3.0,Đầy đủ,Đầy đủ,7 m,Đông,Đông,N
-Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,353.3333435058594,5.0,5.0,Đầy đủ,Đầy đủ,"6,6 m",Đông - Nam,Tây - Bắc,M
-Phú Lãm,Hà Đông,Tư nhân,Tư nhân,30.0,170.0,2.0,3.0,Đầy đủ,Cơ bản,31 m,Đông,Đông,M
-Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,190.0,305.2631530761719,4.0,4.0,Đầy đủ,Không nội thất,10 m,Đông - Nam,Đông - Nam,M
-Kim Chung,Hoài Đức,Tư nhân,Tư nhân,32.0,123.4375,3.0,3.0,Đầy đủ,Cơ bản,"3,45 m",Tây,Tây,M
-Quan Hoa,Cầu Giấy,Tư nhân,Tư nhân,120.0,233.3333282470703,4.0,3.0,Đầy đủ,Cơ bản,"9,5 m",Bắc,Bắc,M
-Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,68.0,235.2941131591797,4.0,2.0,Đầy đủ,Cơ bản,4 m,Đông - Nam,Đông - Nam,M
-Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,51.0,323.5294189453125,8.0,8.0,Đầy đủ,Cao cấp,"6,2 m",Đông,Đông,M
-Trâu Quỳ,Gia Lâm,Công ty CP Đầu tư Hải Phát,Dự án Thuận An,90.0,229.77777099609375,6.0,7.0,Đầy đủ,Đầy đủ,6 m,Tây - Bắc,Tây - Bắc,Q
-Đồng Nhân,Hai Bà Trưng,Tư nhân,Tư nhân,44.0,465.9090881347656,1.0,1.0,Đầy đủ,Không nội thất,"4,7 m",Tây,Tây,Q
-Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,22.0,254.5454559326172,2.0,1.0,Đầy đủ,Không nội thất,5 m,Tây,Tây - Nam,M
-Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,255.0,784.313720703125,8.0,14.0,Đầy đủ,Đầy đủ,30 m,Đông - Nam,Đông - Nam,M
-Bồ Đề,Long Biên,Tư nhân,Tư nhân,90.0,160.0,4.0,5.0,Đầy đủ,Đầy đủ,45 m,Đông - Nam,Đông - Nam,M
-Điện Biên,Ba Đình,Tư nhân,Tư nhân,47.0,489.14892578125,2.0,5.0,Đầy đủ,Đầy đủ,"4,5 m",Nam,Đông - Nam,Q
-Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,700.0,325.71429443359375,7.0,5.0,Đầy đủ,Cơ bản,28 m,Đông - Nam,Đông - Nam,M
-Hoàng Cầu,Đống Đa,Tư nhân,Tư nhân,100.0,399.0,5.0,5.0,Đầy đủ,Cơ bản,"7,5 m",Đông - Nam,Đông - Nam,M
-Thanh Xuân Trung,Thanh Xuân,Tư nhân,Tư nhân,73.0,393.15069580078125,5.0,5.0,Đầy đủ,Cao cấp,"5,5 m",Đông - Nam,Đông - Nam,M
-Giang Biên,Long Biên,Tư nhân,Tư nhân,38.0,173.0,3.0,4.0,Đầy đủ,Cơ bản,"3,6 m",Đông - Nam,Đông - Nam,M
-Ngã Tư Sở,Đống Đa,Tư nhân,Tư nhân,36.0,208.3333282470703,4.0,3.0,Đầy đủ,Đầy đủ,"6,8 m",Nam,Nam,M
-Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,50.0,290.0,4.0,6.0,Đầy đủ,Cơ bản,"5,37 m",Đông - Nam,Đông - Nam,M
-Thành Công,Ba Đình,Tư nhân,Tư nhân,105.8,652.1738891601562,18.0,20.0,Đầy đủ,Đầy đủ,"21,8 m",Đông - Nam,Đông - Nam,M
-Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,135.0,222.22222900390625,5.0,5.0,Đầy đủ,Đầy đủ,5 m,Đông - Bắc,Tây - Nam,M
-Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,130.0,145.0,5.0,4.0,Đầy đủ,Đầy đủ,6 m,Đông - Nam,Đông - Nam,M
-Thượng Đình,Thanh Xuân,Tư nhân,Tư nhân,44.0,195.4545440673828,5.0,5.0,Đầy đủ,Cơ bản,4 m,Đông,Đông,M
-Long Biên,Long Biên,Tư nhân,Tư nhân,44.0,193.18182373046875,3.0,3.0,Đầy đủ,Cơ bản,4 m,Tây - Nam,Tây - Nam,M
-La Khê,Hà Đông,Công ty CP Sông Đà Thăng Long,Khu đô thị Văn Khê,165.0,168.0,5.0,5.0,Đầy đủ,Cơ bản,10 m,Tây - Bắc,Tây - Bắc,M
-Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,59.1,118.10491180419922,4.0,3.0,Đầy đủ,Đầy đủ,7 m,Nam,Nam,M
-Văn Quán,Hà Đông,Tư nhân,Tư nhân,38.2,232.98428344726562,4.0,4.0,Đầy đủ,Đầy đủ,4 m,Đông - Nam,Đông - Nam,M
-Di Trạch,Hoài Đức,Tư nhân,Tư nhân,35.0,114.28571319580078,3.0,3.0,Đầy đủ,Cơ bản,4 m,Đông,Đông,M
-Nghĩa Tân,Cầu Giấy,Tư nhân,Tư nhân,79.0,316.4556884765625,6.0,5.0,Đầy đủ,Đầy đủ,"6,2 m",Bắc,Bắc,M
-Đông La,Hoài Đức,Tư nhân,Tư nhân,36.4,98.90109252929688,3.0,3.0,Đầy đủ,Đầy đủ,4 m,Đông - Bắc,Tây - Nam,M
-Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,90.0,185.55555725097656,6.0,6.0,Đầy đủ,Không nội thất,4 m,Bắc,Bắc,M
-Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,94.0,187.23403930664062,9.0,8.0,Đầy đủ,Cơ bản,4 m,Bắc,Bắc,M
-Nghĩa Tân,Cầu Giấy,Tư nhân,Tư nhân,60.0,350.0,6.0,9.0,Đầy đủ,Đầy đủ,"5,2 m",Đông - Nam,Đông - Nam,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,33.0,150.0,3.0,4.0,Đầy đủ,Đầy đủ,"3,5 m",Đông - Bắc,Đông - Bắc,M
-Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,150.0,500.0,5.0,7.0,Đầy đủ,Đầy đủ,"7,5 m",Tây - Nam,Đông - Bắc,N
-Phương Mai,Đống Đa,Tư nhân,Tư nhân,90.0,317.77777099609375,4.0,4.0,Đầy đủ,Đầy đủ,"3,5 m",Đông,Tây,Q
-Xuân La,Tây Hồ,Tư nhân,Tư nhân,56.0,262.5,5.0,3.0,Đầy đủ,Đầy đủ,4 m,Đông - Nam,Đông - Nam,M
-Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,27.0,248.1481475830078,2.0,2.0,Đầy đủ,Cơ bản,"3,8 m",Nam,Nam,M
-An Khánh,Hoài Đức,Tư nhân,Tư nhân,30.9,160.19418334960938,3.0,4.0,Đầy đủ,Đầy đủ,"3,3 m",Tây,Tây,M
-Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,56.2,128.11387634277344,1.0,1.0,Đầy đủ,Cơ bản,6 m,Tây - Bắc,Tây - Bắc,M
-Dịch Vọng Hậu,Cầu Giấy,Tư nhân,Tư nhân,50.0,256.0,5.0,6.0,Đầy đủ,Cơ bản,"4,8 m",Tây - Nam,Tây - Bắc,M
-Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,104.0,225.96153259277344,3.0,4.0,Đầy đủ,Cơ bản,5 m,Đông - Nam,Đông - Nam,M
-Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,80.0,437.5,10.0,7.0,Đầy đủ,Đầy đủ,"6,55 m",Đông - Bắc,Đông - Bắc,M
-Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,61.0,491.80328369140625,4.0,5.0,Đầy đủ,Cơ bản,15 m,Đông - Bắc,Tây - Bắc,M
-Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,55.2,297.1014404296875,2.0,7.0,Đầy đủ,Đầy đủ,"6,5 m",Đông - Nam,Đông - Nam,M
-Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,44.0,290.9090881347656,6.0,6.0,Đầy đủ,Đầy đủ,4 m,Nam,Nam,M
-Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,35.0,308.5714416503906,5.0,6.0,Đầy đủ,Đầy đủ,4 m,Nam,Nam,M
-Long Biên,Long Biên,Tư nhân,Tư nhân,32.0,178.125,3.0,3.0,Đầy đủ,Cơ bản,4 m,Đông - Nam,Đông - Nam,M
-Khương Trung,Thanh Xuân,Tư nhân,Tư nhân,105.0,280.952392578125,3.0,4.0,Đầy đủ,Đầy đủ,11 m,Đông - Nam,Đông - Nam,M
-Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,282.0,230.4964599609375,6.0,6.0,Đầy đủ,Đầy đủ,"5,1 m",Đông - Nam,Đông - Nam,N
-Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,100.0,27.0,3.0,2.0,Chưa có,Cơ bản,43 m,Đông - Bắc,Đông - Bắc,Q
-Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,55.0,232.72727966308594,3.0,4.0,Đầy đủ,Đầy đủ,"4,36 m",Đông - Nam,Đông - Nam,N
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,50.0,190.0,3.0,4.0,Đầy đủ,Cơ bản,"4,5 m",Tây - Nam,Tây - Nam,M
-Cát Linh,Đống Đa,Tư nhân,Tư nhân,37.0,152.70269775390625,3.0,4.0,Đầy đủ,Cơ bản,7 m,Đông - Bắc,Đông,M
-Yên Nghĩa,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Sol Lake Villa,100.0,170.0,9.0,10.0,Đầy đủ,Cơ bản,5 m,Tây - Bắc,Tây - Bắc,M
-Yên Nghĩa,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Sol Lake Villa,75.0,286.6666564941406,6.0,7.0,Đầy đủ,Đầy đủ,5 m,Đông - Bắc,Đông - Bắc,M
-Cầu Dền,Hai Bà Trưng,Tư nhân,Tư nhân,90.0,118.88888549804688,8.0,8.0,Đầy đủ,Cơ bản,46 m,Tây - Bắc,Tây,M
-Thịnh Quang,Đống Đa,Tư nhân,Tư nhân,52.0,153.84616088867188,2.0,1.0,Đầy đủ,Không nội thất,"4,12 m",Đông - Nam,Tây - Bắc,M
-Dương Nội,Hà Đông,Tư nhân,Tư nhân,33.0,115.1515121459961,3.0,4.0,Đầy đủ,Cơ bản,"5,25 m",Nam,Nam,M
-Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,90.0,277.77777099609375,6.0,5.0,Đầy đủ,Đầy đủ,9 m,Đông - Nam,Đông - Nam,M
-Quảng An,Tây Hồ,Tư nhân,Tư nhân,200.0,330.0,5.0,5.0,Đầy đủ,Cơ bản,20 m,Đông,Đông,M
-An Khánh,Hoài Đức,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,Khu A - Geleximco Lê Trọng Tấn,240.0,154.1666717529297,6.0,5.0,Đầy đủ,Không nội thất,12 m,Đông - Bắc,Đông - Bắc,Q
-Đức Thượng,Hoài Đức,Tư nhân,Tư nhân,74.5,134.2281951904297,5.0,4.0,Đầy đủ,Đầy đủ,5 m,Đông - Bắc,Đông - Bắc,N
-Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,35.0,168.57142639160156,3.0,4.0,Đầy đủ,Đầy đủ,"3,8 m",Nam,Nam,M
-Láng Hạ,Đống Đa,Tư nhân,Tư nhân,99.0,575.757568359375,4.0,6.0,Đầy đủ,Cơ bản,4 m,Đông,Đông,M
-An Khánh,Hoài Đức,Công ty CP Địa ốc Phú Long,Mailand Hanoi City,236.0,228.8135528564453,6.0,5.0,Đầy đủ,Cơ bản,11 m,Đông,Đông,N
-Vĩnh Phúc,Ba Đình,Tư nhân,Tư nhân,104.0,257.69232177734375,34.0,34.0,Đầy đủ,Cao cấp,"7,6 m",Đông - Nam,Đông - Nam,M
-Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,80.0,210.0,4.0,4.0,Đầy đủ,Đầy đủ,"5,33 m",Tây,Tây - Nam,M
-Tứ Liên,Tây Hồ,Tư nhân,Tư nhân,120.0,112.5,7.0,7.0,Đầy đủ,Cơ bản,"4,8 m",Đông - Bắc,Đông - Bắc,M
-Liên Hồng,Đan Phượng,Tư nhân,Tư nhân,68.8,52.32558059692383,4.0,2.0,Đầy đủ,Cơ bản,5 m,Nam,Nam,N
-Bồ Đề,Long Biên,Tư nhân,Tư nhân,32.0,201.5625,3.0,4.0,Đầy đủ,Cơ bản,"3,53 m",Tây,Tây,M
-Cự Khối,Long Biên,Tư nhân,Tư nhân,35.0,164.2857208251953,3.0,4.0,Đầy đủ,Cơ bản,5 m,Tây - Nam,Tây - Nam,M
-Di Trạch,Hoài Đức,Tư nhân,Tư nhân,38.0,231.57894897460938,5.0,5.0,Đầy đủ,Cơ bản,6 m,Nam,Tây - Nam,M
-Xuân Phương,Nam Từ Liêm,Công ty Cổ phần Tasco,Xuân Phương Tasco,150.0,130.0,6.0,4.0,Đầy đủ,Không nội thất,8 m,Đông - Nam,Tây - Bắc,M
-Vân Canh,Hoài Đức,Công ty Cổ phần Vinapol,Khu biệt thự Vườn Cam - Orange Graden,240.0,90.0,6.0,5.0,Hợp đồng mua bán,Không nội thất,12 m,Đông - Nam,Tây - Bắc,Q
-Xuân Phương,Nam Từ Liêm,Công ty Cổ phần Tasco,Xuân Phương Tasco,86.0,140.0,5.0,5.0,Hợp đồng mua bán,Không nội thất,"6,3 m",Tây - Nam,Đông - Bắc,M
-Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,319.3333435058594,6.0,6.0,Đầy đủ,Cơ bản,5 m,Tây - Bắc,Tây - Bắc,Q
-Vân Canh,Hoài Đức,Tư nhân,Tư nhân,36.6,147.54098510742188,4.0,4.0,Đầy đủ,Cơ bản,"3,2 m",Đông - Nam,Đông - Nam,M
-Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,45.0,286.6666564941406,4.0,4.0,Đầy đủ,Đầy đủ,7 m,Tây - Nam,Tây - Nam,M
-Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,93.0,354.8387145996094,5.0,5.0,Đầy đủ,Đầy đủ,6 m,Tây - Bắc,Đông - Nam,M
-Văn Quán,Hà Đông,Tư nhân,Tư nhân,64.0,421.875,6.0,4.0,Đầy đủ,Đầy đủ,4 m,Đông - Bắc,Đông - Bắc,M
-Kiến Hưng,Hà Đông,Tư nhân,Tư nhân,30.0,206.6666717529297,5.0,3.0,Đầy đủ,Cơ bản,"3,26 m",Bắc,Bắc,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,86.0,202.906982421875,6.0,5.0,Đầy đủ,Đầy đủ,5 m,Đông - Nam,Đông - Nam,M
-An Khánh,Hoài Đức,Tập đoàn Vingroup,Vinhomes Thăng Long,286.0,227.27272033691406,4.0,4.0,Đầy đủ,Cơ bản,10 m,Nam,Nam,M
-Cống Vị,Ba Đình,Tư nhân,Tư nhân,75.0,346.6666564941406,4.0,5.0,Đầy đủ,Cơ bản,"8,7 m",Tây,Tây,M
-Kim Mã,Ba Đình,Công ty CP Đầu tư Văn Phú - Invest,Grandeur Palace Giảng Võ,138.0,471.0144958496094,5.0,6.0,Đầy đủ,Cơ bản,"7,75 m",Đông - Nam,Đông - Nam,Q
-Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,53.5,327.1028137207031,3.0,5.0,Đầy đủ,Không nội thất,"3,9 m",Đông - Nam,Đông - Nam,M
-Tân Lập,Đan Phượng,Tư nhân,Tư nhân,43.3,151.0,4.0,3.0,Đầy đủ,Đầy đủ,5 m,Tây - Nam,Đông,Q
-Bồ Đề,Long Biên,Tư nhân,Tư nhân,90.0,176.11111450195312,4.0,4.0,Đầy đủ,Cơ bản,"7,2 m",Tây,Tây,M
-Nhân Chính,Thanh Xuân,Công ty CP Đầu tư Xây dựng Phát triển nhà số 7 Hà Nội,HDI Homes Nguyễn Tuân,98.0,408.16326904296875,4.0,5.0,Đầy đủ,Đầy đủ,"7,5 m",Đông - Nam,Đông - Nam,Q
-Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,60.0,225.0,18.0,18.0,Đầy đủ,Cơ bản,"3,9 m",Tây - Bắc,Tây - Bắc,M
-Đức Thượng,Hoài Đức,Tư nhân,Tư nhân,70.0,57.14285659790039,2.0,1.0,Đầy đủ,Đầy đủ,5 m,Đông - Nam,Đông - Bắc,Q
-Trung Văn,Nam Từ Liêm,Công ty CP Tập đoàn Nam Cường Hà Nội,Khu đô thị mới Phùng Khoang,70.0,285.71429443359375,4.0,3.0,Đầy đủ,Không nội thất,5 m,Đông - Bắc,Đông - Bắc,M
-Sài Đồng,Long Biên,Tư nhân,Tư nhân,48.0,185.4166717529297,4.0,3.0,Đầy đủ,Cơ bản,"4,5 m",Tây - Bắc,Tây - Bắc,M
-Phụng Châu,Chương Mỹ,Tư nhân,Tư nhân,32.0,75.0,3.0,3.0,Đầy đủ,Cơ bản,"3,5 m",Đông - Bắc,Đông - Bắc,M
-Ba Trại,Ba Vì,Tư nhân,Tư nhân,4162.0,3.363767385482788,3.0,2.0,Đầy đủ,Đầy đủ,80 m,Tây - Nam,Tây - Nam,N
-Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,99.0,383.83837890625,7.0,4.0,Đầy đủ,Đầy đủ,"6,6 m",Tây - Bắc,Đông - Nam,M
-Xuân Phương,Nam Từ Liêm,Tư nhân,Tư nhân,34.0,208.8235321044922,3.0,4.0,Đầy đủ,Cơ bản,"5,6 m",Đông,Đông,M
-Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,33.0,189.39393615722656,7.0,4.0,Đầy đủ,Đầy đủ,"3,3 m",Đông - Bắc,Đông - Bắc,M
-An Khánh,Hoài Đức,Công ty TNHH Một thành viên Du lịch Giải trí Thiên đường Bảo Sơn,Khu biệt thự Thiên Đường Bảo Sơn,130.0,146.15383911132812,4.0,4.0,Đầy đủ,Cơ bản,"6,6 m",Tây - Nam,Tây - Nam,Q
-Giang Biên,Long Biên,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị Việt Hưng,234.0,205.12820434570312,6.0,5.0,Đầy đủ,Cơ bản,17 m,Tây - Bắc,Tây - Bắc,M
-Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,93.0,440.8602294921875,6.0,4.0,Đầy đủ,Không nội thất,6 m,Tây - Bắc,Đông - Nam,N
-Vân Canh,Hoài Đức,Công ty CP Đầu tư An Lạc,An Lạc Green Symphony,80.0,225.0,5.0,4.0,Hợp đồng mua bán,Không nội thất,5 m,Đông - Nam,Đông - Nam,M
-Văn Quán,Hà Đông,Tư nhân,Tư nhân,38.0,172.36842346191406,3.0,3.0,Đầy đủ,Cơ bản,3 m,Tây - Nam,Tây - Nam,M
-Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,50.0,329.0,4.0,4.0,Đầy đủ,Đầy đủ,34 m,Đông - Nam,Đông - Nam,M
-Kiến Hưng,Hà Đông,Tư nhân,Tư nhân,30.2,192.052978515625,3.0,4.0,Đầy đủ,Đầy đủ,3 m,Tây,Đông - Nam,M
-Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,30.0,298.3333435058594,4.0,5.0,Đầy đủ,Đầy đủ,33 m,Tây - Bắc,Tây - Bắc,M
-Văn Quán,Hà Đông,Tư nhân,Tư nhân,30.0,220.0,3.0,4.0,Đầy đủ,Cơ bản,34 m,Tây - Nam,Tây - Nam,M
-Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,56.0,273.21429443359375,3.0,3.0,Đầy đủ,Đầy đủ,"4,6 m",Tây,Tây,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,31.0,145.16128540039062,3.0,3.0,Đầy đủ,Cơ bản,"3,8 m",Tây,Tây,M
-Sơn Đồng,Hoài Đức,Công ty Cổ phần Địa ốc MB,Sơn Đồng Center,90.0,111.11111450195312,6.0,4.0,Đầy đủ,Không nội thất,"6,25 m",Bắc,Bắc,Q
-Vân Canh,Hoài Đức,Tư nhân,Tư nhân,30.0,156.6666717529297,3.0,4.0,Đầy đủ,Đầy đủ,"4,5 m",Đông - Nam,Đông - Nam,M
-Đức Giang,Long Biên,Tư nhân,Tư nhân,180.0,316.6666564941406,2.0,2.0,Đầy đủ,Cơ bản,9 m,Đông - Nam,Đông - Nam,M
-Hàng Bông,Hoàn Kiếm,Tư nhân,Tư nhân,370.0,1486.4864501953125,55.0,55.0,Đầy đủ,Đầy đủ,10 m,Tây - Nam,Tây - Nam,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,30.0,205.0,5.0,5.0,Đầy đủ,Cơ bản,3 m,Tây - Bắc,Tây - Bắc,M
-Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,523.0,66.9216079711914,5.0,3.0,Hợp đồng mua bán,Không nội thất,15 m,Đông - Bắc,Đông - Nam,M
-Thanh Xuân Trung,Thanh Xuân,Tư nhân,Tư nhân,46.0,173.9130401611328,2.0,3.0,Đầy đủ,Không nội thất,"3,8 m",Đông - Nam,Đông - Nam,M
-Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,83.0,368.6747131347656,6.0,5.0,Đầy đủ,Cơ bản,"4,3 m",Bắc,Bắc,M
-Trâu Quỳ,Gia Lâm,Tư nhân,Tư nhân,140.0,192.85714721679688,4.0,5.0,Đầy đủ,Đầy đủ,7 m,Đông - Nam,Đông - Nam,Q
-Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,80.0,15.600000381469727,1.0,1.0,Đầy đủ,Cơ bản,"4,5 m",Tây,Tây,M
-Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,46.0,326.0869445800781,6.0,4.0,Đầy đủ,Đầy đủ,"3,55 m",Đông - Nam,Đông - Nam,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,45.0,286.6666564941406,3.0,3.0,Đầy đủ,Cơ bản,"4,2 m",Đông,Đông,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,32.0,140.3125,3.0,4.0,Đầy đủ,Cơ bản,"3,5 m",Đông,Đông,M
-Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,279.0,412.1863708496094,6.0,6.0,Đầy đủ,Đầy đủ,19 m,Tây - Bắc,Tây - Bắc,M
-Vạn Phúc,Hà Đông,Tư nhân,Tư nhân,50.0,270.0,5.0,4.0,Đầy đủ,Đầy đủ,4 m,Đông - Bắc,Đông - Bắc,M
-Trung Liệt,Đống Đa,Tư nhân,Tư nhân,34.0,285.29412841796875,5.0,4.0,Đầy đủ,Đầy đủ,36 m,Tây - Bắc,Tây - Bắc,M
-Xuân La,Tây Hồ,Tư nhân,Tư nhân,43.0,616.279052734375,12.0,12.0,Đầy đủ,Đầy đủ,5 m,Đông - Nam,Đông - Nam,M
-Di Trạch,Hoài Đức,Công ty Vietracimex,Hinode Royal Park,100.0,170.0,5.0,5.0,Hợp đồng mua bán,Không nội thất,5 m,Đông - Nam,Tây - Bắc,M
-Giáp Bát,Hoàng Mai,Tư nhân,Tư nhân,42.0,269.047607421875,6.0,4.0,Đầy đủ,Cơ bản,4 m,Đông - Nam,Đông - Bắc,M
-Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,77.0,56.493507385253906,2.0,2.0,Đầy đủ,Cơ bản,5 m,Tây - Bắc,Đông - Nam,M
-Việt Hưng,Long Biên,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị Việt Hưng,238.0,252.10084533691406,5.0,5.0,Đầy đủ,Đầy đủ,14 m,Đông - Nam,Đông - Nam,M
-Kim Chung,Hoài Đức,Tư nhân,Tư nhân,43.0,113.9534912109375,5.0,4.0,Đầy đủ,Đầy đủ,4 m,Nam,Nam,M
-Cầu Diễn,Nam Từ Liêm,Tổng Công ty Đầu tư phát triển nhà và đô thị Bộ Quốc Phòng,Khu đô thị Mỹ Đình I,120.0,304.1666564941406,4.0,5.0,Đầy đủ,Đầy đủ,30 m,Đông - Nam,Đông - Nam,M
-Thạch Bàn,Long Biên,Tư nhân,Tư nhân,30.0,183.3333282470703,3.0,4.0,Đầy đủ,Cơ bản,"4,3 m",Tây - Nam,Tây - Nam,M
-Phúc Lợi,Long Biên,Tư nhân,Tư nhân,90.0,211.11111450195312,6.0,6.0,Đầy đủ,Cao cấp,6 m,Tây - Bắc,Tây - Bắc,M
-Bồ Đề,Long Biên,Tư nhân,Tư nhân,60.0,230.0,4.0,5.0,Đầy đủ,Đầy đủ,"5,5 m",Tây - Bắc,Tây - Bắc,M
-Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,41.0,217.0731658935547,3.0,3.0,Đầy đủ,Cơ bản,"3,25 m",Bắc,Bắc,M
-Di Trạch,Hoài Đức,Tư nhân,Tư nhân,33.0,116.66666412353516,4.0,4.0,Đầy đủ,Đầy đủ,"3,3 m",Đông - Nam,Đông - Nam,M
-Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,42.0,186.90475463867188,3.0,4.0,Đầy đủ,Đầy đủ,"3,8 m",Đông,Đông,M
-Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,75.0,246.6666717529297,5.0,5.0,Đầy đủ,Đầy đủ,5 m,Tây - Nam,Tây - Nam,M
+Xã/Phường,Quận/Huyện,Chủ đầu tư,Tên dự án,Diện tích,Mức giá,Số phòng ngủ,Số toilet,Pháp lý,Nội thất,Mặt tiền,Đường vào,Số tầng,Mã lịch sử giá
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,38.4,156.25,6.0,4.0,Đầy đủ,Đầy đủ,4.0,3.1,5.0,M
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,31.0,159.6774139404297,6.0,4.0,Đầy đủ,Cơ bản,4.099999904632568,2.8,5.0,M
+Tân Lập,Đan Phượng,Tư nhân,Tư nhân,36.0,127.77777862548828,4.0,3.0,Đầy đủ,Cơ bản,4.840000152587891,9.0,4.0,Q
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,30.3,146.86468505859375,3.0,4.0,Đầy đủ,Cơ bản,3.950000047683716,2.6,5.0,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,54.0,138.88888549804688,7.0,6.0,Chưa có,Không nội thất,4.5,13.0,5.0,M
+Phú Thượng,Tây Hồ,Kita Group,Kita Capital Ciputra,150.0,322.6666564941406,5.0,4.0,Đầy đủ,Không nội thất,7.0,13.5,4.0,N
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,128.0,312.5,5.0,7.0,Hợp đồng mua bán,Cơ bản,6.0,17.0,5.0,M
+Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,170.0,155.88235473632812,6.0,6.0,Đầy đủ,Không nội thất,8.5,11.5,4.0,N
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,120.0,333.3333435058594,5.0,5.0,Đầy đủ,Đầy đủ,8.0,30.0,5.0,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,208.0,302.8846130371094,5.0,4.0,Đầy đủ,Đầy đủ,16.0,13.0,4.0,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,230.0,273.9130554199219,4.0,4.0,Đầy đủ,Đầy đủ,11.5,13.0,4.0,M
+Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,180.0,275.0,6.0,5.0,Đầy đủ,Không nội thất,7.5,8.0,4.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,70.0,55.0,3.0,2.0,Đầy đủ,Không nội thất,4.0,20.0,1.0,M
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,125.0,320.0,6.0,5.0,Đầy đủ,Đầy đủ,9.0,30.0,5.0,M
+Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,35.0,159.42857360839844,5.0,4.0,Đầy đủ,Đầy đủ,3.5,3.0,4.0,M
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,46.0,150.0,1.0,1.0,Đầy đủ,Không nội thất,6.0,50.0,1.0,Q
+Hòa Thạch,Quốc Oai,Tư nhân,Tư nhân,2499.7,13.0,1.0,1.0,Đầy đủ,Cơ bản,50.0,10.0,1.0,N
+Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,An Quý Villa - KĐT Dương Nội,198.0,212.1212158203125,4.0,4.0,Đầy đủ,Không nội thất,9.0,23.0,4.0,Q
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,62.5,236.8000030517578,3.0,5.0,Hợp đồng mua bán,Không nội thất,5.0,40.0,5.0,N
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,200.0,340.0,6.0,6.0,Đầy đủ,Đầy đủ,11.0,15.0,4.0,M
+Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,250.0,58.0,4.0,4.0,Đầy đủ,Không nội thất,10.0,16.5,4.0,M
+Khâm Thiên,Đống Đa,Tư nhân,Tư nhân,48.0,495.8333435058594,5.0,5.0,Đầy đủ,Cơ bản,7.0,10.0,6.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,103.0,541.74755859375,8.0,8.0,Đầy đủ,Không nội thất,6.0,25.0,8.0,M
+Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,324.0,340.0,6.0,5.0,Đầy đủ,Không nội thất,12.0,20.0,3.0,M
+Việt Hưng,Long Biên,Tư nhân,Tư nhân,50.0,264.0,4.0,5.0,Đầy đủ,Đầy đủ,4.300000190734863,6.0,6.0,M
+La Khê,Hà Đông,Công ty CP Phát triển Đô thị Quốc tế Việt Nam,The Mansions,154.0,340.9090881347656,5.0,5.0,Đầy đủ,Cơ bản,7.0,13.0,4.0,Q
+Long Biên,Long Biên,Tư nhân,Tư nhân,32.0,178.125,3.0,3.0,Đầy đủ,Cơ bản,4.0,2.5,4.0,M
+Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,170.0,158.8235321044922,5.0,5.0,Đầy đủ,Không nội thất,9.0,30.0,4.0,N
+Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,212.0,160.0,4.0,5.0,Đầy đủ,Không nội thất,8.5,30.0,4.0,N
+Phú Lương,Hà Đông,Công ty CP Sông Đà 2,Khu đô thị mới Phú Lương,62.0,201.61289978027344,5.0,4.0,Hợp đồng mua bán,Không nội thất,5.0,12.0,5.0,M
+Yên Hòa,Cầu Giấy,Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC,Khu đô thị Yên Hòa,152.7,419.1224670410156,5.0,6.0,Đầy đủ,Đầy đủ,10.0,12.0,5.0,M
+Dương Nội,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Solasta Mansion Dương Nội,170.0,157.64706420898438,4.0,4.0,Hợp đồng mua bán,Không nội thất,8.5,11.5,4.0,N
+Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,250.0,56.0,6.0,5.0,Đầy đủ,Không nội thất,10.0,16.5,4.0,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,30.0,206.6666717529297,4.0,4.0,Đầy đủ,Cơ bản,3.5,3.0,6.0,M
+Minh Khai,Hai Bà Trưng,Tư nhân,Tư nhân,51.2,224.609375,11.0,11.0,Đầy đủ,Đầy đủ,7.0,5.0,7.0,M
+Phương Liên,Đống Đa,Tư nhân,Tư nhân,130.0,172.3076934814453,2.0,2.0,Đầy đủ,Cơ bản,3.5999999046325684,40.0,2.0,M
+Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,135.0,50.0,4.0,4.0,Hợp đồng mua bán,Cơ bản,6.0,24.0,4.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,33.0,190.90908813476562,6.0,4.0,Đầy đủ,Cơ bản,3.5,3.0,5.0,M
+Dịch Vọng Hậu,Cầu Giấy,Tư nhân,Tư nhân,65.0,284.6153869628906,6.0,5.0,Đầy đủ,Đầy đủ,5.0,10.0,5.0,M
+Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,246.0,380.081298828125,4.0,4.0,Đầy đủ,Cơ bản,12.5,13.5,5.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,96.0,265.625,4.0,6.0,Đầy đủ,Đầy đủ,4.599999904632568,6.0,5.0,M
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,400.0,4.0,5.0,Đầy đủ,Cơ bản,5.0,30.0,5.0,M
+Xuân Phương,Nam Từ Liêm,Công ty CP Đầu tư Hạ tầng và Công trình Kiến trúc Hà Nội,Hateco Green Park,120.0,180.0,4.0,4.0,Đầy đủ,Không nội thất,6.0,40.0,4.0,N
+Phú Thượng,Tây Hồ,Kita Group,Kita Capital Ciputra,140.0,400.0,5.0,4.0,Đầy đủ,Không nội thất,7.0,11.5,4.0,N
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,95.0,163.15789794921875,4.0,5.0,Đầy đủ,Đầy đủ,5.0,15.0,5.0,M
+Văn Chương,Đống Đa,Tư nhân,Tư nhân,30.0,220.0,3.0,2.0,Đầy đủ,Đầy đủ,4.5,4.0,4.0,M
+Chương Dương,Hoàn Kiếm,Tư nhân,Tư nhân,70.4,238.6363525390625,4.0,2.0,Đầy đủ,Không nội thất,3.200000047683716,10.0,3.0,Q
+La Khê,Hà Đông,Công ty CP Sông Đà Thăng Long,Khu đô thị Văn Khê,165.0,181.81817626953125,5.0,3.0,Đầy đủ,Không nội thất,10.0,11.0,3.0,M
+Văn Chương,Đống Đa,Tư nhân,Tư nhân,50.0,470.0,5.0,6.0,Đầy đủ,Đầy đủ,7.0,15.0,7.0,Q
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,50.0,324.0000305175781,4.0,4.0,Đầy đủ,Đầy đủ,4.0,5.0,6.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,130.0,406.9230651855469,20.0,21.0,Đầy đủ,Không nội thất,8.5,3.0,9.0,M
+Đông La,Hoài Đức,Tư nhân,Tư nhân,162.0,98.76543426513672,2.0,1.0,Đầy đủ,Đầy đủ,6.0,7.0,1.0,N
+Ngọc Hồi,Thanh Trì,Tư nhân,Tư nhân,38.0,123.15789794921875,3.0,3.0,Đầy đủ,Đầy đủ,4.5,25.0,4.0,Q
+Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,126.0,360.0,4.0,4.0,Đầy đủ,Đầy đủ,8.0,11.0,3.0,M
+Xuân La,Tây Hồ,Công ty TNHH Phát triển T.H.T,KĐT Tây Hồ Tây - Starlake Hà Nội,195.5,590.0,5.0,5.0,Đầy đủ,Cơ bản,8.0,30.0,5.0,Q
+An Khánh,Hoài Đức,Tư nhân,Tư nhân,34.0,135.2941131591797,4.0,4.0,Đầy đủ,Không nội thất,4.0,3.2,5.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,70.0,222.85714721679688,9.0,9.0,Đầy đủ,Đầy đủ,5.0,5.0,5.0,M
+Mỗ Lao,Hà Đông,Công ty TSQ Việt Nam,Làng Việt Kiều Châu Âu Euroland,253.0,250.0,5.0,4.0,Đầy đủ,Đầy đủ,15.0,11.0,3.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,154.0,454.5454406738281,4.0,4.0,Đầy đủ,Không nội thất,6.199999809265137,20.0,4.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,30.0,205.0,3.0,4.0,Đầy đủ,Cơ bản,4.5,2.0,5.0,M
+Phúc Lợi,Long Biên,Tư nhân,Tư nhân,32.0,135.9375,5.0,4.0,Đầy đủ,Cơ bản,4.599999904632568,2.5,5.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,40.0,310.0,3.0,5.0,Đầy đủ,Đầy đủ,5.0,3.0,6.0,M
+Quang Minh,Mê Linh,Công Ty CP Đầu Tư Xây dựng Long Việt,Long Việt Riverside,70.0,127.14286041259766,6.0,4.0,Hợp đồng mua bán,Đầy đủ,5.0,12.0,4.0,Q
+Phú La,Hà Đông,Công ty CP Đầu tư Văn Phú - Invest,Khu đô thị mới Văn Phú,96.0,166.6666717529297,4.0,4.0,Đầy đủ,Không nội thất,4.5,14.5,4.0,M
+Vĩnh Quỳnh,Thanh Trì,Tư nhân,Tư nhân,90.0,65.0,5.0,4.0,Đầy đủ,Cơ bản,5.199999809265137,2.5,4.0,M
+Ngọc Hà,Ba Đình,Tư nhân,Tư nhân,40.0,207.5,4.0,4.0,Đầy đủ,Đầy đủ,4.0,6.0,6.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,50.0,313.79998779296875,10.0,5.0,Đầy đủ,Không nội thất,3.5,3.0,6.0,M
+Dương Nội,Hà Đông,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,Khu đô thị Geleximco - Lê Trọng Tấn,120.0,158.3333282470703,5.0,5.0,Đầy đủ,Không nội thất,6.0,14.0,5.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,36.0,173.61111450195312,3.0,5.0,Đầy đủ,Cơ bản,3.299999952316284,2.7,6.0,M
+Đức Giang,Long Biên,Tư nhân,Tư nhân,56.0,136.60714721679688,4.0,3.0,Đầy đủ,Cơ bản,4.0,2.0,4.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,48.0,129.1666717529297,4.0,3.0,Đầy đủ,Đầy đủ,3.5,3.0,4.0,M
+Yên Hòa,Cầu Giấy,Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC,Khu đô thị Yên Hòa,200.0,450.0,6.0,6.0,Đầy đủ,Không nội thất,20.0,20.0,2.0,M
+Dương Nội,Hà Đông,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,Khu đô thị Geleximco - Lê Trọng Tấn,150.0,176.6666717529297,5.0,6.0,Đầy đủ,Không nội thất,6.0,14.0,4.0,M
+Đồng Mai,Hà Đông,Tư nhân,Tư nhân,32.0,89.0625,3.0,3.0,Đầy đủ,Cơ bản,5.0,3.0,4.0,M
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,255.0,280.0,6.0,6.0,Đầy đủ,Cơ bản,20.0,13.0,4.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,62.0,491.93548583984375,5.0,5.0,Đầy đủ,Đầy đủ,15.0,20.0,5.0,M
+Biên Giang,Hà Đông,Tư nhân,Tư nhân,30.0,73.33333587646484,3.0,2.0,Đầy đủ,Cơ bản,4.599999904632568,3.0,4.0,M
+Đức Giang,Long Biên,Cen Group,Bình Minh Garden,82.0,210.97561645507812,8.0,5.0,Đầy đủ,Cơ bản,5.0,25.0,6.0,N
+Trung Phụng,Đống Đa,Tư nhân,Tư nhân,95.0,500.0,8.0,8.0,Đầy đủ,Cao cấp,6.0,25.0,8.0,Q
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,46.0,447.8260803222656,3.0,4.0,Đầy đủ,Đầy đủ,6.400000095367432,20.0,6.0,M
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,63.0,230.0,6.0,4.0,Đầy đủ,Không nội thất,5.0,13.0,5.0,N
+Kiêu Kỵ,Gia Lâm,Tư nhân,Tư nhân,180.0,82.77777862548828,6.0,6.0,Đầy đủ,Cơ bản,113.0,15.0,3.0,Q
+Vĩnh Hưng,Hoàng Mai,Tư nhân,Tư nhân,73.9,85.92692565917969,4.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Vĩnh Hưng,Hoàng Mai,Tư nhân,Tư nhân,36.0,159.72222900390625,5.0,4.0,Đầy đủ,Đầy đủ,4.5,3.0,5.0,M
+Thanh Xuân Nam,Thanh Xuân,Tư nhân,Tư nhân,200.0,310.0,35.0,35.0,Đầy đủ,Đầy đủ,10.0,10.0,9.0,M
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,80.0,211.25,4.0,5.0,Đầy đủ,Đầy đủ,43.0,35.0,5.0,M
+Dịch Vọng,Cầu Giấy,Tư nhân,Tư nhân,60.0,391.6666564941406,5.0,5.0,Đầy đủ,Không nội thất,7.199999809265137,7.0,4.0,M
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,155.0,154.83871459960938,30.0,30.0,Đầy đủ,Đầy đủ,8.0,2.5,7.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,48.0,208.3333282470703,4.0,4.0,Đầy đủ,Đầy đủ,4.199999809265137,3.0,6.0,M
+Cự Khối,Long Biên,Tư nhân,Tư nhân,97.4,180.69815063476562,3.0,4.0,Đầy đủ,Đầy đủ,8.90999984741211,10.0,4.0,M
+Bạch Đằng,Hai Bà Trưng,Tư nhân,Tư nhân,110.0,231.81817626953125,4.0,4.0,Đầy đủ,Đầy đủ,4.800000190734863,5.0,4.0,M
+Quang Trung,Đống Đa,Tư nhân,Tư nhân,28.0,264.28570556640625,3.0,3.0,Đầy đủ,Đầy đủ,35.0,35.0,4.0,M
+Phú La,Hà Đông,Tư nhân,Tư nhân,200.0,289.0,4.0,4.0,Đầy đủ,Đầy đủ,25.0,40.0,4.0,M
+Bạch Đằng,Hai Bà Trưng,Tư nhân,Tư nhân,112.0,267.8571472167969,6.0,4.0,Đầy đủ,Không nội thất,13.0,5.0,3.0,M
+Nhật Tân,Tây Hồ,Tư nhân,Tư nhân,50.0,458.0,6.0,6.0,Đầy đủ,Cơ bản,6.0,15.0,8.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,50.0,170.0,4.0,4.0,Đầy đủ,Không nội thất,4.0,3.0,5.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,47.0,175.53192138671875,4.0,4.0,Đầy đủ,Đầy đủ,4.0,4.0,5.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,54.0,160.0,3.0,3.0,Đầy đủ,Đầy đủ,4.800000190734863,4.5,4.0,M
+Điện Biên,Ba Đình,Tư nhân,Tư nhân,83.0,481.9277038574219,2.0,2.0,Đầy đủ,Đầy đủ,55.0,50.0,2.0,Q
+Phúc Đồng,Long Biên,Công ty Cổ phần Đầu tư Bất động sản Song Lộc,The Diamond Point,130.7,321.3465881347656,6.0,4.0,Đầy đủ,Không nội thất,7.5,31.0,5.0,Q
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,40.0,250.0,6.0,5.0,Đầy đủ,Cao cấp,3.4000000953674316,5.0,5.0,M
+Đại Kim,Hoàng Mai,Tư nhân,Tư nhân,75.8,290.2374572753906,7.0,5.0,Đầy đủ,Không nội thất,5.5,16.0,5.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,31.0,154.83871459960938,3.0,3.0,Đầy đủ,Cơ bản,4.300000190734863,2.5,5.0,M
+Tây Mỗ,Nam Từ Liêm,Tư nhân,Tư nhân,46.0,113.0434799194336,4.0,4.0,Đầy đủ,Không nội thất,4.5,2.5,4.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,82.0,205.60975646972656,4.0,4.0,Đầy đủ,Không nội thất,5.400000095367432,5.0,4.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,53.0,213.20755004882812,5.0,6.0,Đầy đủ,Cơ bản,6.800000190734863,3.0,7.0,M
+Đại Kim,Hoàng Mai,Tư nhân,Tư nhân,70.0,371.4285583496094,5.0,6.0,Đầy đủ,Không nội thất,6.199999809265137,7.0,6.0,Q
+Gia Thụy,Long Biên,Tư nhân,Tư nhân,36.0,188.88888549804688,3.0,4.0,Đầy đủ,Cơ bản,5.099999904632568,3.0,5.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,110.0,354.5454406738281,8.0,8.0,Đầy đủ,Cơ bản,11.0,7.0,4.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,44.3,124.15350341796875,3.0,4.0,Đầy đủ,Đầy đủ,4.800000190734863,3.5,6.0,M
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,31.0,206.4516143798828,4.0,3.0,Đầy đủ,Cơ bản,6.0,2.0,5.0,M
+Quảng An,Tây Hồ,Tư nhân,Tư nhân,100.0,510.0,20.0,21.0,Đầy đủ,Đầy đủ,6.0,12.0,8.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,65.0,230.76922607421875,9.0,9.0,Đầy đủ,Đầy đủ,4.0,4.0,6.0,M
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,64.0,164.0625,4.0,4.0,Đầy đủ,Không nội thất,5.199999809265137,4.0,4.0,M
+Liễu Giai,Ba Đình,Tư nhân,Tư nhân,190.0,347.368408203125,4.0,3.0,Đầy đủ,Không nội thất,12.0,7.0,3.0,M
+Yên Nghĩa,Hà Đông,Tư nhân,Tư nhân,36.0,104.16666412353516,5.0,4.0,Đầy đủ,Đầy đủ,4.0,12.0,5.0,M
+Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,46.0,278.2608642578125,5.0,5.0,Đầy đủ,Đầy đủ,4.0,5.0,7.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Vimefulland,Jade Square,120.0,247.5,5.0,5.0,Hợp đồng mua bán,Không nội thất,9.0,15.5,4.0,M
+Trương Định,Hai Bà Trưng,Tư nhân,Tư nhân,48.5,109.27835083007812,4.0,4.0,Đầy đủ,Không nội thất,4.909999847412109,3.0,5.0,M
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,109.0,321.1009216308594,5.0,4.0,Đầy đủ,Không nội thất,5.5,6.0,5.0,M
+Di Trạch,Hoài Đức,Tư nhân,Tư nhân,33.0,137.8787841796875,3.0,3.0,Đầy đủ,Cơ bản,8.0,3.8,5.0,M
+Thanh Xuân Trung,Thanh Xuân,Tư nhân,Tư nhân,52.0,240.38461303710938,6.0,3.0,Đầy đủ,Cơ bản,4.0,5.0,4.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,110.0,181.81817626953125,4.0,4.0,Đầy đủ,Đầy đủ,5.599999904632568,5.0,3.0,M
+Yên Sở,Hoàng Mai,Tư nhân,Tư nhân,36.0,144.44444274902344,3.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Phúc Xá,Ba Đình,Tư nhân,Tư nhân,56.0,294.6428527832031,6.0,4.0,Đầy đủ,Không nội thất,3.799999952316284,7.0,5.0,M
+Hàng Bột,Đống Đa,Tư nhân,Tư nhân,50.0,96.0,4.0,3.0,Đầy đủ,Không nội thất,3.5,2.0,3.0,M
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,63.0,230.0,5.0,3.0,Hợp đồng mua bán,Không nội thất,5.0,13.0,5.0,N
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,66.0,469.69696044921875,5.0,5.0,Đầy đủ,Đầy đủ,15.0,20.0,5.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,41.5,160.48193359375,6.0,3.0,Đầy đủ,Cơ bản,4.099999904632568,4.0,4.0,M
+Thanh Xuân Bắc,Thanh Xuân,Tư nhân,Tư nhân,169.0,245.44378662109375,5.0,5.0,Đầy đủ,Đầy đủ,8.600000381469727,10.0,3.0,Q
+Nam Hồng,Đông Anh,Tư nhân,Tư nhân,55.0,63.6363639831543,3.0,2.0,Đầy đủ,Cơ bản,4.400000095367432,9.0,3.0,Q
+Đông Dư,Gia Lâm,Tư nhân,Tư nhân,128.0,210.9375,10.0,6.0,Đầy đủ,Đầy đủ,10.0,40.0,6.0,N
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,40.0,370.0,4.0,4.0,Đầy đủ,Không nội thất,37.0,7.0,5.0,M
+Hoàng Liệt,Hoàng Mai,Tư nhân,Tư nhân,58.4,248.28765869140625,6.0,4.0,Đầy đủ,Đầy đủ,4.099999904632568,20.0,4.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,116.0,448.2758483886719,20.0,20.0,Đầy đủ,Không nội thất,9.0,6.0,7.0,M
+Việt Hưng,Long Biên,Tập đoàn Vingroup,Vinhomes The Harmony,90.2,354.7671813964844,4.0,3.0,Đầy đủ,Cơ bản,6.0,20.0,3.0,M
+Ngọc Hà,Ba Đình,Tư nhân,Tư nhân,38.0,197.36842346191406,4.0,5.0,Đầy đủ,Không nội thất,38.0,25.0,6.0,M
+Quang Trung,Hà Đông,Tư nhân,Tư nhân,50.0,179.0,4.0,4.0,Đầy đủ,Không nội thất,5.0,4.0,6.0,M
+Vân Côn,Hoài Đức,Tư nhân,Tư nhân,40.0,77.5,4.0,3.0,Đầy đủ,Cơ bản,3.200000047683716,3.0,3.0,Q
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,50.0,212.0,5.0,5.0,Đầy đủ,Đầy đủ,4.5,6.0,5.0,M
+Đội Cấn,Ba Đình,Tư nhân,Tư nhân,36.0,191.6666717529297,3.0,4.0,Đầy đủ,Đầy đủ,5.239999771118164,2.0,5.0,M
+Láng Thượng,Đống Đa,Tư nhân,Tư nhân,75.0,400.0,2.0,4.0,Đầy đủ,Không nội thất,3.4800000190734863,9.0,4.0,M
+Minh Khai,Hai Bà Trưng,Tư nhân,Tư nhân,101.0,252.47525024414062,23.0,23.0,Đầy đủ,Không nội thất,6.0,6.0,7.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,42.2,552.1326904296875,5.0,5.0,Đầy đủ,Đầy đủ,4.0,60.0,6.0,M
+Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,79.0,163.2911376953125,10.0,11.0,Đầy đủ,Đầy đủ,5.5,2.5,6.0,M
+Dương Nội,Hà Đông,Tư nhân,Tư nhân,46.0,123.91304016113281,5.0,3.0,Đầy đủ,Đầy đủ,7.0,3.0,4.0,M
+Dương Nội,Hà Đông,Tư nhân,Tư nhân,46.0,123.91304016113281,5.0,3.0,Đầy đủ,Đầy đủ,7.0,3.0,4.0,N
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,353.3333435058594,5.0,5.0,Đầy đủ,Đầy đủ,6.599999904632568,30.0,5.0,M
+Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,120.0,229.1666717529297,36.0,36.0,Đầy đủ,Đầy đủ,6.5,3.0,8.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,110.0,218.18182373046875,7.0,5.0,Đầy đủ,Cơ bản,4.199999809265137,6.0,5.0,M
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,148.5,188.55218505859375,1.0,1.0,Đầy đủ,Đầy đủ,7.199999809265137,10.0,1.0,M
+Quang Trung,Hà Đông,Tư nhân,Tư nhân,35.0,157.14285278320312,4.0,5.0,Đầy đủ,Đầy đủ,4.0,3.5,5.0,M
+Phú Lãm,Hà Đông,Tư nhân,Tư nhân,30.0,170.0,2.0,3.0,Đầy đủ,Cơ bản,31.0,2.5,4.0,M
+Đội Cấn,Ba Đình,Tư nhân,Tư nhân,36.0,191.6666717529297,3.0,4.0,Đầy đủ,Cơ bản,5.0,2.0,5.0,M
+Hạ Đình,Thanh Xuân,Tư nhân,Tư nhân,60.0,163.3333282470703,4.0,3.0,Đầy đủ,Không nội thất,3.299999952316284,3.0,3.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,190.0,305.2631530761719,4.0,4.0,Đầy đủ,Không nội thất,10.0,15.0,4.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,50.0,296.0,4.0,5.0,Đầy đủ,Cao cấp,4.0,6.0,6.0,M
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,32.0,123.4375,3.0,3.0,Đầy đủ,Cơ bản,3.450000047683716,2.5,3.0,M
+Quan Hoa,Cầu Giấy,Tư nhân,Tư nhân,50.0,278.0,4.0,4.0,Đầy đủ,Đầy đủ,4.650000095367432,4.0,4.0,M
+Nghĩa Tân,Cầu Giấy,Tư nhân,Tư nhân,60.0,283.3333435058594,4.0,3.0,Đầy đủ,Đầy đủ,4.0,8.0,5.0,M
+Thụy Khuê,Tây Hồ,Tư nhân,Tư nhân,51.0,294.1176452636719,4.0,5.0,Đầy đủ,Cơ bản,5.099999904632568,5.0,5.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,80.0,211.25,4.0,4.0,Đầy đủ,Cơ bản,5.400000095367432,6.0,4.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,200.0,350.0,42.0,42.0,Đầy đủ,Đầy đủ,10.0,5.0,10.0,M
+La Khê,Hà Đông,Tư nhân,Tư nhân,50.0,272.0,4.0,4.0,Đầy đủ,Không nội thất,5.0,6.0,5.0,M
+Khương Trung,Thanh Xuân,Tư nhân,Tư nhân,39.8,184.67337036132812,4.0,4.0,Đầy đủ,Đầy đủ,4.199999809265137,3.0,4.0,M
+Quang Trung,Hà Đông,Tư nhân,Tư nhân,22.0,209.09091186523438,3.0,2.0,Đầy đủ,Không nội thất,4.400000095367432,2.5,3.0,M
+Quan Hoa,Cầu Giấy,Tư nhân,Tư nhân,120.0,233.3333282470703,4.0,3.0,Đầy đủ,Cơ bản,9.5,10.0,3.0,M
+Yên Phụ,Tây Hồ,Tư nhân,Tư nhân,50.0,306.0,4.0,6.0,Đầy đủ,Đầy đủ,4.0,12.0,7.0,M
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,51.0,323.5294189453125,8.0,8.0,Đầy đủ,Cao cấp,6.199999809265137,6.0,7.0,M
+Trâu Quỳ,Gia Lâm,Công ty CP Đầu tư Hải Phát,Dự án Thuận An,90.0,229.77777099609375,6.0,7.0,Đầy đủ,Đầy đủ,6.0,12.0,5.0,Q
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,280.0,500.0,6.0,6.0,Đầy đủ,Không nội thất,18.0,20.0,10.0,M
+Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,638.0,341.6927795410156,5.0,5.0,Đầy đủ,Cơ bản,28.0,50.0,4.0,M
+Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,22.0,254.5454559326172,2.0,1.0,Đầy đủ,Không nội thất,5.0,5.0,3.0,M
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,90.0,160.0,4.0,5.0,Đầy đủ,Đầy đủ,45.0,6.0,4.0,M
+Điện Biên,Ba Đình,Tư nhân,Tư nhân,47.0,489.14892578125,2.0,5.0,Đầy đủ,Đầy đủ,4.5,20.0,5.0,Q
+Phú Thượng,Tây Hồ,Công ty TNHH phát triển khu đô thị Nam Thăng Long,Khu đô thị Nam Thăng Long - Ciputra,700.0,325.71429443359375,7.0,5.0,Đầy đủ,Cơ bản,28.0,25.0,5.0,M
+Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,285.0,757.8947143554688,6.0,5.0,Đầy đủ,Cơ bản,25.0,25.0,5.0,M
+Hoàng Cầu,Đống Đa,Tư nhân,Tư nhân,100.0,399.0,5.0,5.0,Đầy đủ,Cơ bản,7.5,10.0,6.0,M
+Thanh Xuân Trung,Thanh Xuân,Tư nhân,Tư nhân,73.0,393.15069580078125,5.0,5.0,Đầy đủ,Cao cấp,5.5,17.0,6.0,M
+Bạch Mai,Hai Bà Trưng,Tư nhân,Tư nhân,131.0,396.9465637207031,6.0,8.0,Đầy đủ,Cơ bản,10.0,40.0,6.0,M
+Cống Vị,Ba Đình,Tư nhân,Tư nhân,85.0,494.1176452636719,5.0,4.0,Đầy đủ,Đầy đủ,6.650000095367432,8.0,4.0,M
+Liễu Giai,Ba Đình,Tư nhân,Tư nhân,45.0,328.8888854980469,4.0,4.0,Đầy đủ,Không nội thất,4.599999904632568,13.0,6.0,M
+Vĩnh Hưng,Hoàng Mai,Tư nhân,Tư nhân,75.0,86.0,6.0,5.0,Đầy đủ,Đầy đủ,10.0,3.0,5.0,M
+Yên Phụ,Tây Hồ,Tư nhân,Tư nhân,50.0,306.0,4.0,6.0,Đầy đủ,Đầy đủ,4.0,12.0,7.0,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,70.0,231.4285888671875,19.0,19.0,Đầy đủ,Đầy đủ,6.699999809265137,3.0,8.0,N
+Giang Biên,Long Biên,Tư nhân,Tư nhân,38.0,173.0,3.0,4.0,Đầy đủ,Cơ bản,3.5999999046325684,2.8,5.0,M
+Mai Động,Hoàng Mai,Tư nhân,Tư nhân,33.0,236.36363220214844,4.0,4.0,Đầy đủ,Đầy đủ,6.5,5.0,4.0,M
+Ngã Tư Sở,Đống Đa,Tư nhân,Tư nhân,36.0,208.3333282470703,4.0,3.0,Đầy đủ,Đầy đủ,6.800000190734863,1.8,4.0,M
+Quan Hoa,Cầu Giấy,Tư nhân,Tư nhân,40.0,345.0,4.0,6.0,Đầy đủ,Không nội thất,5.5,5.0,7.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,23.0,243.47825622558594,3.0,4.0,Đầy đủ,Đầy đủ,3.700000047683716,3.0,5.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,60.0,320.0,18.0,18.0,Đầy đủ,Cao cấp,9.199999809265137,4.0,8.0,M
+Phương Liên,Đống Đa,Tư nhân,Tư nhân,36.6,355.1912841796875,3.0,3.0,Đầy đủ,Cơ bản,3.700000047683716,6.0,3.0,M
+Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,50.0,290.0,4.0,6.0,Đầy đủ,Cơ bản,5.369999885559082,8.0,7.0,M
+Khương Trung,Thanh Xuân,Tư nhân,Tư nhân,44.1,251.70068359375,4.0,4.0,Đầy đủ,Đầy đủ,4.0,5.0,5.0,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,135.0,222.22222900390625,5.0,5.0,Đầy đủ,Đầy đủ,5.0,40.0,5.0,M
+Láng Hạ,Đống Đa,Tư nhân,Tư nhân,75.0,186.6666717529297,7.0,5.0,Đầy đủ,Đầy đủ,5.0,3.0,4.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,182.0,521.97802734375,9.0,10.0,Đầy đủ,Không nội thất,7.5,25.0,9.0,M
+Hoàng Liệt,Hoàng Mai,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị mới Linh Đàm,250.0,184.0,7.0,5.0,Đầy đủ,Cơ bản,13.0,7.0,4.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,46.0,302.1739196777344,6.0,4.0,Đầy đủ,Không nội thất,4.800000190734863,6.0,4.0,M
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,135.0,203.70370483398438,25.0,26.0,Đầy đủ,Không nội thất,7.0,6.0,7.0,M
+Thượng Đình,Thanh Xuân,Tư nhân,Tư nhân,44.0,195.4545440673828,5.0,5.0,Đầy đủ,Cơ bản,4.0,3.0,5.0,M
+Kiêu Kỵ,Gia Lâm,Tư nhân,Tư nhân,180.0,83.0,4.0,3.0,Đầy đủ,Đầy đủ,11.300000190734863,105.0,3.0,N
+Long Biên,Long Biên,Tư nhân,Tư nhân,44.0,193.18182373046875,3.0,3.0,Đầy đủ,Cơ bản,4.0,7.0,4.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,32.0,184.375,3.0,4.0,Đầy đủ,Không nội thất,3.549999952316284,2.6,5.0,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,38.0,152.63157653808594,4.0,3.0,Đầy đủ,Cơ bản,4.0,3.0,4.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,43.0,213.9534912109375,5.0,3.0,Đầy đủ,Đầy đủ,3.5,3.0,4.0,M
+La Khê,Hà Đông,Công ty CP Sông Đà Thăng Long,Khu đô thị Văn Khê,165.0,168.0,5.0,5.0,Đầy đủ,Cơ bản,10.0,12.0,3.0,M
+Giáp Bát,Hoàng Mai,Tư nhân,Tư nhân,50.0,192.0,4.0,3.0,Đầy đủ,Cơ bản,4.099999904632568,20.0,5.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,59.1,118.10491180419922,4.0,3.0,Đầy đủ,Đầy đủ,7.0,2.5,4.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,38.2,232.98428344726562,4.0,4.0,Đầy đủ,Đầy đủ,4.0,4.0,5.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,30.0,366.6666564941406,3.0,4.0,Đầy đủ,Không nội thất,4.5,15.0,5.0,M
+Phú Thượng,Tây Hồ,Kita Group,Kita Capital Ciputra,140.0,342.8571472167969,5.0,4.0,Đầy đủ,Không nội thất,7.0,17.5,4.0,N
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,62.0,403.2257995605469,5.0,4.0,Đầy đủ,Đầy đủ,5.5,5.0,6.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,52.0,400.0,5.0,4.0,Đầy đủ,Cơ bản,4.0,5.0,5.0,M
+Nghĩa Tân,Cầu Giấy,Tư nhân,Tư nhân,79.0,316.4556884765625,6.0,5.0,Đầy đủ,Đầy đủ,6.199999809265137,5.0,5.0,M
+Đông La,Hoài Đức,Tư nhân,Tư nhân,36.4,98.90109252929688,3.0,3.0,Đầy đủ,Đầy đủ,4.0,4.0,3.0,M
+Kiến Hưng,Hà Đông,Tư nhân,Tư nhân,150.0,45.33333206176758,2.0,2.0,Đầy đủ,Không nội thất,5.5,20.0,2.0,N
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,63.0,296.8254089355469,12.0,12.0,Đầy đủ,Không nội thất,5.0,2.5,7.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,90.0,185.55555725097656,6.0,6.0,Đầy đủ,Không nội thất,4.0,5.0,5.0,M
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,51.0,470.5882263183594,6.0,6.0,Đầy đủ,Đầy đủ,4.0,20.0,3.0,M
+Ninh Hiệp,Gia Lâm,Tư nhân,Tư nhân,180.0,66.0,6.0,3.0,Đầy đủ,Không nội thất,10.0,6.0,3.0,N
+Văn Quán,Hà Đông,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị mới Văn Quán,107.0,233.64486694335938,6.0,7.0,Đầy đủ,Đầy đủ,4.5,14.0,5.0,M
+Ngọc Lâm,Long Biên,Tư nhân,Tư nhân,34.0,250.0,4.0,5.0,Đầy đủ,Đầy đủ,3.5999999046325684,5.0,6.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,94.0,187.23403930664062,9.0,8.0,Đầy đủ,Cơ bản,4.0,5.0,5.0,M
+Nghĩa Tân,Cầu Giấy,Tư nhân,Tư nhân,60.0,350.0,6.0,9.0,Đầy đủ,Đầy đủ,5.199999809265137,7.0,6.0,M
+Cửa Đông,Hoàn Kiếm,Tư nhân,Tư nhân,60.6,717.82177734375,9.0,10.0,Đầy đủ,Đầy đủ,5.059999942779541,25.0,5.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,105.0,233.3333282470703,5.0,4.0,Đầy đủ,Đầy đủ,4.300000190734863,10.0,5.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,73.0,404.1095886230469,6.0,4.0,Đầy đủ,Đầy đủ,4.699999809265137,8.0,4.0,M
+Thụy Khuê,Tây Hồ,Tư nhân,Tư nhân,50.0,192.0,3.0,3.0,Đầy đủ,Không nội thất,3.299999952316284,3.0,3.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,45.0,181.11109924316406,5.0,6.0,Đầy đủ,Đầy đủ,4.0,3.0,6.0,M
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,75.0,293.3333435058594,5.0,5.0,Đầy đủ,Không nội thất,5.0,13.0,5.0,N
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,33.0,150.0,3.0,4.0,Đầy đủ,Đầy đủ,3.5,3.0,5.0,M
+An Khánh,Hoài Đức,Công ty CP Đầu tư Phát triển Đô thị và KCN Sông Đà - Sudico,Khu đô thị Nam An Khánh,593.0,100.0,6.0,5.0,Đầy đủ,Không nội thất,12.0,13.0,3.0,M
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,150.0,500.0,5.0,7.0,Đầy đủ,Đầy đủ,7.5,13.0,4.0,N
+Bưởi,Tây Hồ,Tư nhân,Tư nhân,52.0,461.5384521484375,4.0,4.0,Đầy đủ,Đầy đủ,4.0,12.0,5.0,M
+Thanh Trì,Hoàng Mai,Tư nhân,Tư nhân,22.0,118.18181610107422,3.0,3.0,Hợp đồng mua bán,Đầy đủ,4.0,2.0,5.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,40.0,270.0,5.0,5.0,Đầy đủ,Đầy đủ,4.0,10.0,5.0,M
+Phương Mai,Đống Đa,Tư nhân,Tư nhân,90.0,317.77777099609375,4.0,4.0,Đầy đủ,Đầy đủ,3.5,8.0,4.0,Q
+Hoàng Liệt,Hoàng Mai,Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên,VP7 Linh Đàm,232.0,171.55172729492188,5.0,6.0,Đầy đủ,Đầy đủ,12.0,10.0,4.0,N
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,56.0,262.5,5.0,3.0,Đầy đủ,Đầy đủ,4.0,1.0,4.0,M
+Tây Mỗ,Nam Từ Liêm,Tổng Công ty Viglacera,Khu đô thị Tây Mỗ,83.0,171.08433532714844,4.0,4.0,Đầy đủ,Đầy đủ,6.0,16.0,4.0,Q
+Hữu Hòa,Thanh Trì,Tư nhân,Tư nhân,40.0,235.0,4.0,3.0,Đầy đủ,Không nội thất,3.0,10.0,4.0,N
+Quan Hoa,Cầu Giấy,Tư nhân,Tư nhân,185.0,174.05404663085938,4.0,4.0,Đầy đủ,Cơ bản,10.0,8.0,4.0,Q
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,70.0,507.1428527832031,6.0,5.0,Đầy đủ,Không nội thất,5.099999904632568,15.0,6.0,M
+La Khê,Hà Đông,Tư nhân,Tư nhân,48.0,287.5,4.0,4.0,Đầy đủ,Không nội thất,4.0,7.0,5.0,M
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,43.0,200.0,6.0,4.0,Đầy đủ,Không nội thất,4.0,10.0,6.0,Q
+Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,78.0,125.64102935791016,3.0,2.0,Đầy đủ,Không nội thất,4.5,3.0,2.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,45.0,211.11111450195312,4.0,4.0,Đầy đủ,Cơ bản,4.0,5.0,6.0,M
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,27.0,248.1481475830078,2.0,2.0,Đầy đủ,Cơ bản,3.799999952316284,4.0,3.0,M
+Quang Trung,Hà Đông,Tư nhân,Tư nhân,35.0,248.57142639160156,5.0,3.0,Đầy đủ,Không nội thất,4.190000057220459,3.5,5.0,M
+An Khánh,Hoài Đức,Tư nhân,Tư nhân,30.9,160.19418334960938,3.0,4.0,Đầy đủ,Đầy đủ,3.299999952316284,4.0,5.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,30.0,143.3333282470703,3.0,4.0,Đầy đủ,Không nội thất,3.5,3.0,5.0,M
+Trần Phú,Hoàng Mai,Tư nhân,Tư nhân,35.0,142.57142639160156,3.0,4.0,Đầy đủ,Đầy đủ,5.0,2.8,5.0,M
+Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,122.0,425.40985107421875,4.0,3.0,Đầy đủ,Cơ bản,7.0,30.0,3.0,M
+Ngã Tư Sở,Đống Đa,Tư nhân,Tư nhân,52.0,350.0,6.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Kim Chung,Đông Anh,Tư nhân,Tư nhân,69.0,140.0,1.0,1.0,Đầy đủ,Đầy đủ,6.110000133514404,6.0,1.0,Q
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,75.0,193.3333282470703,5.0,4.0,Đầy đủ,Đầy đủ,4.800000190734863,3.0,5.0,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,56.2,128.11387634277344,1.0,1.0,Đầy đủ,Cơ bản,6.0,17.0,1.0,M
+Thanh Liệt,Thanh Trì,Tư nhân,Tư nhân,110.0,122.7272720336914,3.0,3.0,Đầy đủ,Không nội thất,4.599999904632568,6.0,3.0,M
+Gia Thụy,Long Biên,Tư nhân,Tư nhân,90.0,194.44444274902344,6.0,5.0,Đầy đủ,Đầy đủ,45.0,3.0,6.0,M
+Long Biên,Long Biên,Tư nhân,Tư nhân,130.0,146.15383911132812,4.0,4.0,Đầy đủ,Đầy đủ,12.0,4.0,4.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,37.0,175.67567443847656,5.0,5.0,Đầy đủ,Cao cấp,4.0,2.5,5.0,M
+Dịch Vọng,Cầu Giấy,Tư nhân,Tư nhân,293.0,887.3720092773438,3.0,9.0,Đầy đủ,Đầy đủ,34.0,12.0,8.0,M
+Dịch Vọng Hậu,Cầu Giấy,Tư nhân,Tư nhân,50.0,256.0,5.0,6.0,Đầy đủ,Cơ bản,4.800000190734863,4.0,7.0,M
+Minh Khai,Hai Bà Trưng,Tư nhân,Tư nhân,30.0,213.3333282470703,3.0,3.0,Đầy đủ,Cơ bản,5.400000095367432,4.0,5.0,M
+Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,104.0,225.96153259277344,3.0,4.0,Đầy đủ,Cơ bản,5.0,6.0,2.0,M
+Kiến Hưng,Hà Đông,Công ty CP Đầu tư Phát triển Đô thị Kiến Hưng,Kiến Hưng Luxury,260.0,303.8461608886719,10.0,9.0,Đầy đủ,Không nội thất,6.0,40.0,7.0,N
+Chương Dương,Hoàn Kiếm,Tư nhân,Tư nhân,95.4,172.9559783935547,3.0,3.0,Đầy đủ,Cơ bản,7.130000114440918,12.0,4.0,M
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,80.0,437.5,10.0,7.0,Đầy đủ,Đầy đủ,6.550000190734863,17.0,8.0,M
+Gia Thụy,Long Biên,Tư nhân,Tư nhân,37.0,270.270263671875,4.0,3.0,Đầy đủ,Đầy đủ,3.5,6.0,4.0,M
+Quan Hoa,Cầu Giấy,Tư nhân,Tư nhân,60.0,283.3333435058594,6.0,6.0,Đầy đủ,Cơ bản,41.0,12.0,5.0,M
+Phương Canh,Nam Từ Liêm,Tư nhân,Tư nhân,37.9,155.67282104492188,6.0,4.0,Đầy đủ,Cao cấp,4.199999809265137,4.0,5.0,M
+Phú Lương,Hà Đông,Công ty CP Sông Đà 2,Khu đô thị mới Phú Lương,80.0,157.5,5.0,5.0,Hợp đồng mua bán,Cao cấp,5.0,20.0,5.0,M
+Đại Kim,Hoàng Mai,Tư nhân,Tư nhân,35.0,185.7142791748047,3.0,4.0,Đầy đủ,Đầy đủ,4.800000190734863,2.5,5.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,61.0,491.80328369140625,4.0,5.0,Đầy đủ,Cơ bản,15.0,16.0,6.0,M
+Bùi Thị Xuân,Hai Bà Trưng,Tư nhân,Tư nhân,120.0,670.8333129882812,30.0,30.0,Đầy đủ,Đầy đủ,5.099999904632568,30.0,13.0,M
+Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,67.0,297.0149230957031,4.0,4.0,Đầy đủ,Đầy đủ,4.5,6.0,4.0,M
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,55.2,297.1014404296875,2.0,7.0,Đầy đủ,Đầy đủ,6.5,7.0,7.0,M
+Dịch Vọng Hậu,Cầu Giấy,Tư nhân,Tư nhân,70.0,342.8571472167969,6.0,6.0,Đầy đủ,Đầy đủ,5.5,8.0,6.0,M
+Thanh Trì,Hoàng Mai,Tư nhân,Tư nhân,31.0,187.09677124023438,3.0,4.0,Đầy đủ,Không nội thất,3.569999933242798,10.0,5.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,68.0,158.8235321044922,4.0,3.0,Đầy đủ,Đầy đủ,5.800000190734863,3.0,4.0,M
+Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,44.0,290.9090881347656,6.0,6.0,Đầy đủ,Đầy đủ,4.0,7.0,6.0,M
+Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,35.0,308.5714416503906,5.0,6.0,Đầy đủ,Đầy đủ,4.0,7.0,6.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,58.0,151.72413635253906,4.0,4.0,Đầy đủ,Đầy đủ,4.5,3.0,5.0,M
+Mai Động,Hoàng Mai,Tư nhân,Tư nhân,25.0,199.60000610351562,3.0,4.0,Đầy đủ,Không nội thất,3.0,2.0,5.0,M
+Long Biên,Long Biên,Tư nhân,Tư nhân,32.0,178.125,3.0,3.0,Đầy đủ,Cơ bản,4.0,25.0,4.0,M
+Yên Phụ,Tây Hồ,Tư nhân,Tư nhân,37.0,226.48648071289062,4.0,2.0,Đầy đủ,Cao cấp,4.599999904632568,2.0,5.0,M
+Khương Trung,Thanh Xuân,Tư nhân,Tư nhân,105.0,280.952392578125,3.0,4.0,Đầy đủ,Đầy đủ,11.0,13.0,3.0,M
+Bách Khoa,Hai Bà Trưng,Tư nhân,Tư nhân,282.0,230.4964599609375,6.0,6.0,Đầy đủ,Đầy đủ,5.099999904632568,6.0,8.0,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,100.0,27.0,3.0,2.0,Chưa có,Cơ bản,43.0,30.0,1.0,Q
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,60.0,160.0,4.0,3.0,Đầy đủ,Cơ bản,6.5,10.0,2.0,M
+Phúc Lợi,Long Biên,Tư nhân,Tư nhân,78.0,134.61538696289062,4.0,3.0,Đầy đủ,Cơ bản,6.0,3.5,4.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,55.0,232.72727966308594,3.0,4.0,Đầy đủ,Đầy đủ,4.360000133514404,3.5,5.0,N
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,50.0,190.0,3.0,4.0,Đầy đủ,Cơ bản,4.5,4.0,6.0,M
+Ngọc Lâm,Long Biên,Tư nhân,Tư nhân,56.0,244.64285278320312,4.0,4.0,Đầy đủ,Đầy đủ,3.799999952316284,4.0,6.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,37.0,152.70269775390625,3.0,4.0,Đầy đủ,Cơ bản,7.0,1.8,4.0,M
+Yên Nghĩa,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Sol Lake Villa,100.0,170.0,9.0,10.0,Đầy đủ,Cơ bản,5.0,12.0,5.0,M
+Yên Nghĩa,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,Sol Lake Villa,75.0,286.6666564941406,6.0,7.0,Đầy đủ,Đầy đủ,5.0,30.0,5.0,M
+Đại Kim,Hoàng Mai,Tư nhân,Tư nhân,75.0,313.3333435058594,6.0,4.0,Đầy đủ,Cơ bản,5.0,10.0,5.0,M
+Nhân Chính,Thanh Xuân,Tư nhân,Tư nhân,60.0,358.3333435058594,5.0,5.0,Đầy đủ,Đầy đủ,3.549999952316284,5.0,5.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,89.0,471.9101257324219,5.0,5.0,Đầy đủ,Đầy đủ,6.0,17.0,5.0,M
+Vân Canh,Hoài Đức,Công ty Cổ phần Vinapol,Khu biệt thự Vườn Cam - Orange Graden,280.0,90.0,4.0,4.0,Hợp đồng mua bán,Không nội thất,15.0,11.5,4.0,Q
+Cầu Dền,Hai Bà Trưng,Tư nhân,Tư nhân,90.0,118.88888549804688,8.0,8.0,Đầy đủ,Cơ bản,46.0,5.0,4.0,M
+Phú Lương,Hà Đông,Tư nhân,Tư nhân,30.0,150.0,4.0,3.0,Đầy đủ,Cơ bản,4.150000095367432,3.0,4.0,M
+Thịnh Quang,Đống Đa,Tư nhân,Tư nhân,60.0,133.3333282470703,2.0,2.0,Đầy đủ,Cơ bản,35.0,30.0,2.0,M
+Thịnh Quang,Đống Đa,Tư nhân,Tư nhân,52.0,153.84616088867188,2.0,1.0,Đầy đủ,Không nội thất,4.119999885559082,5.0,2.0,M
+Dương Nội,Hà Đông,Tư nhân,Tư nhân,33.0,115.1515121459961,3.0,4.0,Đầy đủ,Cơ bản,5.25,2.0,5.0,M
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,90.0,277.77777099609375,6.0,5.0,Đầy đủ,Đầy đủ,9.0,8.0,6.0,M
+Bạch Mai,Hai Bà Trưng,Tư nhân,Tư nhân,50.0,8.680000305175781,6.0,4.0,Đầy đủ,Đầy đủ,39.0,50.0,5.0,M
+Phúc Lợi,Long Biên,Tập đoàn Vingroup,Vinhomes Riverside,408.8,242.17222595214844,6.0,6.0,Đầy đủ,Không nội thất,18.0,20.0,4.0,M
+Quảng An,Tây Hồ,Tư nhân,Tư nhân,200.0,330.0,5.0,5.0,Đầy đủ,Cơ bản,20.0,5.0,5.0,M
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,115.0,230.43478393554688,4.0,5.0,Đầy đủ,Đầy đủ,7.099999904632568,7.0,6.0,M
+An Khánh,Hoài Đức,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,Khu A - Geleximco Lê Trọng Tấn,240.0,154.1666717529297,6.0,5.0,Đầy đủ,Không nội thất,12.0,13.5,4.0,Q
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,50.0,256.0,7.0,8.0,Đầy đủ,Không nội thất,4.0,3.0,5.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,160.0,468.75,3.0,3.0,Đầy đủ,Đầy đủ,8.800000190734863,20.0,4.0,M
+Đức Thượng,Hoài Đức,Tư nhân,Tư nhân,74.5,134.2281951904297,5.0,4.0,Đầy đủ,Đầy đủ,5.0,12.0,5.0,N
+Trâu Quỳ,Gia Lâm,Tư nhân,Tư nhân,50.0,97.0,4.0,3.0,Đầy đủ,Đầy đủ,4.0,2.0,3.0,M
+Trung Phụng,Đống Đa,Tư nhân,Tư nhân,34.0,175.0,3.0,3.0,Đầy đủ,Không nội thất,4.199999809265137,25.0,5.0,M
+Láng Thượng,Đống Đa,Tư nhân,Tư nhân,47.0,287.2340393066406,7.0,5.0,Đầy đủ,Cơ bản,4.0,9.0,5.0,M
+Hà Cầu,Hà Đông,Tư nhân,Tư nhân,100.0,268.79998779296875,6.0,7.0,Đầy đủ,Đầy đủ,8.0,20.0,5.0,M
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,63.0,257.14288330078125,8.0,7.0,Hợp đồng mua bán,Cơ bản,5.0,20.0,5.0,N
+Dịch Vọng,Cầu Giấy,Tư nhân,Tư nhân,270.0,240.74073791503906,6.0,6.0,Đầy đủ,Không nội thất,20.0,5.0,4.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,65.0,332.30767822265625,5.0,5.0,Đầy đủ,Không nội thất,6.0,6.0,5.0,M
+Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,35.0,168.57142639160156,3.0,4.0,Đầy đủ,Đầy đủ,3.799999952316284,3.0,5.0,M
+Láng Hạ,Đống Đa,Tư nhân,Tư nhân,99.0,575.757568359375,4.0,6.0,Đầy đủ,Cơ bản,4.0,10.0,5.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,65.0,150.76922607421875,9.0,5.0,Đầy đủ,Không nội thất,4.400000095367432,4.0,6.0,M
+An Khánh,Hoài Đức,Công ty CP Địa ốc Phú Long,Mailand Hanoi City,236.0,228.8135528564453,6.0,5.0,Đầy đủ,Cơ bản,11.0,13.0,3.0,N
+Vĩnh Phúc,Ba Đình,Tư nhân,Tư nhân,104.0,257.69232177734375,34.0,34.0,Đầy đủ,Cao cấp,7.599999904632568,3.0,7.0,M
+Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,117.0,70.34188079833984,4.0,4.0,Hợp đồng mua bán,Không nội thất,6.0,13.5,4.0,M
+Trúc Bạch,Ba Đình,Tư nhân,Tư nhân,115.0,652.1738891601562,7.0,8.0,Đầy đủ,Đầy đủ,6.0,8.0,10.0,M
+Cống Vị,Ba Đình,Tư nhân,Tư nhân,82.0,241.46340942382812,4.0,4.0,Đầy đủ,Đầy đủ,5.0,4.0,5.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,31.0,212.5806427001953,3.0,4.0,Đầy đủ,Cơ bản,4.199999809265137,2.5,5.0,M
+Bưởi,Tây Hồ,Tư nhân,Tư nhân,75.0,193.3333282470703,4.0,4.0,Đầy đủ,Cơ bản,6.0,6.0,4.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,80.0,210.0,4.0,4.0,Đầy đủ,Đầy đủ,5.329999923706055,4.5,5.0,M
+Tứ Liên,Tây Hồ,Tư nhân,Tư nhân,120.0,112.5,7.0,7.0,Đầy đủ,Cơ bản,4.800000190734863,2.0,6.0,M
+Liên Hồng,Đan Phượng,Tư nhân,Tư nhân,68.8,52.32558059692383,4.0,2.0,Đầy đủ,Cơ bản,5.0,2.0,3.0,N
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,32.0,201.5625,3.0,4.0,Đầy đủ,Cơ bản,3.5299999713897705,3.0,5.0,M
+Đội Cấn,Ba Đình,Tư nhân,Tư nhân,68.0,235.2941131591797,3.0,3.0,Đầy đủ,Không nội thất,5.0,5.0,3.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,400.5,574.2821655273438,9.0,19.0,Đầy đủ,Đầy đủ,16.0,26.0,8.0,M
+Cự Khối,Long Biên,Tư nhân,Tư nhân,35.0,164.2857208251953,3.0,4.0,Đầy đủ,Cơ bản,5.0,4.0,6.0,M
+Láng Hạ,Đống Đa,Tư nhân,Tư nhân,102.0,303.92156982421875,13.0,14.0,Đầy đủ,Cơ bản,5.599999904632568,6.0,7.0,M
+Phúc Lợi,Long Biên,Tư nhân,Tư nhân,32.0,151.5625,3.0,4.0,Đầy đủ,Không nội thất,3.299999952316284,3.3,5.0,M
+Di Trạch,Hoài Đức,Tư nhân,Tư nhân,38.0,231.57894897460938,5.0,5.0,Đầy đủ,Cơ bản,6.0,10.0,6.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,34.0,191.1764678955078,3.0,3.0,Đầy đủ,Không nội thất,4.0,2.0,4.0,M
+Việt Hưng,Long Biên,Tập đoàn Vingroup,Vinhomes The Harmony,152.0,328.9473571777344,4.0,4.0,Đầy đủ,Đầy đủ,8.0,15.0,4.0,M
+Thượng Thanh,Long Biên,Tư nhân,Tư nhân,50.0,144.0,3.0,4.0,Đầy đủ,Không nội thất,4.199999809265137,4.0,5.0,M
+Xuân Phương,Nam Từ Liêm,Công ty Cổ phần Tasco,Xuân Phương Tasco,150.0,130.0,6.0,4.0,Đầy đủ,Không nội thất,8.0,18.0,3.0,M
+Vân Canh,Hoài Đức,Công ty Cổ phần Vinapol,Khu biệt thự Vườn Cam - Orange Graden,240.0,90.0,6.0,5.0,Hợp đồng mua bán,Không nội thất,12.0,13.0,4.0,Q
+Xuân Phương,Nam Từ Liêm,Công ty Cổ phần Tasco,Xuân Phương Tasco,86.0,140.0,5.0,5.0,Hợp đồng mua bán,Không nội thất,6.300000190734863,19.0,5.0,M
+Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,32.5,123.07691955566406,4.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,319.3333435058594,6.0,6.0,Đầy đủ,Cơ bản,5.0,15.0,5.0,Q
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,74.6,355.2278747558594,6.0,6.0,Đầy đủ,Không nội thất,5.0,17.0,5.0,M
+Phú Thị,Gia Lâm,Tư nhân,Tư nhân,140.0,67.85713958740234,3.0,2.0,Đầy đủ,Không nội thất,6.099999904632568,5.0,3.0,N
+Vân Canh,Hoài Đức,Tư nhân,Tư nhân,36.6,147.54098510742188,4.0,4.0,Đầy đủ,Cơ bản,3.200000047683716,4.3,5.0,M
+An Khánh,Hoài Đức,Công ty CP Đầu tư Phát triển Đô thị và KCN Sông Đà - Sudico,Khu đô thị Nam An Khánh,416.0,98.55769348144531,5.0,6.0,Đầy đủ,Không nội thất,14.449999809265137,13.0,4.0,M
+Ngọc Lâm,Long Biên,Tư nhân,Tư nhân,76.0,310.52630615234375,5.0,4.0,Đầy đủ,Không nội thất,8.0,5.0,5.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,45.0,286.6666564941406,4.0,4.0,Đầy đủ,Đầy đủ,7.0,6.0,5.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,35.0,198.57142639160156,3.0,4.0,Đầy đủ,Đầy đủ,3.5,2.0,5.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,42.0,166.6666717529297,3.0,3.0,Đầy đủ,Đầy đủ,4.5,3.0,5.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,51.0,588.2352905273438,9.0,9.0,Đầy đủ,Không nội thất,5.099999904632568,8.0,7.0,M
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,93.0,354.8387145996094,5.0,5.0,Đầy đủ,Đầy đủ,6.0,14.0,5.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,64.0,421.875,6.0,4.0,Đầy đủ,Đầy đủ,4.0,21.0,5.0,M
+Kiến Hưng,Hà Đông,Tư nhân,Tư nhân,30.0,206.6666717529297,5.0,3.0,Đầy đủ,Cơ bản,3.259999990463257,4.0,4.0,M
+Phú La,Hà Đông,Tư nhân,Tư nhân,50.0,256.0,4.0,3.0,Đầy đủ,Không nội thất,5.0,6.0,4.0,Q
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,86.0,202.906982421875,6.0,5.0,Đầy đủ,Đầy đủ,5.0,8.0,6.0,M
+Ngọc Lâm,Long Biên,Tư nhân,Tư nhân,49.0,271.4285583496094,4.0,4.0,Đầy đủ,Cao cấp,4.0,4.0,5.0,M
+An Khánh,Hoài Đức,Tập đoàn Vingroup,Vinhomes Thăng Long,286.0,227.27272033691406,4.0,4.0,Đầy đủ,Cơ bản,10.0,13.0,3.0,M
+Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,28.0,166.07142639160156,4.0,4.0,Đầy đủ,Không nội thất,3.200000047683716,7.0,5.0,M
+Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,55.0,218.18182373046875,6.0,4.0,Đầy đủ,Đầy đủ,5.0,6.0,5.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,285.0,491.2280578613281,8.0,8.0,Đầy đủ,Cơ bản,19.0,17.0,8.0,M
+Nhân Chính,Thanh Xuân,Tư nhân,Tư nhân,80.0,207.5,5.0,6.0,Đầy đủ,Cơ bản,5.0,5.0,5.0,M
+Cống Vị,Ba Đình,Tư nhân,Tư nhân,75.0,346.6666564941406,4.0,5.0,Đầy đủ,Cơ bản,8.699999809265137,5.0,5.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,48.0,207.2916717529297,9.0,9.0,Đầy đủ,Không nội thất,3.4000000953674316,3.0,5.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,75.0,200.0,4.0,4.0,Đầy đủ,Đầy đủ,5.0,5.0,5.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,60.0,150.0,3.0,5.0,Đầy đủ,Đầy đủ,5.0,3.0,6.0,M
+Phụng Châu,Chương Mỹ,Tư nhân,Tư nhân,60.0,37.5,4.0,4.0,Đầy đủ,Cơ bản,4.0,5.0,5.0,M
+Giảng Võ,Ba Đình,Tư nhân,Tư nhân,31.0,96.45161437988281,2.0,1.0,Đầy đủ,Không nội thất,3.0,1.0,3.0,M
+Lê Đại Hành,Hai Bà Trưng,Tư nhân,Tư nhân,66.0,195.4545440673828,4.0,5.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Đại Kim,Hoàng Mai,Công ty Đầu tư Xây dựng số 2 Hà Nội,Khu đô thị Đại Kim,53.0,235.84906005859375,6.0,4.0,Đầy đủ,Đầy đủ,5.0,15.0,5.0,M
+Vân Côn,Hoài Đức,Tư nhân,Tư nhân,43.0,106.97674560546875,2.0,2.0,Đầy đủ,Không nội thất,3.700000047683716,6.0,3.0,N
+Ngọc Lâm,Long Biên,Tư nhân,Tư nhân,63.0,263.4920654296875,4.0,4.0,Đầy đủ,Cơ bản,4.300000190734863,4.0,6.0,M
+Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,46.0,173.9130401611328,8.0,8.0,Đầy đủ,Đầy đủ,3.200000047683716,4.5,6.0,M
+Mỗ Lao,Hà Đông,Tư nhân,Tư nhân,53.5,327.1028137207031,3.0,5.0,Đầy đủ,Không nội thất,3.9000000953674316,165.0,5.0,M
+Tân Lập,Đan Phượng,Tư nhân,Tư nhân,43.3,151.0,4.0,3.0,Đầy đủ,Đầy đủ,5.0,4.0,5.0,Q
+Bồ Đề,Long Biên,Tư nhân,Tư nhân,90.0,176.11111450195312,4.0,4.0,Đầy đủ,Cơ bản,7.199999809265137,3.0,3.0,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,35.0,175.7142791748047,3.0,4.0,Đầy đủ,Cơ bản,3.5999999046325684,3.0,6.0,M
+Nhân Chính,Thanh Xuân,Công ty CP Đầu tư Xây dựng Phát triển nhà số 7 Hà Nội,HDI Homes Nguyễn Tuân,98.0,408.16326904296875,4.0,5.0,Đầy đủ,Đầy đủ,7.5,11.0,5.0,Q
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,40.0,140.0,6.0,4.0,Đầy đủ,Đầy đủ,3.5999999046325684,3.0,5.0,M
+Đông La,Hoài Đức,Tư nhân,Tư nhân,37.0,98.64865112304688,3.0,3.0,Đầy đủ,Không nội thất,4.0,4.0,3.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,65.0,776.923095703125,3.0,6.0,Đầy đủ,Không nội thất,6.0,40.0,7.0,M
+Đức Thượng,Hoài Đức,Tư nhân,Tư nhân,70.0,57.14285659790039,2.0,1.0,Đầy đủ,Đầy đủ,5.0,3.0,1.0,Q
+Trung Văn,Nam Từ Liêm,Công ty CP Tập đoàn Nam Cường Hà Nội,Khu đô thị mới Phùng Khoang,70.0,285.71429443359375,4.0,3.0,Đầy đủ,Không nội thất,5.0,11.0,4.0,M
+Sài Đồng,Long Biên,Tư nhân,Tư nhân,48.0,185.4166717529297,4.0,3.0,Đầy đủ,Cơ bản,4.5,5.0,4.0,M
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,84.0,273.80950927734375,6.0,8.0,Đầy đủ,Không nội thất,6.0,10.0,4.0,Q
+Đại Kim,Hoàng Mai,Tư nhân,Tư nhân,82.0,128.0487823486328,4.0,3.0,Đầy đủ,Không nội thất,5.0,4.0,4.0,M
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,65.0,952.3076782226562,6.0,6.0,Đầy đủ,Đầy đủ,20.0,30.0,5.0,M
+Phụng Châu,Chương Mỹ,Tư nhân,Tư nhân,32.0,75.0,3.0,3.0,Đầy đủ,Cơ bản,3.5,3.0,3.0,M
+Ba Trại,Ba Vì,Tư nhân,Tư nhân,4162.0,3.363767385482788,3.0,2.0,Đầy đủ,Đầy đủ,80.0,7.0,1.0,N
+Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,46.0,166.30435180664062,4.0,3.0,Đầy đủ,Đầy đủ,4.0,3.0,4.0,M
+Vạn Phúc,Hà Đông,Tư nhân,Tư nhân,135.0,207.40740966796875,6.0,6.0,Đầy đủ,Đầy đủ,9.0,19.0,5.0,Q
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,51.0,153.92156982421875,4.0,5.0,Đầy đủ,Đầy đủ,5.300000190734863,3.0,4.0,M
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,120.0,537.5,11.0,15.0,Đầy đủ,Cơ bản,7.199999809265137,10.0,8.0,M
+Liễu Giai,Ba Đình,Tư nhân,Tư nhân,106.0,155.66036987304688,5.0,3.0,Đầy đủ,Cơ bản,8.0,3.0,3.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,128.0,347.65625,6.0,6.0,Đầy đủ,Không nội thất,8.0,40.0,6.0,M
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,99.0,383.83837890625,7.0,4.0,Đầy đủ,Đầy đủ,6.599999904632568,15.0,4.0,M
+Văn Miếu,Đống Đa,Tư nhân,Tư nhân,39.0,264.1025695800781,5.0,4.0,Đầy đủ,Không nội thất,3.0,4.0,4.0,Q
+Kim Liên,Đống Đa,Tư nhân,Tư nhân,123.0,121.95121765136719,4.0,4.0,Đầy đủ,Không nội thất,10.0,4.0,3.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,60.0,196.6666717529297,4.0,4.0,Đầy đủ,Đầy đủ,5.0,2.8,4.0,M
+Xuân Phương,Nam Từ Liêm,Tư nhân,Tư nhân,34.0,208.8235321044922,3.0,4.0,Đầy đủ,Cơ bản,5.599999904632568,2.0,5.0,M
+Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,33.0,189.39393615722656,7.0,4.0,Đầy đủ,Đầy đủ,3.299999952316284,2.5,5.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,50.0,199.0,9.0,9.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Giang Biên,Long Biên,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị Việt Hưng,234.0,205.12820434570312,6.0,5.0,Đầy đủ,Cơ bản,17.0,15.0,3.0,M
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,93.0,440.8602294921875,6.0,4.0,Đầy đủ,Không nội thất,6.0,14.0,4.0,N
+Ngọc Hà,Ba Đình,Tư nhân,Tư nhân,35.0,196.57142639160156,4.0,4.0,Đầy đủ,Không nội thất,3.0999999046325684,2.0,5.0,M
+Quảng An,Tây Hồ,Tư nhân,Tư nhân,212.0,334.9056701660156,4.0,4.0,Đầy đủ,Cơ bản,6.0,3.0,4.0,M
+Nhật Tân,Tây Hồ,Tư nhân,Tư nhân,75.0,306.6666564941406,10.0,10.0,Đầy đủ,Cơ bản,6.0,4.0,7.0,M
+Vân Canh,Hoài Đức,Công ty CP Đầu tư An Lạc,An Lạc Green Symphony,80.0,225.0,5.0,4.0,Hợp đồng mua bán,Không nội thất,5.0,13.5,5.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,38.0,172.36842346191406,3.0,3.0,Đầy đủ,Cơ bản,3.0,25.0,3.0,M
+Tân Mai,Hoàng Mai,Tư nhân,Tư nhân,50.0,120.0,3.0,3.0,Đầy đủ,Không nội thất,4.0,2.0,4.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,50.0,329.0,4.0,4.0,Đầy đủ,Đầy đủ,34.0,6.0,5.0,M
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,105.0,128.57142639160156,26.0,26.0,Đầy đủ,Đầy đủ,8.0,4.0,5.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,37.0,445.9459533691406,3.0,3.0,Đầy đủ,Cơ bản,32.0,10.0,4.0,M
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,100.0,700.0,9.0,9.0,Đầy đủ,Đầy đủ,7.0,30.0,10.0,M
+Phúc Xá,Ba Đình,Tư nhân,Tư nhân,42.5,305.8823547363281,5.0,4.0,Đầy đủ,Cơ bản,3.0,10.0,5.0,Q
+Sài Sơn,Quốc Oai,Công ty CP Tập đoàn C.E.O,Sunny Garden City,180.0,141.6666717529297,4.0,4.0,Đầy đủ,Đầy đủ,10.0,20.0,4.0,Q
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,58.0,181.03448486328125,4.0,3.0,Đầy đủ,Đầy đủ,6.400000095367432,5.0,5.0,M
+Kiến Hưng,Hà Đông,Tư nhân,Tư nhân,45.0,146.6666717529297,4.0,5.0,Đầy đủ,Đầy đủ,3.5999999046325684,6.0,5.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,110.0,359.0909118652344,5.0,5.0,Đầy đủ,Cơ bản,11.0,12.0,4.0,M
+Nhân Chính,Thanh Xuân,Tư nhân,Tư nhân,50.0,198.0,5.0,5.0,Đầy đủ,Đầy đủ,5.0,5.0,5.0,M
+Thượng Thanh,Long Biên,Tư nhân,Tư nhân,40.0,120.75,2.0,2.0,Đầy đủ,Cơ bản,14.0,7.0,2.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,60.0,291.6666564941406,8.0,9.0,Đầy đủ,Đầy đủ,4.0,4.0,6.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,55.2,219.20289611816406,6.0,6.0,Đầy đủ,Đầy đủ,56.0,6.0,7.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,50.0,198.0,4.0,6.0,Đầy đủ,Cao cấp,4.0,4.0,6.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,34.0,197.05882263183594,3.0,5.0,Đầy đủ,Đầy đủ,4.0,4.0,6.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,30.0,298.3333435058594,4.0,5.0,Đầy đủ,Đầy đủ,33.0,4.0,6.0,M
+Cầu Dền,Hai Bà Trưng,Tư nhân,Tư nhân,105.0,442.8571472167969,12.0,12.0,Đầy đủ,Đầy đủ,6.599999904632568,30.0,8.0,Q
+La Khê,Hà Đông,Công ty CP Tập đoàn Nam Cường Hà Nội,An Phú Shop Villa,200.0,180.0,5.0,5.0,Đầy đủ,Không nội thất,9.0,27.0,4.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,30.0,220.0,3.0,4.0,Đầy đủ,Cơ bản,34.0,25.0,5.0,M
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,56.0,273.21429443359375,3.0,3.0,Đầy đủ,Đầy đủ,4.599999904632568,5.0,6.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,31.0,145.16128540039062,3.0,3.0,Đầy đủ,Cơ bản,3.799999952316284,2.5,5.0,M
+Sơn Đồng,Hoài Đức,Công ty Cổ phần Địa ốc MB,Sơn Đồng Center,90.0,111.11111450195312,6.0,4.0,Đầy đủ,Không nội thất,6.25,12.0,4.0,Q
+Vĩnh Phúc,Ba Đình,Tư nhân,Tư nhân,80.0,298.75,4.0,4.0,Đầy đủ,Đầy đủ,5.5,5.0,4.0,M
+Vân Canh,Hoài Đức,Tư nhân,Tư nhân,30.0,156.6666717529297,3.0,4.0,Đầy đủ,Đầy đủ,4.5,3.0,5.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,58.0,256.03448486328125,15.0,15.0,Đầy đủ,Đầy đủ,4.5,4.0,8.0,M
+Thanh Xuân Nam,Thanh Xuân,Tư nhân,Tư nhân,52.0,255.76922607421875,4.0,3.0,Đầy đủ,Cơ bản,3.9000000953674316,5.0,5.0,M
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,38.0,178.94737243652344,4.0,5.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
+Đức Giang,Long Biên,Tư nhân,Tư nhân,180.0,316.6666564941406,2.0,2.0,Đầy đủ,Cơ bản,9.0,30.0,2.0,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,34.0,169.11764526367188,4.0,4.0,Đầy đủ,Không nội thất,3.5,4.0,5.0,M
+Vĩnh Hưng,Hoàng Mai,Tư nhân,Tư nhân,33.0,146.96969604492188,5.0,3.0,Đầy đủ,Không nội thất,3.299999952316284,2.0,4.0,M
+Lĩnh Nam,Hoàng Mai,Tư nhân,Tư nhân,30.0,132.6666717529297,6.0,5.0,Đầy đủ,Đầy đủ,3.5,15.0,5.0,M
+Hàng Bạc,Hoàn Kiếm,Tư nhân,Tư nhân,145.0,551.72412109375,5.0,4.0,Đầy đủ,Đầy đủ,3.5,8.0,3.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,45.0,128.88888549804688,4.0,4.0,Đầy đủ,Đầy đủ,3.700000047683716,5.0,5.0,M
+Giang Biên,Long Biên,Tư nhân,Tư nhân,90.0,168.88888549804688,4.0,4.0,Đầy đủ,Đầy đủ,5.0,5.0,5.0,M
+Đức Giang,Long Biên,Tư nhân,Tư nhân,80.0,156.25,6.0,4.0,Đầy đủ,Đầy đủ,10.0,6.0,5.0,M
+Bạch Đằng,Hai Bà Trưng,Tư nhân,Tư nhân,150.0,246.6666717529297,22.0,22.0,Đầy đủ,Không nội thất,6.0,8.0,7.0,M
+Võng La,Đông Anh,Tư nhân,Tư nhân,54.0,53.703704833984375,2.0,1.0,Đầy đủ,Không nội thất,7.0,3.0,1.0,Q
+Đông La,Hoài Đức,Tư nhân,Tư nhân,31.6,107.59493255615234,4.0,3.0,Đầy đủ,Cơ bản,3.0,2.2,4.0,M
+Phúc Lợi,Long Biên,Tư nhân,Tư nhân,37.0,100.0,2.0,2.0,Đầy đủ,Đầy đủ,6.0,2.5,2.0,M
+Quán Thánh,Ba Đình,Tư nhân,Tư nhân,82.0,939.0244140625,17.0,17.0,Đầy đủ,Đầy đủ,6.0,17.0,9.0,M
+Giang Biên,Long Biên,Tư nhân,Tư nhân,50.0,168.39999389648438,4.0,5.0,Đầy đủ,Đầy đủ,4.5,4.0,6.0,M
+Nguyễn Trãi,Hà Đông,Tư nhân,Tư nhân,35.0,232.57144165039062,4.0,4.0,Đầy đủ,Đầy đủ,4.0,5.0,4.0,M
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,55.0,240.0,4.0,5.0,Đầy đủ,Cơ bản,53.0,10.0,6.0,M
+Hàng Bông,Hoàn Kiếm,Tư nhân,Tư nhân,370.0,1486.4864501953125,55.0,55.0,Đầy đủ,Đầy đủ,10.0,25.0,11.0,M
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,63.0,234.92063903808594,5.0,4.0,Đầy đủ,Không nội thất,5.0,15.0,4.0,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,30.0,205.0,5.0,5.0,Đầy đủ,Cơ bản,3.0,8.0,5.0,M
+Vạn Phúc,Hà Đông,Công ty TSQ Việt Nam,TSQ Galaxy,91.0,274.72528076171875,6.0,6.0,Đầy đủ,Không nội thất,5.0,20.0,6.0,Q
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,60.0,343.3333435058594,6.0,6.0,Đầy đủ,Cơ bản,5.199999809265137,8.0,6.0,M
+Giảng Võ,Ba Đình,Tư nhân,Tư nhân,40.0,348.75,5.0,5.0,Đầy đủ,Đầy đủ,5.0,4.0,6.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,54.0,180.55555725097656,3.0,3.0,Đầy đủ,Đầy đủ,2.0,4.0,4.0,M
+Vĩnh Ngọc,Đông Anh,Tư nhân,Tư nhân,50.0,74.0,3.0,2.0,Đầy đủ,Không nội thất,5.0,32.0,3.0,Q
+Thanh Lâm,Mê Linh,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,HUD Me Linh Central,523.0,66.9216079711914,5.0,3.0,Hợp đồng mua bán,Không nội thất,15.0,30.0,3.0,M
+Duyên Hà,Thanh Trì,Tư nhân,Tư nhân,45.0,59.55555725097656,3.0,3.0,Đầy đủ,Cơ bản,4.099999904632568,3.0,3.0,N
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,70.0,178.57142639160156,5.0,6.0,Đầy đủ,Đầy đủ,45.0,6.0,6.0,Q
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,56.0,241.07142639160156,18.0,18.0,Đầy đủ,Đầy đủ,4.0,3.0,7.0,M
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,37.0,248.64865112304688,9.0,9.0,Đầy đủ,Đầy đủ,3.299999952316284,3.0,5.0,M
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,61.0,206.557373046875,18.0,18.0,Đầy đủ,Đầy đủ,4.0,3.0,8.0,M
+Nguyễn Trãi,Hà Đông,Tư nhân,Tư nhân,50.0,269.0,7.0,5.0,Đầy đủ,Cơ bản,35.0,6.0,5.0,M
+Thanh Xuân Trung,Thanh Xuân,Tư nhân,Tư nhân,46.0,173.9130401611328,2.0,3.0,Đầy đủ,Không nội thất,3.799999952316284,4.5,4.0,M
+Định Công,Hoàng Mai,Tư nhân,Tư nhân,45.0,200.0,4.0,5.0,Đầy đủ,Đầy đủ,4.5,4.0,7.0,M
+Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,87.0,319.54022216796875,4.0,4.0,Đầy đủ,Cao cấp,8.0,6.0,4.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,22.0,177.27272033691406,3.0,3.0,Đầy đủ,Cơ bản,4.199999809265137,2.0,5.0,M
+Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,80.0,318.75,4.0,5.0,Đầy đủ,Cao cấp,6.199999809265137,8.0,6.0,M
+Trương Định,Hai Bà Trưng,Công ty CP Đầu tư Bất động sản Toàn Cầu (GP Invest),Minori Village,94.0,297.8723449707031,5.0,5.0,Đầy đủ,Đầy đủ,5.0,12.0,5.0,N
+Xuân Đỉnh,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Khu Ngoại Giao Đoàn,130.0,223.07691955566406,5.0,5.0,Đầy đủ,Đầy đủ,6.0,20.0,4.0,M
+Xuân Phương,Nam Từ Liêm,Tư nhân,Tư nhân,90.0,144.44444274902344,16.0,16.0,Đầy đủ,Đầy đủ,7.0,4.0,7.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,68.0,476.4706115722656,5.0,5.0,Đầy đủ,Cơ bản,18.0,10.0,6.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,83.0,368.6747131347656,6.0,5.0,Đầy đủ,Cơ bản,4.300000190734863,8.0,6.0,M
+Xuân Phương,Nam Từ Liêm,Tư nhân,Tư nhân,125.0,132.0,25.0,25.0,Đầy đủ,Đầy đủ,12.0,4.0,7.0,M
+Phạm Đình Hổ,Hai Bà Trưng,Tư nhân,Tư nhân,148.0,601.3513793945312,11.0,11.0,Đầy đủ,Đầy đủ,7.0,15.0,9.0,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,65.0,207.6923065185547,8.0,6.0,Đầy đủ,Không nội thất,4.800000190734863,5.0,6.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,63.0,288.8888854980469,5.0,5.0,Đầy đủ,Cơ bản,6.599999904632568,5.0,6.0,M
+Khương Thượng,Đống Đa,Tư nhân,Tư nhân,62.0,406.45159912109375,6.0,4.0,Đầy đủ,Không nội thất,5.0,10.0,5.0,M
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,116.0,205.60345458984375,12.0,9.0,Đầy đủ,Không nội thất,5.400000095367432,5.0,9.0,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,30.0,200.0,3.0,3.0,Đầy đủ,Cơ bản,4.0,4.0,5.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,276.0,481.8840637207031,9.0,9.0,Đầy đủ,Cơ bản,8.5,6.0,9.0,M
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,116.0,205.60345458984375,14.0,9.0,Đầy đủ,Không nội thất,5.400000095367432,5.0,9.0,M
+Phố Huế,Hai Bà Trưng,Tư nhân,Tư nhân,32.0,200.0,3.0,5.0,Đầy đủ,Đầy đủ,4.0,4.0,5.0,Q
+Trâu Quỳ,Gia Lâm,Tư nhân,Tư nhân,140.0,192.85714721679688,4.0,5.0,Đầy đủ,Đầy đủ,7.0,20.0,4.0,Q
+Khâm Thiên,Đống Đa,Tư nhân,Tư nhân,61.0,183.60655212402344,5.0,5.0,Đầy đủ,Đầy đủ,4.679999828338623,2.2,5.0,M
+Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,42.0,207.14285278320312,3.0,4.0,Đầy đủ,Không nội thất,3.5,3.0,5.0,M
+Bạch Đằng,Hai Bà Trưng,Tư nhân,Tư nhân,22.0,222.72727966308594,3.0,4.0,Đầy đủ,Cơ bản,3.0,3.5,5.0,M
+Thanh Liệt,Thanh Trì,Tư nhân,Tư nhân,126.0,107.14286041259766,4.0,3.0,Đầy đủ,Cơ bản,4.599999904632568,3.5,3.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,80.0,15.600000381469727,1.0,1.0,Đầy đủ,Cơ bản,4.5,15.0,1.0,M
+Nhân Chính,Thanh Xuân,Tư nhân,Tư nhân,45.0,266.6666564941406,5.0,6.0,Đầy đủ,Đầy đủ,5.0,2.2,6.0,M
+Lê Đại Hành,Hai Bà Trưng,Tư nhân,Tư nhân,45.0,132.22222900390625,3.0,4.0,Đầy đủ,Đầy đủ,3.5,2.0,5.0,M
+Đồng Tâm,Hai Bà Trưng,Tư nhân,Tư nhân,41.0,307.31707763671875,4.0,3.0,Đầy đủ,Không nội thất,6.099999904632568,6.0,4.0,M
+Cửa Nam,Hoàn Kiếm,Tư nhân,Tư nhân,40.0,320.0,3.0,4.0,Đầy đủ,Đầy đủ,3.5999999046325684,40.0,5.0,Q
+Hải Bối,Đông Anh,Tư nhân,Tư nhân,55.0,84.54545593261719,4.0,2.0,Đầy đủ,Đầy đủ,4.0,3.0,3.0,Q
+Ngọc Hà,Ba Đình,Tư nhân,Tư nhân,40.0,220.0,3.0,4.0,Đầy đủ,Đầy đủ,36.0,3.0,6.0,M
+Khương Đình,Thanh Xuân,Tư nhân,Tư nhân,47.0,246.8085174560547,4.0,4.0,Đầy đủ,Cơ bản,4.0,5.0,4.0,M
+Cầu Diễn,Nam Từ Liêm,Tổng Công ty Đầu tư phát triển nhà và đô thị Bộ Quốc Phòng,Khu đô thị Mỹ Đình I,120.0,308.3333435058594,4.0,5.0,Đầy đủ,Cơ bản,30.0,10.0,5.0,M
+Khương Mai,Thanh Xuân,Tư nhân,Tư nhân,46.0,326.0869445800781,6.0,4.0,Đầy đủ,Đầy đủ,3.549999952316284,10.0,5.0,M
+Khương Thượng,Đống Đa,Tư nhân,Tư nhân,57.0,156.14035034179688,5.0,5.0,Đầy đủ,Đầy đủ,4.400000095367432,3.0,5.0,M
+Thượng Thanh,Long Biên,Công ty Cổ phần Him Lam,Nhà ở xã hội Him Lam Thượng Thanh,82.0,207.31707763671875,2.0,2.0,Hợp đồng mua bán,Đầy đủ,6.0,25.0,2.0,N
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,31.3,172.5239715576172,3.0,4.0,Đầy đủ,Đầy đủ,3.4000000953674316,3.0,5.0,M
+Trương Định,Hai Bà Trưng,Tư nhân,Tư nhân,56.0,223.2142791748047,4.0,3.0,Đầy đủ,Đầy đủ,4.0,6.0,4.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,34.0,161.76470947265625,3.0,4.0,Đầy đủ,Cơ bản,3.4000000953674316,32.0,4.0,M
+Giáp Bát,Hoàng Mai,Tư nhân,Tư nhân,50.0,434.0,5.0,5.0,Đầy đủ,Không nội thất,5.0,10.0,7.0,M
+Thượng Đình,Thanh Xuân,Tư nhân,Tư nhân,40.0,277.5,5.0,4.0,Đầy đủ,Đầy đủ,3.5,4.0,6.0,M
+Dịch Vọng,Cầu Giấy,Tư nhân,Tư nhân,41.0,210.0,4.0,5.0,Đầy đủ,Cơ bản,4.0,2.5,5.0,M
+Tả Thanh Oai,Thanh Trì,Tư nhân,Tư nhân,32.5,132.3076934814453,4.0,4.0,Đầy đủ,Không nội thất,3.0999999046325684,2.0,4.0,M
+Đại Kim,Hoàng Mai,Tư nhân,Tư nhân,34.0,213.23529052734375,4.0,5.0,Đầy đủ,Đầy đủ,3.559999942779541,9.0,5.0,M
+Long Biên,Long Biên,Tư nhân,Tư nhân,30.0,183.3333282470703,3.0,4.0,Đầy đủ,Cơ bản,4.0,3.0,5.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,45.0,286.6666564941406,3.0,3.0,Đầy đủ,Cơ bản,4.199999809265137,20.0,3.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,32.0,140.3125,3.0,4.0,Đầy đủ,Cơ bản,3.5,2.2,5.0,M
+Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,98.0,261.2244873046875,23.0,23.0,Đầy đủ,Đầy đủ,4.0,5.0,7.0,M
+Văn Quán,Hà Đông,Tư nhân,Tư nhân,85.0,211.76470947265625,26.0,26.0,Đầy đủ,Đầy đủ,6.0,4.0,8.0,M
+Thanh Xuân Nam,Thanh Xuân,Tư nhân,Tư nhân,290.0,127.5862045288086,90.0,90.0,Đầy đủ,Đầy đủ,10.0,8.0,10.0,M
+Kim Giang,Thanh Xuân,Tư nhân,Tư nhân,37.0,183.78378295898438,10.0,5.0,Đầy đủ,Cơ bản,4.0,4.0,5.0,M
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,120.0,216.6666717529297,20.0,20.0,Đầy đủ,Đầy đủ,4.5,12.0,8.0,M
+Thanh Xuân Nam,Thanh Xuân,Tư nhân,Tư nhân,85.0,229.41175842285156,24.0,24.0,Đầy đủ,Đầy đủ,6.099999904632568,4.0,8.0,M
+Bạch Mai,Hai Bà Trưng,Tư nhân,Tư nhân,230.0,513.04345703125,6.0,6.0,Đầy đủ,Đầy đủ,9.0,25.0,3.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,240.0,645.8333129882812,12.0,12.0,Đầy đủ,Đầy đủ,9.600000381469727,35.0,9.0,M
+Lê Đại Hành,Hai Bà Trưng,Tư nhân,Tư nhân,342.0,511.6958923339844,8.0,8.0,Đầy đủ,Đầy đủ,12.0,18.0,3.0,M
+Trung Hòa,Cầu Giấy,Tư nhân,Tư nhân,70.0,238.57142639160156,4.0,3.0,Đầy đủ,Đầy đủ,4.5,5.0,5.0,M
+Đường Doãn Kế Thiện  Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,42.0,340.4761962890625,4.0,5.0,Đầy đủ,Cơ bản,6.5,15.0,4.0,M
+Láng Hạ,Đống Đa,Tư nhân,Tư nhân,70.0,464.28570556640625,4.0,9.0,Đầy đủ,Đầy đủ,5.300000190734863,6.0,8.0,M
+Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,379.0,472.2955017089844,6.0,8.0,Đầy đủ,Cao cấp,20.0,10.0,5.0,M
+Nhân Chính,Thanh Xuân,Tư nhân,Tư nhân,55.0,325.4545593261719,6.0,7.0,Đầy đủ,Đầy đủ,4.5,8.0,5.0,M
+Phú Thượng,Tây Hồ,Tư nhân,Tư nhân,279.0,412.1863708496094,6.0,6.0,Đầy đủ,Đầy đủ,19.0,15.0,5.0,M
+Vạn Phúc,Hà Đông,Tư nhân,Tư nhân,50.0,270.0,5.0,4.0,Đầy đủ,Đầy đủ,4.0,15.0,5.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,42.0,261.9047546386719,3.0,4.0,Đầy đủ,Không nội thất,4.0,15.0,4.0,M
+Trung Liệt,Đống Đa,Tư nhân,Tư nhân,34.0,285.29412841796875,5.0,4.0,Đầy đủ,Đầy đủ,36.0,6.0,5.0,M
+Quang Trung,Hà Đông,Tư nhân,Tư nhân,36.0,109.72222137451172,3.0,3.0,Đầy đủ,Cao cấp,3.5,3.0,4.0,M
+Đại Mỗ,Nam Từ Liêm,Tư nhân,Tư nhân,32.0,171.875,3.0,4.0,Đầy đủ,Cơ bản,3.5,2.5,5.0,M
+Trương Định,Hai Bà Trưng,Tư nhân,Tư nhân,190.0,631.5789184570312,10.0,12.0,Đầy đủ,Không nội thất,5.5,20.0,9.0,M
+Trương Định,Hai Bà Trưng,Tư nhân,Tư nhân,212.0,566.0377197265625,4.0,4.0,Đầy đủ,Cơ bản,8.5,20.0,3.0,M
+Láng Hạ,Đống Đa,Tư nhân,Tư nhân,70.0,457.1428527832031,4.0,4.0,Đầy đủ,Đầy đủ,55.0,10.0,5.0,Q
+Đại Kim,Hoàng Mai,Tập đoàn Bitexco,The Manor Central Park,75.0,320.0,5.0,4.0,Đầy đủ,Không nội thất,5.0,70.0,5.0,Q
+Hàng Bột,Đống Đa,Tư nhân,Tư nhân,37.0,174.32432556152344,4.0,3.0,Đầy đủ,Đầy đủ,4.0,10.0,4.0,M
+Long Biên,Long Biên,Tư nhân,Tư nhân,45.0,60.0,1.0,1.0,Đầy đủ,Cơ bản,5.0,3.5,1.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,30.0,192.6666717529297,3.0,3.0,Đầy đủ,Đầy đủ,4.0,4.0,4.0,M
+Hoàng Văn Thụ,Hoàng Mai,Tư nhân,Tư nhân,51.0,300.0,3.0,5.0,Đầy đủ,Đầy đủ,4.400000095367432,5.0,6.0,M
+Phương Liệt,Thanh Xuân,Tư nhân,Tư nhân,50.0,269.0,5.0,6.0,Đầy đủ,Đầy đủ,4.199999809265137,7.0,7.0,M
+Khương Thượng,Đống Đa,Tư nhân,Tư nhân,40.0,202.50001525878906,6.0,4.0,Đầy đủ,Cơ bản,4.0,2.5,5.0,M
+Hạ Đình,Thanh Xuân,Tư nhân,Tư nhân,55.0,363.6363525390625,6.0,5.0,Đầy đủ,Đầy đủ,3.799999952316284,12.0,7.0,M
+Tứ Liên,Tây Hồ,Tư nhân,Tư nhân,58.0,255.1724090576172,5.0,5.0,Đầy đủ,Không nội thất,5.0,3.0,5.0,M
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,50.0,216.0,8.0,7.0,Đầy đủ,Đầy đủ,4.0,5.0,5.0,M
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,43.0,616.279052734375,12.0,12.0,Đầy đủ,Đầy đủ,5.0,20.0,6.0,M
+Di Trạch,Hoài Đức,Công ty Vietracimex,Hinode Royal Park,100.0,170.0,5.0,5.0,Hợp đồng mua bán,Không nội thất,5.0,12.0,5.0,M
+Đồng Tâm,Hai Bà Trưng,Tư nhân,Tư nhân,45.0,184.44444274902344,6.0,4.0,Đầy đủ,Đầy đủ,38.0,2.0,6.0,M
+Kiến Hưng,Hà Đông,Tư nhân,Tư nhân,83.0,162.65060424804688,5.0,4.0,Đầy đủ,Đầy đủ,4.800000190734863,18.0,4.0,M
+Quảng An,Tây Hồ,Tư nhân,Tư nhân,80.0,498.75,9.0,9.0,Đầy đủ,Đầy đủ,9.0,3.0,9.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,40.0,205.0,5.0,5.0,Đầy đủ,Cơ bản,3.5999999046325684,4.0,5.0,M
+Phú La,Hà Đông,Công ty CP Đầu tư Văn Phú - Invest,Khu đô thị mới Văn Phú,100.0,200.0,5.0,5.0,Đầy đủ,Cao cấp,5.5,18.0,5.0,M
+Giáp Bát,Hoàng Mai,Tư nhân,Tư nhân,42.0,269.047607421875,6.0,4.0,Đầy đủ,Cơ bản,4.0,6.0,5.0,M
+Đông La,Hoài Đức,Tư nhân,Tư nhân,45.0,65.55555725097656,3.0,3.0,Đầy đủ,Không nội thất,4.369999885559082,3.0,3.0,M
+Đại Kim,Hoàng Mai,Công ty CP Kinh doanh Phát triển nhà và Đô thị Hà Nội (HanHud),Khu đô thị mới Đại Kim - Định Công,55.0,305.4545593261719,4.0,4.0,Đầy đủ,Cơ bản,5.0,7.0,4.0,Q
+Kim Liên,Đống Đa,Tư nhân,Tư nhân,50.0,300.0,5.0,7.0,Đầy đủ,Không nội thất,4.0,10.0,7.0,N
+Yên Phụ,Tây Hồ,Tư nhân,Tư nhân,170.0,329.4117736816406,6.0,6.0,Đầy đủ,Đầy đủ,9.0,4.0,2.0,M
+Biên Giang,Hà Đông,Tư nhân,Tư nhân,40.0,82.5,4.0,4.0,Đầy đủ,Cơ bản,4.5,5.0,5.0,M
+Việt Hưng,Long Biên,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị Việt Hưng,238.0,252.10084533691406,5.0,5.0,Đầy đủ,Đầy đủ,14.0,7.0,3.0,M
+Vĩnh Ngọc,Đông Anh,Tư nhân,Tư nhân,55.0,121.81818389892578,4.0,3.0,Đầy đủ,Cơ bản,4.0,3.0,3.0,Q
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,35.0,242.85714721679688,3.0,4.0,Đầy đủ,Đầy đủ,3.5,5.0,5.0,M
+Ngọc Hà,Ba Đình,Tư nhân,Tư nhân,35.0,157.14285278320312,3.0,2.0,Đầy đủ,Đầy đủ,4.0,4.0,3.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,77.0,285.71429443359375,8.0,8.0,Đầy đủ,Đầy đủ,6.0,8.0,8.0,M
+Nghĩa Tân,Cầu Giấy,Tư nhân,Tư nhân,76.0,250.0,5.0,6.0,Đầy đủ,Đầy đủ,6.0,8.0,5.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,61.0,327.8688659667969,7.0,7.0,Đầy đủ,Cao cấp,6.0,10.0,7.0,M
+Ngọc Hà,Ba Đình,Tư nhân,Tư nhân,52.0,196.15383911132812,5.0,4.0,Đầy đủ,Đầy đủ,4.5,11.0,5.0,M
+Đội Cấn,Ba Đình,Tư nhân,Tư nhân,31.0,158.06451416015625,2.0,2.0,Đầy đủ,Không nội thất,45.0,2.0,3.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,43.0,330.2325439453125,5.0,7.0,Đầy đủ,Đầy đủ,42.0,26.0,7.0,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,54.0,172.22222900390625,9.0,9.0,Đầy đủ,Đầy đủ,6.300000190734863,4.0,5.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,60.0,205.0,4.0,4.0,Đầy đủ,Cơ bản,6.400000095367432,10.0,5.0,M
+Vĩnh Quỳnh,Thanh Trì,Tư nhân,Tư nhân,45.0,98.88888549804688,4.0,3.0,Đầy đủ,Không nội thất,3.5,3.0,4.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,90.0,190.0,6.0,6.0,Đầy đủ,Đầy đủ,5.0,5.0,6.0,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,43.0,302.3255920410156,4.0,5.0,Đầy đủ,Đầy đủ,8.75,7.0,5.0,M
+Phúc La,Hà Đông,Tư nhân,Tư nhân,88.0,181.81817626953125,4.0,3.0,Đầy đủ,Đầy đủ,5.0,8.0,4.0,M
+Quảng An,Tây Hồ,Tư nhân,Tư nhân,80.0,831.25,5.0,6.0,Đầy đủ,Đầy đủ,6.5,15.0,6.0,M
+Thanh Lương,Hai Bà Trưng,Tư nhân,Tư nhân,55.0,236.36363220214844,4.0,4.0,Đầy đủ,Đầy đủ,45.0,12.0,5.0,M
+Phúc La,Hà Đông,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị mới Văn Quán,98.0,193.87754821777344,5.0,4.0,Đầy đủ,Không nội thất,8.0,13.0,5.0,M
+Cát Linh,Đống Đa,Tư nhân,Tư nhân,52.0,230.76922607421875,10.0,11.0,Đầy đủ,Đầy đủ,4.0,3.0,7.0,M
+Việt Hưng,Long Biên,Tư nhân,Tư nhân,60.0,245.0,6.0,6.0,Đầy đủ,Không nội thất,4.300000190734863,14.0,6.0,M
+Mỹ Đình 1,Nam Từ Liêm,Công ty CP Đầu tư Văn Phú - Invest,Tổ hợp nhà cao tầng Phú Mỹ,40.0,212.5,4.0,4.0,Đầy đủ,Đầy đủ,5.199999809265137,3.0,5.0,N
+Thụy Khuê,Tây Hồ,Tư nhân,Tư nhân,60.0,1016.6666870117188,3.0,4.0,Đầy đủ,Không nội thất,6.0,15.0,5.0,M
+Trung Văn,Nam Từ Liêm,Công ty CP Đầu tư - Xây dựng Hà Nội,Khu đô thị Trung Văn - Hancic,221.0,294.1176452636719,5.0,5.0,Đầy đủ,Không nội thất,18.0,10.0,5.0,Q
+Nhân Chính,Thanh Xuân,Tư nhân,Tư nhân,100.0,410.0,6.0,4.0,Đầy đủ,Không nội thất,7.5,9.0,6.0,Q
+Dịch Vọng Hậu,Cầu Giấy,Tư nhân,Tư nhân,60.0,458.3333435058594,6.0,6.0,Đầy đủ,Không nội thất,5.0,12.0,7.0,M
+Thanh Xuân Trung,Thanh Xuân,Tư nhân,Tư nhân,74.0,237.8378448486328,4.0,3.0,Đầy đủ,Cơ bản,4.699999809265137,8.0,4.0,M
+Đức Giang,Long Biên,Tư nhân,Tư nhân,146.0,149.3150634765625,1.0,1.0,Đầy đủ,Không nội thất,4.5,40.0,1.0,M
+Sài Đồng,Long Biên,Tư nhân,Tư nhân,36.0,204.1666717529297,5.0,5.0,Đầy đủ,Cơ bản,4.5,3.0,5.0,M
+Kim Chung,Hoài Đức,Tư nhân,Tư nhân,43.0,113.9534912109375,5.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,4.0,M
+Quang Trung,Hà Đông,Tư nhân,Tư nhân,75.0,114.0,4.0,3.0,Đầy đủ,Không nội thất,4.5,4.0,3.0,M
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,52.0,182.6923065185547,5.0,5.0,Đầy đủ,Đầy đủ,5.800000190734863,25.0,4.0,M
+Dương Nội,Hà Đông,Tư nhân,Tư nhân,40.0,137.5,4.0,4.0,Đầy đủ,Đầy đủ,4.0,4.0,4.0,M
+Thanh Nhàn,Hai Bà Trưng,Tư nhân,Tư nhân,18.0,583.3333129882812,4.0,4.0,Đầy đủ,Đầy đủ,5.0,6.0,4.0,M
+Cống Vị,Ba Đình,Tư nhân,Tư nhân,30.0,206.6666717529297,3.0,4.0,Đầy đủ,Cơ bản,3.0,4.0,5.0,M
+Cầu Dền,Hai Bà Trưng,Tư nhân,Tư nhân,44.0,102.2727279663086,3.0,3.0,Đầy đủ,Không nội thất,3.4000000953674316,2.0,3.0,M
+Thanh Liệt,Thanh Trì,Tư nhân,Tư nhân,48.5,138.1443328857422,4.0,4.0,Đầy đủ,Đầy đủ,3.200000047683716,3.0,6.0,M
+Cầu Diễn,Nam Từ Liêm,Tổng Công ty Đầu tư phát triển nhà và đô thị Bộ Quốc Phòng,Khu đô thị Mỹ Đình I,120.0,304.1666564941406,4.0,5.0,Đầy đủ,Đầy đủ,30.0,15.0,4.0,M
+Yên Hòa,Cầu Giấy,Tư nhân,Tư nhân,31.0,225.80645751953125,3.0,4.0,Đầy đủ,Đầy đủ,5.199999809265137,2.0,5.0,M
+Dương Nội,Hà Đông,Tư nhân,Tư nhân,33.0,136.36363220214844,4.0,4.0,Đầy đủ,Cơ bản,5.0,9.0,5.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,30.0,183.3333282470703,3.0,4.0,Đầy đủ,Cơ bản,4.300000190734863,3.0,5.0,M
+Phúc Lợi,Long Biên,Tư nhân,Tư nhân,90.0,211.11111450195312,6.0,6.0,Đầy đủ,Cao cấp,6.0,21.0,5.0,M
+Thượng Thanh,Long Biên,Tư nhân,Tư nhân,122.7,166.01467895507812,1.0,1.0,Đầy đủ,Không nội thất,7.5,21.0,1.0,M
+Cầu Diễn,Nam Từ Liêm,Tư nhân,Tư nhân,40.0,312.5,7.0,5.0,Đầy đủ,Cơ bản,3.5,4.0,5.0,M
+Hoàng Liệt,Hoàng Mai,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Tây Nam Hồ Linh Đàm,56.0,173.2142791748047,6.0,4.0,Đầy đủ,Đầy đủ,36.0,2.0,5.0,N
+Long Biên,Long Biên,Tư nhân,Tư nhân,33.0,168.18182373046875,4.0,4.0,Đầy đủ,Cơ bản,3.5,2.7,5.0,M
+Đội Cấn,Ba Đình,Tư nhân,Tư nhân,42.0,323.80950927734375,4.0,6.0,Đầy đủ,Không nội thất,51.0,3.0,7.0,M
+Thạch Bàn,Long Biên,Tư nhân,Tư nhân,57.0,166.6666717529297,4.0,5.0,Đầy đủ,Cao cấp,4.5,5.0,6.0,M
+Tả Thanh Oai,Thanh Trì,Tư nhân,Tư nhân,32.0,132.8125,3.0,4.0,Đầy đủ,Không nội thất,3.5,3.0,5.0,M
+Vĩnh Tuy,Hai Bà Trưng,Tư nhân,Tư nhân,41.0,217.0731658935547,3.0,3.0,Đầy đủ,Cơ bản,3.25,2.5,4.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,68.0,154.41175842285156,5.0,5.0,Đầy đủ,Đầy đủ,48.0,5.0,5.0,M
+Di Trạch,Hoài Đức,Tư nhân,Tư nhân,33.0,116.66666412353516,4.0,4.0,Đầy đủ,Đầy đủ,3.299999952316284,2.5,4.0,M
+Nghĩa Đô,Cầu Giấy,Tư nhân,Tư nhân,37.0,216.21621704101562,4.0,4.0,Đầy đủ,Cơ bản,3.5999999046325684,5.0,5.0,M
+La Khê,Hà Đông,Tư nhân,Tư nhân,34.0,200.0,3.0,3.0,Đầy đủ,Không nội thất,5.199999809265137,3.0,5.0,M
+Thanh Xuân Bắc,Thanh Xuân,Tư nhân,Tư nhân,53.0,224.52830505371094,3.0,2.0,Đầy đủ,Đầy đủ,38.0,5.0,3.0,M
+Yên Phụ,Tây Hồ,Tư nhân,Tư nhân,48.0,318.75,4.0,5.0,Đầy đủ,Đầy đủ,4.0,8.0,7.0,M
+Việt Hưng,Long Biên,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị Việt Hưng,240.0,245.8333282470703,4.0,4.0,Đầy đủ,Cơ bản,10.0,25.0,4.0,M
+Quảng An,Tây Hồ,Tư nhân,Tư nhân,60.0,366.6666564941406,6.0,6.0,Đầy đủ,Đầy đủ,6.0,15.0,7.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,75.0,193.3333282470703,3.0,3.0,Đầy đủ,Đầy đủ,5.5,4.5,4.0,M
+Việt Hưng,Long Biên,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD,Khu đô thị Việt Hưng,202.0,306.9306945800781,4.0,4.0,Đầy đủ,Không nội thất,10.0,25.0,4.0,M
+Ô Chợ Dừa,Đống Đa,Tư nhân,Tư nhân,40.0,220.0,4.0,5.0,Đầy đủ,Đầy đủ,4.0,35.0,7.0,M
+Dịch Vọng Hậu,Cầu Giấy,Tư nhân,Tư nhân,40.0,337.5,5.0,5.0,Đầy đủ,Cơ bản,4.0,5.0,6.0,M
+Thịnh Liệt,Hoàng Mai,Tư nhân,Tư nhân,80.0,125.0,5.0,3.0,Đầy đủ,Đầy đủ,7.0,3.0,4.0,M
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,42.0,186.90475463867188,3.0,4.0,Đầy đủ,Đầy đủ,3.799999952316284,5.0,5.0,M
+Ngô Thì Nhậm,Hai Bà Trưng,Tư nhân,Tư nhân,208.0,663.4615478515625,5.0,5.0,Đầy đủ,Đầy đủ,10.600000381469727,25.0,3.0,M
+Bạch Đằng,Hai Bà Trưng,Tư nhân,Tư nhân,19.0,310.52630615234375,3.0,3.0,Đầy đủ,Đầy đủ,6.0,5.0,4.0,M
+Liễu Giai,Ba Đình,Tư nhân,Tư nhân,45.0,328.8888854980469,4.0,5.0,Đầy đủ,Đầy đủ,5.0,13.0,6.0,M

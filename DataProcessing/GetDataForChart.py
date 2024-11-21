@@ -248,33 +248,40 @@ try:
     # Hàm duyệt trang
     def navigate_pagination():
         number_of_pages = 1
-        with open(page_new_Path, "r", encoding="utf-8") as file:
-            number_of_page = int(file.read())
-
-        
-        url_page =  'https://batdongsan.com.vn/ban-can-ho-chung-cu-ha-dong/p' + str(number_of_pages)
-        driver.get(url_page)
-
-        while True:
-            property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
-            property_urls = [link.get_attribute('href') for link in property_links]
-
-            for property_url in property_urls:
-                driver.get(property_url)
-                time.sleep(0.5)
-                get_property_details()
-
-            number_of_pages += 1
-            with open(page_new_Path, "w", encoding="utf-8") as file:
-                file.write(f"{number_of_page}")
-
-            try:
-                url_page = 'https://batdongsan.com.vn/ban-can-ho-chung-cu-ha-dong/p' + str(number_of_pages)
+        areas = ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa']
+        classify_links = ['ban-can-ho-chung-cu-', 'ban-nha-dat-', 'ban-dat-dat-nen-', 'ban-trang-trai-khu-nghi-duong-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
+        count_of_data = 0
+        for area in areas:
+            for classify_link in classify_links:
+                count_of_data = 0
+                url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
+                print(url_page)
                 driver.get(url_page)
-                time.sleep(0.5)
-            except:
-                print("Đã duyệt hết tất cả các trang")
-                break
+                while True:
+                    property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
+                    property_urls = [link.get_attribute('href') for link in property_links]
+
+                    for property_url in property_urls:
+                        driver.get(property_url)
+                        time.sleep(0.5)
+                        get_property_details()
+                        count_of_data += 1
+                    
+                    if count_of_data >= 200:
+                        break
+
+                    number_of_pages += 1
+
+
+                    try:
+                        url_page =  'https://batdongsan.com.vn/' + area + classify_link + '/p' + str(number_of_pages)
+                        with open(page_new_Path, "w", encoding="utf-8") as file:
+                            file.write(url_page)
+                        driver.get(url_page)
+                        time.sleep(0.5)
+                    except:
+                        print("Đã duyệt hết tất cả các trang")
+                        break
 
     # Chạy hàm duyệt trang
     navigate_pagination()

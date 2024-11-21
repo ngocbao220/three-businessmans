@@ -274,7 +274,7 @@ try:
 
 
                     try:
-                        url_page =  'https://batdongsan.com.vn/' + area + classify_link + '/p' + str(number_of_pages)
+                        url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
                         with open(page_new_Path, "w", encoding="utf-8") as file:
                             file.write(url_page)
                         driver.get(url_page)

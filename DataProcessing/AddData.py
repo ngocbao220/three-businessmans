@@ -224,9 +224,9 @@ try:
 
     # Hàm duyệt trang
     def navigate_pagination():
-        number_of_pages = 1
+        number_of_pages = 14
         
-        url_page =  'https://batdongsan.com.vn/nha-dat-ban-quoc-oai/p' + str(number_of_pages)
+        url_page =  'https://batdongsan.com.vn/nha-dat-ban-me-linh/p' + str(number_of_pages)
         driver.get(url_page)
 
         while True:
@@ -242,7 +242,7 @@ try:
             print(number_of_pages)
 
             try:
-                url_page = 'https://batdongsan.com.vn/nha-dat-ban-quoc-oai/p' + str(number_of_pages)
+                url_page = 'https://batdongsan.com.vn/nha-dat-ban-me-linh/p' + str(number_of_pages)
                 driver.get(url_page)
                 time.sleep(0.5)
             except:

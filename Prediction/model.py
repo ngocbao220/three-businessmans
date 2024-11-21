@@ -1,128 +1,68 @@
 import pandas as pd
-import xgboost as xgb
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.impute import SimpleImputer
 import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import OneHotEncoder
+import matplotlib.pyplot as plt
 
-class PricePredictor:
-    def __init__(self, model=None):
-        # Xác định các cột phân loại và số
-        self.categorical_features = ['Xã/Phường', 'Quận/Huyện', 'Chủ đầu tư', 'Tên dự án', 'Pháp lý', 'Nội thất']
-        self.numerical_features = ['Diện tích (m²)', 'Số phòng ngủ (phòng)', 'Số toilet (phòng)']
+class Predictor:
+    def __init__(self, time, prices):
+        self.time = time
+        self.prices = prices
+        self.data = pd.DataFrame({"Time": time, "Price": prices})
+        self.model = None
+        self.encoded_time = None
 
-        # Tiền xử lý dữ liệu: Impute và chuẩn hóa
-        self.preprocessor = ColumnTransformer(
-            transformers=[
-                ('num', Pipeline(steps=[
-                    ('imputer', SimpleImputer(strategy='mean')),  # Xử lý giá trị thiếu cho đặc trưng số
-                    ('scaler', StandardScaler())  # Chuẩn hóa các đặc trưng số
-                ]), self.numerical_features),
-                ('cat', Pipeline(steps=[
-                    ('imputer', SimpleImputer(strategy='most_frequent')),  # Impute giá trị thiếu cho đặc trưng phân loại
-                    ('onehot', OneHotEncoder(handle_unknown='ignore'))  # OneHotEncoder cho các đặc trưng phân loại
-                ]), self.categorical_features)
-            ])
+    def standar(self):
+        encoder = OneHotEncoder(sparse_output=False)
+        self.encoded_time = encoder.fit_transform(self.data[['Time']])
+        self.data['Time_Numeric'] = range(len(self.time))
 
-        # Lưu trữ giá trị phổ biến cho các cột phân loại (tránh việc đọc lại mỗi lần)
-        self.most_frequent_values = {}
-        for feature in self.categorical_features:
-            self.most_frequent_values[feature] = self._get_most_frequent_value(feature)
+    def learn(self):
+        X = self.data[['Time_Numeric']].values
+        y = self.data['Price'].values
 
-        # Nếu không có mô hình, huấn luyện mô hình mặc định
-        if model is None:
-            self.model = self._train_default_model()
-        else:
-            self.model = model
+        self.model = LinearRegression()
+        self.model.fit(X, y)
 
-    def _train_default_model(self):
-        """
-        Huấn luyện mô hình XGBoost mặc định.
-        """
-        # Đọc dữ liệu
-        data = pd.read_csv('../Data/standardizedData/standardized_data.csv')
-        X = data.drop(['Mức giá (triệu/m²)', 'Mã lịch sử giá'], axis=1)
-        y = data['Mức giá (triệu/m²)']
-        
-        # Chia dữ liệu
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        
-        # Tạo pipeline và huấn luyện mô hình
-        model = Pipeline(steps=[
-            ('preprocessor', self.preprocessor),
-            ('regressor', xgb.XGBRegressor(n_estimators=100, random_state=42, objective='reg:squarederror'))
-        ])
-        
-        model.fit(X_train, y_train)
-        
-        # Đánh giá mô hình
-        y_pred = model.predict(X_test)
-        mae = mean_absolute_error(y_test, y_pred)
-        print(f'Mean Absolute Error: {mae}')
-        
-        return model
+    def getParameters(self):
+        if self.model is None:
+            raise ValueError("Model chưa được huấn luyện. Vui lòng gọi hàm 'learn()' trước.")
+        a = self.model.coef_[0]
+        b = self.model.intercept_
+        return a, b
 
-    def get_price(self, **kwargs):
-        """
-        Dự đoán giá của căn nhà khi nhận các tham số từ người dùng.
-        Nếu thiếu tham số, mô hình sẽ tự động dự đoán.
-        
-        Args:
-        **kwargs: các tham số đặc trưng của căn nhà, ví dụ: Diện tích, số phòng, quận, pháp lý, ...
-        
-        Returns:
-        giá dự đoán và sai số (hoặc xác suất đúng)
-        """
-        # Tạo dataframe từ các tham số đầu vào
-        input_data = pd.DataFrame([kwargs])
+    def plotData(self):
+        plt.figure(figsize=(8, 6))
+        plt.plot(self.data['Time_Numeric'], self.data['Price'], color='blue')
+        plt.title("Biểu đồ biến động giá")
+        plt.xlabel("Mốc thời gian")
+        plt.ylabel("Mức giá")
+        plt.legend()
+        plt.show()
 
-        # Kiểm tra các tham số thiếu và xử lý tự động
-        missing_columns = list(set(self.categorical_features + self.numerical_features) - set(kwargs.keys()))
-        for column in missing_columns:
-            if column in self.categorical_features:
-                input_data[column] = [self.most_frequent_values[column]]
-            else:
-                input_data[column] = [np.mean(self.model.named_steps['preprocessor'].transformers_[0][1].steps[0][1].statistics_)]
+    def plotRegression(self):
+        a, b = self.getParameters()
+        x_values = self.data['Time_Numeric']
+        y_values = a * x_values + b
 
-        # Tiền xử lý đầu vào
-        processed_data = self.preprocessor.fit_transform(input_data)  # Sử dụng fit_transform thay vì transform
-        
-        # Dự đoán giá trị
-        predicted_price = self.model.predict(processed_data)
-        
-        # Tính sai số dự đoán (mean absolute error so với tập huấn luyện)
-        mae = np.abs(predicted_price - np.mean(self.model.predict(self.preprocessor.transform(input_data))))
-        
-        return predicted_price[0], mae
+        plt.figure(figsize=(8, 6))
+        plt.plot(x_values, self.data['Price'], color='blue')
+        plt.plot(x_values, y_values, color='red')
 
-    def _get_most_frequent_value(self, column):
-        """
-        Trả về giá trị xuất hiện nhiều nhất trong cột phân loại.
-        """
-        data = pd.read_csv('../Data/standardizedData/standardized_data.csv')
-        return data[column].mode()[0]
-    
-# Khởi tạo mô hình dự đoán
-predictor = PricePredictor()
+        plt.annotate('', xy=(x_values.iloc[-1], y_values.iloc[-1]), xytext=(x_values.iloc[0], y_values.iloc[0]),
+                     arrowprops=dict(facecolor='yellow', width=2, headwidth=10),
+                     label="Mũi tên")
+        plt.title("Biểu đồ biến động giá")
+        plt.xlabel("Mốc thời gian")
+        plt.ylabel("Giá nhà")
+        plt.legend()
+        plt.show()
 
-# Dữ liệu của căn nhà mà bạn muốn dự đoán giá
-input_data = {
-    'Xã/Phường': 'Dương Xá',
-    'Quận/Huyện': 'Gia Lâm',
-    'Chủ đầu tư': 'Tập đoàn Vingroup',
-    'Tên dự án': 'Vinhomes Ocean Park Gia Lâm',
-    'Diện tích (m²)': 55.0,
-    'Số phòng ngủ (phòng)': 2.0,
-    'Số toilet (phòng)': 1.0,
-    'Pháp lý': 'Đầy đủ',
-    'Nội thất': 'Cơ bản'
-}
+time_data = ['T10/22', 'T11/22', 'T12/22', 'T01/23', 'T02/23', 'T03/23']
+house_prices = [200, 120, 340, 300, 400, 500]
 
-# Dự đoán giá của căn nhà
-price, mae = predictor.get_price(**input_data)
-
-# In kết quả
-print(f'Giá dự đoán: {price} triệu/m², Sai số dự đoán: {mae} triệu/m²')
+predictor = Predictor(time_data, house_prices)
+predictor.standar()
+predictor.learn()
+predictor.plotData()
+predictor.plotRegression()

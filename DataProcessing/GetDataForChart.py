@@ -8,15 +8,19 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+import csv
+import json
 
 # Chắc chắn là thư mục data tồn tại
 if not os.path.exists('Data'):
     os.makedirs('Data')
 
-# Đường dẫn tới file data csv basic và project
+# Đường dẫn tới file
 page_new_Path = 'Data/page_number_new.txt'
 data_new_Path = 'Data/originalData/data_original_new.csv'
 data_Project_new_Path = 'Data/originalData/data_project_new.csv'
+
+
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -24,6 +28,8 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Phân loại', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
 df.to_csv(data_new_Path, mode='a', index=False, encoding='utf-8-sig')
 df.to_csv(data_Project_new_Path, mode='a', index=False, encoding='utf-8-sig')'''
+
+project_name_dict = {}
 
 try:
     # URL của trang web bất động sản
@@ -43,6 +49,18 @@ try:
         except:
             print("Không tìm thấy nút lịch sử giá.")
             return 0
+        
+    # Hàm lấy tên dự án vào 1 dict
+    def get_project_data_dict():
+        project_column = 'Tên dự án'
+        fields = ['Lịch sử giá', 'Khoảng giá']
+        with open(data_new_Path, mode='r', encoding='utf-8') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                project_name = row[project_column]
+                if project_name not in project_name_dict:
+                    # Lấy giá trị từ các cột cụ thể
+                    project_name_dict[project_name] = {field: row[field] for field in fields}
         
     # Hàm lấy lịch sử giá, trả về lịch sử giá và lịch sử khoảng giá
     def get_price_history():
@@ -182,34 +200,41 @@ try:
             if(len(other_info) == 0):
                 other_info.append("Không có thông tin")
 
-            # Kiểm tra xem có lịch sử giá không
-            if (click_price_history_button()):
-                try:
-                    wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__tab-box-group')))
-                    two_years_tab = driver.find_element(By.XPATH, "//li[@data-val='7bd57ad3dfa6ce4b']")
-                    
-                    # Cuộn trang đến tab để đảm bảo phần tử này hiển thị trên màn hình
-                    driver.execute_script("arguments[0].scrollIntoView(true);", two_years_tab)
-                    time.sleep(1)  # Đợi một chút sau khi cuộn
+            # Kiểm tra xem tên dự án đã tồn tại hay chưa
+            if project_name not in project_name_dict or project_name == 'Không có thông tin':
+                #print('Dự án mới:' + project_name)
+                # Kiểm tra xem có nút lịch sử giá hay không và lấy lịch sử giá
+                if (click_price_history_button()):
+                    try:
+                        wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__tab-box-group')))
+                        two_years_tab = driver.find_element(By.XPATH, "//li[@data-val='7bd57ad3dfa6ce4b']")
+                        
+                        # Cuộn trang đến tab để đảm bảo phần tử này hiển thị trên màn hình
+                        driver.execute_script("arguments[0].scrollIntoView(true);", two_years_tab)
+                        time.sleep(1)  # Đợi một chút sau khi cuộn
 
-                    # Kiểm tra xem tab đã được chọn chưa, nếu chưa thì click vào
-                    if 're__tab-box--active' not in two_years_tab.get_attribute('class'):
-                        #print("Tab '2 năm' chưa được chọn, tiến hành click")
-                        # Sử dụng JavaScriptExecutor để click nếu thao tác click bình thường không thành công
-                        two_years_tab.click()
-                        #print("Đã chuyển sang tab '2 năm'")
-                    else:
-                        print("Tab '2 năm' đã được chọn")
-                    time.sleep(1)  # Đợi một chút sau khi nhấp vào tab
+                        # Kiểm tra xem tab đã được chọn chưa, nếu chưa thì click vào
+                        if 're__tab-box--active' not in two_years_tab.get_attribute('class'):
+                            #print("Tab '2 năm' chưa được chọn, tiến hành click")
+                            # Sử dụng JavaScriptExecutor để click nếu thao tác click bình thường không thành công
+                            two_years_tab.click()
+                            #print("Đã chuyển sang tab '2 năm'")
+                        time.sleep(1)  # Đợi một chút sau khi nhấp vào tab
 
-                    # Gọi hàm để lấy giá và khoảng giá trong lịch sử
-                    get_price_history_data = get_price_history()
-                    price_history = get_price_history_data[0]
-                    price_spread_history = get_price_history_data[1]
+                        # Gọi hàm để lấy giá và khoảng giá trong lịch sử
+                        get_price_history_data = get_price_history()
+                        price_history = get_price_history_data[0]
+                        price_spread_history = get_price_history_data[1]
+                        project_name_dict[project_name] = {'Lịch sử giá': price_history, 'Khoảng giá': price_spread_history}
 
-                except Exception as e:
-                    print(f"Không thể chuyển sang tab '2 năm'")
-                
+                    except Exception as e:
+                        print(f"Không thể chuyển sang tab '2 năm'")
+            else:
+                #print('Đã tồn tại dự án:' + project_name)
+                price_history = project_name_dict[project_name]['Lịch sử giá']
+                price_spread_history = project_name_dict[project_name]['Khoảng giá']
+
+
             new_row = pd.DataFrame([{
                 'Xã/Phường': commune_ward,
                 'Quận/Huyện': district,
@@ -247,6 +272,9 @@ try:
 
     # Hàm duyệt trang
     def navigate_pagination():
+
+        get_project_data_dict()
+
         number_of_pages = 1
         ''' ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong', 
         'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 
@@ -261,9 +289,9 @@ try:
                 count_of_data = 0
                 number_of_pages = 1
                 url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
-                print(url_page)
+                #print(url_page)
                 with open(page_new_Path, "w", encoding="utf-8") as file:
-                            file.write(url_page)
+                    file.write(url_page)
                 driver.get(url_page)
 
                 try:
@@ -271,6 +299,7 @@ try:
                     check = empty_class.find_element(By.TAG_NAME, "p").text
                     if check == 'Không có kết quả nào phù hợp':
                         continue 
+                    
                 except:
                     while True:
                         property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
@@ -282,12 +311,10 @@ try:
                             get_property_details()
                             count_of_data += 1
                         
-                        if count_of_data >= 600:
+                        if count_of_data >= 5:
                             break
 
                         number_of_pages += 1
-
-
                         try:
                             url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
                             

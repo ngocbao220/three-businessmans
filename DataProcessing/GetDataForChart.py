@@ -248,12 +248,14 @@ try:
     # Hàm duyệt trang
     def navigate_pagination():
         number_of_pages = 1
-        areas = ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa']
+        # 'ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong', 'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'
+        areas = ['hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-nha-dat-', 'ban-dat-dat-nen-', 'ban-trang-trai-khu-nghi-duong-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
         for area in areas:
             for classify_link in classify_links:
                 count_of_data = 0
+                number_of_pages = 1
                 url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
                 print(url_page)
                 driver.get(url_page)
@@ -279,6 +281,11 @@ try:
                             file.write(url_page)
                         driver.get(url_page)
                         time.sleep(0.5)
+
+                        empty_class = driver.find_element(By.CLASS_NAME, "re__srp-empty")
+                        check = empty_class.find_element(By.TAG_NAME, "p").text
+                        if check == 'Không có kết quả nào phù hợp':
+                            break 
                     except:
                         print("Đã duyệt hết tất cả các trang")
                         break

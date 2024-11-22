@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
@@ -33,11 +32,13 @@ class Predictor:
         return a, b
 
     def plotData(self):
-        plt.figure(figsize=(8, 6))
+        plt.figure(figsize=(13, 6))
         plt.plot(self.time, self.data['Price'], color='blue')
         plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Mức giá")
+        plt.xticks(fontsize=8)  # Giảm cỡ chữ trên trục X
+        plt.yticks(fontsize=8)  # Giảm cỡ chữ trên trục Y
         plt.legend()
         plt.show()
 
@@ -46,7 +47,7 @@ class Predictor:
         x_values = self.data['Time_Numeric']
         y_values = a * x_values + b
 
-        plt.figure(figsize=(8, 6))
+        plt.figure(figsize=(13, 6))
         plt.plot(self.time, self.data['Price'], color='blue')
         plt.plot(x_values, y_values, color='red')
 
@@ -56,6 +57,8 @@ class Predictor:
         plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Giá nhà")
+        plt.xticks(fontsize=8)  # Giảm cỡ chữ trên trục X
+        plt.yticks(fontsize=8)  # Giảm cỡ chữ trên trục Y
         plt.legend()
         plt.show()
 

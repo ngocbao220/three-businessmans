@@ -14,11 +14,16 @@ if not os.path.exists('Data'):
     os.makedirs('Data')
 
 # Đường dẫn tới file data csv basic và project
-page_Path = 'Data/page_number.txt'
-data_Path = 'Data/originalData/data_original1.csv'
-data_Project_Path = 'Data/originalData/data_project1.csv'
+page_new_Path = 'Data/page_number_new.txt'
+data_new_Path = 'Data/originalData/data_original_new.csv'
+data_Project_new_Path = 'Data/originalData/data_project_new.csv'
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+'''# Tạo 1 dataframe chứa các cột của data
+df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Phân loại', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
+df.to_csv(data_new_Path, mode='a', index=False, encoding='utf-8-sig')
+df.to_csv(data_Project_new_Path, mode='a', index=False, encoding='utf-8-sig')'''
 
 try:
     # URL của trang web bất động sản
@@ -96,8 +101,9 @@ try:
         try:
             price_history = 'Không có dữ liệu lịch sử giá'
             price_spread_history = 'Không có dữ liệu lịch sử khoảng giá'
-            investor_name = "Không có thông tin"
-            project_name = "Không có thông tin"
+            investor_name = 'Không có thông tin'
+            project_name = 'Không có thông tin'
+            classify = 'Không thể phân loại'
 
             wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__pr-short-description')))
 
@@ -132,8 +138,6 @@ try:
                        'Mặt tiền': 'Không có thông tin', 
                        'Hướng nhà': 'Không có thông tin',
                        'Hướng ban công': 'Không có thông tin',
-                       'Đường vào' : 'Không có thông tin',
-                       'Số tầng' : 'Không có thông tin',
             }
 
             other_info = []
@@ -152,6 +156,29 @@ try:
                         other_info.append(f"{spec_title}: {spec_value}")
                 except:
                     continue
+            
+            # Tìm số tòa/căn
+            try:
+                elements = driver.find_elements(By.CLASS_NAME, "re__prj-card-config-value")
+                for element in elements:
+                    aria_label = element.get_attribute("aria-label") 
+
+                    if "căn hộ" in aria_label:  # Phần tử chứa thông tin căn hộ
+                        num_apartments = element.text
+                    elif "tòa nhà" in aria_label:  # Phần tử chứa thông tin tòa nhà
+                        num_buildings = element.text
+
+                other_info.append(f"{'Số tòa'}: {num_buildings}")
+                other_info.append(f"{'Số căn hộ'}: {num_apartments}")
+            except:
+                print('Không có thông tin tòa/căn')
+
+            # Phân loại bđt
+            try:
+                classify = driver.find_element(By.XPATH, '//a[@class="re__link-se" and @level="4"]').text
+            except:
+                print('Không thể phân loại')
+
             if(len(other_info) == 0):
                 other_info.append("Không có thông tin")
 
@@ -189,6 +216,7 @@ try:
                 'Tỉnh/Thành phố': province_city,
                 'Chủ đầu tư': investor_name,
                 'Tên dự án': project_name,
+                'Phân loại': classify,
                 'Diện tích': details['Diện tích'],
                 'Mức giá': details['Mức giá'],
                 'Số phòng ngủ': details['Số phòng ngủ'],
@@ -198,8 +226,6 @@ try:
                 'Mặt tiền': details['Mặt tiền'],
                 'Hướng nhà': details['Hướng nhà'],
                 'Hướng ban công': details['Hướng ban công'],
-                'Đường vào' : details['Đường vào'],
-                'Số tầng' : details['Số tầng'],
                 'Thông tin khác': "; ".join(other_info),
                 'Lịch sử giá': price_history,
                 'Khoảng giá': price_spread_history
@@ -212,46 +238,51 @@ try:
             # Ghi dữ liệu vào file CSV
             if (investor_name != "Không có thông tin"):
                 # File CSV dự án và có lịch sử giá
-                new_row.to_csv(data_Project_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+                new_row.to_csv(data_Project_new_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
             # File CSV basic
-            new_row.to_csv(data_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+            new_row.to_csv(data_new_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
 
         except Exception as e:
             print(f"Lỗi khi lấy thông tin bất động sản")
 
     # Hàm duyệt trang
     def navigate_pagination():
-        
-        # Đọc số trang đã duyệt và lưu trong file txt
-        with open(page_Path, "r") as file:
-            number_of_pages = int(file.read()) + 1
-        
-        url_page = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi/p' + str(number_of_pages)
-        driver.get(url_page)
-
-        while True:
-            # Lưu số trang dã duyệt qua với file txt
-            with open(page_Path, "w", encoding="utf-8") as file:
-                file.write(str(number_of_pages))
-
-            property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
-            property_urls = [link.get_attribute('href') for link in property_links]
-
-            for property_url in property_urls:
-                driver.get(property_url)
-                time.sleep(0.5)
-                get_property_details()
-
-            number_of_pages += 1
-        
-
-            try:
-                url_page = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi/p' + str(number_of_pages)
+        number_of_pages = 1
+        areas = ['bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 
+                 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh']
+        classify_links = ['ban-can-ho-chung-cu-', 'ban-nha-dat-', 'ban-dat-dat-nen-', 'ban-trang-trai-khu-nghi-duong-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
+        count_of_data = 0
+        for area in areas:
+            for classify_link in classify_links:
+                count_of_data = 0
+                url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
+                print(url_page)
                 driver.get(url_page)
-                time.sleep(0.5)
-            except:
-                print("Đã duyệt hết tất cả các trang")
-                break
+                while True:
+                    property_links = driver.find_elements(By.CLASS_NAME, 'js__product-link-for-product-id')
+                    property_urls = [link.get_attribute('href') for link in property_links]
+
+                    for property_url in property_urls:
+                        driver.get(property_url)
+                        time.sleep(0.5)
+                        get_property_details()
+                        count_of_data += 1
+                    
+                    if count_of_data >= 200:
+                        break
+
+                    number_of_pages += 1
+
+
+                    try:
+                        url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
+                        with open(page_new_Path, "w", encoding="utf-8") as file:
+                            file.write(url_page)
+                        driver.get(url_page)
+                        time.sleep(0.5)
+                    except:
+                        print("Đã duyệt hết tất cả các trang")
+                        break
 
     # Chạy hàm duyệt trang
     navigate_pagination()

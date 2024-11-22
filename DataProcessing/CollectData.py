@@ -311,7 +311,7 @@ try:
                             get_property_details()
                             count_of_data += 1
                         
-                        if count_of_data >= 5:
+                        if count_of_data >= 600:
                             break
 
                         number_of_pages += 1

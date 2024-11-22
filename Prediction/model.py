@@ -5,7 +5,8 @@ from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
 
 class Predictor:
-    def __init__(self, time, prices):
+    def __init__(self,area, time, prices):
+        self.area = area
         self.time = time
         self.prices = prices
         self.data = pd.DataFrame({"Time": time, "Price": prices})
@@ -33,8 +34,8 @@ class Predictor:
 
     def plotData(self):
         plt.figure(figsize=(8, 6))
-        plt.plot(self.data['Time_Numeric'], self.data['Price'], color='blue')
-        plt.title("Biểu đồ biến động giá")
+        plt.plot(self.time, self.data['Price'], color='blue')
+        plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Mức giá")
         plt.legend()
@@ -46,23 +47,20 @@ class Predictor:
         y_values = a * x_values + b
 
         plt.figure(figsize=(8, 6))
-        plt.plot(x_values, self.data['Price'], color='blue')
+        plt.plot(self.time, self.data['Price'], color='blue')
         plt.plot(x_values, y_values, color='red')
 
         plt.annotate('', xy=(x_values.iloc[-1], y_values.iloc[-1]), xytext=(x_values.iloc[0], y_values.iloc[0]),
                      arrowprops=dict(facecolor='yellow', width=2, headwidth=10),
                      label="Mũi tên")
-        plt.title("Biểu đồ biến động giá")
+        plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Giá nhà")
         plt.legend()
         plt.show()
 
-time_data = ['T10/22', 'T11/22', 'T12/22', 'T01/23', 'T02/23', 'T03/23']
-house_prices = [200, 120, 340, 300, 400, 500]
-
-predictor = Predictor(time_data, house_prices)
-predictor.standar()
-predictor.learn()
-predictor.plotData()
-predictor.plotRegression()
+    def show(self):
+        self.standar()
+        self.learn()
+        self.plotData()
+        self.plotRegression()

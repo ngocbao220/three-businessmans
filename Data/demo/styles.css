@@ -1,0 +1,10 @@
+body {
+  background-color: #123133;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100hv;
+  overflow: hidden;
+}

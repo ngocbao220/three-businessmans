@@ -1,12 +1,44 @@
 body {
-  background-color: #121212;
-  color: white;
+  background: #1e1e1e; /* Màu nền tối chủ đạo */
+  color: #f0f0f0; /* Màu chữ trắng nhạt */
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  font-family: "Roboto", sans-serif; /* Font chữ hiện đại */
+  position: relative;
+}
+
+/* Hiệu ứng loang sáng cong cong phía trên */
+body::before {
+  content: "";
+  position: absolute;
+  top: -40px; /* Dịch lên trên */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 150px;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.1), transparent 80%);
+  border-radius: 50%; /* Tạo hiệu ứng cong cong */
+  pointer-events: none;
+  z-index: 1;
+  
+}
+
+#main-title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 10; /* Đảm bảo tiêu đề luôn ở trên cùng */
 }
 
 #container {
@@ -18,51 +50,21 @@ body {
   position: relative;
 }
 
-#prices,
-#details {
-  width: 30%; /* Giảm kích thước xuống 0.6 lần (so với 50%) */
+#price_segment,
+#his_prices {
+  width: 40%; /* Giảm kích thước xuống 0.6 lần (so với 50%) */
   height: 50%; /* Tương tự cho chiều cao */
   position: absolute;
   transition: all 0.5s ease;
 }
 
-#prices {
-  left: 35%; /* Giữ biểu đồ tròn ở chính giữa */
+#price_segment {
+  right: 0%;
+  top: 5%; /* Giữ biểu đồ tròn ở chính giữa */
   transform: translateX(0) scale(1);
 }
 
-#details {
-  display: none;
-  right: -50%; /* Ẩn chi tiết ban đầu */
-}
-
-#details.show {
-  display: block;
-  right: 10%;
-}
-
-button {
-  position: absolute;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #2c3e50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #34495e;
-}
-
-#reset-button {
-  left: 10px;
-  top: 10px;
-}
-
-#show-button {
-  right: 10px;
-  top: 10px;
+#his_prices {
+  right: 0%;
+  bottom: 0%;
 }

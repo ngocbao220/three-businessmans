@@ -37,8 +37,8 @@ class Predictor:
         plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Mức giá")
-        plt.xticks(fontsize=8)  # Giảm cỡ chữ trên trục X
-        plt.yticks(fontsize=8)  # Giảm cỡ chữ trên trục Y
+        plt.xticks(fontsize=8)
+        plt.yticks(fontsize=8)
         plt.legend()
         plt.show()
 
@@ -57,8 +57,8 @@ class Predictor:
         plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Giá nhà")
-        plt.xticks(fontsize=8)  # Giảm cỡ chữ trên trục X
-        plt.yticks(fontsize=8)  # Giảm cỡ chữ trên trục Y
+        plt.xticks(fontsize=8)
+        plt.yticks(fontsize=8)
         plt.legend()
         plt.show()
 

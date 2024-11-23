@@ -1,49 +1,423 @@
-Xã/Phường,Quận/Huyện,Chủ đầu tư,Tên dự án,Loại Hình,Diện tích,Mức giá,Số phòng ngủ,Số toilet,Pháp lý,Nội thất,Mặt tiền,Đường vào,Số tầng,Mã lịch sử giá
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,60.2,257.4750671386719,21.0,21.0,Đầy đủ,Đầy đủ,5.699999809265137,3.5,7.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,68.2,337.243408203125,4.0,4.0,Đầy đủ,Không nội thất,5.699999809265137,15.0,3.0,M
-Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,Các loại nhà bán,128.0,347.65625,6.0,6.0,Đầy đủ,Không nội thất,8.0,40.0,6.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,43.5,317.24139404296875,4.0,7.0,Đầy đủ,Đầy đủ,3.9100000858306885,5.0,7.0,M
-Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,40.0,145.0,4.0,4.0,Đầy đủ,Đầy đủ,4.0,2.0,5.0,M
-Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,35.0,190.0,3.0,3.0,Đầy đủ,Đầy đủ,4.0,2.5,5.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,52.0,132.6923065185547,4.0,4.0,Đầy đủ,Đầy đủ,5.0,3.0,4.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,50.0,275.0,5.0,7.0,Đầy đủ,Đầy đủ,4.0,5.0,8.0,M
-Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,61.0,196.7213134765625,13.0,13.0,Đầy đủ,Đầy đủ,4.099999904632568,2.8,6.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,45.0,172.22222900390625,4.0,3.0,Đầy đủ,Đầy đủ,3.5999999046325684,2.8,4.0,M
-Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,36.0,143.05555725097656,3.0,4.0,Đầy đủ,Đầy đủ,4.0,4.0,5.0,M
-Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,60.0,114.16666412353516,3.0,3.0,Đầy đủ,Đầy đủ,4.0,3.0,1.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,40.0,221.25,4.0,4.0,Đầy đủ,Đầy đủ,4.0,4.0,5.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,67.0,143.28358459472656,1.0,1.0,Đầy đủ,Cơ bản,3.299999952316284,6.0,1.0,M
-Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,35.0,146.85714721679688,3.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,5.0,M
-Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,30.0,205.0,4.0,5.0,Đầy đủ,Cơ bản,44.0,3.0,6.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,120.0,175.0,18.0,18.0,Đầy đủ,Đầy đủ,6.0,19.0,5.0,M
-Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,80.0,195.0,1.0,1.0,Đầy đủ,Cơ bản,4.5,15.0,1.0,M
-Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,48.0,193.75,10.0,10.0,Đầy đủ,Đầy đủ,6.5,4.0,5.0,M
-Thụy Phương,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,48.0,145.8333282470703,4.0,4.0,Đầy đủ,Đầy đủ,4.0,7.0,4.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,42.0,183.3333282470703,4.0,4.0,Đầy đủ,Đầy đủ,3.5,15.0,5.0,M
-Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,35.0,217.14285278320312,3.0,4.0,Đầy đủ,Đầy đủ,6.0,5.0,5.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,52.0,288.4615478515625,16.0,16.0,Đầy đủ,Đầy đủ,5.0,3.0,7.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,140.0,160.0,6.0,4.0,Đầy đủ,Đầy đủ,8.5,4.0,4.0,M
-Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,55.0,169.09091186523438,10.0,10.0,Đầy đủ,Đầy đủ,5.5,4.0,5.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,50.0,27.0,1.0,1.0,Hợp đồng mua bán,Đầy đủ,5.0,1.5,2.0,M
-Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,152.0,398.6842041015625,1.0,1.0,Đầy đủ,Không nội thất,8.0,20.0,1.0,Q
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,58.0,175.86207580566406,12.0,12.0,Đầy đủ,Đầy đủ,4.0,4.0,7.0,M
-Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,62.0,161.2903289794922,3.0,4.0,Đầy đủ,Cơ bản,3.0,5.0,3.0,M
-Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,60.0,153.3333282470703,3.0,3.0,Đầy đủ,Cơ bản,4.0,3.0,3.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,46.0,169.56521606445312,5.0,4.0,Đầy đủ,Không nội thất,4.0,3.0,5.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,46.0,293.478271484375,5.0,7.0,Đầy đủ,Đầy đủ,4.0,8.0,8.0,M
-Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,50.0,136.0,3.0,3.0,Đầy đủ,Đầy đủ,4.0,5.0,4.0,M
-Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,38.0,197.36842346191406,3.0,3.0,Đầy đủ,Cơ bản,4.0,5.0,5.0,M
-Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,45.0,153.3333282470703,4.0,4.0,Đầy đủ,Đầy đủ,3.5,4.0,4.0,M
-Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,45.0,98.88888549804688,4.0,4.0,Đầy đủ,Đầy đủ,5.0,3.0,5.0,M
-Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,46.0,141.30435180664062,2.0,2.0,Đầy đủ,Đầy đủ,6.5,4.0,2.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,48.0,287.5,6.0,6.0,Đầy đủ,Đầy đủ,4.0,6.0,6.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,70.0,192.85714721679688,4.0,4.0,Đầy đủ,Đầy đủ,5.0,3.0,4.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,34.0,175.0,3.0,4.0,Đầy đủ,Đầy đủ,3.5999999046325684,2.5,5.0,M
-Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,60.0,241.6666717529297,5.0,5.0,Đầy đủ,Đầy đủ,45.0,8.0,6.0,M
-Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,45.0,153.3333282470703,4.0,3.0,Đầy đủ,Không nội thất,4.0,2.5,4.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,56.0,116.07142639160156,3.0,2.0,Đầy đủ,Đầy đủ,4.0,4.0,3.0,M
-Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,60.2,257.4750671386719,21.0,21.0,Đầy đủ,Đầy đủ,5.699999809265137,3.5,7.0,N
-Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,36.0,143.05555725097656,3.0,4.0,Đầy đủ,Đầy đủ,4.0,4.0,5.0,M
-Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,65.0,200.0,4.0,3.0,Đầy đủ,Cơ bản,15.5,10.0,5.0,M
-Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,Các loại nhà bán,210.0,280.952392578125,4.0,4.0,Đầy đủ,Đầy đủ,10.0,12.0,4.0,M
-Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Các loại nhà bán,33.0,154.5454559326172,3.0,4.0,Đầy đủ,Đầy đủ,38.0,3.0,5.0,M
+Xã/Phường,Quận/Huyện,Chủ đầu tư,Tên dự án,Loại hình,Diện tích,Mức giá,Số phòng ngủ,Số toilet,Pháp lý,Nội thất,Số tầng,Số tòa,Số căn hộ,Mã lịch sử giá
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,83.0,61.44578170776367,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,86.0,65.11627960205078,2.0,2.0,Đầy đủ,Không nội thất,,9.0,4785.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,195.0,71.79486846923828,4.0,4.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,73.0,75.34246826171875,2.0,2.0,Đầy đủ,Cơ bản,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,81.3,79.95079803466797,2.0,2.0,Đầy đủ,Không nội thất,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,97.0,74.226806640625,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,157.4,76.23888397216797,3.0,4.0,Đầy đủ,Cơ bản,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,98.5,76.14213562011719,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,96.7,74.45708465576172,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,96.9,82.04334259033203,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,80.3,75.96512603759766,2.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,110.0,50.0,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Khu Ngoại Giao Đoàn,Căn hộ chung cư,129.0,61.24031066894531,3.0,2.0,Đầy đủ,Không nội thất,,23.0,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,66.8,60.62874221801758,2.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Quang Minh,N02-T3 Ngoại Giao Đoàn,Căn hộ chung cư,94.0,99.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,Q
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,74.0,74.32432556152344,2.0,2.0,Đầy đủ,Không nội thất,,6.0,2368.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,114.0,41.22806930541992,3.0,2.0,Đầy đủ,Cơ bản,,9.0,4785.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,90.0,63.33333206176758,3.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,78.0,61.53845977783203,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,89.0,76.40449523925781,2.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,75.0,71.73332977294922,2.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,Căn hộ chung cư,70.0,60.0,2.0,2.0,Đầy đủ,Đầy đủ,,,,Q
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty TNHH Phát triển T.H.T,Chung cư H9-CT1 Starlake,Căn hộ chung cư,113.2,132.5088348388672,3.0,2.0,Đầy đủ,Đầy đủ,,3.0,603.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,84.0,50.0,2.0,2.0,Đầy đủ,Không nội thất,,9.0,4785.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,105.0,67.61904907226562,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,81.3,79.95079803466797,2.0,2.0,Đầy đủ,Không nội thất,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,97.0,74.226806640625,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,157.4,76.23888397216797,3.0,4.0,Đầy đủ,Cơ bản,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,98.5,76.14213562011719,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,96.7,74.45708465576172,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,96.9,82.04334259033203,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,135.0,60.000003814697266,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,110.0,50.0,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty TNHH Phát triển T.H.T,Chung cư H9-CT1 Starlake,Căn hộ chung cư,113.2,136.92579650878906,3.0,2.0,Đầy đủ,Cơ bản,,3.0,603.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,143.0,63.0,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Xuân Tảo,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Chung cư Han Jardin,Căn hộ chung cư,107.0,105.0467300415039,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Quang Minh,N02-T3 Ngoại Giao Đoàn,Căn hộ chung cư,94.0,99.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,110.0,54.54545593261719,3.0,2.0,Đầy đủ,Cao cấp,,9.0,4785.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,103.8,65.99229431152344,3.0,2.0,Đầy đủ,Cơ bản,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,105.3,85.47008514404297,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,83.0,79.51807403564453,3.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,N
+Xuân Tảo,Bắc Từ Liêm,Công ty CP Phát triển tài trợ Địa ốc R.C,Kosmo Tây Hồ,Căn hộ chung cư,180.8,125.55309295654297,3.0,3.0,Đầy đủ,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,77.8,66.83804321289062,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,84.0,53.57143020629883,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,79.0,63.2911376953125,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Xuân Đỉnh,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Khu Ngoại Giao Đoàn,Căn hộ chung cư,129.0,69.0,3.0,2.0,Đầy đủ,Không nội thất,,23.0,,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Đông Đô - BQP,IA20 Ciputra,Căn hộ chung cư,92.0,48.91304397583008,3.0,2.0,Đầy đủ,Cơ bản,,3.0,1468.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,195.0,71.79486846923828,4.0,4.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,73.0,75.34246826171875,2.0,2.0,Đầy đủ,Cơ bản,,6.0,2368.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,79.0,65.18987274169922,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,105.3,85.47008514404297,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,194.4,86.41975402832031,5.0,4.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,73.0,51.3698616027832,2.0,2.0,Đầy đủ,Cơ bản,,8.0,2732.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,82.0,83.53658294677734,3.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,117.0,72.0,3.0,2.0,Đầy đủ,Cơ bản,,3.0,2150.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Đông Đô - BQP,IA20 Ciputra,Căn hộ chung cư,100.0,54.5,3.0,2.0,Đầy đủ,Đầy đủ,,3.0,1468.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng số 1 Hà Nội,Khu đô thị mới Nghĩa Đô,Căn hộ chung cư,70.0,66.0,2.0,2.0,Đầy đủ,Cơ bản,,,,N
+Xuân Tảo,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,N01-T7 Ngoại Giao Đoàn,Căn hộ chung cư,101.0,125.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,98.0,76.53060913085938,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Đông Đô - BQP,IA20 Ciputra,Căn hộ chung cư,92.0,56.5217399597168,3.0,2.0,Đầy đủ,Đầy đủ,,3.0,1468.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Tập đoàn Nam Cường Hà Nội,Khu đô thị mới Cổ Nhuế,Căn hộ chung cư,95.0,52.6315803527832,3.0,2.0,Đầy đủ,Không nội thất,,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,92.0,50.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Căn hộ chung cư,156.0,43.589744567871094,3.0,2.0,Đầy đủ,Không nội thất,,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,130.0,70.0,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,99.0,67.17171478271484,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,129.0,61.24031066894531,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,97.2,72.01646423339844,3.0,2.0,Đầy đủ,Cơ bản,,6.0,2368.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,74.0,59.0,2.0,2.0,Đầy đủ,Không nội thất,,9.0,4785.0,N
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,104.0,44.230770111083984,3.0,2.0,Đầy đủ,Cao cấp,,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Công ty CP Xây dựng số 2 - Vinaconex2,N03 -T8 Ngoại Giao Đoàn,Căn hộ chung cư,90.0,72.22222137451172,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,66.8,65.8682632446289,2.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,147.0,36.054420471191406,3.0,4.0,Đầy đủ,Không nội thất,,9.0,4785.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,68.0,48.52941131591797,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,86.6,51.963050842285156,3.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,N
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,120.0,64.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,106.5,74.17840576171875,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,N
+Xuân Tảo,Bắc Từ Liêm,Công ty CP Phát triển tài trợ Địa ốc R.C,Kosmo Tây Hồ,Căn hộ chung cư,84.0,83.33333587646484,2.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Đông Đô - BQP,IA20 Ciputra,Căn hộ chung cư,92.6,59.39524841308594,2.0,2.0,Đầy đủ,Đầy đủ,,3.0,1468.0,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Căn hộ chung cư,84.0,38.095237731933594,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,139.0,34.53237533569336,4.0,2.0,Đầy đủ,Cơ bản,,9.0,4785.0,N
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,104.0,40.38461685180664,3.0,2.0,Đầy đủ,Cơ bản,,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Công ty CP Xây dựng và Kỹ thuật Việt Nam,N03-T3&T4 Ngoại Giao Đoàn,Căn hộ chung cư,110.0,900.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng số 1 Hà Nội,Khu đô thị mới Nghĩa Đô,Căn hộ chung cư,250.0,63.20000076293945,5.0,4.0,Đầy đủ,Cơ bản,,,,N
+Đông Ngạc,Bắc Từ Liêm,Công ty TNHH phát triển khu đô thị Nam Thăng Long,The Link 345-CT1,Căn hộ chung cư,114.0,78.9473648071289,3.0,2.0,Đầy đủ,Đầy đủ,,3.0,594.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Diamond Goldmark City,Căn hộ chung cư,105.0,80.95237731933594,3.0,2.0,Đầy đủ,Đầy đủ,,1.0,278.0,N
+Đông Ngạc,Bắc Từ Liêm,Công ty TNHH phát triển khu đô thị Nam Thăng Long,The Link 345-CT1,Căn hộ chung cư,114.0,96.49122619628906,3.0,2.0,Đầy đủ,Đầy đủ,,3.0,594.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,Căn hộ chung cư,71.0,54.9295768737793,2.0,2.0,Đầy đủ,Không nội thất,,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,101.0,53.46534729003906,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Đông Ngạc,Bắc Từ Liêm,Công ty TNHH phát triển khu đô thị Nam Thăng Long,The Link 345-CT1,Căn hộ chung cư,108.0,83.33333587646484,3.0,2.0,Đầy đủ,Cơ bản,,3.0,594.0,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Diamond Goldmark City,Căn hộ chung cư,96.0,68.22916412353516,3.0,2.0,Đầy đủ,Đầy đủ,,1.0,278.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,66.8,68.11376953125,2.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,83.0,77.10843658447266,3.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,102.0,63.235294342041016,3.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,66.8,66.61676025390625,2.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,83.0,82.77108764648438,3.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,129.0,61.24031066894531,3.0,2.0,Đầy đủ,Cao cấp,,9.0,4785.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,114.0,69.29824829101562,3.0,2.0,Đầy đủ,Cơ bản,,8.0,2732.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,94.0,67.02127838134766,3.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,110.0,68.18181610107422,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,73.0,75.34246826171875,2.0,3.0,Đầy đủ,Cơ bản,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Đầu tư Bất động sản Đông Đô - BQP,IA20 Ciputra,Căn hộ chung cư,92.0,56.5217399597168,3.0,2.0,Đầy đủ,Cơ bản,,3.0,1468.0,M
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,156.0,64.1025619506836,3.0,2.0,Đầy đủ,Đầy đủ,,,,Q
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,79.0,196.20252990722656,2.0,2.0,Đầy đủ,Cơ bản,1.0,,,M
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,161.6666717529297,4.0,3.0,Đầy đủ,Cơ bản,4.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,41.0,146.34146118164062,7.0,4.0,Đầy đủ,Không nội thất,4.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,41.0,146.34146118164062,4.0,3.0,Đầy đủ,Không nội thất,4.0,,,M
+Thụy Phương,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.0,158.3333282470703,2.0,2.0,Đầy đủ,Không nội thất,2.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.2,257.4750671386719,21.0,21.0,Đầy đủ,Đầy đủ,7.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,68.2,337.243408203125,4.0,4.0,Đầy đủ,Không nội thất,3.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",128.0,347.65625,6.0,6.0,Đầy đủ,Không nội thất,6.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,43.5,317.24139404296875,4.0,7.0,Đầy đủ,Đầy đủ,7.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,37.0,205.40541076660156,4.0,3.0,Đầy đủ,Không nội thất,4.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,180.0,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,40.0,145.0,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,111.0,468.4684753417969,4.0,9.0,Đầy đủ,Cơ bản,7.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,190.0,3.0,3.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,80.0,131.25,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,50.0,104.0,3.0,2.0,Đầy đủ,Không nội thất,2.0,,,M
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,78.0,139.74359130859375,4.0,3.0,Đầy đủ,Đầy đủ,4.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,31.0,195.16128540039062,3.0,4.0,Đầy đủ,Đầy đủ,6.0,,,M
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,153.3333282470703,4.0,4.0,Đầy đủ,Không nội thất,5.0,,,M
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,34.0,125.0,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,40.0,162.5,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,48.4,144.21487426757812,4.0,3.0,Đầy đủ,Cao cấp,,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,52.0,132.6923065185547,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,50.0,275.0,5.0,7.0,Đầy đủ,Đầy đủ,8.0,,,M
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,138.57142639160156,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,61.0,196.7213134765625,13.0,13.0,Đầy đủ,Đầy đủ,6.0,,,M
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,148.57142639160156,3.0,4.0,Đầy đủ,Cơ bản,5.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,45.0,172.22222900390625,4.0,3.0,Đầy đủ,Đầy đủ,4.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,36.0,143.05555725097656,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.0,114.16666412353516,3.0,3.0,Đầy đủ,Đầy đủ,1.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,147.14285278320312,3.0,3.0,Đầy đủ,Không nội thất,5.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,40.0,221.25,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,67.0,143.28358459472656,1.0,1.0,Đầy đủ,Cơ bản,1.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,217.14285278320312,3.0,3.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,146.85714721679688,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,205.0,4.0,5.0,Đầy đủ,Cơ bản,6.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,70.0,192.85714721679688,4.0,4.0,Đầy đủ,Đầy đủ,,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,120.0,175.0,18.0,18.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.0,375.0,8.0,8.0,Đầy đủ,Không nội thất,8.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,80.0,195.0,1.0,1.0,Đầy đủ,Cơ bản,1.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,48.0,193.75,10.0,10.0,Đầy đủ,Đầy đủ,5.0,,,M
+Thụy Phương,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,48.0,145.8333282470703,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,42.0,183.3333282470703,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,217.14285278320312,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,59.0,250.8474578857422,17.0,18.0,Đầy đủ,Đầy đủ,7.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,52.0,288.4615478515625,16.0,16.0,Đầy đủ,Đầy đủ,7.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,140.0,160.0,6.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,55.0,169.09091186523438,10.0,10.0,Đầy đủ,Đầy đủ,5.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,150.0,126.66666412353516,31.0,32.0,Đầy đủ,Đầy đủ,7.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,50.0,27.0,1.0,1.0,Hợp đồng mua bán,Đầy đủ,2.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,55.0,181.81817626953125,12.0,12.0,Đầy đủ,Đầy đủ,7.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,75.0,213.3333282470703,12.0,12.0,Đầy đủ,Đầy đủ,,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,78.0,211.53846740722656,11.0,11.0,Đầy đủ,Đầy đủ,7.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,64.0,234.375,15.0,15.0,Đầy đủ,Đầy đủ,6.0,,,M
+Thượng Cát,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,34.0,135.2941131591797,4.0,4.0,Đầy đủ,Không nội thất,5.0,,,Q
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,152.0,398.6842041015625,1.0,1.0,Đầy đủ,Không nội thất,1.0,,,Q
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,68.0,301.0,17.0,18.0,Đầy đủ,Đầy đủ,7.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,65.0,126.15384674072266,10.0,10.0,Đầy đủ,Đầy đủ,,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,65.0,169.23077392578125,5.0,4.0,Đầy đủ,Đầy đủ,7.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,58.0,175.86207580566406,12.0,12.0,Đầy đủ,Đầy đủ,7.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,147.14285278320312,3.0,3.0,Đầy đủ,Không nội thất,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,147.14285278320312,3.0,3.0,Đầy đủ,Không nội thất,5.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,62.0,161.2903289794922,3.0,4.0,Đầy đủ,Cơ bản,3.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.0,153.3333282470703,3.0,3.0,Đầy đủ,Cơ bản,3.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,65.0,127.69230651855469,7.0,7.0,Đầy đủ,Cơ bản,5.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,46.0,169.56521606445312,5.0,4.0,Đầy đủ,Không nội thất,5.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,180.0,143.3333282470703,18.0,18.0,Đầy đủ,Đầy đủ,6.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,46.0,293.478271484375,5.0,7.0,Đầy đủ,Đầy đủ,8.0,,,M
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,50.0,136.0,3.0,3.0,Đầy đủ,Đầy đủ,4.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,38.0,197.36842346191406,3.0,3.0,Đầy đủ,Cơ bản,5.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,45.0,153.3333282470703,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,45.0,98.88888549804688,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,46.0,141.30435180664062,2.0,2.0,Đầy đủ,Đầy đủ,2.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,58.0,379.3103332519531,7.0,7.0,Đầy đủ,Đầy đủ,6.0,,,M
+Xuân Tảo,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,44.0,254.5454559326172,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,48.0,287.5,6.0,6.0,Đầy đủ,Đầy đủ,6.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,150.0,126.66666412353516,32.0,32.0,Đầy đủ,Đầy đủ,6.0,,,M
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,160.0,4.0,4.0,Đầy đủ,Không nội thất,5.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,70.0,192.85714721679688,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,34.0,175.0,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,60.0,241.6666717529297,5.0,5.0,Đầy đủ,Đầy đủ,6.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,45.0,153.3333282470703,4.0,3.0,Đầy đủ,Không nội thất,4.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,56.0,116.07142639160156,3.0,2.0,Đầy đủ,Đầy đủ,3.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,53.0,122.64151000976562,3.0,3.0,Đầy đủ,Đầy đủ,4.0,,,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,182.85714721679688,3.0,4.0,Đầy đủ,Không nội thất,5.0,,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.2,257.4750671386719,21.0,21.0,Đầy đủ,Đầy đủ,7.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,168.57142639160156,3.0,4.0,Đầy đủ,Không nội thất,5.0,,,M
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,36.0,143.05555725097656,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,63.0,261.9047546386719,17.0,17.0,Đầy đủ,Đầy đủ,,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,65.0,200.0,4.0,3.0,Đầy đủ,Cơ bản,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",210.0,280.952392578125,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,M
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,134.2857208251953,4.0,5.0,Đầy đủ,Cơ bản,5.0,,,M
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,100.0,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Thụy Phương,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,147.14285278320312,3.0,4.0,Đầy đủ,Cơ bản,5.0,,,M
+Tây Tựu,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,140.0,170.7142791748047,45.0,45.0,Đầy đủ,Đầy đủ,,,,Q
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,33.0,154.5454559326172,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,M
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,61.0,237.70492553710938,16.0,15.0,Đầy đủ,Đầy đủ,6.0,,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Bán đất,151.0,139.73509216308594,1.0,1.0,Đầy đủ,Không nội thất,1.0,,,Q
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,96.5,75.64766693115234,3.0,2.0,Đầy đủ,Đầy đủ,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,99.7,78.23470306396484,3.0,2.0,Đầy đủ,Cơ bản,,6.0,2368.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Tập đoàn Sunshine,Sunshine City,Căn hộ chung cư,116.7,81.40531158447266,3.0,2.0,Đầy đủ,Cơ bản,,6.0,2368.0,M
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội,Khu đô thị mới Resco,Căn hộ chung cư,156.4,40.0,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,78.0,66.66666412353516,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,90.0,65.55555725097656,3.0,2.0,Đầy đủ,Đầy đủ,,8.0,2732.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,102.0,56.86274337768555,3.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco,An Bình City,Căn hộ chung cư,73.0,51.3698616027832,2.0,2.0,Đầy đủ,Cơ bản,,8.0,2732.0,M
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Ngôi sao An Bình,Green Stars,Căn hộ chung cư,63.0,71.42857360839844,2.0,2.0,Đầy đủ,Đầy đủ,,7.0,930.0,M
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,36.0,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Tây Tựu,Bắc Từ Liêm,Công ty Cổ phần Quản Lý Tài Sản Sông Nhuệ,Avenue Garden,"Chung cư mini, căn hộ dịch vụ",35.0,85.71428680419922,7.0,5.0,Đầy đủ,Đầy đủ,,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",60.0,25.83333396911621,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,150.0,113.33333587646484,28.0,28.0,Đầy đủ,Đầy đủ,6.0,,,N
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",40.0,47.5,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",45.0,31.11111068725586,2.0,1.0,Hợp đồng mua bán,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",55.0,29.090909957885742,2.0,2.0,Hợp đồng mua bán,Đầy đủ,,,,N
+Mai Dịch,Cầu Giấy,Tư nhân,Tư nhân,Nhà riêng,60.0,245.0,14.0,14.0,Đầy đủ,Đầy đủ,8.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",38.0,990.0,1.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",35.0,39.71428680419922,2.0,1.0,Đầy đủ,Cơ bản,,,,N
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,31.0,2.0,2.0,Hợp đồng mua bán,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,37.0,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",45.0,32.88888931274414,2.0,1.0,Hợp đồng mua bán,Không nội thất,,,,N
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,37.0,2.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",75.0,53.33333206176758,2.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,37.0,2.0,1.0,Đầy đủ,Không nội thất,,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",35.0,650.0,1.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,70.0,192.85714721679688,4.0,5.0,Đầy đủ,Đầy đủ,4.0,,,N
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,32.0,184.375,4.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,122.0,149.18032836914062,4.0,3.0,Đầy đủ,Đầy đủ,3.0,,,N
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,40.0,158.75,6.0,4.0,Đầy đủ,Không nội thất,5.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,205.0,4.0,5.0,Đầy đủ,Cơ bản,6.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,55.0,189.09091186523438,2.0,2.0,Đầy đủ,Không nội thất,2.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,42.0,250.0,5.0,4.0,Đầy đủ,Không nội thất,4.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,41.0,146.34146118164062,7.0,4.0,Đầy đủ,Không nội thất,4.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,41.0,146.34146118164062,4.0,3.0,Đầy đủ,Không nội thất,4.0,,,N
+Thụy Phương,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,60.0,158.3333282470703,2.0,2.0,Đầy đủ,Không nội thất,2.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,205.0,4.0,4.0,Đầy đủ,Cơ bản,6.0,,,N
+Thụy Phương,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,50.0,140.0,4.0,3.0,Đầy đủ,Đầy đủ,4.0,,,N
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,32.0,181.25,3.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Xuân La,Tây Hồ,Tư nhân,Tư nhân,Nhà riêng,44.0,352.2727355957031,3.0,5.0,Đầy đủ,Đầy đủ,6.0,,,N
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,173.3333282470703,3.0,3.0,Đầy đủ,Cơ bản,5.0,,,N
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,45.0,153.3333282470703,4.0,2.0,Đầy đủ,Cơ bản,4.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,32.0,226.5625,4.0,5.0,Đầy đủ,Cơ bản,6.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,187.14285278320312,3.0,4.0,Đầy đủ,Không nội thất,5.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,37.0,202.70269775390625,4.0,3.0,Đầy đủ,Cơ bản,4.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,32.0,187.5,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,46.0,171.7391357421875,6.0,4.0,Đầy đủ,Đầy đủ,5.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,31.0,198.38710021972656,4.0,5.0,Đầy đủ,Cơ bản,6.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,174.2857208251953,3.0,4.0,Đầy đủ,Không nội thất,5.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",128.0,347.65625,6.0,6.0,Đầy đủ,Không nội thất,6.0,,,Q
+Cổ Nhuế 2,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",120.0,415.8333435058594,6.0,6.0,Đầy đủ,Đầy đủ,6.0,,,Q
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",189.0,312.1693115234375,5.0,5.0,Đầy đủ,Cơ bản,5.0,,,Q
+Xuân Đỉnh,Bắc Từ Liêm,Vimefulland,Jade Square,"Nhà Biệt thự, liền kề",120.0,274.1666564941406,7.0,6.0,Hợp đồng mua bán,Không nội thất,5.0,5.0,1150.0,N
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",128.0,347.65625,6.0,6.0,Đầy đủ,Không nội thất,6.0,,,Q
+Cổ Nhuế 1,Bắc Từ Liêm,Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba,Thành phố Giao Lưu,"Nhà Biệt thự, liền kề",190.0,305.2631530761719,4.0,4.0,Đầy đủ,Không nội thất,4.0,,,Q
+Đông Ngạc,Bắc Từ Liêm,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",110.0,209.09091186523438,6.0,6.0,Đầy đủ,Không nội thất,3.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Khu Ngoại Giao Đoàn,"Nhà Biệt thự, liền kề",101.0,396.03961181640625,7.0,8.0,Đầy đủ,Đầy đủ,6.0,23.0,,M
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",111.0,184.68467712402344,4.0,4.0,Đầy đủ,Không nội thất,4.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Khu Ngoại Giao Đoàn,"Nhà Biệt thự, liền kề",216.0,190.0,5.0,4.0,Đầy đủ,Không nội thất,4.0,23.0,,M
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,72.0,180.55555725097656,3.0,3.0,Đầy đủ,Không nội thất,3.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,46.0,447.8260803222656,3.0,4.0,Đầy đủ,Đầy đủ,6.0,,,N
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,205.0,202.43902587890625,3.0,3.0,Đầy đủ,Không nội thất,3.0,,,N
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,68.2,337.243408203125,4.0,4.0,Đầy đủ,Không nội thất,3.0,,,N
+Phú Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,230.0,282.60870361328125,2.0,2.0,Đầy đủ,Cơ bản,3.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,50.0,300.0,4.0,4.0,Đầy đủ,Đầy đủ,5.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,47.0,308.5106506347656,6.0,5.0,Đầy đủ,Không nội thất,5.0,,,N
+Phúc Diễn,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,145.0,310.3448181152344,8.0,8.0,Đầy đủ,Không nội thất,8.0,,,N
+Liên Mạc,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,237.0,178.27003479003906,3.0,4.0,Đầy đủ,Đầy đủ,5.0,,,N
+Đức Thắng,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,68.0,300.0,6.0,4.0,Đầy đủ,Cơ bản,3.0,,,N
+Cổ Nhuế 2,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,60.0,241.6666717529297,6.0,5.0,Đầy đủ,Đầy đủ,5.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,63.0,301.5873107910156,1.0,1.0,Đầy đủ,Không nội thất,1.0,,,N
+Xuân Đỉnh,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,79.0,196.20252990722656,2.0,2.0,Đầy đủ,Cơ bản,1.0,,,N
+Cổ Nhuế 1,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,111.0,468.4684753417969,4.0,9.0,Đầy đủ,Cơ bản,7.0,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,"Shophouse, nhà phố thương mại",144.0,111.11111450195312,1.0,1.0,Đầy đủ,Không nội thất,1.0,9.0,4785.0,M
+Đông Ngạc,Bắc Từ Liêm,Công ty CP Đầu tư và Thương mại Thủ Đô,Ecohome 1,Bất động sản khác,76.0,32.894737243652344,2.0,1.0,Hợp đồng mua bán,Cơ bản,,,,N
+Xuân Tảo,Bắc Từ Liêm,Tổng công ty Xây dựng Hà Nội,Khu Ngoại Giao Đoàn,Bất động sản khác,871.0,72.33065795898438,20.0,2.0,Đầy đủ,Đầy đủ,,23.0,,M
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Căn hộ chung cư,55.0,67.2727279663086,2.0,2.0,Đầy đủ,Đầy đủ,,56.0,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Sapphire-Vinhomes Smart City,Căn hộ chung cư,55.0,60.0,2.0,2.0,Đầy đủ,Đầy đủ,,14.0,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Miami,Căn hộ chung cư,54.8,60.21897888183594,2.0,1.0,Đầy đủ,Không nội thất,,5.0,3000.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,Căn hộ chung cư,62.1,77.29468536376953,2.0,2.0,Đầy đủ,Đầy đủ,,3.0,2696.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,Căn hộ chung cư,63.4,82.01892852783203,2.0,2.0,Đầy đủ,Không nội thất,,3.0,2696.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,Căn hộ chung cư,25.62,55.425445556640625,1.0,1.0,Hợp đồng mua bán,Không nội thất,,3.0,2696.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,Căn hộ chung cư,69.47,76.29192352294922,2.0,2.0,Đầy đủ,Đầy đủ,,3.0,2696.0,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,Căn hộ chung cư,63.9,60.250389099121094,2.0,2.0,Đầy đủ,Đầy đủ,,5.0,3922.0,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Căn hộ chung cư,30.7,50.48859786987305,1.0,1.0,Đầy đủ,Không nội thất,,56.0,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Căn hộ chung cư,60.0,58.33333206176758,2.0,2.0,Đầy đủ,Đầy đủ,,56.0,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Căn hộ chung cư,69.0,53.62318801879883,2.0,2.0,Đầy đủ,Đầy đủ,,56.0,,N
+Mễ Trì,Nam Từ Liêm,Công ty Cổ phần Đầu tư Mai Linh,The Matrix One,Căn hộ chung cư,80.0,87.5,2.0,2.0,Đầy đủ,Không nội thất,,2.0,740.0,N
+Tây Mỗ,Nam Từ Liêm,Masterise Homes,Masteri West Heights,Căn hộ chung cư,30.3,69.30693054199219,1.0,1.0,Hợp đồng mua bán,Cơ bản,,4.0,3599.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,Căn hộ chung cư,86.0,63.953487396240234,2.0,2.0,Đầy đủ,Đầy đủ,,3.0,2401.0,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Sapphire-Vinhomes Smart City,Căn hộ chung cư,55.0,52.727272033691406,2.0,1.0,Đầy đủ,Đầy đủ,,14.0,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Căn hộ chung cư,43.0,58.13953399658203,1.0,1.0,Đầy đủ,Không nội thất,,56.0,,N
+Mễ Trì,Nam Từ Liêm,Công ty Cổ phần Đầu tư Mai Linh,The Matrix One,Căn hộ chung cư,86.0,93.02325439453125,2.0,2.0,Hợp đồng mua bán,Đầy đủ,,2.0,740.0,N
+Mỹ Đình 2,Nam Từ Liêm,HD Mon Holdings,The Zei Mỹ Đình,Căn hộ chung cư,107.0,85.98130798339844,3.0,2.0,Đầy đủ,Không nội thất,,1.0,891.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,Căn hộ chung cư,79.0,72.15190124511719,2.0,2.0,Đầy đủ,Cơ bản,,3.0,2401.0,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Căn hộ chung cư,82.0,54.878047943115234,3.0,2.0,Đầy đủ,Không nội thất,,56.0,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,Căn hộ chung cư,54.9,60.10928726196289,2.0,1.0,Đầy đủ,Đầy đủ,,5.0,3922.0,N
+Trung Văn,Nam Từ Liêm,Công ty CP Xây dựng và Thương mại Bắc Hà,C14 - Bộ Công An,Căn hộ chung cư,109.0,56.422019958496094,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,38.0,2.0,1.0,Hợp đồng mua bán,Cơ bản,,,,N
+Cầu Diễn,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,35.0,2.0,1.0,Đầy đủ,Cơ bản,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",30.0,41.66666793823242,1.0,1.0,Hợp đồng mua bán,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",40.0,31.25,1.0,1.0,Đầy đủ,Cơ bản,,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,37.0,2.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Mễ Trì,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",35.0,31.428571701049805,1.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",45.0,33.33333206176758,1.0,1.0,Hợp đồng mua bán,Không nội thất,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",30.0,41.66666793823242,1.0,1.0,Đầy đủ,Không nội thất,,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,27.0,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",52.0,24.038461685180664,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,800.0,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,39.20000076293945,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",52.0,21.153846740722656,2.0,1.0,Đầy đủ,Đầy đủ,,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,20.0,2.0,1.0,Đầy đủ,Cao cấp,,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,"Chung cư mini, căn hộ dịch vụ",50.0,25.0,2.0,1.0,Đầy đủ,Không nội thất,,,,N
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,217.0,5.0,5.0,Đầy đủ,Đầy đủ,6.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,41.0,210.97561645507812,4.0,4.0,Đầy đủ,Cơ bản,4.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,116.5,204.7210235595703,14.0,14.0,Đầy đủ,Cao cấp,7.0,,,N
+Xuân Phương,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,121.0,104.54545593261719,2.0,2.0,Đầy đủ,Không nội thất,1.0,,,N
+Tây Mỗ,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,50.0,111.5999984741211,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,N
+Cầu Diễn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,106.0,344.3396301269531,8.0,8.0,Đầy đủ,Đầy đủ,8.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,52.0,236.53846740722656,6.0,6.0,Đầy đủ,Cơ bản,7.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,117.0,203.41880798339844,28.0,14.0,Đầy đủ,Không nội thất,8.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,69.0,239.13043212890625,21.0,21.0,Đầy đủ,Đầy đủ,6.0,,,N
+Phương Canh,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,98.0,357.1428527832031,22.0,22.0,Đầy đủ,Cơ bản,6.0,,,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,48.0,187.5,10.0,9.0,Đầy đủ,Đầy đủ,5.0,,,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,48.0,177.0833282470703,9.0,9.0,Đầy đủ,Không nội thất,5.0,,,N
+Đại Mỗ,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,150.0,126.66666412353516,5.0,3.0,Chưa có,Không nội thất,2.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,44.5,278.65167236328125,6.0,3.0,Đầy đủ,Đầy đủ,5.0,,,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,31.0,206.4516143798828,4.0,3.0,Đầy đủ,Cơ bản,5.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,51.0,172.35293579101562,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,N
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,56.0,241.07142639160156,14.0,14.0,Đầy đủ,Đầy đủ,6.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,182.57142639160156,3.0,3.0,Đầy đủ,Đầy đủ,4.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,120.0,197.5,14.0,14.0,Đầy đủ,Không nội thất,8.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,31.0,200.0,3.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Mễ Trì,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,30.0,216.6666717529297,4.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,81.0,111.11111450195312,1.0,1.0,Đầy đủ,Không nội thất,1.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,35.0,122.57142639160156,5.0,4.0,Đầy đủ,Cơ bản,4.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,54.0,214.8148193359375,9.0,9.0,Đầy đủ,Cơ bản,5.0,,,N
+Mễ Trì,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,130.0,211.53846740722656,25.0,26.0,Đầy đủ,Đầy đủ,7.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,106.0,344.3396301269531,8.0,8.0,Đầy đủ,Đầy đủ,8.0,,,N
+Phương Canh,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,37.9,155.67282104492188,6.0,4.0,Đầy đủ,Cao cấp,5.0,,,N
+Đại Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Villas,"Nhà Biệt thự, liền kề",474.0,143.0,5.0,5.0,Đầy đủ,Đầy đủ,5.0,,,N
+Cầu Diễn,Nam Từ Liêm,Tổng Công ty Đầu tư phát triển nhà và đô thị Bộ Quốc Phòng,Khu đô thị Mỹ Đình I,"Nhà Biệt thự, liền kề",203.0,236.4532012939453,4.0,4.0,Đầy đủ,Cơ bản,4.0,17.0,1720.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,"Nhà Biệt thự, liền kề",150.0,433.3333435058594,5.0,4.0,Đầy đủ,Đầy đủ,4.0,3.0,2696.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Nhà Biệt thự, liền kề",93.0,354.8387145996094,5.0,5.0,Đầy đủ,Đầy đủ,5.0,3.0,2401.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,"Nhà Biệt thự, liền kề",150.0,400.0,5.0,5.0,Đầy đủ,Đầy đủ,4.0,3.0,2696.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Nhà Biệt thự, liền kề",283.5,292.7689514160156,5.0,4.0,Đầy đủ,Cao cấp,4.0,3.0,2401.0,N
+Đại Mỗ,Nam Từ Liêm,Tập đoàn Lã Vọng,Louis City,"Nhà Biệt thự, liền kề",100.0,225.0,6.0,5.0,Đầy đủ,Không nội thất,5.0,,,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Nhà Biệt thự, liền kề",287.0,334.4947814941406,6.0,6.0,Đầy đủ,Không nội thất,4.0,3.0,2401.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Nhà Biệt thự, liền kề",283.5,282.18695068359375,4.0,4.0,Đầy đủ,Đầy đủ,3.0,3.0,2401.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Nhà Biệt thự, liền kề",126.0,428.5714416503906,5.0,5.0,Đầy đủ,Không nội thất,5.0,3.0,2401.0,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,"Nhà Biệt thự, liền kề",93.5,438.502685546875,6.0,4.0,Đầy đủ,Không nội thất,4.0,3.0,2696.0,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Nhà Biệt thự, liền kề",65.0,952.3076782226562,6.0,6.0,Đầy đủ,Đầy đủ,5.0,3.0,2401.0,N
+Trung Văn,Nam Từ Liêm,Công ty CP Tập đoàn Nam Cường Hà Nội,Khu đô thị mới Phùng Khoang,"Nhà Biệt thự, liền kề",70.0,285.71429443359375,4.0,3.0,Đầy đủ,Không nội thất,4.0,,,N
+Xuân Phương,Nam Từ Liêm,Công ty Cổ phần Tasco,Xuân Phương Tasco,"Nhà Biệt thự, liền kề",175.0,188.57142639160156,6.0,5.0,Hợp đồng mua bán,Không nội thất,4.0,,,N
+Trung Văn,Nam Từ Liêm,Công ty CP Xây dựng số 3 - VINACONEX3,CT1 Trung Văn - Vinaconex 3,"Nhà Biệt thự, liền kề",181.0,259.66851806640625,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,N
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,68.0,267.6470642089844,4.0,4.0,Đầy đủ,Đầy đủ,4.0,,,N
+Mễ Trì,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,90.0,388.8888854980469,4.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,75.2,618.35107421875,6.0,6.0,Đầy đủ,Cơ bản,6.0,,,N
+Cầu Diễn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,106.0,344.3396301269531,6.0,8.0,Đầy đủ,Đầy đủ,8.0,,,N
+Cầu Diễn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,106.0,344.3396301269531,4.0,8.0,Đầy đủ,Đầy đủ,8.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,100.0,700.0,9.0,8.0,Đầy đủ,Không nội thất,9.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,71.0,322.53521728515625,12.0,12.0,Đầy đủ,Đầy đủ,9.0,,,N
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,56.0,208.0357208251953,2.0,2.0,Đầy đủ,Cơ bản,1.0,,,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,670.0,164.17910766601562,5.0,5.0,Đầy đủ,Đầy đủ,6.0,,,N
+Phú Đô,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,100.0,27.0,3.0,2.0,Chưa có,Cơ bản,1.0,,,N
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,120.0,216.6666717529297,20.0,20.0,Đầy đủ,Đầy đủ,8.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,80.0,575.0,6.0,6.0,Đầy đủ,Cơ bản,7.0,,,N
+Mỹ Đình 1,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,76.0,613.1578979492188,6.0,6.0,Đầy đủ,Đầy đủ,6.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,605.0,350.4132080078125,6.0,6.0,Đầy đủ,Đầy đủ,6.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,270.0,325.9259338378906,8.0,8.0,Đầy đủ,Đầy đủ,8.0,,,N
+Trung Văn,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,105.0,252.2857208251953,18.0,18.0,Đầy đủ,Đầy đủ,7.0,,,N
+Xuân Phương,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,145.0,275.862060546875,6.0,6.0,Đầy đủ,Đầy đủ,6.0,,,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Nhà mặt phố,250.0,236.0,5.0,4.0,Đầy đủ,Đầy đủ,4.0,,,N
+Cầu Diễn,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Gardenia,"Shophouse, nhà phố thương mại",219.0,328.7671203613281,5.0,5.0,Đầy đủ,Không nội thất,4.0,3.0,2401.0,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,"Shophouse, nhà phố thương mại",46.0,152.17391967773438,1.0,1.0,Đầy đủ,Không nội thất,1.0,56.0,,N
+Mễ Trì,Nam Từ Liêm,Công ty Cổ phần Đầu tư Mai Linh,The Matrix One,"Shophouse, nhà phố thương mại",188.4,345.0106201171875,5.0,5.0,Hợp đồng mua bán,Cao cấp,5.0,2.0,740.0,N
+Xuân Phương,Nam Từ Liêm,Công ty Cổ phần Tasco,Xuân Phương Tasco,"Shophouse, nhà phố thương mại",90.0,227.77777099609375,5.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,"Shophouse, nhà phố thương mại",38.0,192.1052703857422,1.0,1.0,Đầy đủ,Cơ bản,1.0,5.0,3922.0,N
+Trung Văn,Nam Từ Liêm,Công ty Cổ phần Đầu Tư MHD Hà Nội,MHD Trung Văn,Condotel tại MHD Trung Văn,72.4,26.933700561523438,3.0,2.0,HĐ ủy quyền công chứng,Không nội thất,,2.0,285.0,N
+Mỹ Đình 2,Nam Từ Liêm,Tư nhân,Tư nhân,Bất động sản khác,75.0,220.0,14.0,14.0,Đầy đủ,Đầy đủ,,,,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Smart City,Bất động sản khác,14000.0,20.0,1.0,1.0,"Pháp lý: Đủ pháp lý bàn giao, đã GPMB, sẵn sàng xây dựng",Đầy đủ,2.0,56.0,,N
+Trung Văn,Nam Từ Liêm,Tổng công ty Đầu tư nước và Môi trường Việt Nam - CTCP,Viwaseen Tower,Bất động sản khác,1752.0,60.0,9.0,6.0,Đầy đủ,Cơ bản,,,,N
+Cổ Đông,Sơn Tây,Tư nhân,Tư nhân,Nhà riêng,518.0,9.652509689331055,6.0,3.0,Đầy đủ,Không nội thất,3.0,,,N
+Xuân Khanh,Sơn Tây,Tư nhân,Tư nhân,Nhà riêng,4500.0,0.6666666865348816,3.0,1.0,Đầy đủ,Cơ bản,1.0,,,N
+Ngọc Thụy,Long Biên,Tư nhân,Tư nhân,Nhà riêng,33.0,140.90908813476562,3.0,4.0,Đầy đủ,Cơ bản,5.0,,,N
+Cổ Đông,Sơn Tây,Tư nhân,Tư nhân,Nhà riêng,84.0,41.66666793823242,2.0,1.0,Đầy đủ,Cơ bản,1.0,,,N
+Lê Lợi,Sơn Tây,Tư nhân,Tư nhân,Nhà riêng,116.3,28.37489128112793,3.0,2.0,Đầy đủ,Đầy đủ,2.0,,,N
+Xuân Khanh,Sơn Tây,Tư nhân,Tư nhân,Nhà riêng,119.0,33.61344528198242,4.0,2.0,Đầy đủ,Cơ bản,3.0,,,N
+Xuân Khanh,Sơn Tây,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",400.0,21.5,5.0,5.0,Đầy đủ,Không nội thất,4.0,,,N
+Kim Sơn,Sơn Tây,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",5000.0,9.0,3.0,2.0,Đầy đủ,Không nội thất,1.0,,,N
+Cổ Đông,Sơn Tây,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",2728.0,12.0,4.0,5.0,Đầy đủ,Đầy đủ,1.0,,,N
+Phú Thịnh,Sơn Tây,Công ty CP Vinaconex 21,Khu đô thị mới Phú Thịnh,"Nhà Biệt thự, liền kề",100.0,59.0,4.0,3.0,Đầy đủ,Không nội thất,3.0,,,N
+Lê Lợi,Sơn Tây,Tư nhân,Tư nhân,Nhà mặt phố,200.0,49.5,1.0,1.0,Đầy đủ,Không nội thất,1.0,,,N
+Cổ Đông,Sơn Tây,Tư nhân,Tư nhân,Nhà mặt phố,84.0,50.0,3.0,2.0,Đầy đủ,Cơ bản,3.0,,,N
+Lê Lợi,Sơn Tây,Tư nhân,Tư nhân,Nhà mặt phố,99.8,35.07014083862305,3.0,2.0,Đầy đủ,Cơ bản,3.0,,,N
+Đường Lâm,Sơn Tây,Tư nhân,Tư nhân,Nhà mặt phố,60.0,100.0,12.0,12.0,Đầy đủ,Đầy đủ,6.0,,,N
+Xuân Khanh,Sơn Tây,Tư nhân,Tư nhân,Nhà mặt phố,100.0,43.0,3.0,2.0,Đầy đủ,Không nội thất,2.0,,,N
+Ngô Quyền,Sơn Tây,Tư nhân,Tư nhân,Nhà mặt phố,310.0,70.96774291992188,3.0,2.0,Đầy đủ,Đầy đủ,2.0,,,N
+Thanh Mỹ,Sơn Tây,Tư nhân,Tư nhân,"Trang trại, khu nghỉ dưỡng tại xã Thanh Mỹ",26541.0,4.52130651473999,1.0,1.0,Đầy đủ,Không nội thất,1.0,,,N
+Cổ Đông,Sơn Tây,Tư nhân,Tư nhân,"Trang trại, khu nghỉ dưỡng tại đường 21",2728.0,11.730205535888672,4.0,4.0,Đầy đủ,Không nội thất,1.0,,,N
+Cổ Đông,Sơn Tây,Tư nhân,Tư nhân,"Trang trại, khu nghỉ dưỡng tại đường 21",2728.4,11.728486061096191,4.0,4.0,Đầy đủ,Không nội thất,1.0,,,N
+Vân Hòa,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,561.0,5.258467197418213,2.0,2.0,Đầy đủ,Không nội thất,1.0,,,N
+Vân Hòa,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,360.0,7.361111164093018,2.0,2.0,Đầy đủ,Không nội thất,1.0,,,N
+Khánh Thượng,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,628.4,4.217059135437012,2.0,1.0,Đầy đủ,Không nội thất,1.0,,,N
+Tiên Phong,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,1472.0,3.05706524848938,2.0,2.0,Đầy đủ,Không nội thất,2.0,,,N
+Tiên Phong,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,333.0,5.855855941772461,2.0,1.0,Đầy đủ,Không nội thất,1.0,,,N
+Vân Hòa,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,135.0,12.592592239379883,2.0,1.0,Đầy đủ,Đầy đủ,2.0,,,N
+Chu Minh,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,112.0,80.35713958740234,4.0,2.0,Đầy đủ,Không nội thất,3.0,,,N
+Vân Hòa,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,360.0,6.388888835906982,3.0,2.0,Đầy đủ,Đầy đủ,1.0,,,N
+Cẩm Lĩnh,Ba Vì,Tư nhân,Tư nhân,Nhà riêng,1055.0,2.4644548892974854,2.0,1.0,Đầy đủ,Đầy đủ,1.0,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",400.0,12.5,4.0,2.0,Đầy đủ,Đầy đủ,2.0,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",287.5,29.565217971801758,3.0,3.0,Đầy đủ,Đầy đủ,,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",290.0,22.758621215820312,3.0,3.0,Đầy đủ,Đầy đủ,2.0,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",287.0,29.616724014282227,2.0,2.0,Đầy đủ,Đầy đủ,2.0,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",287.5,33.043479919433594,3.0,3.0,Đầy đủ,Không nội thất,2.0,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",400.0,10.25,4.0,2.0,Đầy đủ,Đầy đủ,1.0,,,N
+Yên Bài,Ba Vì,Tư nhân,Tư nhân,"Nhà Biệt thự, liền kề",320.0,12.03125,4.0,4.0,Đầy đủ,Đầy đủ,1.0,,,N
+Tây Đằng,Ba Vì,Tư nhân,Tư nhân,Nhà mặt phố,140.0,71.42857360839844,4.0,3.0,Đầy đủ,Cơ bản,3.0,,,N
+Thụy An,Ba Vì,Tư nhân,Tư nhân,Nhà mặt phố,105.0,35.0,2.0,1.0,Đầy đủ,Cơ bản,1.0,,,N
+Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,86.0,58.13953399658203,2.0,2.0,Đầy đủ,Đầy đủ,,9.0,4785.0,M
+Phú Diễn,Bắc Từ Liêm,Công ty CP Lắp Máy Điện nước và Xây Dựng,Chung cư 199 Hồ Tùng Mậu,Căn hộ chung cư,80.0,34.75,3.0,2.0,Đầy đủ,Đầy đủ,,,,N
+Minh Khai,Bắc Từ Liêm,Tư nhân,Tư nhân,Nhà riêng,150.0,113.33333587646484,28.0,28.0,Đầy đủ,Đầy đủ,6.0,,,M

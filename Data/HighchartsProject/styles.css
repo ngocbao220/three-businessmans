@@ -1,70 +1,87 @@
 body {
-  background: #1e1e1e; /* Màu nền tối chủ đạo */
-  color: #f0f0f0; /* Màu chữ trắng nhạt */
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Roboto", sans-serif; /* Font chữ hiện đại */
   position: relative;
+  margin: 0;
+  height: 100vh;
+  background-image: url("https://cms.luatvietnam.vn/uploaded/Images/Original/2018/09/29/nha-dang-the-chap_2909092944.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Hiệu ứng loang sáng cong cong phía trên */
-body::before {
+body::after {
   content: "";
   position: absolute;
-  top: -40px; /* Dịch lên trên */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150%;
-  height: 150px;
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.1), transparent 80%);
-  border-radius: 50%; /* Tạo hiệu ứng cong cong */
-  pointer-events: none;
-  z-index: 1;
-  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Lớp phủ màu đen với độ trong suốt */
+  pointer-events: none; /* Đảm bảo lớp phủ không ảnh hưởng đến các sự kiện chuột */
+  z-index: -1;
 }
 
+/* Main Title */
 #main-title {
   position: absolute;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   font-weight: bold;
   text-align: center;
   margin: 0;
-  padding: 0;
-  z-index: 10; /* Đảm bảo tiêu đề luôn ở trên cùng */
+  z-index: 10;
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Container for Charts */
+#chart-container {
+  position: relative;
+  color: #09dd73;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
-#price_segment,
-#his_prices {
-  width: 40%; /* Giảm kích thước xuống 0.6 lần (so với 50%) */
-  height: 50%; /* Tương tự cho chiều cao */
+.chart_pie {
   position: absolute;
-  transition: all 0.5s ease;
+  width: 40%;
+  height: 40%;
+  cursor: pointer;
+}
+
+.chart_column {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  cursor: pointer;
 }
 
 #price_segment {
+  top: 40px;
   right: 0%;
-  top: 5%; /* Giữ biểu đồ tròn ở chính giữa */
-  transform: translateX(0) scale(1);
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 #his_prices {
+  top: 300px;
   right: 0%;
-  bottom: 0%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#icon-container {
+  display: flex; /* Đặt các phần tử con thành một cột */
+  flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+  justify-content: center; /* Căn giữa các biểu tượng theo chiều dọc */
+  align-items: flex-start; /* Căn các biểu tượng về phía bên trái */
+  margin-left: 20px; /* Khoảng cách từ lề trái */
+  gap: 20px; 
+}
+
+#pie_icon,
+#column_icon {
+  width: 50px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }

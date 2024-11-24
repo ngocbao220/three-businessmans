@@ -9,10 +9,14 @@
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   </head>
   <body>
-    <h1 id="main-title">Tổng quan về Bất động sản tại hà nội</h1>
-    <div id="container">
-      <div id="price_segment"></div>
-      <div id="his_prices"></div>
+    <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
+    <div id="chart-container">
+      <div id="icon-container">
+        <img id="pie_icon" src="./image/pie_icon.png" alt="Pie Icon" />
+        <img id="column_icon" src="./image/column_icon.png" alt="Column Icon" />
+      </div>
+      <div id="price_segment" class="chart_pie"></div>
+      <div id="his_prices" class="chart_column"></div>
     </div>
     <script src="script.js"></script>
   </body>

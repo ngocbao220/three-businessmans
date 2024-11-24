@@ -16,9 +16,9 @@ if not os.path.exists('Data'):
     os.makedirs('Data')
 
 # Đường dẫn tới file
-page_new_Path = 'Data/page_number.txt'
-data_new_Path = 'Data/originalData/data_original_new.csv'
-data_Project_new_Path = 'Data/originalData/data_project_new.csv'
+page_new_Path = '../Data/page_number.txt'
+data_new_Path = '../Data/originalData/data_original_new.csv'
+data_Project_new_Path = '../Data/originalData/data_project_new.csv'
 
 
 # Tạo trình điều khiển Chrome
@@ -280,7 +280,7 @@ try:
         'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
 
-        areas = ['ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh']
+        areas = ['my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
@@ -327,7 +327,7 @@ try:
                                 break 
                         except:
                             print("Đã duyệt hết tất cả các trang")
-                            break
+                            continue
 
     # Chạy hàm duyệt trang
     navigate_pagination()

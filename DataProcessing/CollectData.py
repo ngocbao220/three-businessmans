@@ -16,10 +16,10 @@ if not os.path.exists('Data'):
     os.makedirs('Data')
 
 # Đường dẫn tới file
-page_new_Path = 'Data/page_number.txt'
+page_new_Path = 'Data/page_number_new.txt'
 data_new_Path = 'Data/originalData/data_original_new.csv'
 data_Project_new_Path = 'Data/originalData/data_project_new.csv'
-
+test_Path = 'Data/originalData/test2.csv'
 
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -35,7 +35,7 @@ try:
     # URL của trang web bất động sản
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
-    time.sleep(30) # Sleep để login bằng cơm
+    time.sleep(20) # Sleep để login bằng cơm
 
     # Chờ load xong trang
     wait = WebDriverWait(driver, 5)
@@ -115,7 +115,7 @@ try:
                     )
         
     # Hàm lấy thông tin bất động sản
-    def get_property_details():
+    def get_property_details(classify_property_link):
         try:
             price_history = 'Không có dữ liệu lịch sử giá'
             price_spread_history = 'Không có dữ liệu lịch sử khoảng giá'
@@ -132,19 +132,22 @@ try:
             commune_ward = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
             district = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
             province_city = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
-            
-            try:
-                wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
+            if classify_property_link not in ['ban-nha-rieng-', 'ban-nha-mat-pho-', 'ban-dat-', 'ban-kho-nha-xuong-']:
+                try:
+                    wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
 
-                # Lấy thông tin cđt, vì cùng class name với cái khác nên phải dùng css selector
-                investor = driver.find_element(By.CSS_SELECTOR, ".re__footer-content .re__long-text")
-                investor_name = investor.text if investor else "Không có thông tin"
+                    # Lấy thông tin cđt, vì cùng class name với cái khác nên phải dùng css selector
+                    investor = driver.find_element(By.CSS_SELECTOR, ".re__footer-content .re__long-text")
+                    investor_name = investor.text if investor else "Không có thông tin"
 
-                # Lấy thông tin dự án
-                project = driver.find_element(By.CLASS_NAME, 're__project-title')
-                project_name = project.text if project else "Không có thông tin"
-            except:
-                print("Không có thông tin cđt và dự án bất động sản")
+                    # Lấy thông tin dự án
+                    project = driver.find_element(By.CLASS_NAME, 're__project-title')
+                    project_name = project.text if project else "Không có thông tin"
+                except:
+                    print("Không có thông tin cđt và dự án bất động sản")
+            else:
+                investor_name = 'Không có thông tin'
+                project_name = 'Không có thông tin'
                 
             
             details = {'Diện tích': 'Không có thông tin', 
@@ -272,22 +275,39 @@ try:
 
     # Hàm duyệt trang
     def navigate_pagination():
-
+        file_path = test_Path  # Thay bằng đường dẫn file của bạn
+        df = pd.read_csv(file_path)
+        pivot_df = df.pivot_table(index=['Quận/Huyện', 'Loại bất động sản'], values='Số lượng', aggfunc='sum')
         get_project_data_dict()
 
         number_of_pages = 1
         ''' ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong', 
         'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
-
-        areas = ['bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh']
+        ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
+        
+        areas = ['bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
         for area in areas:
             for classify_link in classify_links:
                 count_of_data = 0
+                current_data = 0
                 number_of_pages = 1
+
+                if (area, classify_link) in pivot_df.index:
+                    # Lấy số lượng tương ứng
+                    current_data = pivot_df.loc[(area, classify_link), 'Số lượng']
+                else:
+                    # Nếu không có trong DataFrame, số lượng là 0
+                    current_data = 0
+
+                try:
+                    total_property = int(driver.find_element(By.ID, "count-number").text)
+                except:
+                    total_property = 1000
+
                 url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
                 #print(url_page)
                 with open(page_new_Path, "w", encoding="utf-8") as file:
@@ -298,6 +318,7 @@ try:
                     empty_class = driver.find_element(By.CLASS_NAME, "re__srp-empty")
                     check = empty_class.find_element(By.TAG_NAME, "p").text
                     if check == 'Không có kết quả nào phù hợp':
+                        print("Không tìm thấy dữ liệu")
                         continue 
                     
                 except:
@@ -308,22 +329,33 @@ try:
                         for property_url in property_urls:
                             driver.get(property_url)
                             time.sleep(0.5)
-                            get_property_details()
+
+                            if count_of_data > current_data:    
+                                get_property_details(classify_link)
+                            else:
+                                count_of_data += 1
+                                continue
+
                             count_of_data += 1
-                        
-                        if count_of_data >= 600:
+
+                        print('Số lượng dữ liệu: ', count_of_data)
+
+                        if count_of_data >= int(total_property * 0.7):
+                            print("Quá số lượng")
                             break
 
                         number_of_pages += 1
                         try:
                             url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
-                            
+                            with open(page_new_Path, "w", encoding="utf-8") as file:
+                                file.write(url_page)
                             driver.get(url_page)
                             time.sleep(0.5)
 
                             empty_class_1 = driver.find_element(By.CLASS_NAME, "re__srp-empty")
                             check_1 = empty_class_1.find_element(By.TAG_NAME, "p").text
                             if check_1 == 'Không có kết quả nào phù hợp':
+                                print("Đã duyệt hết tất cả các trang 1")
                                 break 
                         except:
                             print("Đã duyệt hết tất cả các trang")

@@ -2,7 +2,7 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
-  background-image: url("https://cms.luatvietnam.vn/uploaded/Images/Original/2018/09/29/nha-dang-the-chap_2909092944.jpg");
+  background-image: url("./image/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,8 +15,8 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* Lớp phủ màu đen với độ trong suốt */
-  pointer-events: none; /* Đảm bảo lớp phủ không ảnh hưởng đến các sự kiện chuột */
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
   z-index: -1;
 }
 
@@ -42,41 +42,63 @@ body::after {
   height: 100%;
 }
 
-.chart_pie {
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  cursor: pointer;
+/* Adjust chart positioning */
+.chart {
+  cursor: grab;
+  transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease;
 }
 
-.chart_column {
-  position: absolute;
-  width: 40%;
-  height: 60%;
-  cursor: pointer;
-}
-
+/* Price segment positioning */
 #price_segment {
   top: 40px;
   right: 0%;
   opacity: 1;
-  transition: opacity 0.5s ease;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
 }
 
 #his_prices {
-  top: 300px;
+  top: 320px;
   right: 0%;
   opacity: 1;
-  transition: opacity 0.5s ease;
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+/* Button customization */
+.custom-button {
+  position: absolute;
+  top: 320px;
+  right: 10px;
+  background: none;
+  background-color: #09dd73;
+  color: #d4f7d4;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-button:hover {
+  background-color: #005f6b;
+}
+
+/* Icon containers */
 #icon-container {
-  display: flex; /* Đặt các phần tử con thành một cột */
-  flex-direction: column; /* Đặt các phần tử theo chiều dọc */
-  justify-content: center; /* Căn giữa các biểu tượng theo chiều dọc */
-  align-items: flex-start; /* Căn các biểu tượng về phía bên trái */
-  margin-left: 20px; /* Khoảng cách từ lề trái */
-  gap: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+  padding-top: 50px;
+  gap: 10px;
 }
 
 #pie_icon,
@@ -84,4 +106,28 @@ body::after {
   width: 50px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+
+#redirect-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  padding-top: 160px;
+}
+
+#back_icon,
+#next_icon {
+  width: 6%;
+  filter: contrast(0%);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+#next_icon.over {
+  border-color: green;
+  background-color: #d4f7d4;
 }

@@ -179,20 +179,21 @@ try:
                     continue
             
             # Tìm số tòa/căn
-            try:
-                elements = driver.find_elements(By.CLASS_NAME, "re__prj-card-config-value")
-                for element in elements:
-                    aria_label = element.get_attribute("aria-label") 
+            if classify_property_link not in ['ban-nha-rieng-', 'ban-nha-mat-pho-', 'ban-dat-', 'ban-kho-nha-xuong-']:
+                try:
+                    elements = driver.find_elements(By.CLASS_NAME, "re__prj-card-config-value")
+                    for element in elements:
+                        aria_label = element.get_attribute("aria-label") 
 
-                    if "căn hộ" in aria_label:  # Phần tử chứa thông tin căn hộ
-                        num_apartments = element.text
-                    elif "tòa nhà" in aria_label:  # Phần tử chứa thông tin tòa nhà
-                        num_buildings = element.text
+                        if "căn hộ" in aria_label:  # Phần tử chứa thông tin căn hộ
+                            num_apartments = element.text
+                        elif "tòa nhà" in aria_label:  # Phần tử chứa thông tin tòa nhà
+                            num_buildings = element.text
 
-                other_info.append(f"{'Số tòa'}: {num_buildings}")
-                other_info.append(f"{'Số căn hộ'}: {num_apartments}")
-            except:
-                print('Không có thông tin tòa/căn')
+                    other_info.append(f"{'Số tòa'}: {num_buildings}")
+                    other_info.append(f"{'Số căn hộ'}: {num_apartments}")
+                except:
+                    print('Không có thông tin tòa/căn')
 
             # Phân loại bđt
             try:
@@ -275,9 +276,9 @@ try:
 
     # Hàm duyệt trang
     def navigate_pagination():
-        file_path = test_Path  # Thay bằng đường dẫn file của bạn
+        '''file_path = test_Path  # Thay bằng đường dẫn file của bạn
         df = pd.read_csv(file_path)
-        pivot_df = df.pivot_table(index=['Quận/Huyện', 'Loại bất động sản'], values='Số lượng', aggfunc='sum')
+        pivot_df = df.pivot_table(index=['Quận/Huyện', 'Loại bất động sản'], values='Số lượng', aggfunc='sum')'''
         get_project_data_dict()
 
         number_of_pages = 1
@@ -285,34 +286,34 @@ try:
         'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
         ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
-        
-        areas = ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien']
+        areas = ['cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
         for area in areas:
             for classify_link in classify_links:
                 count_of_data = 0
-                current_data = 0
+                
                 number_of_pages = 1
 
-                if (area, classify_link) in pivot_df.index:
+                '''if (area, classify_link) in pivot_df.index:
                     # Lấy số lượng tương ứng
                     current_data = pivot_df.loc[(area, classify_link), 'Số lượng']
                 else:
                     # Nếu không có trong DataFrame, số lượng là 0
-                    current_data = 0
-
-                try:
-                    total_property = int(driver.find_element(By.ID, "count-number").text)
-                except:
-                    total_property = 1000
+                    current_data = 0'''
 
                 url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
+
                 #print(url_page)
                 with open(page_new_Path, "w", encoding="utf-8") as file:
                     file.write(url_page)
                 driver.get(url_page)
+
+                try:
+                    total_property = int(driver.find_element(By.ID, "count-number").text.replace('.', ''))
+                except:
+                    total_property = 1000
 
                 try:
                     empty_class = driver.find_element(By.CLASS_NAME, "re__srp-empty")
@@ -330,11 +331,7 @@ try:
                             driver.get(property_url)
                             time.sleep(0.5)
 
-                            if count_of_data > current_data:    
-                                get_property_details(classify_link)
-                            else:
-                                count_of_data += 1
-                                continue
+                            get_property_details(classify_link)
 
                             count_of_data += 1
 
@@ -358,7 +355,7 @@ try:
                                 print("Đã duyệt hết tất cả các trang 1")
                                 break 
                         except:
-                            print("Đã duyệt hết tất cả các trang")
+                            print("Đã duyệt hết trang")
                             continue
 
     # Chạy hàm duyệt trang

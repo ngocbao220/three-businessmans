@@ -4,7 +4,7 @@ from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
 
 class Predictor:
-    def __init__(self,area, time, prices):
+    def __init__(self, area, time, prices):
         self.area = area
         self.time = time
         self.prices = prices

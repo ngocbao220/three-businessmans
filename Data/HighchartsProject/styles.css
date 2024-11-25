@@ -40,6 +40,7 @@ body::after {
   color: #09dd73;
   width: 100%;
   height: 100%;
+  outline: 1px solid red;
 }
 
 /* Adjust chart positioning */
@@ -57,7 +58,7 @@ body::after {
   width: 40%;
   height: 40%;
   cursor: pointer;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 10;
 }
 
@@ -70,20 +71,7 @@ body::after {
   height: 60%;
   cursor: pointer;
   z-index: 10;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* Button customization */
-.custom-button {
-  position: absolute;
-  top: 320px;
-  right: 10px;
-  background: none;
-  background-color: #09dd73;
-  color: #d4f7d4;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
+  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
 }
 
 .custom-button:hover {
@@ -130,4 +118,8 @@ body::after {
 #next_icon.over {
   border-color: green;
   background-color: #d4f7d4;
+}
+
+.highcharts-contextbutton {
+  opacity: 0.2;
 }

@@ -1,10 +1,19 @@
+import {
+  handlePieIconClick,
+  handleColumnIconClick,
+  handleNextIconClick,
+  handleBackIconClick,
+  toggleCenter,
+} from "./events.js";
+
 document.addEventListener("DOMContentLoaded", () => {
+  // Fetch và vẽ biểu đồ phân khúc mức giá (Pie Chart)
   fetch("./prices_data.json")
     .then((response) => response.json())
     .then((data) => {
       const { num_price1, num_price2, num_price3, num_price4 } = data;
 
-      // Dữ liệu
+      // Dữ liệu cho Pie Chart
       const chartData = [
         { name: "Dưới 100 triệu/m²", y: num_price1 },
         { name: "100 đến 200 triệu/m²", y: num_price2 },
@@ -12,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Trên 300 triệu/m²", y: num_price4 },
       ];
 
+      // Khởi tạo Pie Chart
       const price_segment = Highcharts.chart("price_segment", {
         chart: {
           type: "pie",
@@ -49,11 +59,33 @@ document.addEventListener("DOMContentLoaded", () => {
             data: chartData,
           },
         ],
+        exporting: {
+          enabled: true,
+          buttons: {
+            contextButton: {
+              align: "right", // Căn phải
+              verticalAlign: "top", // Căn đỉnh
+              x: 10,
+              y: 0,
+              symbol: "menu", // Biểu tượng
+              menuItems: [
+                {
+                  text: "beCenter", // Ban đầu là beCenter
+                  onclick: function () {
+                    const chart_price_segment =
+                      document.getElementById("price_segment");
+                    toggleCenter(chart_price_segment);
+                  },
+                },
+              ],
+            },
+          },
+        },
       });
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
 
-  // Fetch và vẽ biểu đồ biến động giá
+  // Fetch và vẽ biểu đồ biến động giá (Line Chart)
   fetch("./mean_price.json")
     .then((response) => response.json())
     .then((data) => {
@@ -140,125 +172,34 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         ],
         exporting: {
+          enabled: true,
           buttons: {
             contextButton: {
+              align: "right", // Căn phải
+              verticalAlign: "top", // Căn đỉnh
+              x: -170,
+              y: -10,
+              symbol: "./image/icon_next.png", // Biểu tượng
               menuItems: [
                 {
-                  text: "Chuyển sang cột",
+                  text: "beCenter", // Ban đầu là beCenter
                   onclick: function () {
-                    this.update({
-                      chart: {
-                        type: "column",
-                      },
-                    });
+                    const chart_hist_prices =
+                      document.getElementById("his_prices");
+                    toggleCenter(chart_hist_prices);
                   },
                 },
               ],
             },
-            enabled: true,
           },
         },
-      });
-
-      // Xử lý sự kiện cho nút "Chuyển kiểu"
-      document.getElementById("toggleButton").addEventListener("click", () => {
-        // Lấy kiểu hiện tại của biểu đồ
-        const currentChartType = his_prices.options.chart.type;
-        // Chuyển đổi kiểu biểu đồ
-        his_prices.update({
-          chart: {
-            type: currentChartType === "line" ? "column" : "line",
-          },
-        });
       });
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
 
-  document.getElementById("pie_icon").addEventListener("click", function () {
-    if (this.style.opacity === "0.5") {
-      this.style.opacity = "1";
-      price_segment.style.opacity = 1;
-    } else {
-      this.style.opacity = "0.5";
-      price_segment.style.opacity = 0;
-    }
-  });
-  document.getElementById("column_icon").addEventListener("click", function () {
-    if (this.style.opacity === "0.5") {
-      this.style.opacity = "1";
-      his_prices.style.opacity = 1;
-    } else {
-      this.style.opacity = "0.5";
-      his_prices.style.opacity = 0;
-    }
-  });
-
-  document.getElementById("back_icon").addEventListener("click", function () {
-    const charts = document.querySelectorAll(".chart");
-    charts.forEach((chart) => {
-      chart.style.transform = "translateX(-1500px)";
-    });
-  });
-
-  document.getElementById("next_icon").addEventListener("click", function () {
-    const charts = document.querySelectorAll(".chart");
-    charts.forEach((chart) => {
-      chart.style.transform = "translateX(0px)";
-    });
-  });
-
-  // Lấy tất cả các phần tử chart
-  const charts = document.querySelectorAll(".chart");
-
-  // Lấy phần tử mục tiêu
-  const iconNext = document.getElementById("next_icon");
-
-  // Sự kiện dragstart: Bắt đầu kéo
-  charts.forEach((chart) => {
-    chart.addEventListener("dragstart", (e) => {
-      e.dataTransfer.setData("text/plain", chart.id); // Lưu trữ ID của chart được kéo
-    });
-  });
-
-  // Sự kiện dragover: Khi kéo qua vùng thả
-  iconNext.addEventListener("dragover", (e) => {
-    e.preventDefault(); // Cho phép thả
-    iconNext.classList.add("over");
-  });
-
-  // Sự kiện dragleave: Khi rời vùng thả
-  iconNext.addEventListener("dragleave", () => {
-    iconNext.classList.remove("over");
-  });
-
-  // Sự kiện drop: Khi thả vào vùng thả
-  iconNext.addEventListener("drop", (e) => {
-    e.preventDefault();
-    const droppedId = e.dataTransfer.getData("text/plain"); // Lấy ID của chart được thả
-    const droppedElement = document.getElementById(droppedId);
-
-    if (droppedElement) {
-      // Dịch tất cả các chart còn lại sang trái
-      charts.forEach((chart) => {
-        if (chart !== droppedElement) {
-          chart.style.transform = "translateX(-1500px)";
-        }
-      });
-
-      // Đưa chart được thả ra giữa màn hình
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
-
-      droppedElement.style.position = "absolute";
-      droppedElement.style.top = `${
-        screenHeight / 2 - droppedElement.offsetHeight / 2
-      }px`;
-      droppedElement.style.left = `${
-        screenWidth / 2 - droppedElement.offsetWidth / 2
-      }px`;
-      droppedElement.style.transform = "none"; // Đặt lại transform
-    }
-
-    iconNext.classList.remove("over"); // Xóa hiệu ứng vùng thả
-  });
+  // Gọi các hàm sự kiện
+  handlePieIconClick();
+  handleColumnIconClick();
+  handleBackIconClick();
+  handleNextIconClick();
 });

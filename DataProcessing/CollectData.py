@@ -287,7 +287,7 @@ try:
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
         ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
         areas = ['cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong']
-        classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
+        classify_links = ['ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
         for area in areas:

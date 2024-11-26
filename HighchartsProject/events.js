@@ -47,6 +47,23 @@ export function handleNextIconClick() {
   });
 }
 
+export function no_croll() {
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.addEventListener("click", (e) => {
+      const contextMenu = document.querySelector(".highcharts-contextmenu");
+
+      if (contextMenu && e.target.closest(".highcharts-contextmenu")) {
+        // Khi menu hiển thị
+        document.body.classList.add("no-scroll");
+      } else {
+        // Khi nhấp ra ngoài hoặc menu bị đóng
+        document.body.classList.remove("no-scroll");
+      }
+    });
+  });
+}
+
+
 let isCentered = false; // Biến kiểm tra trạng thái (ban đầu chưa căn giữa)
 
 export function toggleCenter(c) {

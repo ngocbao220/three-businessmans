@@ -20,6 +20,11 @@ body::after {
   z-index: -1;
 }
 
+/* Khi menu mở, ẩn thanh cuộn của trang */
+.no-scroll {
+  overflow: hidden; /* Ẩn thanh trượt */
+}
+
 /* Main Title */
 #main-title {
   position: absolute;
@@ -43,35 +48,33 @@ body::after {
   outline: 1px solid red;
 }
 
-/* Adjust chart positioning */
 .chart {
-  cursor: grab;
-  transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
+  z-index: 10;
 }
-
 /* Price segment positioning */
 #price_segment {
   top: 40px;
-  right: 0%;
-  opacity: 1;
-  position: absolute;
-  width: 40%;
+  right: 2%;
+  width: 30%;
   height: 40%;
-  cursor: pointer;
-  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
-  z-index: 10;
 }
 
 #his_prices {
-  top: 320px;
-  right: 0%;
-  opacity: 1;
-  position: absolute;
-  width: 40%;
-  height: 60%;
-  cursor: pointer;
-  z-index: 10;
-  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
+  bottom: 0px;
+  right: 2%;
+  width: 30%;
+  height: 50%;
+}
+
+#correlation_chart {
+  bottom: 0px;
+  left: 2%;
+  width: 30%;
+  height: 45%;
 }
 
 .custom-button:hover {
@@ -87,37 +90,6 @@ body::after {
   margin-left: 20px;
   padding-top: 50px;
   gap: 10px;
-}
-
-#pie_icon,
-#column_icon {
-  width: 50px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-#redirect-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  padding-top: 160px;
-}
-
-#back_icon,
-#next_icon {
-  width: 6%;
-  filter: contrast(0%);
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  z-index: 3;
-}
-
-#next_icon.over {
-  border-color: green;
-  background-color: #d4f7d4;
 }
 
 .highcharts-contextbutton {

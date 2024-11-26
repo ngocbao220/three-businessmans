@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap for Hanoi</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/map.js"></script>
+</head>
+<body>
+    <div id="container" style="height: 600px;"></div>
+
+    <script>
+        // Dữ liệu giả lập với tọa độ và nhiệt độ
+        var data = [
+            [105.8542, 21.0285, 30],  // longitude, latitude, temperature
+            [105.8191, 21.0406, 32],
+            [105.8522, 21.0287, 31]
+        ];
+
+        // Tạo bản đồ nhiệt
+        Highcharts.mapChart('container', {
+            chart: {
+                map: 'countries/vn/vn-all'
+            },
+            title: {
+                text: 'Heatmap for Hanoi - Temperature Data'
+            },
+            colorAxis: {
+                min: 0,
+                max: 40,
+                type: 'linear',
+                stops: [
+                    [0, '#f0f0f0'],
+                    [0.5, '#ffff00'],
+                    [1, '#ff0000']
+                ]
+            },
+            series: [{
+                type: 'heatmap',
+                data: data.map(function (point) {
+                    return {
+                        x: point[0], // longitude
+                        y: point[1], // latitude
+                        value: point[2] // temperature
+                    };
+                }),
+                pointWidth: 20,
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: 'Temp: {point.value}°C'
+                }
+            }]
+        });
+    </script>
+</body>
+</html>

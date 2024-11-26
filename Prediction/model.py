@@ -4,8 +4,7 @@ from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
 
 class Predictor:
-    def __init__(self, area, time, prices):
-        self.area = area
+    def __init__(self, time, prices):
         self.time = time
         self.prices = prices
         self.data = pd.DataFrame({"Time": time, "Price": prices})
@@ -30,6 +29,13 @@ class Predictor:
         a = self.model.coef_[0]
         b = self.model.intercept_
         return a, b
+    
+    def prediction(self):
+        self.standar()
+        self.learn()
+        a, b = self.getParameters()
+
+        return a * 26 + b
 
     def plotData(self):
         plt.figure(figsize=(13, 6))

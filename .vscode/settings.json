@@ -3,6 +3,7 @@
     "python": false,
     "javascript": false,
     "html": false,
-    "csv": false
+    "csv": false,
+    "json": false
   }
 }

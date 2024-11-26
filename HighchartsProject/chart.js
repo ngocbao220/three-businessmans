@@ -9,7 +9,7 @@ import {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch và vẽ biểu đồ phân khúc mức giá (Pie Chart)
-  fetch("./Json/Segment_Price/prices_data.json")
+  fetch("../Data/Json/Segment_Price/prices_data.json")
     .then((response) => response.json())
     .then((data) => {
       const { num_price1, num_price2, num_price3, num_price4 } = data;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
   // Fetch và vẽ biểu đồ biến động giá (Line Chart)
-  fetch("./Json/History_Price/area/ha_noi.json")
+  fetch("../Data/Json/History_Price/area/ha_noi.json")
     .then((response) => response.json())
     .then((jsonData) => {
       const lowPrices = jsonData[0]; // Giá thấp
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         xAxis: {
           categories: categories.map((key) => key.replace("Giá ", "")),
-          labels: {enabled: true, style: {color: '#ffffff'} },
+          labels: { enabled: true, style: { color: "#ffffff" } },
           plotLines: [
             {
               value: categories.length - 2,
@@ -100,8 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         yAxis: {
-          labels: { enabled: true, style: {color: "#ffffff"} },
-          title: { text: "Triệu/m²", style: {color: '#ffffff', fontSize: '12px'}},
+          labels: { enabled: true, style: { color: "#ffffff" } },
+          title: {
+            text: "Triệu/m²",
+            style: { color: "#ffffff", fontSize: "12px" },
+          },
         },
         tooltip: {
           useHTML: true,
@@ -146,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
             zoneAxis: "x",
             zones: [
               {
-                value: Object.keys(highPrices).length - 2 , // Dữ liệu trước prediction
+                value: Object.keys(highPrices).length - 2, // Dữ liệu trước prediction
                 dashStyle: "Solid",
               },
               {
@@ -203,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
           align: "center",
           verticalAlign: "bottom",
           layout: "horizontal",
-        },  
+        },
       });
     })
     .catch((error) =>
@@ -211,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
   // Fetch và vẽ biểu đồ tương quan (Heatmap)
-  fetch("./Json/Correlation/corr_by_district/corr_by_district.json")
+  fetch("../Data/Json/Correlation/area/ha_noi.json")
     .then((response) => response.json())
     .then((data) => {
       const categories = data.columns;

@@ -38,7 +38,7 @@ try:
     time.sleep(20) # Sleep để login bằng cơm
 
     # Chờ load xong trang
-    wait = WebDriverWait(driver, 5)
+    wait = WebDriverWait(driver, 10)
 
     # Hàm ấnh nút lịch sử giá
     def click_price_history_button():        
@@ -276,9 +276,7 @@ try:
 
     # Hàm duyệt trang
     def navigate_pagination():
-        '''file_path = test_Path  # Thay bằng đường dẫn file của bạn
-        df = pd.read_csv(file_path)
-        pivot_df = df.pivot_table(index=['Quận/Huyện', 'Loại bất động sản'], values='Số lượng', aggfunc='sum')'''
+        
         get_project_data_dict()
 
         number_of_pages = 1
@@ -287,13 +285,17 @@ try:
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
         ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
         areas = ['cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong']
-        classify_links = ['ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
+        classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
         for area in areas:
             for classify_link in classify_links:
                 count_of_data = 0
-                
+                if area == 'cau-giay':
+                    if (classify_link == 'ban-can-ho-chung-cu-mini-' 
+                        or classify_link == 'ban-can-ho-chung-cu-' 
+                        or classify_link == 'ban-nha-rieng-'):
+                        continue
                 number_of_pages = 1
 
                 '''if (area, classify_link) in pivot_df.index:

@@ -421,3 +421,594 @@ Thụy An,Ba Vì,Không có chủ đầu tư,Không phải dự án,Nhà mặt p
 Phú Diễn,Bắc Từ Liêm,Công ty TNHH Thương mại - Quảng cáo - Xây dựng - Địa ốc Việt Hân,Goldmark City,Căn hộ chung cư,86.0,58.13953399658203,2.0,2.0,4,3,Không có thông tin,,,9.0,4785.0,Đông,Đông - Nam,M
 Phú Diễn,Bắc Từ Liêm,Công ty CP Lắp Máy Điện nước và Xây Dựng,Chung cư 199 Hồ Tùng Mậu,Căn hộ chung cư,80.0,34.75,3.0,2.0,4,3,Không có thông tin,,,,,Không có thông tin,Không có thông tin,N
 Minh Khai,Bắc Từ Liêm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,150.0,113.33333587646484,28.0,28.0,4,3,Không có thông tin,,6.0,,,Không có thông tin,Không có thông tin,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,59.0,44.06779479980469,2.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,50.0,60.0,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,64.8,47.06789779663086,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,60.0,45.83333206176758,2.0,1.0,4,1,Không có thông tin,,,16.0,9600.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,67.9,44.91899871826172,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,36.5,49.315067291259766,1.0,1.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,59.1,47.038917541503906,2.0,2.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,70.3,56.614505767822266,2.0,2.0,4,1,Không có thông tin,,,4.0,,Đông - Nam,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,69.3,44.01154327392578,2.0,2.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,74.3,51.14400863647461,2.0,2.0,4,1,Không có thông tin,,,4.0,,Tây - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,59.0,44.06779479980469,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,89.0,64.0449447631836,3.0,2.0,3,2,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,43.382354736328125,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,64.0,70.3125,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,43.0,58.13953399658203,1.0,1.0,4,3,Không có thông tin,,,3.0,,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,45.1,60.97561264038086,1.0,1.0,1,2,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,117.0,87.35042572021484,3.0,2.0,3,1,Không có thông tin,,,3.0,2150.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,90.3,66.0,3.0,2.0,4,1,Không có thông tin,,,3.0,2150.0,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,65.3,61.10260009765625,2.0,2.0,4,3,Không có thông tin,,,4.0,,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,117.0,69.23077392578125,3.0,2.0,3,2,Không có thông tin,,,3.0,2150.0,Đông - Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,48.52941131591797,2.0,2.0,4,3,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,43.0,55.8139533996582,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,30.0,70.0,1.0,1.0,3,2,Không có thông tin,,,3.0,2200.0,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,80.0,52.125,3.0,2.0,4,3,Không có thông tin,,,16.0,9600.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,75.0,75.33333587646484,3.0,2.0,3,1,Không có thông tin,,,6.0,3837.0,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,41.1,63.017032623291016,1.0,1.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,55.0,54.181819915771484,2.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Bắc,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,63.0,72.22222137451172,2.0,2.0,1,3,Không có thông tin,,,6.0,3837.0,Tây - Bắc,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,48.0,47.91666793823242,1.0,1.0,3,1,Không có thông tin,,,4.0,2600.0,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,76.0,48.02631759643555,3.0,2.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,54.9,53.73406219482422,2.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,52.6,51.3307991027832,1.0,1.0,3,3,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,43.0,57.44186019897461,1.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,55.0,52.181819915771484,2.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,74.0,51.79999923706055,2.0,2.0,3,2,Không có thông tin,,,4.0,2600.0,Không có thông tin,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,47.66666793823242,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,48.0,46.875,1.0,1.0,4,3,Không có thông tin,,,66.0,,Tây,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,62.4,50.8012809753418,2.0,2.0,4,3,Không có thông tin,,,16.0,9600.0,Đông,Bắc,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,74.0,61.486488342285156,2.0,2.0,4,2,Không có thông tin,,,4.0,,Tây - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,41.5,62.650604248046875,1.0,1.0,4,2,Không có thông tin,,,4.0,,Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,100.0,49.0,3.0,2.0,3,1,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,43.0,69.76744079589844,1.0,1.0,4,3,Không có thông tin,,,6.0,3837.0,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,68.0,63.52941131591797,2.0,2.0,4,3,Không có thông tin,,,4.0,,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,69.0,50.0,2.0,2.0,1,2,Không có thông tin,,,4.0,2600.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,53.5,72.8971939086914,2.0,1.0,3,3,Không có thông tin,,,3.0,2150.0,Không có thông tin,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,43.0,57.67441940307617,1.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,64.0,78.125,2.0,2.0,3,3,Không có thông tin,,,3.0,2150.0,Tây - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Beverly - Vinhomes Ocean Park,Căn hộ chung cư,61.5,61.78861618041992,2.0,2.0,4,2,Không có thông tin,,,4.0,,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,31.0,56.129032135009766,1.0,1.0,4,1,Không có thông tin,,,11.0,6000.0,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,75.6,50.0,3.0,2.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,96.8,75.5999984741211,3.0,2.0,3,3,Không có thông tin,,,3.0,2150.0,Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,54.6,52.56410217285156,2.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,50.0,49.599998474121094,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,130.0,80.76923370361328,4.0,3.0,3,1,Không có thông tin,,,6.0,3837.0,Đông - Nam,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,28.0,76.07142639160156,1.0,1.0,3,2,Không có thông tin,,,6.0,3837.0,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,50.0,58.0,1.0,1.0,4,3,Không có thông tin,,,4.0,,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,43.1,53.3642692565918,1.0,1.0,4,2,Không có thông tin,,,16.0,9600.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,41.6,72.11538696289062,1.0,1.0,3,2,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Tây - Nam,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,43.0,69.53488159179688,1.0,1.0,4,4,Không có thông tin,,,3.0,2200.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,1,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,45.0,3.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,43.0,51.16279220581055,1.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,235.0,95.74468231201172,8.0,5.0,1,1,Không có thông tin,,,6.0,3837.0,Tây - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,51.0,58.82352828979492,1.0,1.0,4,4,Không có thông tin,,,4.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,63.9,60.250389099121094,2.0,2.0,4,1,Không có thông tin,,,4.0,2600.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,67.6,53.25444030761719,2.0,2.0,1,1,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,63.3,68.72038269042969,2.0,2.0,4,2,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,81.0,86.41975402832031,2.0,2.0,3,1,Không có thông tin,,,3.0,2150.0,Đông - Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,42.83333206176758,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,46.808509826660156,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,45.0,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,66.0,62.121212005615234,2.0,2.0,3,3,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,46.808509826660156,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,51.6129035949707,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,89.0,64.0449447631836,3.0,2.0,3,2,Không có thông tin,,,3.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,106.0,46.22641372680664,3.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,42.64706039428711,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,48.51063919067383,1.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,45.0,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,44.117645263671875,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,48.51063919067383,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,45.0,3.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,43.57143020629883,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,50.0,53.0,2.0,1.0,3,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,2,Không có thông tin,,,66.0,,Đông - Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,35.0,48.57143020629883,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,98.4,58.94308853149414,3.0,2.0,4,4,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,46.9,52.87846374511719,1.0,1.0,4,1,Không có thông tin,,,11.0,6000.0,Đông - Nam,Tây - Bắc,N
+Dự án Vinhomes Ocean Park Gia Lâm,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,37.0,43.24324417114258,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,53.225807189941406,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,110.0,46.818180084228516,3.0,2.0,1,2,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,54.83871078491211,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,45.0,3.0,2.0,3,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,43.0,55.8139533996582,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,50.0,49.599998474121094,1.0,1.0,4,3,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,50.0,49.599998474121094,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.65957260131836,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,133.0,72.93232727050781,3.0,2.0,4,1,Không có thông tin,,,3.0,2150.0,Đông - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,109.0,65.32109832763672,3.0,2.0,4,2,Không có thông tin,,,3.0,2150.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The London - Vinhomes Ocean Park,Căn hộ chung cư,96.0,58.33333206176758,3.0,2.0,4,1,Không có thông tin,,,3.0,,Đông - Nam,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,45.0,60.0,1.0,1.0,4,3,Không có thông tin,,,4.0,,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,63.0,59.52381134033203,2.0,2.0,4,2,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,69.7,56.958396911621094,2.0,2.0,4,1,Không có thông tin,,,4.0,2600.0,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.23404312133789,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,45.0,3.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,64.0,68.0,2.0,2.0,3,2,Không có thông tin,,,3.0,2200.0,Đông - Bắc,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,37.0,45.945945739746094,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,54.0,55.29999923706055,1.0,1.0,4,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,42.0,71.42857360839844,1.0,1.0,4,3,Không có thông tin,,,3.0,2150.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,58.3,45.45454788208008,2.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,82.0,45.73170852661133,3.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,30.0,56.66666793823242,1.0,1.0,4,3,Không có thông tin,,,66.0,,Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,63.0,63.492061614990234,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Tây - Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,48.0,48.95833206176758,1.0,1.0,1,1,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,69.0,49.27536392211914,2.0,2.0,1,1,Không có thông tin,,,4.0,2600.0,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,55.6,56.65467834472656,2.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Tây - Bắc,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,42.64706039428711,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Bắc,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,74.0,56.08108139038086,2.0,2.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,75.0,52.0,3.0,2.0,4,2,Không có thông tin,,,16.0,9600.0,Tây - Bắc,Đông - Bắc,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,41.0,61.70731735229492,1.0,1.0,4,3,Không có thông tin,,,4.0,,Đông - Bắc,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,43.0,54.651161193847656,1.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Tây - Nam,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,62.3,52.96950149536133,2.0,2.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,82.0,45.121952056884766,3.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,51.6129035949707,1.0,1.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Đông - Nam,N
+Đặng Xá,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Căn hộ chung cư,70.0,43.57143020629883,2.0,2.0,4,1,Không có thông tin,,,,,Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,30.0,63.33333206176758,1.0,1.0,3,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The London - Vinhomes Ocean Park,Căn hộ chung cư,48.1,62.785865783691406,2.0,1.0,3,1,Không có thông tin,,,3.0,,Tây - Nam,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,56.6,49.646644592285156,2.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,61.70212936401367,1.0,1.0,3,3,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,27.0,61.85185241699219,1.0,1.0,4,3,Không có thông tin,,,3.0,,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,63.0,51.587303161621094,2.0,2.0,4,3,Không có thông tin,,,16.0,9600.0,Không có thông tin,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,63.6,45.59748458862305,2.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,67.8,53.09734344482422,2.0,2.0,3,1,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.66666793823242,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dự án Vinhomes Ocean Park Gia Lâm,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,47.0,48.9361686706543,2.0,1.0,3,2,Không có thông tin,,,4.0,2600.0,Tây - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,98.0,50.0,3.0,2.0,4,2,Không có thông tin,,,11.0,6000.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,48.0,41.66666793823242,2.0,1.0,1,1,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,44.16666793823242,2.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Beverly - Vinhomes Ocean Park,Căn hộ chung cư,62.0,45.16128921508789,2.0,1.0,4,2,Không có thông tin,,,4.0,,Tây,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,43.57143020629883,2.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,31.0,59.67741775512695,1.0,1.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,46.808509826660156,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,68.0,50.0,2.0,2.0,4,3,Không có thông tin,,,4.0,2600.0,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,36.7,55.85831069946289,1.0,1.0,4,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,26.9,67.28624725341797,1.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,3,Không có thông tin,,,66.0,,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,47.5,2.0,1.0,4,3,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,46.808509826660156,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,69.2,42.63005828857422,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,43.235294342041016,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,46.2,79.22077941894531,2.0,2.0,4,3,Không có thông tin,,,3.0,2150.0,Tây,Đông,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The London - Vinhomes Ocean Park,Căn hộ chung cư,43.0,62.093021392822266,1.0,1.0,3,1,Không có thông tin,,,3.0,,Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,55.0,63.6363639831543,2.0,2.0,4,2,Không có thông tin,,,6.0,3837.0,Đông,Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,63.0,65.0793685913086,2.0,2.0,4,2,Không có thông tin,,,6.0,3837.0,Đông,Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,54.0,66.66666412353516,2.0,1.0,4,1,Không có thông tin,,,6.0,3837.0,Đông,Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,45.0,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,45.0,3.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,53.225807189941406,1.0,1.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,50.967742919921875,1.0,1.0,4,3,Không có thông tin,,,66.0,,Tây - Nam,Đông - Bắc,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,65.0,70.76923370361328,2.0,2.0,4,2,Không có thông tin,,,3.0,2200.0,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,59.0,46.949153900146484,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.87234115600586,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,93.3,48.231510162353516,3.0,2.0,3,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,44.875,3.0,2.0,4,2,Không có thông tin,,,66.0,,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,2,Không có thông tin,,,66.0,,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,62.0,59.51612854003906,2.0,2.0,3,3,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.446807861328125,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,46.0,47.826087951660156,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,68.0,50.0,2.0,2.0,4,1,Không có thông tin,,,4.0,2600.0,Tây,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,43.0,63.953487396240234,1.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,53.225807189941406,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,44.117645263671875,2.0,2.0,4,2,Không có thông tin,,,66.0,,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,109.9,77.88899230957031,3.0,2.0,4,1,Không có thông tin,,,3.0,2150.0,Không có thông tin,Đông - Nam,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,133.0,74.28571319580078,3.0,2.0,4,1,Không có thông tin,,,3.0,2150.0,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,46.0,47.826087951660156,1.0,1.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,43.33333206176758,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,82.0,43.90243911743164,3.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,78.2,58.184146881103516,3.0,2.0,3,2,Không có thông tin,,,4.0,2600.0,Không có thông tin,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,64.0,62.5,2.0,2.0,3,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,63.0,55.55555725097656,2.0,2.0,3,4,Không có thông tin,,,16.0,9600.0,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,31.7,73.18611907958984,1.0,1.0,3,2,Không có thông tin,,,6.0,3837.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,60.0,68.33333587646484,2.0,2.0,3,3,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,47.2,77.33050537109375,1.0,1.0,3,2,Không có thông tin,,,6.0,3837.0,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,39.0,46.153846740722656,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,52.7,50.09487533569336,1.0,1.0,1,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,69.4,46.1095085144043,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,54.0,51.85185241699219,2.0,1.0,4,3,Không có thông tin,,,66.0,,Tây - Bắc,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,62.8,65.28662872314453,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,88.0,60.227272033691406,3.0,2.0,4,2,Không có thông tin,,,3.0,,Đông - Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,33.4,60.47903823852539,1.0,1.0,1,3,Không có thông tin,,,4.0,2600.0,Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,45.8,50.21834182739258,1.0,1.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Beverly - Vinhomes Ocean Park,Căn hộ chung cư,59.0,50.84745788574219,2.0,2.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,73.0,47.94520568847656,2.0,2.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,54.0,48.14814758300781,2.0,1.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,43.0,56.97674560546875,1.0,1.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Tây,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,75.0,75.0,3.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,62.0,68.2258071899414,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,36.0,44.44444274902344,1.0,1.0,4,1,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,43.4,52.53456115722656,1.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,82.0,63.414634704589844,3.0,2.0,3,3,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,30.0,56.66666793823242,1.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,27.0,68.51851654052734,1.0,1.0,3,2,Không có thông tin,,,4.0,,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,56.0,47.32143020629883,2.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Bắc,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,54.2,55.0,2.0,2.0,3,3,Không có thông tin,,,3.0,,Tây - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Beverly - Vinhomes Ocean Park,Căn hộ chung cư,54.4,59.742645263671875,2.0,2.0,3,2,Không có thông tin,,,4.0,,Đông - Bắc,Đông - Bắc,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,68.0,61.02941131591797,2.0,2.0,4,2,Không có thông tin,,,4.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,33.0,50.90909194946289,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,48.4,51.652889251708984,1.0,1.0,3,1,Không có thông tin,,,3.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,50.0,2.0,2.0,3,2,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,55.0,58.181819915771484,2.0,2.0,3,4,Không có thông tin,,,3.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,43.82352828979492,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.446807861328125,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,52.58064651489258,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,56.0,70.0,2.0,2.0,3,3,Không có thông tin,,,3.0,2200.0,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,42.64706039428711,2.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,64.0,90.3125,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,44.680850982666016,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,42.85714340209961,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,101.0,69.40593719482422,3.0,2.0,3,2,Không có thông tin,,,3.0,2150.0,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,54.0,72.22222137451172,2.0,2.0,4,3,Không có thông tin,,,6.0,3837.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,43.0,54.651161193847656,1.0,1.0,4,1,Không có thông tin,,,16.0,9600.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,55.0,51.45454406738281,2.0,1.0,4,3,Không có thông tin,,,66.0,,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,63.0,55.55555725097656,2.0,2.0,4,3,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,64.0,50.9375,2.0,1.0,4,2,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,98.4,56.40243911743164,3.0,2.0,3,2,Không có thông tin,,,4.0,2600.0,Không có thông tin,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,71.0,61.971832275390625,2.0,2.0,4,3,Không có thông tin,,,4.0,,Đông - Bắc,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,75.0,56.0,3.0,2.0,4,1,Không có thông tin,,,66.0,,Tây - Bắc,Đông - Nam,N
+Đặng Xá,Gia Lâm,Tổng Công ty Viglacera,Khu đô thị Đặng Xá 1,Căn hộ chung cư,60.0,38.83333206176758,2.0,2.0,4,3,Không có thông tin,,,,,Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,69.3,53.9682502746582,2.0,2.0,3,2,Không có thông tin,,,4.0,2600.0,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,82.0,70.0,3.0,2.0,4,3,Không có thông tin,,,3.0,2200.0,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,37.0,45.945945739746094,1.0,1.0,4,4,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,74.0,61.486488342285156,2.0,2.0,4,2,Không có thông tin,,,4.0,,Không có thông tin,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,47.0,47.446807861328125,1.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,43.75,3.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,59.0,44.06779479980469,2.0,1.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,44.28571319580078,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,67.4,48.961421966552734,2.0,2.0,4,3,Không có thông tin,,,11.0,6000.0,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,56.6,49.116607666015625,2.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,42.9,54.7785530090332,1.0,1.0,4,2,Không có thông tin,,,11.0,6000.0,Không có thông tin,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,107.0,53.271026611328125,3.0,2.0,3,3,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,51.0,63.72549057006836,1.0,1.0,3,2,Không có thông tin,,,6.0,3837.0,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,43.0,53.488372802734375,1.0,1.0,4,3,Không có thông tin,,,66.0,,Tây,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Beverly - Vinhomes Ocean Park,Căn hộ chung cư,61.1,50.0,2.0,2.0,3,1,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Masterise Homes,The Lake,Căn hộ chung cư,63.5,70.0,2.0,2.0,3,3,Không có thông tin,,,3.0,2200.0,Nam,Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,68.0,45.0,2.0,2.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,45.6,58.99123001098633,1.0,1.0,4,3,Không có thông tin,,,4.0,,Tây - Nam,Đông - Bắc,N
+Yên Viên,Gia Lâm,Không có chủ đầu tư,Không phải dự án,"Chung cư mini, căn hộ dịch vụ",42.8,81.77570343017578,2.0,1.0,4,2,Không có thông tin,,,,,Bắc,Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Chung cư mini, căn hộ dịch vụ",55.0,43.818180084228516,2.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Chung cư mini, căn hộ dịch vụ",55.0,43.818180084228516,2.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Tây - Bắc,N
+Đa Tốn,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,200.0,67.5,4.0,3.0,4,3,7.0,4.0,3.0,,,Nam,Nam,N
+Đa Tốn,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,110.0,66.36363983154297,3.0,3.0,4,1,7.0,4.0,3.0,,,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,55.0,134.5454559326172,4.0,3.0,4,2,4.5,7.0,5.0,,,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,124.0,104.83870697021484,17.0,8.0,4,1,5.0,,6.0,,,Tây - Bắc,Không có thông tin,N
+Đông Dư,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,45.0,131.11111450195312,5.0,5.0,4,2,4.300000190734863,6.0,6.0,,,Đông - Nam,Đông - Nam,N
+Phú Thị,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,43.0,66.27906799316406,2.0,1.0,4,2,5.0,,2.0,,,Không có thông tin,Không có thông tin,N
+Kiêu Kỵ,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,180.0,80.55555725097656,5.0,3.0,4,3,11.0,,4.0,,,Đông - Nam,Đông - Nam,N
+Phú Thị,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,56.0,67.85713958740234,2.0,1.0,4,1,5.840000152587891,,1.0,,,Không có thông tin,Không có thông tin,N
+Yên Thường,Gia Lâm,Không có chủ đầu tư,Không phải dự án,Nhà riêng,60.0,77.5,4.0,3.0,4,1,5.0,10.0,3.0,,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",142.2,189.87342834472656,4.0,5.0,4,3,7.900000095367432,13.0,4.0,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",297.0,225.2525177001953,4.0,5.0,4,3,16.5,13.0,4.0,66.0,,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Công ty CP Đầu tư Hải Phát,Dự án Thuận An,"Nhà Biệt thự, liền kề",90.0,232.22222900390625,6.0,6.0,4,3,6.0,11.0,5.0,,,Tây - Bắc,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",70.8,282.4858703613281,4.0,5.0,4,1,Không có thông tin,,,66.0,,Đông - Nam,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",288.0,208.3333282470703,3.0,3.0,4,1,15.0,,4.0,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",230.0,273.9130554199219,4.0,5.0,4,3,11.5,13.0,4.0,66.0,,Tây - Bắc,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",90.0,227.77777099609375,3.0,3.0,4,3,7.5,13.0,4.0,66.0,,Tây - Bắc,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",90.0,200.0,3.0,4.0,4,3,7.5,,4.0,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",150.0,206.6666717529297,4.0,4.0,4,1,Không có thông tin,,4.0,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",145.0,206.89654541015625,4.0,5.0,3,3,8.5,13.0,4.0,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",149.3,157.4011993408203,4.0,4.0,4,1,8.300000190734863,13.0,4.0,66.0,,Đông - Nam,Đông - Bắc,N
+Trâu Quỳ,Gia Lâm,Công ty CP Đầu tư Hải Phát,Dự án Thuận An,"Nhà Biệt thự, liền kề",90.0,233.3333282470703,4.0,5.0,4,2,6.0,16.0,4.0,,,Đông - Bắc,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Công ty CP Eurowindow Holding,Eurowindow Twin Parks,"Nhà Biệt thự, liền kề",192.5,184.93505859375,4.0,3.0,4,1,11.0,12.0,3.0,,,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",150.0,173.3333282470703,3.0,3.0,4,1,10.0,15.0,4.0,66.0,,Tây - Bắc,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Công ty CP Eurowindow Holding,Eurowindow Twin Parks,"Nhà Biệt thự, liền kề",192.5,187.0129852294922,3.0,3.0,4,1,11.0,12.0,4.0,,,Đông - Bắc,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Công ty CP Đầu tư Hải Phát,Dự án Thuận An,"Nhà Biệt thự, liền kề",87.0,143.67816162109375,4.0,5.0,4,2,5.0,13.0,5.0,,,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",166.0,271.0843505859375,4.0,5.0,4,3,9.300000190734863,,4.0,66.0,,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Công ty CP Eurowindow Holding,Eurowindow Twin Parks,"Nhà Biệt thự, liền kề",74.1,236.16734313964844,5.0,5.0,4,2,5.0,13.0,5.0,,,Tây - Nam,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",90.0,222.22222900390625,5.0,3.0,4,1,8.0,15.0,3.0,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",89.0,198.0,4.0,3.0,4,1,7.5,15.0,4.0,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",297.0,222.22222900390625,5.0,5.0,4,3,16.5,13.0,4.0,66.0,,Đông - Nam,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",297.0,224.91583251953125,4.0,5.0,4,3,17.0,13.0,3.0,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,"Nhà Biệt thự, liền kề",70.8,331.9208984375,3.0,2.0,4,1,Không có thông tin,,4.0,66.0,,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Công ty CP Eurowindow Holding,Eurowindow Twin Parks,"Nhà Biệt thự, liền kề",75.0,226.6666717529297,6.0,5.0,4,1,5.0,,5.0,,,Đông - Nam,Đông - Nam,N
+Trâu Quỳ,Gia Lâm,Công ty CP Eurowindow Holding,Eurowindow Twin Parks,"Nhà Biệt thự, liền kề",192.5,181.81817626953125,8.0,9.0,4,1,11.0,17.5,4.0,,,Đông - Bắc,Đông - Bắc,N
+Đặng Xá,Gia Lâm,Tổng Công ty Viglacera,Khu đô thị Đặng Xá 2,Căn hộ chung cư,69.9,40.05722427368164,2.0,2.0,4,2,Không có thông tin,,,,,Tây - Bắc,Đông - Nam,N
+Đặng Xá,Gia Lâm,Tổng Công ty Viglacera,Khu đô thị Đặng Xá 2,Căn hộ chung cư,69.9,41.201717376708984,2.0,2.0,4,3,Không có thông tin,,,,,Đông - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,58.0,60.344825744628906,2.0,2.0,3,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,83.5,58.083831787109375,3.0,2.0,4,1,Không có thông tin,,,4.0,2600.0,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,64.0,67.1875,2.0,2.0,4,3,Không có thông tin,,,6.0,3837.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,69.1,53.0,2.0,2.0,4,3,Không có thông tin,,,3.0,,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,27.1,77.12177276611328,1.0,1.0,3,3,Không có thông tin,,,6.0,3837.0,Tây - Bắc,Đông - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,37.5,46.93333435058594,2.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,64.0,60.9375,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Tây,Tây - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,49.1,57.0264778137207,1.0,1.0,4,1,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,44.0,55.681819915771484,1.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Bắc,Đông - Bắc,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,38.66666793823242,2.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,42.5,2.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,63.0,49.20634841918945,2.0,2.0,4,3,Không có thông tin,,,11.0,6000.0,Không có thông tin,Đông - Nam,N
+Nghĩa Đô,Cầu Giấy,Không có chủ đầu tư,Không phải dự án,Nhà riêng,51.0,284.313720703125,4.0,4.0,4,3,5.099999904632568,,5.0,,,Đông - Bắc,Đông - Bắc,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Sapphire-Vinhomes Smart City,Căn hộ chung cư,59.1,54.1455192565918,2.0,1.0,4,3,Không có thông tin,,,14.0,,Không có thông tin,Không có thông tin,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Sapphire-Vinhomes Smart City,Căn hộ chung cư,74.0,52.02702713012695,3.0,2.0,4,3,Không có thông tin,,,14.0,,Không có thông tin,Không có thông tin,N
+Mễ Trì,Nam Từ Liêm,Tập đoàn Vingroup,Vinhomes Green Bay Mễ Trì,Căn hộ chung cư,61.0,57.37704849243164,2.0,1.0,4,4,Không có thông tin,,,3.0,2696.0,Đông - Bắc,Tây - Nam,N
+Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Miami,Căn hộ chung cư,75.6,54.23280715942383,3.0,2.0,4,3,Không có thông tin,,,5.0,3000.0,Không có thông tin,Không có thông tin,N
+Tây Mỗ,Nam Từ Liêm,Masterise Homes,Masteri West Heights,Căn hộ chung cư,41.94,67.9542236328125,1.0,1.0,3,1,Không có thông tin,,,4.0,3599.0,Đông - Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,236.5079345703125,6.0,4.0,3,2,5.0,40.0,5.0,,,Đông - Nam,Không có thông tin,N
+Hoàng Liệt,Hoàng Mai,Công ty CP Tập đoàn Hưng Thịnh,Hà Nội Melody Residences,Căn hộ chung cư,74.04,67.53106689453125,2.0,2.0,3,3,Không có thông tin,,,4.0,2000.0,Tây,Đông,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,Căn hộ chung cư,49.5,31.31313133239746,2.0,1.0,4,3,Không có thông tin,,,,,Bắc,Đông,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,Căn hộ chung cư,64.0,26.5625,2.0,2.0,4,3,Không có thông tin,,,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,Căn hộ chung cư,50.0,27.0,2.0,1.0,4,3,Không có thông tin,,,,,Bắc,Đông - Bắc,N
+Phượng đồng Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,35.0,88.57142639160156,4.0,4.0,4,1,Không có thông tin,,4.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,33.3,79.57958221435547,3.0,3.0,4,3,3.2699999809265137,3.0,3.0,,,Đông,Đông,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,33.0,80.30303192138672,3.0,3.0,4,2,4.0,4.0,3.0,,,Đông - Nam,Đông - Nam,N
+Giáp Bát,Hoàng Mai,Không có chủ đầu tư,Không phải dự án,Nhà riêng,75.0,264.0,5.0,6.0,4,3,5.0,15.0,4.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,30.0,73.33333587646484,3.0,2.0,4,2,5.0,3.0,4.0,,,Đông - Nam,Đông - Nam,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,36.0,66.38888549804688,3.0,3.0,4,2,Không có thông tin,,3.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,34.0,74.70587921142578,4.0,3.0,4,3,Không có thông tin,,4.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,66.0,81.81818389892578,4.0,4.0,4,3,5.0,8.0,5.0,,,Không có thông tin,Không có thông tin,N
+Hoàng Văn Thụ,Hoàng Mai,Không có chủ đầu tư,Không phải dự án,Nhà riêng,65.0,181.53846740722656,5.0,5.0,4,3,5.5,,5.0,,,Đông - Nam,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,35.0,74.28571319580078,3.0,3.0,4,2,3.200000047683716,2.0,3.0,,,Đông - Bắc,Đông - Bắc,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,30.0,106.66666412353516,3.0,3.0,4,3,4.0,4.0,5.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,30.0,88.33333587646484,3.0,3.0,4,3,4.5,2.0,3.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,32.0,70.3125,3.0,3.0,4,2,Không có thông tin,3.0,4.0,,,Đông - Bắc,Đông - Bắc,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,38.0,64.47368621826172,3.0,3.0,4,2,3.5,3.0,4.0,,,Tây - Bắc,Tây - Bắc,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,40.0,50.0,3.0,3.0,4,1,4.5,,5.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,31.0,85.48387145996094,3.0,4.0,4,1,3.700000047683716,2.5,5.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà riêng,32.0,69.6875,4.0,3.0,4,3,Không có thông tin,,4.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",43.4,80.64515686035156,3.0,3.0,4,1,380.0,25.0,3.0,,,Đông - Nam,Đông - Nam,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",45.0,99.33333587646484,3.0,3.0,4,3,3.5999999046325684,7.0,4.0,,,Bắc,Đông,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",76.0,122.36842346191406,6.0,7.0,4,1,5.0,9.0,5.0,,,Tây,Tây,N
+Xuân Mai,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",75.0,47.33333206176758,5.0,4.0,4,1,5.0,7.0,4.0,,,Đông - Nam,Đông - Nam,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",67.5,113.9259262084961,6.0,4.0,4,1,4.5,9.0,5.0,,,Đông - Bắc,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",76.0,125.0,8.0,8.0,4,2,5.0,12.0,5.0,,,Tây,Tây,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",67.5,113.9259262084961,7.0,5.0,4,3,4.5,9.0,5.0,,,Bắc,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",45.0,86.22222137451172,3.0,4.0,4,3,3.5999999046325684,7.0,4.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",67.5,112.59259033203125,6.0,6.0,4,1,4.5,9.0,5.0,,,Đông - Nam,Đông - Nam,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",50.0,102.0,4.0,3.0,4,3,Không có thông tin,,4.0,,,Không có thông tin,Không có thông tin,N
+Hoàng Văn Thụ,Chương Mỹ,Công ty Cổ phần DK ENC Việt Nam,Wyndham Sky Lake Resort & Villas,"Nhà Biệt thự, liền kề",306.0,40.849674224853516,2.0,3.0,3,1,15.0,15.0,3.0,,,Tây - Bắc,Tây - Bắc,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",37.0,70.27027130126953,4.0,4.0,4,2,Không có thông tin,4.0,4.0,,,Đông - Bắc,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",120.0,100.0,8.0,4.0,4,1,Không có thông tin,,5.0,,,Không có thông tin,Không có thông tin,N
+Nam Phương Tiến,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",361.0,16.066482543945312,3.0,1.0,4,2,13.0,8.0,2.0,,,Nam,Nam,N
+Lam Điền,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",780.0,6.282051086425781,3.0,3.0,4,3,Không có thông tin,4.0,1.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",40.0,70.0,3.0,3.0,4,1,4.099999904632568,2.0,4.0,,,Đông - Nam,Không có thông tin,N
+Thụy Hương,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",31.0,64.19355010986328,3.0,2.0,4,1,3.0999999046325684,5.0,3.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",76.0,109.86842346191406,6.0,7.0,4,3,5.0,6.0,5.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",76.0,106.5789566040039,8.0,9.0,4,3,5.0,8.0,5.0,,,Tây,Tây,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",76.0,103.9473648071289,6.0,7.0,4,1,5.0,9.0,5.0,,,Tây,Tây,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",30.0,81.66666412353516,3.0,4.0,4,2,4.0,4.0,5.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",40.0,46.25,3.0,3.0,4,2,3.5,,3.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",75.0,98.0,7.0,7.0,4,1,5.0,9.0,5.0,,,Tây,Tây,N
+Hoàng Văn Thụ,Chương Mỹ,Công ty Cổ phần DK ENC Việt Nam,Wyndham Sky Lake Resort & Villas,"Nhà Biệt thự, liền kề",200.0,57.5,2.0,2.0,4,3,22.0,15.0,3.0,,,Đông - Nam,Đông - Nam,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",67.5,91.85185241699219,8.0,7.0,4,1,4.5,9.0,5.0,,,Đông - Nam,Đông - Nam,N
+Nam Phương Tiến,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",361.0,15.0,4.0,2.0,4,2,16.0,8.0,2.0,,,Bắc,Bắc,N
+Hoàng Văn Thụ,Chương Mỹ,Công ty Cổ phần DK ENC Việt Nam,Wyndham Sky Lake Resort & Villas,"Nhà Biệt thự, liền kề",200.0,70.0,2.0,3.0,3,3,10.0,15.0,3.0,,,Tây - Bắc,Đông - Nam,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",50.0,51.0,3.0,3.0,4,3,4.0,4.0,3.0,,,Tây - Bắc,Tây - Bắc,N
+Thụy Hương,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",35.0,49.42856979370117,3.0,2.0,4,2,5.0,,3.0,,,Đông - Nam,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",76.1,107.75296020507812,6.0,4.0,4,2,5.0,10.0,5.0,,,Tây,Tây,N
+Chúc Sơn,Chương Mỹ,Công ty CP Lộc Ninh,Lộc Ninh Singashine,"Nhà Biệt thự, liền kề",76.0,110.0,8.0,8.0,4,2,5.0,9.0,5.0,,,Tây,Tây,N
+Xuân Mai,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,90.0,77.77777862548828,2.0,1.0,1,1,5.0,20.0,1.0,,,Đông,Không có thông tin,N
+Thanh Bình,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,151.0,32.45033264160156,3.0,2.0,4,2,6.0,15.0,2.0,,,Đông - Nam,Không có thông tin,N
+Xuân Mai,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,153.3333282470703,4.0,3.0,4,1,5.0,60.0,3.0,,,Đông - Nam,Đông - Nam,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,88.0,139.77272033691406,4.0,4.0,4,3,4.0,24.0,3.0,,,Không có thông tin,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,51.0,125.49019622802734,6.0,6.0,4,2,5.0,32.0,4.0,,,Không có thông tin,Không có thông tin,N
+Xuân Mai,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,247.7,56.51998519897461,1.0,1.0,4,2,5.0,,1.0,,,Không có thông tin,Không có thông tin,N
+Phụng Châu,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,50.0,104.0,4.0,3.0,4,1,Không có thông tin,,4.0,,,Nam,Không có thông tin,N
+Chúc Sơn,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,52.0,125.0,1.0,1.0,4,2,5.0,5.0,2.0,,,Đông - Nam,Không có thông tin,N
+Thường Tín,Thường Tín,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",75.0,154.13333129882812,7.0,8.0,3,1,5.0,33.0,5.0,,,Nam,Nam,N
+Tiên Phương,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Trang trại, khu nghỉ dưỡng tại xã Tiên Phương",800.0,8.0,4.0,4.0,4,3,Không có thông tin,4.0,1.0,,,Đông - Nam,Đông - Nam,N
+Tiên Phương,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Trang trại, khu nghỉ dưỡng tại đường 419",800.0,8.5,3.0,3.0,4,1,20.0,4.0,1.0,,,Không có thông tin,Không có thông tin,N
+Tiên Phương,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Trang trại, khu nghỉ dưỡng tại đường 419",800.0,8.125,4.0,4.0,4,3,30.0,4.0,1.0,,,Không có thông tin,Không có thông tin,N
+Thuỷ Xuân Tiên,Chương Mỹ,Không có chủ đầu tư,Không phải dự án,"Trang trại, khu nghỉ dưỡng tại đường Cu Ba",3145.0,5.001589775085449,2.0,2.0,4,1,Không có thông tin,20.0,1.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,55.0,41.818180084228516,2.0,2.0,4,3,Không có thông tin,,,3.0,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,95.0,37.3684196472168,3.0,2.0,4,1,Không có thông tin,,,3.0,,Không có thông tin,Đông - Nam,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,81.2,43.103450775146484,2.0,2.0,4,3,Không có thông tin,,,3.0,,Không có thông tin,Đông - Bắc,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,80.0,38.125,2.0,2.0,4,3,Không có thông tin,,,3.0,,Đông - Nam,Tây - Bắc,N
+Tân Lập,Đan Phượng,Công ty TNHH Xuân Phương,Chung cư XpHomes Tân Tây Đô,Căn hộ chung cư,62.0,45.967742919921875,2.0,2.0,4,1,Không có thông tin,,,,,Không có thông tin,Đông - Bắc,N
+Tân Lập,Đan Phượng,Công ty TNHH Xuân Phương,Chung cư XpHomes Tân Tây Đô,Căn hộ chung cư,60.0,50.83333206176758,2.0,2.0,4,2,Không có thông tin,,,,,Đông - Nam,Đông - Nam,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,55.0,45.45454406738281,2.0,2.0,4,3,Không có thông tin,,,3.0,,Đông - Bắc,Tây - Nam,N
+Tân Lập,Đan Phượng,Công ty TNHH Xuân Phương,Chung cư XpHomes Tân Tây Đô,Căn hộ chung cư,86.0,45.930233001708984,3.0,2.0,4,3,Không có thông tin,,,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,82.0,40.24390411376953,3.0,2.0,4,3,Không có thông tin,,,3.0,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,Căn hộ chung cư,76.0,39.47368240356445,2.0,2.0,4,1,Không có thông tin,,,3.0,,Đông - Nam,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,36.8,133.1521759033203,4.0,4.0,4,2,3.5999999046325684,2.3,4.0,,,Tây,Tây,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,35.0,137.14285278320312,3.0,5.0,4,2,4.0,4.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,31.0,130.64517211914062,3.0,4.0,4,2,5.199999809265137,2.6,5.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,36.0,130.55555725097656,4.0,3.0,4,2,4.840000152587891,9.0,4.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,40.0,116.25,5.0,4.0,4,4,4.849999904632568,8.0,5.0,,,Đông - Bắc,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,36.0,123.61111450195312,5.0,4.0,4,2,4.0,6.0,4.0,,,Đông - Bắc,Đông - Bắc,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,59.9,166.9449005126953,5.0,5.0,4,1,5.0,6.0,4.0,,,Đông - Bắc,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,30.0,120.0,3.0,4.0,4,2,3.799999952316284,2.5,5.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,33.0,107.57575988769531,3.0,4.0,4,2,3.799999952316284,,5.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,33.0,140.90908813476562,3.0,4.0,4,2,4.0,,5.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,30.1,132.89036560058594,3.0,4.0,4,2,3.450000047683716,3.0,5.0,,,Đông - Nam,Đông - Nam,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,36.0,102.77777862548828,4.0,3.0,4,2,3.5,2.2,4.0,,,Đông - Nam,Đông - Nam,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà riêng,34.0,141.1764678955078,3.0,3.0,4,2,4.0,3.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Tân Lập,Đan Phượng,Tổng công ty XD Công trình Giao thông 5 - Cienco5,Khu nhà ở xã Tân Lập - Cienco 5,"Nhà Biệt thự, liền kề",72.0,125.0,5.0,4.0,3,1,5.0,13.0,4.0,,,Đông - Bắc,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",75.0,170.0,6.0,7.0,4,2,5.0,8.0,5.0,3.0,,Không có thông tin,Không có thông tin,N
+Tân Hội,Đan Phượng,Tập đoàn Vingroup,Vinhomes Wonder Park,"Nhà Biệt thự, liền kề",96.0,180.0,5.0,5.0,4,2,6.5,15.0,5.0,,,Đông - Nam,Đông - Nam,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",87.5,182.85714721679688,4.0,4.0,4,1,5.0,24.0,3.0,3.0,,Tây - Bắc,Tây - Bắc,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",72.5,248.27586364746094,4.0,4.0,4,1,5.0,15.0,3.0,3.0,,Tây - Bắc,Tây - Bắc,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",90.0,166.6666717529297,6.0,4.0,4,1,5.0,13.5,4.0,3.0,,Đông - Nam,Đông - Nam,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",238.0,99.49579620361328,4.0,4.0,4,2,15.0,12.0,4.0,3.0,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",60.0,166.6666717529297,4.0,3.0,4,3,5.0,10.0,4.0,3.0,,Đông - Bắc,Đông - Bắc,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Nhà Biệt thự, liền kề",204.0,122.54901885986328,5.0,5.0,4,3,12.0,,3.0,3.0,,Đông - Nam,Đông - Nam,N
+Dự án Tân Lập Cienco 5,Đan Phượng,Tổng công ty XD Công trình Giao thông 5 - Cienco5,Khu nhà ở xã Tân Lập - Cienco 5,"Nhà Biệt thự, liền kề",68.6,142.85714721679688,5.0,4.0,4,1,5.0,13.0,4.0,,,Tây - Nam,Tây - Nam,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,30.0,190.0,3.0,4.0,4,2,4.25,7.2,5.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,90.0,111.11111450195312,5.0,5.0,4,2,5.0,6.0,4.0,,,Tây - Bắc,Tây - Bắc,N
+La Khê,Hà Đông,Không có chủ đầu tư,Không phải dự án,Nhà riêng,50.0,272.0,4.0,5.0,4,3,4.0,,5.0,,,Không có thông tin,Không có thông tin,N
+Phùng,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,91.0,119.78022003173828,6.0,4.0,4,1,3.559999942779541,10.0,5.0,,,Tây - Nam,Tây - Nam,N
+Phùng,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,62.4,116.98717498779297,10.0,11.0,4,1,4.840000152587891,,5.0,,,Không có thông tin,Không có thông tin,N
+Phùng,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,121.0,92.56198120117188,5.0,4.0,4,2,Không có thông tin,17.0,5.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,80.0,174.375,5.0,5.0,4,3,5.0,10.0,4.0,3.0,,Tây - Bắc,Không có thông tin,N
+Phùng,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,90.0,105.55555725097656,6.0,8.0,4,3,6.0,6.0,6.0,,,Bắc,Bắc,N
+Tân Lập,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,85.0,164.7058868408203,5.0,4.0,4,3,5.0,15.0,4.0,,,Không có thông tin,Không có thông tin,N
+Đan Phượng,Đan Phượng,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,11000.0,36.3636360168457,8.0,11.0,4,3,200.0,30.0,3.0,,,Không có thông tin,Không có thông tin,N
+Tân Lập,Đan Phượng,Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land),Khu đô thị mới Tân Tây Đô,"Shophouse, nhà phố thương mại",323.0,26.16098976135254,5.0,4.0,3,2,Không có thông tin,,,3.0,,Tây - Bắc,Tây - Bắc,N
+Phương Đình,Đan Phượng,Không có chủ đầu tư,Không phải dự án,"Trang trại, khu nghỉ dưỡng tại đường Tỉnh lộ 417",11100.0,1.2162162065505981,6.0,5.0,4,2,72.0,10.0,1.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,Căn hộ chung cư,72.7,57.22146224975586,2.0,2.0,4,3,Không có thông tin,,,4.0,2058.0,Đông - Bắc,Tây - Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,Căn hộ chung cư,68.6,52.47813415527344,2.0,2.0,3,3,Không có thông tin,,,4.0,2058.0,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Masterise Homes,Masteri Grand Avenue,Căn hộ chung cư,42.0,92.85713958740234,1.0,1.0,4,2,Không có thông tin,,,2.0,1640.0,Tây - Nam,Đông - Bắc,N
+Kim Chung,Đông Anh,Không có chủ đầu tư,Không phải dự án,"Chung cư mini, căn hộ dịch vụ",49.0,48.979591369628906,2.0,2.0,4,1,Không có thông tin,,,,,Không có thông tin,Không có thông tin,N
+Bắc Hồng,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,42.0,76.19047546386719,3.0,2.0,4,2,4.0,3.0,3.0,,,Không có thông tin,Không có thông tin,N
+Mai Lâm,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,60.8,118.42105102539062,4.0,3.0,4,2,4.139999866485596,6.0,4.0,,,Tây - Bắc,Tây - Bắc,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,90.0,77.77777862548828,4.0,2.0,4,1,Không có thông tin,4.0,3.0,,,Không có thông tin,Không có thông tin,N
+Nguyên Khê,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,108.0,70.37036895751953,4.0,2.0,4,2,5.0,8.0,3.0,,,Nam,Đông - Nam,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,100.0,71.0,4.0,2.0,4,1,Không có thông tin,4.0,3.0,,,Không có thông tin,Không có thông tin,N
+Mai Lâm,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,40.0,75.0,3.0,2.0,4,2,4.0,2.5,3.0,,,Không có thông tin,Không có thông tin,N
+Cổ Loa,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,46.0,78.26087188720703,3.0,2.0,4,2,4.0,10.0,2.0,,,Không có thông tin,Không có thông tin,N
+Hải Bối,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,53.0,87.73584747314453,3.0,2.0,4,1,3.5,3.0,3.0,,,Không có thông tin,Không có thông tin,N
+Vĩnh Ngọc,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,52.0,74.03845977783203,4.0,2.0,4,2,5.0,3.0,3.0,,,Không có thông tin,Không có thông tin,N
+Uy Nỗ,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,30.0,113.33333587646484,4.0,4.0,4,1,5.329999923706055,2.5,5.0,,,Không có thông tin,Không có thông tin,N
+Kim Chung,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà riêng,70.0,22.14285659790039,3.0,2.0,1,1,5.0,3.5,1.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",80.0,275.0,5.0,5.0,3,1,5.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",85.0,241.1764678955078,4.0,4.0,3,1,Không có thông tin,,3.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",65.0,230.46153259277344,5.0,5.0,4,1,Không có thông tin,,5.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,256.9333190917969,8.0,8.0,3,2,5.0,13.0,6.0,,,Tây - Bắc,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",141.4,312.5177001953125,5.0,4.0,3,1,20.0,40.0,5.0,,,Tây - Bắc,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,257.14288330078125,8.0,7.0,3,2,5.0,20.0,5.0,,,Đông - Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",85.0,289.0,5.0,5.0,4,1,5.0,17.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,265.0,6.0,6.0,4,1,5.0,17.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,259.0,5.0,5.0,4,1,5.0,17.0,5.0,,,Tây - Bắc,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,253.3333282470703,8.0,8.0,4,1,Không có thông tin,,5.0,,,Đông - Nam,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",280.0,740.0,4.0,4.0,3,1,15.0,,4.0,,,Đông - Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,230.0,6.0,4.0,1,1,5.0,13.0,5.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,281.6000061035156,5.0,5.0,4,1,5.0,13.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,293.3333435058594,6.0,5.0,3,1,5.0,,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",97.5,358.974365234375,8.0,6.0,3,1,6.5,17.0,5.0,,,Tây - Bắc,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",150.0,313.3333435058594,10.0,10.0,4,1,5.0,13.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,320.0,5.0,5.0,4,1,5.0,13.0,5.0,,,Tây - Bắc,Tây - Bắc,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",95.0,189.4736785888672,4.0,4.0,4,1,8.0,13.0,4.0,4.0,2058.0,Đông,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,236.5079345703125,5.0,5.0,3,1,4.5,13.0,5.0,,,Tây - Nam,Tây - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,281.2799987792969,5.0,5.0,4,2,6.5,5.0,5.0,,,Đông,Đông,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,281.2799987792969,5.0,5.0,4,2,5.0,5.0,5.0,,,Đông,Tây,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,230.0,5.0,3.0,3,1,5.0,13.0,5.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,230.0,6.0,4.0,4,1,5.0,13.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,296.0,5.0,5.0,4,1,5.0,13.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",125.0,264.0,8.0,8.0,4,1,10.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,265.6000061035156,5.0,5.0,4,1,5.0,13.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",135.0,220.74073791503906,4.0,4.0,4,1,10.0,12.0,4.0,4.0,2058.0,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,240.0,8.0,8.0,3,1,5.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",75.0,200.0,4.0,5.0,4,1,5.0,,5.0,4.0,2058.0,Đông - Nam,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,283.67999267578125,8.0,7.0,3,1,5.0,13.0,5.0,,,Đông - Nam,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",85.0,337.6470642089844,4.0,4.0,4,3,10.0,18.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,253.3333282470703,8.0,8.0,4,1,Không có thông tin,,5.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",87.5,273.1428527832031,8.0,6.0,3,1,7.0,15.0,5.0,,,Tây - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,248.0,4.0,4.0,4,1,5.5,13.0,5.0,,,Tây - Nam,Tây - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,234.92063903808594,5.0,4.0,4,1,5.0,15.0,4.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",62.5,208.0,4.0,4.0,4,2,5.0,17.0,,4.0,2058.0,Nam,Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",75.0,253.3333282470703,5.0,4.0,4,2,5.0,17.0,4.0,4.0,2058.0,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,340.0,4.0,4.0,3,1,5.0,20.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",153.0,363.398681640625,5.0,5.0,3,1,8.5,13.0,4.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,198.6666717529297,4.0,4.0,3,1,5.0,13.0,4.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",144.0,187.5,5.0,5.0,4,1,12.0,7.0,4.0,4.0,2058.0,Đông - Nam,Đông - Nam,N
+Uy Nỗ,Đông Anh,Tổng Công ty 319 - Bộ Quốc phòng,Calyx Residence,"Nhà Biệt thự, liền kề",70.0,114.28571319580078,4.0,5.0,4,1,6.800000190734863,,4.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",80.0,288.625,6.0,4.0,4,1,5.0,25.0,5.0,,,Tây - Nam,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,250.6666717529297,8.0,8.0,3,2,5.0,13.0,5.0,,,Tây - Bắc,Đông - Nam,N
+Võng La,Đông Anh,Không có chủ đầu tư,Không phải dự án,"Nhà Biệt thự, liền kề",300.0,140.0,5.0,6.0,4,3,12.0,6.0,3.0,,,Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",67.5,257.3333435058594,8.0,5.0,4,2,5.0,30.0,5.0,,,Đông - Nam,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,246.03175354003906,8.0,5.0,4,2,5.0,30.0,5.0,,,Đông - Nam,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",85.0,282.3529357910156,8.0,5.0,3,2,5.0,30.0,5.0,,,Đông - Nam,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,252.38095092773438,6.0,4.0,4,1,5.0,15.0,5.0,,,Tây - Bắc,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,270.0799865722656,5.0,5.0,1,1,4.5,13.0,4.0,,,Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",75.0,280.0,4.0,4.0,4,1,5.0,5.0,5.0,,,Đông,Đông,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",234.0,277.77777099609375,5.0,5.0,3,1,19.0,17.0,5.0,,,Đông - Nam,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,233.60000610351562,7.0,7.0,3,1,5.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,250.0,5.0,4.0,3,1,5.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",85.0,358.8235168457031,4.0,4.0,3,1,5.0,20.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,250.0,5.0,5.0,3,1,4.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Nhà Biệt thự, liền kề",120.0,200.0,5.0,4.0,4,1,9.0,7.5,4.0,4.0,2058.0,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,253.96824645996094,4.0,4.0,3,1,5.0,13.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",85.0,280.0,9.0,5.0,3,1,5.0,17.0,5.0,,,Đông - Bắc,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,236.5079345703125,4.0,4.0,3,1,4.5,,5.0,,,Tây - Nam,Tây - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",136.0,360.29412841796875,6.0,4.0,4,1,8.5,13.0,4.0,,,Tây - Nam,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",63.0,238.09524536132812,6.0,5.0,4,1,4.5,13.0,5.0,,,Đông - Nam,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",62.5,248.0,4.0,2.0,4,1,Không có thông tin,,6.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",70.0,261.0,7.0,5.0,4,2,5.0,30.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Nhà Biệt thự, liền kề",136.0,360.29412841796875,6.0,4.0,4,1,8.5,13.0,4.0,,,Đông - Bắc,Tây - Nam,N
+Đông Anh,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,90.0,184.44444274902344,3.0,3.0,4,2,4.5,30.0,2.0,,,Không có thông tin,Không có thông tin,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,140.0,7.0,4.0,4,2,5.0,16.0,4.0,,,Không có thông tin,Không có thông tin,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,136.0,5.0,4.0,4,1,5.0,16.0,4.0,,,Nam,Nam,N
+Nam Hồng,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,49.4,135.62753295898438,5.0,3.0,4,1,4.0,8.0,4.0,,,Không có thông tin,Không có thông tin,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,217.0,82.94931030273438,3.0,2.0,4,2,11.0,10.0,3.0,,,Không có thông tin,Không có thông tin,N
+Uy Nỗ,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,213.3333282470703,4.0,4.0,4,1,5.0,6.0,6.0,,,Không có thông tin,Không có thông tin,N
+Đông Anh,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,213.3333282470703,4.0,4.0,4,1,5.0,,6.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,112.3,154.94210815429688,5.0,3.0,4,1,8.0,7.0,3.0,,,Tây,Tây,N
+Cổ Loa,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,76.6,84.85639953613281,4.0,3.0,4,1,51.0,,3.0,,,Tây,Không có thông tin,N
+Võng La,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,125.0,134.39999389648438,5.0,5.0,4,3,6.0,6.0,5.0,,,Không có thông tin,Không có thông tin,N
+Nam Hồng,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,49.4,135.62753295898438,5.0,3.0,4,2,4.0,7.0,4.0,,,Nam,Nam,N
+Dự án Khu đô thị Nguyên Khê,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,80.0,147.5,3.0,3.0,4,1,5.400000095367432,10.0,3.0,,,Không có thông tin,Không có thông tin,N
+Nam Hồng,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,80.0,237.5,5.0,4.0,4,2,5.0,17.0,6.0,,,Đông - Nam,Đông - Nam,N
+Uy Nỗ,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,84.0,170.23809814453125,3.0,3.0,4,2,4.0,10.0,3.0,,,Không có thông tin,Không có thông tin,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,140.0,4.0,4.0,4,1,5.0,,4.0,,,Không có thông tin,Không có thông tin,N
+"Vân Nôi,",Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,632.0,128.16455078125,10.0,10.0,4,2,25.0,40.0,3.0,,,Không có thông tin,Không có thông tin,N
+Đông Anh,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,156.0,83.33333587646484,4.0,2.0,4,2,55.0,20.0,3.0,,,Không có thông tin,Không có thông tin,N
+Đông Anh,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,75.0,217.33331298828125,8.0,6.0,4,1,5.0,12.0,6.0,,,Nam,Nam,N
+Dục Tú,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,80.0,200.0,4.0,3.0,4,2,5.0,50.0,3.0,,,Nam,Nam,N
+Đông Anh,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,180.0,130.0,3.0,3.0,4,1,6.0,,3.0,,,Không có thông tin,Không có thông tin,N
+Hải Bối,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,52.0,115.38461303710938,3.0,2.0,4,2,Không có thông tin,15.0,3.0,,,Không có thông tin,Không có thông tin,N
+Nam Hồng,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,150.0,173.3333282470703,20.0,20.0,4,3,6.5,10.0,9.0,,,Đông - Bắc,Không có thông tin,N
+Đông Anh,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,84.0,202.38095092773438,4.0,3.0,4,2,4.199999809265137,60.0,4.0,,,Không có thông tin,Không có thông tin,N
+Uy Nỗ,Đông Anh,Không có chủ đầu tư,Không phải dự án,Nhà mặt phố,109.0,117.33944702148438,3.0,2.0,4,3,Không có thông tin,24.0,3.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",96.0,250.0,10.0,5.0,3,1,5.0,17.0,5.0,,,Đông - Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",102.5,355.0243835449219,6.0,6.0,4,1,5.0,,5.0,,,Không có thông tin,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",80.0,325.0,5.0,5.0,4,1,5.0,30.0,5.0,,,Tây - Bắc,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",85.0,331.76470947265625,6.0,5.0,4,1,5.0,17.0,5.0,,,Đông - Bắc,Đông - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",75.0,306.6666564941406,5.0,5.0,4,1,5.0,13.0,5.0,,,Tây - Bắc,Tây - Bắc,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",62.5,280.0,5.0,5.0,4,1,5.0,13.0,5.0,,,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",75.0,221.3333282470703,9.0,8.0,3,1,5.0,20.0,5.0,,,Đông - Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Shophouse, nhà phố thương mại",180.0,30.0,4.0,3.0,1,1,4.0,,4.0,4.0,2058.0,Đông - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Shophouse, nhà phố thương mại",150.0,60.0,3.0,3.0,4,1,Không có thông tin,,3.0,4.0,2058.0,Đông - Nam,Tây - Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Shophouse, nhà phố thương mại",265.0,56.60377502441406,4.0,4.0,4,2,5.0,12.0,4.0,4.0,2058.0,Đông - Nam,Không có thông tin,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",125.0,352.0,4.0,4.0,4,1,Không có thông tin,25.0,5.0,,,Tây - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",90.0,311.1111145019531,4.0,4.0,4,1,Không có thông tin,25.0,5.0,,,Tây - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",136.0,323.5294189453125,4.0,4.0,4,1,Không có thông tin,25.0,5.0,,,Tây - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",68.0,308.8235168457031,4.0,4.0,4,1,Không có thông tin,25.0,5.0,,,Tây - Nam,Đông - Nam,N
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,Bất động sản khác,150.0,30.0,2.0,1.0,4,3,Không có thông tin,,,4.0,2058.0,Đông - Bắc,Tây - Nam,N
+Vân Nội,Đông Anh,Không có chủ đầu tư,Không phải dự án,Bất động sản khác,4000.0,14.25,20.0,20.0,4,2,Không có thông tin,,,,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,70.3,56.614505767822266,2.0,2.0,4,1,Không có thông tin,,,4.0,,Đông - Nam,Tây - Nam,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,74.3,51.14400863647461,2.0,2.0,4,1,Không có thông tin,,,4.0,,Tây - Nam,Đông - Nam,M
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Zurich - Vinhomes Ocean Park,Căn hộ chung cư,43.0,58.13953399658203,1.0,1.0,4,3,Không có thông tin,,,3.0,,Đông - Bắc,Tây - Nam,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,45.1,60.97561264038086,1.0,1.0,1,2,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,M
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,65.3,61.10260009765625,2.0,2.0,4,3,Không có thông tin,,,4.0,,Tây - Nam,Đông - Bắc,M
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,41.1,63.017032623291016,1.0,1.0,4,3,Không có thông tin,,,4.0,,Không có thông tin,Đông - Bắc,M
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,55.0,54.181819915771484,2.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,48.0,47.91666793823242,1.0,1.0,3,1,Không có thông tin,,,4.0,2600.0,Không có thông tin,Không có thông tin,M
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,63.0,69.68254089355469,2.0,2.0,4,2,Không có thông tin,,,6.0,3837.0,Đông - Nam,Đông - Nam,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,55.0,74.54545593261719,2.0,2.0,3,2,Không có thông tin,,,6.0,3837.0,Đông - Bắc,Không có thông tin,N
+Đặng Xá,Gia Lâm,Tổng Công ty Viglacera,Khu đô thị Đặng Xá 2,Căn hộ chung cư,69.9,40.05722427368164,2.0,2.0,4,2,Không có thông tin,,,,,Tây - Bắc,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,58.0,60.344825744628906,2.0,2.0,3,3,Không có thông tin,,,4.0,2600.0,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,70.0,42.85714340209961,2.0,2.0,4,2,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,51.6129035949707,1.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The London - Vinhomes Ocean Park,Căn hộ chung cư,43.6,65.36697387695312,1.0,1.0,4,2,Không có thông tin,,,3.0,,Đông - Bắc,Tây - Nam,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 2 - Vinhomes Ocean Park,Căn hộ chung cư,55.0,49.09090805053711,2.0,1.0,4,3,Không có thông tin,,,16.0,9600.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The London - Vinhomes Ocean Park,Căn hộ chung cư,48.0,52.08333206176758,1.0,1.0,3,3,Không có thông tin,,,3.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,96.8,84.60742950439453,3.0,2.0,3,1,Không có thông tin,,,3.0,2150.0,Không có thông tin,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,31.0,51.6129035949707,1.0,1.0,4,3,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,60.0,42.83333206176758,2.0,1.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Beverly - Vinhomes Ocean Park,Căn hộ chung cư,61.0,55.73770523071289,2.0,2.0,3,3,Không có thông tin,,,4.0,,Không có thông tin,Không có thông tin,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,28.0,62.5,1.0,1.0,4,3,Không có thông tin,,,11.0,6000.0,Đông - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Tập đoàn Vingroup,The Sapphire 1 - Vinhomes Ocean Park,Căn hộ chung cư,48.0,50.41666793823242,1.0,1.0,4,2,Không có thông tin,,,11.0,6000.0,Đông - Bắc,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,80.0,44.375,3.0,2.0,4,4,Không có thông tin,,,66.0,,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,27.0,62.592594146728516,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,Căn hộ chung cư,48.0,47.91666793823242,1.0,1.0,3,2,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Đa Tốn,Gia Lâm,Masterise Homes,Masteri Waterfront,Căn hộ chung cư,62.63,67.06051635742188,2.0,2.0,4,1,Không có thông tin,,,6.0,3837.0,Không có thông tin,Không có thông tin,N
+Trâu Quỳ,Gia Lâm,Tập đoàn Vingroup,The Zenpark,Căn hộ chung cư,68.0,57.35293960571289,2.0,2.0,4,3,Không có thông tin,,,4.0,,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,The Pavilion - Vinhomes Ocean Park,"Chung cư mini, căn hộ dịch vụ",72.0,51.38888931274414,2.0,2.0,3,1,Không có thông tin,,,4.0,2600.0,Tây - Nam,Đông - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,106.0,46.22641372680664,3.0,2.0,4,3,Không có thông tin,,,66.0,,Đông - Nam,Đông - Nam,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,58.0,54.31034469604492,2.0,2.0,4,1,Không có thông tin,,,66.0,,Không có thông tin,Không có thông tin,N
+Dương Xá,Gia Lâm,CapitaLand Development (Việt Nam),Chung cư The Senique Hanoi,Căn hộ chung cư,101.0,66.73267364501953,3.0,2.0,3,3,Không có thông tin,,,3.0,2150.0,Đông - Nam,Tây - Bắc,N
+Dương Xá,Gia Lâm,Tập đoàn Vingroup,Vinhomes Ocean Park Gia Lâm,Căn hộ chung cư,46.0,60.65217208862305,1.0,1.0,4,3,Không có thông tin,,,66.0,,Đông - Bắc,Tây - Nam,N

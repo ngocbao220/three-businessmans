@@ -48,17 +48,17 @@ body::after {
   position: absolute;
 
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
-  z-index: 10;
+  z-index: 15;
 }
 /* Price segment positioning */
-#price_segment {
+#price_segment_of_ha_noi {
   bottom: 400px;
   left: 930px;
   width: 30%;
   height: 40%;
 }
 
-#his_prices {
+#history_price_of_ha_noi {
   bottom: 0px;
   left: 930px;
   width: 30%;
@@ -75,27 +75,37 @@ body::after {
   transition: opacity 1s ease;
 }
 
-#fluctuation {
+.notification {
   position: absolute;
-  font-size: 18px; /* Kích thước chữ */
-  font-weight: bold; /* Chữ đậm */
+  font-size: 13px; /* Kích thước chữ */
   font-family: "Arial", sans-serif; /* Font chữ */
-  background-color: "black";
+  background-color: #000000;
   color: #ffffff; /* Màu xanh ngọc */
-  bottom: 100px;
-  left: 470px;
   padding: 10px 20px; /* Khoảng cách bên trong */
   border: 2px solid #264653; /* Viền đậm màu xanh đen */
   border-radius: 8px; /* Bo tròn các góc */
   text-align: center; /* Canh giữa */
   display: inline-block; /* Hiển thị inline để vừa khít đoạn text */
-  white-space: nowrap; /* Không xuống dòng */
   opacity: 0;
   padding: 10px 20px; /* Khoảng cách bên trong */
   z-index: 10;
 }
 
-#correlation_chart {
+#fluctuation {
+  bottom: 100px;
+  left: 470px;
+}
+
+#fluctuationIn2Years {
+  bottom: 450px;
+  left: 540px;
+}
+#meanOfFluctuation {
+  bottom: 400px;
+  left: 540px;
+}
+
+#correlation_of_ha_noi {
   bottom: 0px;
   left: 0px;
   width: 30%;

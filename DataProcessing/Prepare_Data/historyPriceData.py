@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..
 from model import Predictor
 
 # Địa chỉ các file cần thiết
-data_path = './Data/cleanedData/cleaned_data.csv'
+data_path = './Data/cleanedData/cleaned_data_new.csv'
 month_price_path = './Data/priceData/month_price.csv'
 quarter_price_path = './Data/priceData/quarter_price.csv'
 # Tạo DataFrame 
@@ -183,12 +183,12 @@ class historyPriceOfProject:
 
 # Thực hiện chạy các hàm để thêm dữ liệu
 
-area_names = ['Nam Từ Liêm', 'Bắc Từ Liêm', 'Hà Nội']
-project_names = ['Vinhomes Ocean Park Gia Lâm', 'Sunshine City']
+area_names = ['Hà Nội']
+# project_names = ['Vinhomes Ocean Park Gia Lâm']
 
 for area_name in area_names:
     hPA = historyPriceOfArea(area_name)
     hPA.toJson()
-for project_name in project_names:
-    hPP = historyPriceOfProject(project_name)
-    hPP.toJson()
+# for project_name in project_names:
+#     hPP = historyPriceOfProject(project_name)
+#     hPP.toJson()

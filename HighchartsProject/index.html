@@ -13,19 +13,23 @@
   </head>
   <body>
     <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
-    <p id="fluctuation"></p>
-    <img src="./image/pie_icon.png" alt="pie_icon" id="bot">
+    <div id="paragrapth">
+      <p id="fluctuation" class="notification"></p>
+      <p id="fluctuationIn2Years" class="notification"></p>
+      <p id="meanOfFluctuation" class="notification"></p>
+    </div>
+    <img src="./image/pie_icon.png" alt="pie_icon" id="bot" />
     <div id="chart-container">
       <!-- Biểu đồ Phân khúc giá -->
-      <div id="price_segment" class="chart"></div>
+      <div id="price_segment_of_ha_noi" class="chart"></div>
       <!-- Biểu đồ Biến động giá -->
-      <div id="his_prices" class="chart"></div>
-      <div id="correlation_chart" class="chart"></div>
+      <div id="history_price_of_ha_noi" class="chart"></div>
+      <div id="correlation_of_ha_noi" class="chart"></div>
     </div>
 
     <!-- Tập lệnh javaScript -->
     <script type="module" src="events.js"></script>
     <script type="module" src="chart.js"></script>
-
+    <script type="module" src="script.js"></script>
   </body>
 </html>

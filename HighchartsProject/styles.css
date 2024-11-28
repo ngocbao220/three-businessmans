@@ -20,11 +20,6 @@ body::after {
   z-index: -1;
 }
 
-/* Khi menu mở, ẩn thanh cuộn của trang */
-.no-scroll {
-  overflow: hidden; /* Ẩn thanh trượt */
-}
-
 /* Main Title */
 #main-title {
   position: absolute;
@@ -51,28 +46,58 @@ body::after {
 .chart {
   opacity: 1;
   position: absolute;
-  cursor: pointer;
+
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 10;
 }
 /* Price segment positioning */
 #price_segment {
-  top: 40px;
-  right: 2%;
+  bottom: 400px;
+  left: 930px;
   width: 30%;
   height: 40%;
 }
 
 #his_prices {
   bottom: 0px;
-  right: 2%;
+  left: 930px;
   width: 30%;
   height: 50%;
 }
 
+#bot {
+  position: absolute;
+  bottom: 110px;
+  left: 400px;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#fluctuation {
+  position: absolute;
+  font-size: 18px; /* Kích thước chữ */
+  font-weight: bold; /* Chữ đậm */
+  font-family: "Arial", sans-serif; /* Font chữ */
+  background-color: "black";
+  color: #ffffff; /* Màu xanh ngọc */
+  bottom: 100px;
+  left: 470px;
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  border: 2px solid #264653; /* Viền đậm màu xanh đen */
+  border-radius: 8px; /* Bo tròn các góc */
+  text-align: center; /* Canh giữa */
+  display: inline-block; /* Hiển thị inline để vừa khít đoạn text */
+  white-space: nowrap; /* Không xuống dòng */
+  opacity: 0;
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  z-index: 10;
+}
+
 #correlation_chart {
   bottom: 0px;
-  left: 2%;
+  left: 0px;
   width: 30%;
   height: 45%;
 }
@@ -93,5 +118,5 @@ body::after {
 }
 
 .highcharts-contextbutton {
-  opacity: 0.2;
+  opacity: 0.1;
 }

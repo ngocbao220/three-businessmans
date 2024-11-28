@@ -1,25 +1,25 @@
-import {
-  handlePieIconClick,
-  handleColumnIconClick,
-  handleNextIconClick,
-  handleBackIconClick,
-  toggleCenter,
-  no_croll,
-} from "./events.js";
+import { move, returnToDefalut, typeText, showmore } from "./events.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch và vẽ biểu đồ phân khúc mức giá (Pie Chart)
-  fetch("../Data/Json/Segment_Price/prices_data.json")
+  fetch("../Data/Json/Segment/area/ha_noi.json")
     .then((response) => response.json())
     .then((data) => {
-      const { num_price1, num_price2, num_price3, num_price4 } = data;
+      const {
+        under_50,
+        between_50_100,
+        between_100_150,
+        between_150_200,
+        over_200,
+      } = data;
 
       // Dữ liệu cho Pie Chart
       const chartData = [
-        { name: "Dưới 100 triệu/m²", y: num_price1 },
-        { name: "100 đến 200 triệu/m²", y: num_price2 },
-        { name: "200 đến 300 triệu/m²", y: num_price3 },
-        { name: "Trên 300 triệu/m²", y: num_price4 },
+        { name: "Dưới 50 triệu/m²", y: under_50 },
+        { name: "50 đến 100 triệu/m²", y: between_50_100 },
+        { name: "100 đến 150 triệu/m²", y: between_100_150 },
+        { name: "150 đến 200 triệu/m²", y: between_150_200 },
+        { name: "Trên 200 triệu/m²", y: over_200 },
       ];
 
       // Khởi tạo Pie Chart
@@ -51,12 +51,45 @@ document.addEventListener("DOMContentLoaded", () => {
             data: chartData,
           },
         ],
+        exporting: {
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "As The Center",
+                  onclick: function () {
+                    const chart_price_segment =
+                      document.getElementById("price_segment");
+                    move(chart_price_segment, -450, 180);
+                  },
+                },
+                "separator",
+                {
+                  text: "Return To Default",
+                  onclick: function () {
+                    returnToDefalut();
+                  },
+                },
+                {
+                  text: "Show more",
+                  onclick: function () {
+                    const chart_price_segment =
+                      document.getElementById("price_segment");
+                    showmore(chart_price_segment, -800, 200, 1.3);
+                  },
+                },
+              ],
+            },
+          },
+        },
       });
     })
     .catch((error) =>
       console.error("Lỗi tải dữ liệu JSON (Pie Chart):", error)
     );
-
+  let count = 0; // Biến đếm số lần click
+  let point1 = null; // Lưu giá trị của điểm đầu tiên
+  let point2 = null; // Lưu giá trị của điểm thứ hai
   // Fetch và vẽ biểu đồ biến động giá (Line Chart)
   fetch("../Data/Json/History_Price/area/ha_noi.json")
     .then((response) => response.json())
@@ -111,12 +144,20 @@ document.addEventListener("DOMContentLoaded", () => {
           formatter: function () {
             const index = this.point.index;
             return `
+            <b>Thời điểm:</b> ${categories[index] || "N/A"}<br>
             <b>Giá cao nhất:</b> ${highPrices[categories[index]] || "N/A"}<br>
             <b>Giá trung bình:</b> ${
               averagePrices[categories[index]] || "N/A"
-            }<br>
+            }<br> 
             <b>Giá thấp nhất:</b> ${lowPrices[categories[index]] || "N/A"}<br>
           `;
+          },
+          positioner: function (labelWidth) {
+            // Đặt tooltip ở góc trên phải của biểu đồ
+            return {
+              x: this.chart.plotWidth - labelWidth, // Đặt tooltip cách phải 10px
+              y: 50, // Đặt tooltip cách trên 10px
+            };
           },
         },
         plotOptions: {
@@ -135,6 +176,73 @@ document.addEventListener("DOMContentLoaded", () => {
                 mouseOut: function () {
                   const chart = this.series.chart;
                   chart.xAxis[0].removePlotLine("hover-line");
+                },
+                click: function () {
+                  const index = this.index; // Index of the clicked point
+                  const month = categories[index]; // Corresponding month
+                  const average = averagePrices[month] || 0; // Average price for the month
+
+                  const defaultRadius = 5; // Default marker size
+                  const enlargedRadius = 10; // Enlarged marker size
+
+                  // Toggle marker size
+                  if (this.marker && this.marker.radius > defaultRadius) {
+                    this.update({
+                      marker: {
+                        radius: defaultRadius,
+                      },
+                    });
+                    count--; // Decrement click count
+                  } else {
+                    this.update({
+                      marker: {
+                        radius: enlargedRadius,
+                      },
+                    });
+                    count++; // Increment click count
+                  }
+
+                  // Store the first or second point
+                  if (count === 1) {
+                    point1 = {
+                      month: categories[this.index],
+                      index: this.index,
+                      value: average,
+                    }; // Store the month and index of the first point
+                  } else if (count === 2) {
+                    point2 = {
+                      month: categories[this.index],
+                      index: this.index,
+                      value: average,
+                    }; // Store the month and index of the second point
+
+                    // Calculate the difference in months
+                    const difference = point1.value - point2.value;
+
+                    // Display the change in months
+                    const textContent = `Biến động giá từ ${point1.month} đến ${
+                      point2.month
+                    }: ${Math.round(difference * 100) / 100}%.`;
+
+                    typeText("fluctuation", textContent, 20);
+
+                    // Reset selection state
+                    count = 0;
+                    point1 = null;
+                    point2 = null;
+
+                    // Reset all markers to default size
+                    const allMarkers = this.series.points;
+                    allMarkers.forEach((marker) => {
+                      if (marker.graphic) {
+                        marker.update({
+                          marker: {
+                            radius: defaultRadius,
+                          },
+                        });
+                      }
+                    });
+                  }
                 },
               },
             },
@@ -190,6 +298,38 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
           },
         ],
+        exporting: {
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "As The Center",
+                  onclick: function () {
+                    const chart_history_price =
+                      document.getElementById("his_prices");
+                    move(chart_history_price, -450, -150); // Gọi hàm beCenter và truyền vào container
+                  },
+                },
+                "separator",
+                {
+                  text: "Return To Default",
+                  onclick: function () {
+                    returnToDefalut();
+                  },
+                },
+                "separator",
+                {
+                  text: "Show more",
+                  onclick: function () {
+                    const chart_history_price =
+                      document.getElementById("his_prices");
+                    showmore(chart_history_price, -900, -200);
+                  },
+                },
+              ],
+            },
+          },
+        },
         legend: {
           enabled: true,
           itemStyle: {
@@ -271,13 +411,43 @@ document.addEventListener("DOMContentLoaded", () => {
               Hệ số tương quan: <b>${this.point.value.toFixed(2)}</b>`;
           },
         },
+        exporting: {
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "As The Center",
+                  onclick: function () {
+                    const chart_correlation =
+                      document.getElementById("correlation_chart");
+                    move(chart_correlation, 470, -200); // Gọi hàm beCenter và truyền vào container
+                  },
+                },
+                "separator",
+                {
+                  text: "Return To Default",
+                  onclick: function () {
+                    returnToDefalut();
+                  },
+                },
+                {
+                  text: "Show more",
+                  onclick: function () {
+                    const chart_correlation =
+                      document.getElementById("correlation_chart");
+                    showmore(chart_correlation, 0, -200);
+                  },
+                },
+              ],
+            },
+          },
+        },
       });
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON (Heatmap):", error));
 
-  handlePieIconClick();
-  handleColumnIconClick();
-  handleNextIconClick();
-  handleBackIconClick();
-  no_croll();
+  // handlePieIconClick();
+  // handleColumnIconClick();
+  // handleNextIconClick();
+  // handleBackIconClick();
 });

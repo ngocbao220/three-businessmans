@@ -1,12 +1,12 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import json
 import numpy as np
 import os
 import sys
 import unicodedata
 import re
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Prediction')))
+# Thêm mã dự đoán
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..', 'Prediction')))
 from model import Predictor
 
 # Địa chỉ các file cần thiết
@@ -17,12 +17,6 @@ quarter_price_path = './Data/priceData/quarter_price.csv'
 month_prices = pd.read_csv(month_price_path)
 quarter_prices = pd.read_csv(quarter_price_path)
 data = pd.read_csv(data_path)
-
-# Các khu vực trên thành phố Hà Nội
-# area_names = data['Quận/Huyện'].drop_duplicates().to_list()
-
-area_names = ['Nam Từ Liêm', 'Bắc Từ Liêm', 'Hà Nội']
-project_names = ['Vinhomes Ocean Park Gia Lâm', 'Khu đô thị Văn Khê']
 
 # Tài nguyên chuyển đổi giá theo Quý sang theo Tháng
 columns = 'Giá T10/22,Giá T11/22,Giá T12/22,Giá T1/23,Giá T2/23,Giá T3/23,Giá T4/23,Giá T5/23,Giá T6/23,Giá T7/23,Giá T8/23,Giá T9/23,Giá T10/23,Giá T11/23,Giá T12/23,Giá T1/24,Giá T2/24,Giá T3/24,Giá T4/24,Giá T5/24,Giá T6/24,Giá T7/24,Giá T8/24,Giá T9/24,Giá T10/24'
@@ -37,7 +31,7 @@ quarter_to_months = {
     'Giá Q3/24': ['Giá T7/24', 'Giá T8/24', 'Giá T9/24', 'Giá T10/24']
 }
 
-# Hàm chuyển đổi
+# Hàm chuyển đổi 
 def change_quarter_to_month(quarter_row):
     result = pd.DataFrame(columns=columns.split(','))
     for quarter, months in quarter_to_months.items():
@@ -47,7 +41,7 @@ def change_quarter_to_month(quarter_row):
     
     return result
 # Hàm chuẩn hóa địa chỉ file
-def normalize_area_name(area_name):
+def normalize_name(area_name):
     # Bỏ dấu tiếng Việt
     area_name = unicodedata.normalize('NFD', area_name)
     area_name = ''.join(ch for ch in area_name if unicodedata.category(ch) != 'Mn')
@@ -65,7 +59,7 @@ def normalize_area_name(area_name):
 
 # KHU VỰC
 class historyPriceOfArea:
-    def __init__(self, area = None):
+    def __init__(self, area):
         if area != 'Hà Nội':
             self.data = data[data['Quận/Huyện'] == area]
         elif(area == 'Hà Nội'):
@@ -119,23 +113,15 @@ class historyPriceOfArea:
         ]
     
     # Ghi dữ liệu giá vào tệp JSON
-    def toJson(self, base_json_path):
-        if self.area_name is not None:
-            self.makeMeanPrice()
-            self.addPredictionData()
-            json_path = os.path.join(base_json_path, f"{normalize_area_name(self.area_name)}.json")
-            self.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
-        else:
-            for area_name in area_names:
-                hPA = historyPriceOfArea(area_name)
-                hPA.makeMeanPrice()
-                hPA.addPredictionData()
-                json_path = os.path.join(base_json_path, f"{normalize_area_name(area_name)}.json")
-                hPA.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
+    def toJson(self):
+        self.makeMeanPrice()
+        self.addPredictionData()
+        json_path = os.path.join(f"./Data/Json/History_Price/area/{normalize_name(self.area_name)}.json")
+        self.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
 
 # DỰ ÁN
 class historyPriceOfProject:
-    def __init__(self, project = None):
+    def __init__(self, project):
         if project != 'Hà Nội':
             self.data = data[data['Tên dự án'] == project]
         elif(project == 'Hà Nội'):
@@ -189,23 +175,20 @@ class historyPriceOfProject:
         ]
     
     # Ghi dữ liệu giá vào tệp JSON
-    def toJson(self, base_json_path):
-        if self.project_name is not None:
-            self.makeMeanPrice()
-            self.addPredictionData()
-            json_path = os.path.join(base_json_path, f"{normalize_area_name(self.area_name)}.json")
-            self.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
-        else:
-            for project_name in project_names:
-                hPP = historyPriceOfProject(project_name)
-                hPP.makeMeanPrice()
-                hPP.addPredictionData()
-                json_path = os.path.join(base_json_path, f"{normalize_area_name(project_name)}.json")
-                hPP.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
+    def toJson(self):
+        self.makeMeanPrice()
+        self.addPredictionData()
+        json_path = os.path.join(f"./Data/Json/History_Price/project/{normalize_name(self.project_name)}.json")
+        self.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
 
 # Thực hiện chạy các hàm để thêm dữ liệu
-hPA = historyPriceOfArea()
-hPA.toJson('./Data/Json/History_Price/area')
 
-hPP = historyPriceOfProject()
-hPP.toJson('./Data/Json/History_Price/project')
+area_names = ['Nam Từ Liêm', 'Bắc Từ Liêm', 'Hà Nội']
+project_names = ['Vinhomes Ocean Park Gia Lâm', 'Sunshine City']
+
+for area_name in area_names:
+    hPA = historyPriceOfArea(area_name)
+    hPA.toJson()
+for project_name in project_names:
+    hPP = historyPriceOfProject(project_name)
+    hPP.toJson()

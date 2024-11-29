@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Charts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Thư viện Highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+  </head>
+  <body>
+    <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
+    <div id="paragrapth">
+      <p id="fluctuation" class="notification"></p>
+      <p id="fluctuationIn2Years" class="notification"></p>
+      <p id="meanOfFluctuation" class="notification"></p>
+    </div>
+    <img src="./image/pie_icon.png" alt="pie_icon" id="bot" />
+    <div id="chart-container">
+      <!-- Biểu đồ Phân khúc giá -->
+      <div id="price_segment_of_ha_noi" class="chart"></div>
+      <!-- Biểu đồ Biến động giá -->
+      <div id="history_price_of_ha_noi" class="chart"></div>
+      <div id="correlation_of_ha_noi" class="chart"></div>
+    </div>
+
+    <!-- Tập lệnh javaScript -->
+    <script type="module" src="events.js"></script>
+    <script type="module" src="chart.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

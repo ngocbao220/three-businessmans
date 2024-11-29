@@ -30,6 +30,11 @@ class Predictor:
         a = self.model.coef_[0]
         b = self.model.intercept_
         return a, b
+    def prediction(self):
+        self.standar()
+        self.learn()
+        a, b = self.getParameters()
+        return a * 26 + b
 
     def plotData(self):
         plt.figure(figsize=(13, 6))

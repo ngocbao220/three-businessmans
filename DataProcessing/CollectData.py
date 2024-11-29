@@ -16,16 +16,15 @@ if not os.path.exists('Data'):
     os.makedirs('Data')
 
 # Đường dẫn tới file
-page_new_Path = 'Data/page_number_new.txt'
-data_new_Path = 'Data/originalData/data_original_new.csv'
-data_Project_new_Path = 'Data/originalData/data_project_new.csv'
-test_Path = 'Data/originalData/test.csv'
+page_new_Path = 'D:\\AI - năm hai\\Kì I\\LT xử lý dữ liệu\\BTL\\three-businessmans\\Data\\page_number_new.txt'
+data_new_Path = 'D:\\AI - năm hai\\Kì I\\LT xử lý dữ liệu\BTL\\three-businessmans\\Data\\originalData\\data_original_new.csv'
+data_Project_new_Path = 'D:\\AI - năm hai\\Kì I\LT xử lý dữ liệu\\BTL\\three-businessmans\\Data\\originalData\\data_project_new.csv'
 
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-'''# Tạo 1 dataframe chứa các cột của data
-df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Phân loại', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
+# Tạo 1 dataframe chứa các cột của data
+'''df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Phân loại', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
 df.to_csv(data_new_Path, mode='a', index=False, encoding='utf-8-sig')
 df.to_csv(data_Project_new_Path, mode='a', index=False, encoding='utf-8-sig')'''
 
@@ -205,7 +204,7 @@ try:
                 other_info.append("Không có thông tin")
 
             # Kiểm tra xem tên dự án đã tồn tại hay chưa
-            if project_name not in project_name_dict or project_name == 'Không có thông tin':
+            if project_name not in project_name_dict or project_name == 'Không có thông tin' or project_name == 'Đang cập nhật':
                 #print('Dự án mới:' + project_name)
                 # Kiểm tra xem có nút lịch sử giá hay không và lấy lịch sử giá
                 if (click_price_history_button()):
@@ -234,7 +233,7 @@ try:
                     except Exception as e:
                         print(f"Không thể chuyển sang tab '2 năm'")
             else:
-                #print('Đã tồn tại dự án:' + project_name)
+                print('Đã tồn tại dự án:' + project_name)
                 price_history = project_name_dict[project_name]['Lịch sử giá']
                 price_spread_history = project_name_dict[project_name]['Khoảng giá']
 
@@ -281,22 +280,21 @@ try:
 
         number_of_pages = 1
         ''' ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong', 
+        cg,đd,hm
         'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
         ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
-        areas = ['cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong']
+        areas = ['thanh-tri']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
         for area in areas:
             for classify_link in classify_links:
                 count_of_data = 0
-                if area == 'cau-giay':
-                    if (classify_link == 'ban-can-ho-chung-cu-mini-' 
-                        or classify_link == 'ban-can-ho-chung-cu-' 
-                        or classify_link == 'ban-nha-rieng-'):
-                        continue
                 number_of_pages = 1
+                '''if area == 'hoang-mai':
+                    if classify_link in ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-']:
+                        continue'''
 
                 '''if (area, classify_link) in pivot_df.index:
                     # Lấy số lượng tương ứng

@@ -210,6 +210,7 @@ for area_name in districts_hanoi:
         hPA.toJson()
     except Exception as e:  # Bắt lỗi nếu có
         print('Không thành công : ', area_name)
+        print('Lỗi:', e)
     
 # for project_name in project_names:
 #     hPP = historyPriceOfProject(project_name)

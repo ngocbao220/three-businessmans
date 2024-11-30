@@ -15,6 +15,9 @@ def normalize_name(area_name):
     
     area_name = area_name.replace('đ', 'd')
     area_name = area_name.replace('Đ', 'd')
+    area_name = area_name.replace('_', ' ')
+    area_name = area_name.replace('-', ' ')
+
     # Chuyển tất cả sang chữ thường
     area_name = area_name.lower()
 
@@ -57,15 +60,15 @@ class TypeCorrelation():
 class SegmentCorrelation():
     def __init__(self, type_segment) :
         self.type_segment = type_segment
-        if type_segment == 1:
+        if type_segment == 'under_50':
             self.data = data[data['Mức giá'] < 50]
-        elif type_segment == 2:
+        elif type_segment == 'between_50_100':
             self.data = data[(data['Mức giá'] >= 50) & (data['Mức giá'] < 100)]
-        elif type_segment == 3:
+        elif type_segment == 'between_100_150':
             self.data = data[(data['Mức giá'] >= 100) & (data['Mức giá'] < 150)]
-        elif type_segment == 4:
+        elif type_segment == 'between_150_200':
             self.data = data[(data['Mức giá'] >= 150) & (data['Mức giá'] < 200)]
-        elif type_segment == 5:
+        elif type_segment == 'over_200':
             self.data = data[(data['Mức giá'] >= 200)]
     def getCorr(self):
         self.corr = self.data.loc[:,['Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất']].corr()
@@ -74,7 +77,7 @@ class SegmentCorrelation():
         corr_json= self.corr.to_json(orient='split')
 
         # Lưu vào file JSON
-        with open(f'Data/Json/Correlation/segment/type{self.type_segment}.json', 'w', encoding='utf-8') as f:
+        with open(f'Data/Json/Correlation/segment/{normalize_name(self.type_segment)}.json', 'w', encoding='utf-8') as f:
             json.dump(json.loads(corr_json), f, ensure_ascii=False, indent=4)
 
 class ProjectCorrelation():
@@ -99,9 +102,9 @@ districts_hanoi = [
     "Thanh Trì", "Thường Tín", "Ứng Hòa", "Ba Vì", "Chương Mỹ", "Sơn Tây"  # Sơn Tây là thị xã
 ]
 
-project_names = ['Vinhomes Ocean Park Gia Lâm', 'Khu đô thị Văn Khê']
+project_names = data['Tên dự án'].drop_duplicates().to_list()
 
-segment_names = [1, 2, 3, 4, 5]
+segment_names = ['under_50', 'between_50_100', 'between_100_150', 'between_150_200', 'over_200']
 
 property_types = [
     "Căn hộ chung cư",
@@ -119,36 +122,37 @@ property_types = [
 
 for area_name in districts_hanoi:
     try:
-        print('Thành công: ', area_name)
         aP = AreaCorrelation(area_name)
         aP.toJson()
+        print('Thành công: ', area_name)
     except Exception as e:
         print('Không thành công: ', area_name)
         print('Lỗi:', e)
 
 for project_name in project_names:
     try:
-        print('Thành công: ', project_name)
         pP = ProjectCorrelation(project_name)
         pP.toJson()
+        print('Thành công: ', project_name)
     except Exception as e:
         print('Không thành công: ', project_name)
         print('Lỗi:', e)
 
 for segment_name in segment_names:
     try:
-        print('Thành công: ', segment_name)
         sP = SegmentCorrelation(segment_name)
         sP.toJson()
+        print('Thành công: ', segment_name)
     except Exception as e:
         print('Không thành công: ', segment_name)
         print('Lỗi:', e)
 
 for type_name in property_types:
     try:
-        print('Thành công: ', type_name)
         tP = TypeCorrelation(type_name)
         tP.toJson()
+        print('Thành công: ', type_name)
     except Exception as e:
         print('Không thành công: ', type_name)
         print('Lỗi:', e)
+

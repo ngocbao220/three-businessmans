@@ -87,7 +87,7 @@ export function showmore(c, x, y, scale = 1) {
 
   const segment = document.getElementById("price_segment_of_ha_noi");
   if (c == segment) {
-    makeSegmentPrice('area', 'bac_tu_liem', false, 400, 200, 30, 40, 'sub_chart_of_pie');
+    makeSegmentPrice('area', 'bac_tu_liem', false, 600, 200, 30, 40, 'sub_chart_of_pie');
   }
 }
 
@@ -101,18 +101,18 @@ export function remake_sub_chart_of_Pie(range_name) {
     case "Dưới 50 triệu/m²":
       jsonFilePath = "../Data/Json/Segment/area/ha_dong.json";
       break;
-    // case "50 đến 100 triệu/m²":
-    //   jsonFilePath = "../Data/Json/Segment/segment/type2.json";
-    //   break;
-    // case "100 đến 150 triệu/m²":
-    //   jsonFilePath = "../Data/Json/Segment/segment/type3.json";
-    //   break;
-    // case "150 đến 200 triệu/m²":
-    //   jsonFilePath = "../Data/Json/Segment/segment/type4.json";
-    //   break;
-    // case "Trên 200 triệu/m²":
-    //   jsonFilePath = "../Data/Json/Segment/segment/type5.json";
-    //   break;
+    case "50 đến 100 triệu/m²":
+      jsonFilePath = "../Data/Json/Segment/segment/type2.json";
+      break;
+    case "100 đến 150 triệu/m²":
+      jsonFilePath = "../Data/Json/Segment/segment/type3.json";
+      break;
+    case "150 đến 200 triệu/m²":
+      jsonFilePath = "../Data/Json/Segment/segment/type4.json";
+      break;
+    case "Trên 200 triệu/m²":
+      jsonFilePath = "../Data/Json/Segment/segment/type5.json";
+      break;
     default:
       console.error("Giá trị range_name không hợp lệ:", range_name);
       return; // Kết thúc hàm nếu không xác định được JSON
@@ -120,35 +120,8 @@ export function remake_sub_chart_of_Pie(range_name) {
 
   // Duyệt qua các biểu đồ
   sub_charts.forEach((sub_chart) => {
-    console.log(sub_chart.id);
+    sub_chart.remove();
+  })
 
-    if (sub_chart) {
-      // Tải dữ liệu JSON và cập nhật biểu đồ
-      fetch(jsonFilePath)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          return response.json();
-        })
-        .then((newData) => {
-          if (sub_chart && sub_chart.series[0] && Array.isArray(newData)) {
-            sub_chart.series[0].setData(newData);
-            console.log(
-              `Dữ liệu biểu đồ #${sub_chart.highchartsChart} đã được cập nhật!`
-            );
-          } else {
-            console.error("Dữ liệu JSON không hợp lệ:", newData);
-          }
-        })
-        .catch((error) => {
-          console.error("Lỗi khi tải hoặc cập nhật dữ liệu:", error);
-        });
-    } else {
-      console.error(
-        "Không tìm thấy biểu đồ hoặc biểu đồ không hợp lệ:",
-        sub_chart
-      );
-    }
-  });
+  makeHistoryPrice('area')
 }

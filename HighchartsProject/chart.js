@@ -1,4 +1,10 @@
-import { move, returnToDefalut, typeText, showmore } from "./events.js";
+import {
+  move,
+  returnToDefalut,
+  typeText,
+  showmore,
+  remake_sub_chart_of_Pie,
+} from "./events.js";
 
 export function makeSegmentPrice(
   type,
@@ -7,7 +13,8 @@ export function makeSegmentPrice(
   left = 0,
   bottom = 0,
   width = 0,
-  height = 0
+  height = 0,
+  className
 ) {
   fetch(`../Data/Json/Segment/${type}/${name}.json`)
     .then((response) => response.json())
@@ -40,7 +47,7 @@ export function makeSegmentPrice(
         chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
         chartContainer.style.height = `${height}%`; // Chiều cao mặc định
         chartContainer.style.zIndex = 15;
-        chartContainer.className = "chart";
+        chartContainer.className = className;
         document.body.appendChild(chartContainer);
       }
 
@@ -63,6 +70,17 @@ export function makeSegmentPrice(
             cursor: "pointer",
             dataLabels: {
               enabled: true,
+            },
+            point: {
+              events: {
+                click: function () {
+                  // Gọi hàm tùy chỉnh của bạn
+                  remake_sub_chart_of_Pie(this.name);
+
+                  // Hiệu ứng tách lát mặc định (không cần xử lý thủ công slice())
+                  // Highcharts tự quản lý trạng thái này
+                },
+              },
             },
           },
         },
@@ -96,7 +114,7 @@ export function makeSegmentPrice(
                   text: "Show more",
                   onclick: function () {
                     const chart_price_segment = document.getElementById(id);
-                    showmore(chart_price_segment, -800, 200, 1.3);
+                    showmore(chart_price_segment, -850, 200, 1.3);
                   },
                 },
               ],
@@ -117,7 +135,8 @@ export function makeHistoryPrice(
   left = 0,
   bottom = 0,
   width = 0,
-  height = 0
+  height = 0,
+  className
 ) {
   let count = 0; // Biến đếm số lần click
   let point1 = null; // Lưu giá trị của điểm đầu tiên
@@ -144,7 +163,7 @@ export function makeHistoryPrice(
         chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
         chartContainer.style.height = `${height}%`; // Chiều cao mặc định
         chartContainer.style.zIndex = 15;
-        chartContainer.className = "chart";
+        chartContainer.className = className;
         document.body.appendChild(chartContainer);
       }
 
@@ -265,7 +284,7 @@ export function makeHistoryPrice(
                     }; // Store the month and index of the second point
 
                     // Calculate the difference in months
-                    const difference = point2.value - point1.value;
+                    const difference = (point2.value / point1.value - 1) * 100;
 
                     // Display the change in months
                     const textContent = `Biến động giá từ ${point1.month} đến ${
@@ -434,9 +453,9 @@ export function makeCorrelation(
   left = 0,
   bottom = 0,
   width = 0,
-  height = 0
+  height = 0,
+  className
 ) {
-  // Fetch và vẽ biểu đồ tương quan (Heatmap)
   fetch(`../Data/Json/Correlation/${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
@@ -450,18 +469,27 @@ export function makeCorrelation(
 
       const id = `correlation_of_${name}`;
       let chartContainer = document.getElementById(id);
+
       if (!chartContainer) {
         chartContainer = document.createElement("div");
         chartContainer.id = id;
         chartContainer.style.position = "absolute";
-        chartContainer.style.left = `${left}px`; // Đặt vị trí từ tham số left
-        chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
-        chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
-        chartContainer.style.height = `${height}%`; // Chiều cao mặc định
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
         chartContainer.style.zIndex = 15;
-        chartContainer.className = "chart";
+        chartContainer.classList.add(className);
+        chartContainer.style.transition = "opacity 1.5s ease";
+        chartContainer.style.opacity = "0";
+
         document.body.appendChild(chartContainer);
+
+        requestAnimationFrame(() => {
+          chartContainer.style.opacity = "1"; // Sáng dần lên
+        });
       }
+
       // Khởi tạo Heatmap
       Highcharts.chart(id, {
         chart: {
@@ -517,7 +545,7 @@ export function makeCorrelation(
                   text: "As The Center",
                   onclick: function () {
                     const chart_correlation = document.getElementById(id);
-                    move(chart_correlation, 470, -200); // Gọi hàm beCenter và truyền vào container
+                    move(chart_correlation, 470, -200);
                   },
                 },
                 "separator",

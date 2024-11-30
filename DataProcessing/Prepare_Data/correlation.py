@@ -14,6 +14,7 @@ def normalize_name(area_name):
     area_name = ''.join(ch for ch in area_name if unicodedata.category(ch) != 'Mn')
     
     area_name = area_name.replace('đ', 'd')
+    area_name = area_name.replace('Đ', 'd')
     # Chuyển tất cả sang chữ thường
     area_name = area_name.lower()
 
@@ -57,13 +58,15 @@ class SegmentCorrelation():
     def __init__(self, type_segment) :
         self.type_segment = type_segment
         if type_segment == 1:
-            self.data = data[data['Mức giá'] < 100]
+            self.data = data[data['Mức giá'] < 50]
         elif type_segment == 2:
-            self.data = data[(data['Mức giá'] >= 100) & (data['Mức giá'] < 200)]
+            self.data = data[(data['Mức giá'] >= 50) & (data['Mức giá'] < 100)]
         elif type_segment == 3:
-            self.data = data[(data['Mức giá'] >= 200) & (data['Mức giá'] < 300)]
+            self.data = data[(data['Mức giá'] >= 100) & (data['Mức giá'] < 150)]
         elif type_segment == 4:
-            self.data = data[(data['Mức giá'] >= 300)]
+            self.data = data[(data['Mức giá'] >= 150) & (data['Mức giá'] < 200)]
+        elif type_segment == 5:
+            self.data = data[(data['Mức giá'] >= 200)]
     def getCorr(self):
         self.corr = self.data.loc[:,['Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất']].corr()
     def toJson(self):
@@ -88,23 +91,64 @@ class ProjectCorrelation():
         with open(f'Data/Json/Correlation/project/{normalize_name(self.project_name)}.json', 'w', encoding='utf-8') as f:
             json.dump(json.loads(corr_json), f, ensure_ascii=False, indent=4)
 
-area_names = ['Hà Nội', 'Nam Từ Liêm', 'Bắc Từ Liêm']
-project_names = ['Vinhomes Ocean Park Gia Lâm', 'Khu đô thị Văn Khê']
-segment_names = [1, 2, 3, 4]
-type_names = ['Căn hộ chung cư', 'Nhà riêng', 'Chung cư mini, căn hộ dịch vụ', 'Nhà mặt phố']
+districts_hanoi = [
+    'Hà Nội',"Ba Đình", "Hoàn Kiếm", "Hai Bà Trưng", "Đống Đa", "Tây Hồ", "Cầu Giấy",
+    "Thanh Xuân", "Hoàng Mai", "Long Biên", "Hà Đông", "Bắc Từ Liêm", "Nam Từ Liêm",
+    "Đan Phượng", "Đông Anh", "Gia Lâm", "Hoài Đức", "Mê Linh", "Mỹ Đức",
+    "Phú Xuyên", "Phúc Thọ", "Quốc Oai", "Sóc Sơn", "Thạch Thất", "Thanh Oai",
+    "Thanh Trì", "Thường Tín", "Ứng Hòa", "Ba Vì", "Chương Mỹ", "Sơn Tây"  # Sơn Tây là thị xã
+]
 
-for area_name in area_names:
-    aP = AreaCorrelation(area_name)
-    aP.toJson()
+project_names = ['Vinhomes Ocean Park Gia Lâm', 'Khu đô thị Văn Khê']
+
+segment_names = [1, 2, 3, 4, 5]
+
+property_types = [
+    "Căn hộ chung cư",
+    "Chung cư mini, căn hộ dịch vụ",
+    "Nhà riêng",
+    "Nhà Biệt thự, liền kề",
+    "Nhà mặt phố",
+    "Shophouse, nhà phố thương mại",
+    "Bán đất",
+    "Bất động sản khác",
+    "Trang trại, khu nghỉ dưỡng",
+    "Condotel",
+    "Kho, nhà xưởng"
+]
+
+for area_name in districts_hanoi:
+    try:
+        print('Thành công: ', area_name)
+        aP = AreaCorrelation(area_name)
+        aP.toJson()
+    except Exception as e:
+        print('Không thành công: ', area_name)
+        print('Lỗi:', e)
 
 for project_name in project_names:
-    pP = ProjectCorrelation(project_name)
-    pP.toJson()
-    
-for segment_name in segment_names:
-    sP = SegmentCorrelation(segment_name)
-    sP.toJson()
+    try:
+        print('Thành công: ', project_name)
+        pP = ProjectCorrelation(project_name)
+        pP.toJson()
+    except Exception as e:
+        print('Không thành công: ', project_name)
+        print('Lỗi:', e)
 
-for type_name in type_names:
-    tP = TypeCorrelation(type_name)
-    tP.toJson()
+for segment_name in segment_names:
+    try:
+        print('Thành công: ', segment_name)
+        sP = SegmentCorrelation(segment_name)
+        sP.toJson()
+    except Exception as e:
+        print('Không thành công: ', segment_name)
+        print('Lỗi:', e)
+
+for type_name in property_types:
+    try:
+        print('Thành công: ', type_name)
+        tP = TypeCorrelation(type_name)
+        tP.toJson()
+    except Exception as e:
+        print('Không thành công: ', type_name)
+        print('Lỗi:', e)

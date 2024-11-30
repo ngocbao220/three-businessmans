@@ -11,6 +11,7 @@ def normalize_name(area_name):
     area_name = ''.join(ch for ch in area_name if unicodedata.category(ch) != 'Mn')
     
     area_name = area_name.replace('đ', 'd')
+    area_name = area_name.replace('Đ', 'd')
     # Chuyển tất cả sang chữ thường
     area_name = area_name.lower()
 
@@ -76,15 +77,20 @@ class segmentPriceOfProject:
         # Ghi vào file JSON
         with open(f"./Data/Json/Segment/project/{normalize_name(self.project_name)}.json", "w") as f:
             json.dump(data_to_export, f)
+districts_hanoi = [
+    'Hà Nội',"Ba Đình", "Hoàn Kiếm", "Hai Bà Trưng", "Đống Đa", "Tây Hồ", "Cầu Giấy",
+    "Thanh Xuân", "Hoàng Mai", "Long Biên", "Hà Đông", "Bắc Từ Liêm", "Nam Từ Liêm",
+    "Đan Phượng", "Đông Anh", "Gia Lâm", "Hoài Đức", "Mê Linh", "Mỹ Đức",
+    "Phú Xuyên", "Phúc Thọ", "Quốc Oai", "Sóc Sơn", "Thạch Thất", "Thanh Oai",
+    "Thanh Trì", "Thường Tín", "Ứng Hòa", "Ba Vì", "Chương Mỹ", "Sơn Tây"  # Sơn Tây là thị xã
+]
 
-area_names = ['Hà Nội', 'Nam Từ Liêm', 'Bắc Từ Liêm']
 project_names = ['Sunshine City', 'Goldmark City']
 
-for area_name in area_names:
-    sPA = segmentPriceOfArea(area_name)
-    sPA.toJson()
-
-
-for project_name in project_names:
-    sPP = segmentPriceOfProject(project_name)
-    sPP.toJson()
+for area_name in districts_hanoi:
+    try:
+        print('Thành công : ', area_name)
+        sPA = segmentPriceOfArea(area_name)
+        sPA.toJson()
+    except:
+        print('Không thành công : ', area_name)

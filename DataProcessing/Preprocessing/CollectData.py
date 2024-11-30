@@ -17,8 +17,8 @@ if not os.path.exists('Data'):
 
 # Đường dẫn tới file
 page_new_Path = 'Data/page_number_new.txt'
-data_new_Path = 'Data/originalData/data_original_new.csv'
-data_Project_new_Path = 'Data/originalData/data_project_new.csv'
+data_new_Path = 'Data/originalData/data_suport.csv'
+data_Project_new_Path = 'Data/originalData/data_project_suport.csv'
 test_Path = 'Data/originalData/test2.csv'
 
 # Tạo trình điều khiển Chrome
@@ -35,7 +35,7 @@ try:
     # URL của trang web bất động sản
     url = 'https://batdongsan.com.vn/nha-dat-ban-ha-noi'
     driver.get(url)
-    time.sleep(20) # Sleep để login bằng cơm
+    time.sleep(30) # Sleep để login bằng cơm
 
     # Chờ load xong trang
     wait = WebDriverWait(driver, 5)
@@ -286,7 +286,7 @@ try:
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
         ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
         
-        areas = ['gia-lam', 'hoai-duc', 'me-linh']
+        areas = ['dong-anh', 'gia-lam']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 

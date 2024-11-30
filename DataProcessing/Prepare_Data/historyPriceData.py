@@ -11,11 +11,19 @@ from model import Predictor
 
 # Địa chỉ các file cần thiết
 data_path = './Data/cleanedData/cleaned_data_new.csv'
-month_price_path = './Data/priceData/month_price.csv'
-quarter_price_path = './Data/priceData/quarter_price.csv'
+month_price_area_path = './Data/priceData/area/month_price.csv'
+quarter_price_area_path = './Data/priceData/area/quarter_price.csv'
+
+month_price_project_path = './Data/priceData/project/month_price.csv'
+quarter_price_project_path = './Data/priceData/project/quarter_price.csv'
+
 # Tạo DataFrame 
-month_prices = pd.read_csv(month_price_path)
-quarter_prices = pd.read_csv(quarter_price_path)
+month_prices_area = pd.read_csv(month_price_area_path)
+quarter_prices_area = pd.read_csv(quarter_price_area_path)
+
+month_prices_project = pd.read_csv(month_price_project_path)
+quarter_prices_project = pd.read_csv(quarter_price_project_path)
+
 data = pd.read_csv(data_path)
 
 # Tài nguyên chuyển đổi giá theo Quý sang theo Tháng
@@ -47,6 +55,7 @@ def normalize_name(area_name):
     area_name = ''.join(ch for ch in area_name if unicodedata.category(ch) != 'Mn')
     
     area_name = area_name.replace('đ', 'd')
+    area_name = area_name.replace('Đ', 'D')
     # Chuyển tất cả sang chữ thường
     area_name = area_name.lower()
 
@@ -72,11 +81,11 @@ class historyPriceOfArea:
     def addToAllPrice(self):
         for index, row in self.data.iterrows():
             if row['Mã lịch sử giá'] == 'M':
-                matching_row = month_prices[month_prices['index'] == index].drop(columns=['index'])
+                matching_row = month_prices_area[month_prices_area['index'] == index].drop(columns=['index'])
                 if not matching_row.empty:
                     self.allPrices = pd.concat([self.allPrices, matching_row], ignore_index=True)
             if row['Mã lịch sử giá'] == 'Q':
-                matching_row = quarter_prices[quarter_prices['index'] == index].drop(columns=['index'])
+                matching_row = quarter_prices_area[quarter_prices_area['index'] == index].drop(columns=['index'])
                 if not matching_row.empty:
                     self.allPrices = pd.concat([self.allPrices, change_quarter_to_month(matching_row)], ignore_index=True)
     
@@ -97,8 +106,8 @@ class historyPriceOfArea:
                     less.append(float(row_values[0]))
                     mean.append(float(row_values[1]))
                     max.append(float(row_values[2]))
-
-            self.mean_price[col] = [round(np.min(less), 2), round(np.mean(mean), 2), round(np.max(max), 2)]
+            if (less != []) :
+                self.mean_price[col] = [round(np.min(less), 2), round(np.mean(mean), 2), round(np.max(max), 2)]
     
     # Thêm phần dự đoán
     def addPredictionData(self):
@@ -134,11 +143,11 @@ class historyPriceOfProject:
     def addToAllPrice(self):
         for index, row in self.data.iterrows():
             if row['Mã lịch sử giá'] == 'M':
-                matching_row = month_prices[month_prices['index'] == index].drop(columns=['index'])
+                matching_row = month_prices_project[month_prices_project['index'] == index].drop(columns=['index'])
                 if not matching_row.empty:
                     self.allPrices = pd.concat([self.allPrices, matching_row], ignore_index=True)
             if row['Mã lịch sử giá'] == 'Q':
-                matching_row = quarter_prices[quarter_prices['index'] == index].drop(columns=['index'])
+                matching_row = quarter_prices_project[quarter_prices_project['index'] == index].drop(columns=['index'])
                 if not matching_row.empty:
                     self.allPrices = pd.concat([self.allPrices, change_quarter_to_month(matching_row)], ignore_index=True)
     
@@ -159,8 +168,8 @@ class historyPriceOfProject:
                     less.append(float(row_values[0]))
                     mean.append(float(row_values[1]))
                     max.append(float(row_values[2]))
-
-            self.mean_price[col] = [round(np.min(less), 2), round(np.mean(mean), 2), round(np.max(max), 2)]
+            if (less != []) :
+                self.mean_price[col] = [round(np.min(less), 2), round(np.mean(mean), 2), round(np.max(max), 2)]
     
     # Thêm phần dự đoán
     def addPredictionData(self):
@@ -182,13 +191,26 @@ class historyPriceOfProject:
         self.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
 
 # Thực hiện chạy các hàm để thêm dữ liệu
+# ĐÔng anh Phú Xuyên Phúc Thọ Quốc Oai Sóc Sơn Thanh Oai Ứng Hòa Ba Vì Sơn Tây
+districts_hanoi = [
+    'Hà Nội',"Ba Đình", "Hoàn Kiếm", "Hai Bà Trưng", "Đống Đa", "Tây Hồ", "Cầu Giấy",
+    "Thanh Xuân", "Hoàng Mai", "Long Biên", "Hà Đông", "Bắc Từ Liêm", "Nam Từ Liêm",
+    "Đan Phượng", "Đông Anh", "Gia Lâm", "Hoài Đức", "Mê Linh", "Mỹ Đức",
+    "Phú Xuyên", "Phúc Thọ", "Quốc Oai", "Sóc Sơn", "Thạch Thất", "Thanh Oai",
+    "Thanh Trì", "Thường Tín", "Ứng Hòa", "Ba Vì", "Chương Mỹ", "Sơn Tây"  # Sơn Tây là thị xã
+]
 
-area_names = ['Hà Nội']
-# project_names = ['Vinhomes Ocean Park Gia Lâm']
 
-for area_name in area_names:
-    hPA = historyPriceOfArea(area_name)
-    hPA.toJson()
+project_names = ['Vinhomes Metropolis - Liễu Giai']
+
+for area_name in districts_hanoi:
+    try:
+        print('Thành công : ', area_name)
+        hPA = historyPriceOfArea(area_name)
+        hPA.toJson()
+    except Exception as e:  # Bắt lỗi nếu có
+        print('Không thành công : ', area_name)
+    
 # for project_name in project_names:
 #     hPP = historyPriceOfProject(project_name)
 #     hPP.toJson()

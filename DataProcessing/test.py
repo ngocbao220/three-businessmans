@@ -6,7 +6,7 @@ data_new_Path = 'D:\\AI - năm hai\\Kì I\\LT xử lý dữ liệu\BTL\\three-bu
 df = pd.read_csv(data_new_Path)
 
 # Danh sách các quận/huyện cần loại bỏ
-danh_sach_loai_bo = []
+danh_sach_loai_bo = ['Nam Từ Liêm']
 
 # Loại bỏ các bản ghi có Quận/Huyện nằm trong danh sách
 df = df[~df['Quận/Huyện'].isin(danh_sach_loai_bo)]

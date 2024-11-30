@@ -42,7 +42,7 @@ export function returnToDefalut() {
     chart.style.opacity = 0;
     setTimeout(() => {
       chart.remove();
-    }, 1000);
+    }, 2000);
   })
 }
 
@@ -86,32 +86,35 @@ export function showmore(c, x, y, scale = 1) {
   c.style.transform = `translateX(${x}px) translateY(${y}px) scale(${scale})`;
 
   const segment = document.getElementById("price_segment_of_ha_noi");
+  const history_price = document.getElementById("history_price_of_ha_noi");
   if (c == segment) {
-    makeSegmentPrice('area', 'bac_tu_liem', false, 600, 200, 30, 40, 'sub_chart_of_pie');
+    makeCorrelation('segment', 'under_50', false, 700, 400, 30, 40, 'sub_chart_of_pie');
+    makeHistoryPrice('segment', 'under_50', false, 800, 0, 40, 50, 'sub_chart_of_pie');
+  } else if (c == history_price) {
+    
   }
 }
 
 
 export function remake_sub_chart_of_Pie(range_name) {
   const sub_charts = document.querySelectorAll(".sub_chart_of_pie");
-  let jsonFilePath;
-
+  let name;
   // Xác định đường dẫn tệp JSON theo range_name
   switch (range_name) {
     case "Dưới 50 triệu/m²":
-      jsonFilePath = "../Data/Json/Segment/area/ha_dong.json";
+      name = "under_50";
       break;
     case "50 đến 100 triệu/m²":
-      jsonFilePath = "../Data/Json/Segment/segment/type2.json";
+      name = "between_50_100";
       break;
     case "100 đến 150 triệu/m²":
-      jsonFilePath = "../Data/Json/Segment/segment/type3.json";
+      name =  "between_100_150";
       break;
     case "150 đến 200 triệu/m²":
-      jsonFilePath = "../Data/Json/Segment/segment/type4.json";
+      name = "between_150_200";
       break;
     case "Trên 200 triệu/m²":
-      jsonFilePath = "../Data/Json/Segment/segment/type5.json";
+      name = "over_200";
       break;
     default:
       console.error("Giá trị range_name không hợp lệ:", range_name);
@@ -123,5 +126,6 @@ export function remake_sub_chart_of_Pie(range_name) {
     sub_chart.remove();
   })
 
-  makeHistoryPrice('area')
+  makeCorrelation('segment', name, false, 700, 400, 30, 40, 'sub_chart_of_pie');
+  makeHistoryPrice('segment', name, false, 700, 100, 30, 40, 'sub_chart_of_pie');
 }

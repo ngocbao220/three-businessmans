@@ -46,7 +46,8 @@ export function makeSegmentPrice(
         chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
         chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
         chartContainer.style.height = `${height}%`; // Chiều cao mặc định
-        chartContainer.style.zIndex = 15;
+        chartContainer.style.transition = "opacity 0.5s ease";
+        chartContainer.style.zIndex = 5;
         chartContainer.className = className;
         document.body.appendChild(chartContainer);
       }
@@ -114,7 +115,7 @@ export function makeSegmentPrice(
                   text: "Show more",
                   onclick: function () {
                     const chart_price_segment = document.getElementById(id);
-                    showmore(chart_price_segment, -850, 200, 1.3);
+                    showmore(chart_price_segment, -850, 50, 1.3);
                   },
                 },
               ],
@@ -162,7 +163,8 @@ export function makeHistoryPrice(
         chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
         chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
         chartContainer.style.height = `${height}%`; // Chiều cao mặc định
-        chartContainer.style.zIndex = 15;
+        chartContainer.style.transition = "opacity 0.5s ease";
+        chartContainer.style.zIndex = 5;
         chartContainer.className = className;
         document.body.appendChild(chartContainer);
       }
@@ -478,9 +480,9 @@ export function makeCorrelation(
         chartContainer.style.bottom = `${bottom}px`;
         chartContainer.style.width = `${width}%`;
         chartContainer.style.height = `${height}%`;
-        chartContainer.style.zIndex = 15;
+        chartContainer.style.zIndex = 5;
         chartContainer.classList.add(className);
-        chartContainer.style.transition = "opacity 1.5s ease";
+        chartContainer.style.transition = "opacity 1s ease";
         chartContainer.style.opacity = "0";
 
         document.body.appendChild(chartContainer);

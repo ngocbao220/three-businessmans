@@ -542,3 +542,107 @@ export function makeCorrelation(
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON (Heatmap):", error));
 }
+
+
+export function makeDonutChart(
+  type,
+  name,
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 0,
+  height = 0
+) {
+  // Lấy dữ liệu từ tệp JSON
+  fetch(`../Data/Json/Segment/${type}/${name}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const chartData = Object.keys(data).map((key) => ({
+        name: key,
+        y: data[key],
+      }));
+
+      const id = `donut_chart_of_${name}`;
+
+      // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.position = "absolute";
+        chartContainer.style.left = `${left}px`; // Đặt vị trí từ tham số left
+        chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
+        chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
+        chartContainer.style.height = `${height}%`; // Chiều cao mặc định
+        chartContainer.style.zIndex = 15;
+        chartContainer.className = "chart";
+        document.body.appendChild(chartContainer);
+      }
+
+      // Khởi tạo biểu đồ hình bánh donut
+      Highcharts.chart(id, {
+        chart: {
+          type: "pie", // Loại biểu đồ pie
+          backgroundColor: null,
+        },
+        title: {
+          text: `Phân khúc Bất động sản - ${name}`,
+          style: { color: "white", fontSize: "13px" },
+        },
+        tooltip: {
+          pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+        },
+        plotOptions: {
+          pie: {
+            innerSize: "50%", // Tạo hình donut bằng cách thiết lập innerSize
+            allowPointSelect: true,
+            cursor: "pointer",
+            dataLabels: {
+              enabled: true,
+              format: "{point.name}: {point.y}", // Hiển thị tên và giá trị khi hover
+            },
+          },
+        },
+        series: [
+          {
+            name: "Phân khúc",
+            colorByPoint: true,
+            data: chartData,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "As The Center",
+                  onclick: function () {
+                    const chart_donut = document.getElementById(id);
+                    move(chart_donut, -450, 180);
+                  },
+                },
+                "separator",
+                {
+                  text: "Return To Default",
+                  onclick: function () {
+                    returnToDefalut();
+                  },
+                },
+                {
+                  text: "Show more",
+                  onclick: function () {
+                    const chart_donut = document.getElementById(id);
+                    showmore(chart_donut, -800, 200, 1.3);
+                  },
+                },
+              ],
+            },
+          },
+        },
+      });
+    })
+    .catch((error) =>
+      console.error("Lỗi tải dữ liệu JSON (Donut Chart):", error)
+    );
+}

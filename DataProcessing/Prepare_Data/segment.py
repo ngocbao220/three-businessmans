@@ -77,14 +77,18 @@ class segmentPriceOfProject:
         with open(f"./Data/Json/Segment/project/{normalize_name(self.project_name)}.json", "w") as f:
             json.dump(data_to_export, f)
 
-area_names = ['Hà Nội', 'Nam Từ Liêm', 'Bắc Từ Liêm']
+
+
+area_names = ['Hà Nội', 'Bắc Từ Liêm', 'Ba Đình']
 project_names = ['Sunshine City', 'Goldmark City']
 
 for area_name in area_names:
     sPA = segmentPriceOfArea(area_name)
     sPA.toJson()
 
-
+for area_name in area_names:
+    sPA = countSegment('75 đến 100 triệu', area_name)
+    sPA.toJson()
 for project_name in project_names:
     sPP = segmentPriceOfProject(project_name)
     sPP.toJson()

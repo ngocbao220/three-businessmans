@@ -77,4 +77,5 @@ export function showmore(c, x, y, scale = 1) {
   subcharts.forEach((subchart) => {
     subchart.style.opacity = 1;
   });
+  
 }

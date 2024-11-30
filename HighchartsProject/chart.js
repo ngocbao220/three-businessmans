@@ -554,7 +554,7 @@ export function makeDonutChart(
   height = 0
 ) {
   // Lấy dữ liệu từ tệp JSON
-  fetch(`../Data/Json/Segment/${type}/${name}.json`)
+  fetch(`../Data/Json/Segment/${type}/count/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
       const chartData = Object.keys(data).map((key) => ({

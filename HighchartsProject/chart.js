@@ -546,6 +546,7 @@ export function makeCorrelation(
 
 export function makeSegmentCount(
   type,
+  pricetype,
   name,
   menu = false,
   left = 0,
@@ -554,7 +555,7 @@ export function makeSegmentCount(
   height = 0
 ) {
   // Lấy dữ liệu từ tệp JSON
-  fetch(`../Data/Json/Segment/${type}/count/${name}.json`)
+  fetch(`../Data/Json/Segment/${type}/count/${pricetype}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
       const chartData = Object.keys(data).map((key) => ({
@@ -649,6 +650,7 @@ export function makeSegmentCount(
 
 export function makeNumPropertyType(
   type,
+  name,
   menu = false,
   left = 900,
   bottom = 0,
@@ -656,7 +658,7 @@ export function makeNumPropertyType(
   height = 0
 ) {
   // Lấy dữ liệu từ tệp JSON
-  fetch(`../Data/Json/Number_Of_Type_Property/${type}.json`)
+  fetch(`../Data/Json/Number_Of_Type_Property/${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
       const categories = Object.keys(data); // Các loại bất động sản
@@ -746,13 +748,14 @@ export function makeNumPropertyType(
 }
 export function makeAveragePriceChart(
   type,
+  name,
   menu = false,
   left = 0,
   bottom = 0,
   width = 0,
   height = 0
 ) {
-  fetch(`../Data/Json/Mean_Price/${type}.json`)
+  fetch(`../Data/Json/Mean_Price//${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
       const categories = Object.keys(data); // Các loại bất động sản

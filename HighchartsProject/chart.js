@@ -544,7 +544,7 @@ export function makeCorrelation(
 }
 
 
-export function makeDonutChart(
+export function makeSegmentCount(
   type,
   name,
   menu = false,
@@ -586,7 +586,7 @@ export function makeDonutChart(
           backgroundColor: null,
         },
         title: {
-          text: `Phân khúc Bất động sản - ${name}`,
+          text: `Phân khúc Bất động sản `,
           style: { color: "white", fontSize: "13px" },
         },
         tooltip: {
@@ -619,7 +619,7 @@ export function makeDonutChart(
                   text: "As The Center",
                   onclick: function () {
                     const chart_donut = document.getElementById(id);
-                    move(chart_donut, -450, 180);
+                    move(chart_donut, +450, 180);
                   },
                 },
                 "separator",
@@ -645,4 +645,103 @@ export function makeDonutChart(
     .catch((error) =>
       console.error("Lỗi tải dữ liệu JSON (Donut Chart):", error)
     );
+}
+
+export function makeNumPropertyType(
+  type,
+  name,
+  menu = false,
+  left = 900,
+  bottom = 0,
+  width = 0,
+  height = 0
+) {
+  // Lấy dữ liệu từ tệp JSON
+  fetch(`../Data/Json/Number_Of_Type_Property/${type}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const categories = Object.keys(data); // Các loại bất động sản
+      const values = Object.values(data);    // Số lượng tương ứng
+
+      const id = `column_chart_of_count_classify`;
+
+      // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.position = "absolute";
+        chartContainer.style.left = `${left}px`; // Vị trí từ tham số left
+        chartContainer.style.bottom = `${bottom}px`; // Vị trí từ tham số bottom
+        chartContainer.style.width = `${width}%`; // Chiều rộng
+        chartContainer.style.height = `${height}%`; // Chiều cao
+        chartContainer.style.zIndex = 15;
+        chartContainer.className = "chart";
+        document.body.appendChild(chartContainer);
+      }
+
+      // Khởi tạo biểu đồ cột
+      Highcharts.chart(id, {
+        chart: {
+          type: "column", // Biểu đồ dạng cột
+          backgroundColor: null,
+        },
+        title: {
+          text: `Biểu đồ số lượng bất động sản theo loại hình`,
+          style: { color: "white", fontSize: "16px" },
+        },
+        xAxis: {
+          categories: categories, // Các loại bất động sản (trục X)
+          title: {
+            text: "Loại bất động sản",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: "Số lượng",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        series: [
+          {
+            name: "Số lượng",
+            data: values, // Dữ liệu của biểu đồ cột
+            colorByPoint: true,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "Di chuyển ra giữa ",
+                  onclick: function () {
+                    const chart_column = document.getElementById(id);
+                    move(chart_column, +450, 180);
+                  },
+                },
+                "separator",
+                {
+                  text: "Quay lại mặc định",
+                  onclick: function () {
+                    returnToDefault();
+                  },
+                },
+                {
+                  text: "Hiển thị thêm",
+                  onclick: function () {
+                    const chart_column = document.getElementById(id);
+                    showMore(chart_column, -800, 200, 1.3);
+                  },
+                },
+              ],
+            },
+          },
+        },
+      });
+    })
+    .catch((error) => console.error("Lỗi tải dữ liệu JSON (Column Chart):", error));
 }

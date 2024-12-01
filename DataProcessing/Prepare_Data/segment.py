@@ -153,22 +153,29 @@ class countSegment:
         if type_segment == 'Dưới 50 triệu':
             min_price = 0
             max_price = 50
+            type_path = 'gia_loai_1'
         if type_segment == '50 đến 75 triệu':
             min_price = 50
             max_price = 175
+            type_path = 'gia_loai_2'
         if type_segment == '75 đến 100 triệu':
             min_price = 75
             max_price = 100
+            type_path = 'gia_loai_3'
         if type_segment == '100 đến 125 triệu':
             min_price = 100
             max_price = 125
+            type_path = 'gia_loai_4'
         if type_segment == 'Trên 125 triệu':
             min_price = 125
             max_price = 1000000000
+            type_path = 'gia_loai_5'
 
+        self.type_path = type_path
         self.total_type = {}
         self.persent_type = {}
         total = 0
+
         for property_type in property_types:
             self.total_type[property_type] = filtered_data[(filtered_data['Loại hình'] == property_type) & (filtered_data['Mức giá'] >= min_price) & (filtered_data['Mức giá'] < max_price)].shape[0]
             total += self.total_type[property_type]
@@ -176,35 +183,38 @@ class countSegment:
         for property_type in property_types:
             self.persent_type[property_type] = float(self.total_type[property_type] / total) * 100
         
-
-
-        
     def toJson(self):
         # Chuyển dữ liệu cần thiết thành dictionary
         data_to_export = self.persent_type
         # Ghi vào file JSON
-        if self.category == 'area':
-            with open(f"./Data/Json/Segment/area/count/{normalize_name(self.name)}.json", "w") as f:
-                json.dump(data_to_export, f)
-        else:
-            with open(f"./Data/Json/Segment/project/count/{normalize_name(self.name)}.json", "w") as f:
-                json.dump(data_to_export, f)
-
+        with open(f"./Data/Json/Segment/{self.category}/count/{self.type_path}/{normalize_name(self.name)}.json", "w") as f:
+            json.dump(data_to_export, f)
+     
 
 
 project_names = data['Tên dự án'].drop_duplicates().to_list()
 
 
 
+segment = {'Dưới 50 triệu', '50 đến 75 triệu', '75 đến 100 triệu', '100 đến 125 triệu', 'Trên 125 triệu'}
 
-for area_name in districts_hanoi:
-    try:
-        sPA = countSegment('Dưới 50 triệu', area_name)
-        sPA.toJson()
-        print('Thành công : ', area_name)
-    except Exception as e:
-        print('Lỗi: ', e)
-        print('Không thành công : ', area_name)
+for type_segment in segment:
+    for area_name in districts_hanoi:
+        try:
+            sPA = countSegment(type_segment, area_name)
+            sPA.toJson()
+            print('Thành công : ', area_name)
+        except Exception as e:
+            print('Lỗi: ', e)
+            print('Không thành công : ', area_name)
+    for project_name in project_names:
+        try:
+            sPP = countSegment(type_segment, project_name)
+            sPP.toJson()
+            print('Thành công : ', project_name)
+        except Exception as e:
+            print('Lỗi: ', e)
+            print('Không thành công : ', project_name)
 
 
 # for area_name in districts_hanoi:

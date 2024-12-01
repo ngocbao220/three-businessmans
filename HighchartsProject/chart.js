@@ -649,7 +649,6 @@ export function makeSegmentCount(
 
 export function makeNumPropertyType(
   type,
-  name,
   menu = false,
   left = 900,
   bottom = 0,
@@ -744,4 +743,73 @@ export function makeNumPropertyType(
       });
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON (Column Chart):", error));
+}
+export function makeAveragePriceChart(
+  type,
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 0,
+  height = 0
+) {
+  fetch(`../Data/Json/Mean_Price/${type}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const categories = Object.keys(data); // Các loại bất động sản
+      const values = Object.values(data);   // Giá trung bình
+
+      const id = `column_chart_avg_price`;
+
+      // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.position = "absolute";
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
+        chartContainer.style.zIndex = 15;
+        chartContainer.className = "chart";
+        document.body.appendChild(chartContainer);
+      }
+
+      // Khởi tạo biểu đồ cột
+      Highcharts.chart(id, {
+        chart: {
+          type: "column",
+          backgroundColor: null,
+        },
+        title: {
+          text: `Biểu đồ giá trung bình theo loại hình bất động sản`,
+          style: { color: "white", fontSize: "16px" },
+        },
+        xAxis: {
+          categories: categories,
+          title: {
+            text: "Loại bất động sản",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: "Giá trung bình (triệu đồng)",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        series: [
+          {
+            name: "Giá trung bình",
+            data: values,
+            colorByPoint: true,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+        },
+      });
+    })
+    .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
 }

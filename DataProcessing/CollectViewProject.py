@@ -33,7 +33,7 @@ def get_project_data_dict(historyPriceOfProject):
 df["Giá trung bình"] = df["Lịch sử giá"].apply(get_project_data_dict)
 
 # Lọc ra DataFrame chỉ chứa các hàng có giá trị "Giá cuối" không null
-df_result = df[df["Giá trung bình"].notna()][["Tên dự án", "Giá cuối"]]
+df_result = df[df["Giá trung bình"].notna()][["Tên dự án", "Giá trung bình"]]
 
 
 def change_name_to_url(ProjectName):
@@ -50,23 +50,32 @@ df_result.drop_duplicates(inplace=True)
 #print(df_result)
 
 list_of_view = []
+list_of_projectID = []
 
 for url_name in df_result["Tên dự án URL"]:
 
     url = 'https://batdongsan.com.vn/nha-dat-ban-' + url_name
     driver.get(url)
     try:
-        
         element = driver.find_element(By.CLASS_NAME, "re__srp-traffic-label")
         view_text = element.text
-        
-        view = int("".join(filter(str.isdigit, view_text)))
+        view_str = view_text.split()[1].replace('.', '') 
+        view = int(view_str)
+
         list_of_view.append(view)
+        projectID = driver.execute_script("return window.dataLayer.find(item => item.event === 'pageInfo').pro;")
+
+        list_of_projectID.append(projectID)
+        print(view, projectID)
 
     except Exception as e:
         print(f"Không tìm thấy thông tin số lượt xem")
+        projectID = driver.execute_script("return window.dataLayer.find(item => item.event === 'pageInfo').pro;")
+
         list_of_view.append(0)
+        list_of_projectID.append(projectID)
+        print('0', projectID)
 
 df_result['Lượt xem'] = list_of_view
-
+df_result['ProjectID'] = list_of_projectID
 df_result.to_csv(data_Project_view_Path, index=False)

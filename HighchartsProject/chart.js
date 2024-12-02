@@ -697,6 +697,9 @@ export function makeNumPropertyType(
             text: "Loại bất động sản",
             style: { color: "white", fontSize: "13px" },
           },
+          labels: {
+            style: { color: "white" },  
+          }
         },
         yAxis: {
           min: 0,
@@ -704,6 +707,9 @@ export function makeNumPropertyType(
             text: "Số lượng",
             style: { color: "white", fontSize: "13px" },
           },
+          labels: {
+            style: { color: "white" },  
+          }
         },
         series: [
           {
@@ -746,6 +752,7 @@ export function makeNumPropertyType(
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON (Column Chart):", error));
 }
+
 export function makeAveragePriceChart(
   type,
   name,
@@ -794,6 +801,9 @@ export function makeAveragePriceChart(
             text: "Loại bất động sản",
             style: { color: "white", fontSize: "13px" },
           },
+          labels: {
+            style: { color: "white" },  
+          }
         },
         yAxis: {
           min: 0,
@@ -801,10 +811,89 @@ export function makeAveragePriceChart(
             text: "Giá trung bình (triệu đồng)",
             style: { color: "white", fontSize: "13px" },
           },
+          labels: {
+            style: { color: "white" },  
+          }
         },
         series: [
           {
             name: "Giá trung bình",
+            data: values,
+            colorByPoint: true,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+        },
+      });
+    })
+    .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
+}
+
+
+export function makeTopProjectsChart(
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 0,
+  height = 0
+) {
+  fetch('../Data/Json/Top_View_Of_Project/view_of_project.json')
+    .then((response) => response.json())
+    .then((data) => {
+      const categories = Object.keys(data);
+      const values = Object.values(data);
+
+      const id = `column_chart_top_projects`;
+
+      // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.position = "absolute";
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
+        chartContainer.style.zIndex = 15;
+        chartContainer.className = "chart";
+        document.body.appendChild(chartContainer);
+      }
+
+      // Khởi tạo biểu đồ cột
+      Highcharts.chart(id, {
+        chart: {
+          type: "column",
+          backgroundColor: null,
+        },
+        title: {
+          text: 'Biểu đồ các dự án được quan tâm nhất trong 7 ngày qua',
+          style: { color: "white", fontSize: "16px" },
+        },
+        xAxis: {
+          categories: categories,
+          title: {
+            text: 'Tên dự án',
+            style: { color: "white", fontSize: "13px" },
+          },
+          labels: {
+            style: { color: "white" },  // Màu chữ trục X
+          },
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: 'Lượt xem',
+            style: { color: "white", fontSize: "13px" },
+          },
+          labels: {
+            style: { color: "white" },  // Màu chữ trục X
+          },
+        },
+        series: [
+          {
+            name: "Lượt xem",
             data: values,
             colorByPoint: true,
           },

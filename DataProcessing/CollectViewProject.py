@@ -11,8 +11,8 @@ import time
 from unidecode import unidecode
 
 
-data_Project_new_Path = 'D:\\AI - năm hai\\Kì I\LT xử lý dữ liệu\\BTL\\three-businessmans\\Data\\originalData\\data_project_new.csv'
-data_Project_view_Path = 'D:\\AI - năm hai\\Kì I\LT xử lý dữ liệu\\BTL\\three-businessmans\\Data\\originalData\\data_project_view.csv'
+data_Project_new_Path = 'Data\\originalData\\data_project_new.csv'
+data_Project_view_Path = 'Data\\originalData\\data_project_view.csv'
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 

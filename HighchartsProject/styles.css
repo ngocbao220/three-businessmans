@@ -2,7 +2,7 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
-  background-image: url("./image/background.png");
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,36 +34,20 @@ body::after {
   z-index: 10;
 }
 
-/* Container for Charts */
-#chart-container {
-  position: relative;
-  color: #09dd73;
-  width: 100%;
-  height: 100%;
-  outline: 1px solid red;
-}
-
 .chart {
   opacity: 1;
   position: absolute;
-
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 15;
 }
-/* Price segment positioning */
-#price_segment_of_ha_noi {
-  bottom: 400px;
-  left: 930px;
-  width: 30%;
-  height: 40%;
+
+.sub_chart {
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
+  z-index: 15;
 }
 
-#history_price_of_ha_noi {
-  bottom: 0px;
-  left: 930px;
-  width: 30%;
-  height: 50%;
-}
 
 #bot {
   position: absolute;
@@ -106,38 +90,10 @@ body::after {
   left: 540px;
 }
 
-#correlation_of_ha_noi {
-  bottom: 0px;
-  left: 0px;
-  width: 30%;
-  height: 45%;
-}
-
 .custom-button:hover {
   background-color: #005f6b;
-}
-
-/* Icon containers */
-#icon-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 20px;
-  padding-top: 50px;
-  gap: 10px;
 }
 
 .highcharts-contextbutton {
   opacity: 0.1;
 }
-
-.fade-out {
-  opacity: 1;
-  transition: opacity 1s ease-out; /* Mờ dần trong 1 giây */
-}
-
-.fade-out.hidden {
-  opacity: 0; /* Khi thêm lớp hidden, phần tử sẽ mờ dần */
-}
-

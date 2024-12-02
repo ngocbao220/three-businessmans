@@ -1,9 +1,28 @@
-let center_chart = null;
 import {
   makeSegmentPrice,
   makeCorrelation,
   makeHistoryPrice,
+  makeNumPropertyType,
 } from "./chart.js";
+
+function normalizeName(areaName) {
+  // Bỏ dấu tiếng Việt
+  areaName = areaName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  
+  // Thay thế các ký tự đặc biệt
+  areaName = areaName.replace(/đ/g, 'd');
+  areaName = areaName.replace(/Đ/g, 'd');
+  areaName = areaName.replace(/_/g, ' ');
+  areaName = areaName.replace(/-/g, ' ');
+
+  // Chuyển tất cả sang chữ thường
+  areaName = areaName.toLowerCase();
+
+  // Thay khoảng trắng và các ký tự không hợp lệ bằng dấu gạch dưới
+  areaName = areaName.replace(/\s+|, /g, '_');
+
+  return areaName;
+}
 
 export function move(c, x, y) {
   const charts = document.querySelectorAll(".chart");
@@ -30,7 +49,7 @@ export function move(c, x, y) {
 
 export function returnToDefalut() {
   const charts = document.querySelectorAll(".chart");
-  const sub_chart = document.querySelectorAll(".sub_chart_of_pie");
+  const sub_chart = document.querySelectorAll(".sub_chart");
   // Reset styles for all charts
   charts.forEach((chart) => {
     chart.style.opacity = 1;
@@ -43,7 +62,7 @@ export function returnToDefalut() {
     setTimeout(() => {
       chart.remove();
     }, 2000);
-  })
+  });
 }
 
 export function typeText(elementId, text, delay = 100, hideDelay = 1000) {
@@ -87,17 +106,26 @@ export function showmore(c, x, y, scale = 1) {
 
   const segment = document.getElementById("price_segment_of_ha_noi");
   const history_price = document.getElementById("history_price_of_ha_noi");
+  const number_of_type_property = document.getElementById('column_chart_of_count_classify_of_ha_noi')
   if (c == segment) {
-    makeCorrelation('segment', 'under_50', false, 700, 400, 30, 40, 'sub_chart_of_pie');
-    makeHistoryPrice('segment', 'under_50', false, 800, 0, 40, 50, 'sub_chart_of_pie');
-  } else if (c == history_price) {
-    
+    makeCorrelation(
+      "segment",
+      "under_50",
+      false,
+      900,
+      0,
+      30,
+      50,
+      "sub_chart"
+    );
+    makeNumPropertyType('segment', )
+  } else if (c == number_of_type_property) {
+    makeHistoryPrice('type', 'can_ho_chung_cu', false, 600, 200, 30, 40, 'sub_chart');
   }
 }
 
-
 export function remake_sub_chart_of_Pie(range_name) {
-  const sub_charts = document.querySelectorAll(".sub_chart_of_pie");
+  const sub_charts = document.querySelectorAll(".sub_chart");
   let name;
   // Xác định đường dẫn tệp JSON theo range_name
   switch (range_name) {
@@ -108,7 +136,7 @@ export function remake_sub_chart_of_Pie(range_name) {
       name = "between_50_100";
       break;
     case "100 đến 150 triệu/m²":
-      name =  "between_100_150";
+      name = "between_100_150";
       break;
     case "150 đến 200 triệu/m²":
       name = "between_150_200";
@@ -118,14 +146,34 @@ export function remake_sub_chart_of_Pie(range_name) {
       break;
     default:
       console.error("Giá trị range_name không hợp lệ:", range_name);
-      return; // Kết thúc hàm nếu không xác định được JSON
+      return;
   }
-
-  // Duyệt qua các biểu đồ
+  
   sub_charts.forEach((sub_chart) => {
     sub_chart.remove();
-  })
+  });
 
-  makeCorrelation('segment', name, false, 700, 400, 30, 40, 'sub_chart_of_pie');
-  makeHistoryPrice('segment', name, false, 700, 100, 30, 40, 'sub_chart_of_pie');
+  makeCorrelation("segment", name, false, 900, 0, 30, 50, "sub_chart");
+}
+
+export function remake_sub_chart_of_Column(range_name) {
+  const sub_charts = document.querySelectorAll(".sub_chart");
+  let name = normalizeName(range_name);
+
+  sub_charts.forEach((sub_chart) => {
+    sub_chart.remove();
+  });
+
+  makeHistoryPrice("type", name, false, 900, 0, 30, 50, "sub_chart");
+}
+
+export function remove_sub_chart() {
+  const sub_charts = document.querySelectorAll(".sub_chart");
+
+  sub_charts.forEach((chart) => {
+    chart.style.opacity = 0;
+    setTimeout(() => {
+      chart.remove();
+    }, 2000);
+  });
 }

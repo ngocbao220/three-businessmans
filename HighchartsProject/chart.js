@@ -4,6 +4,8 @@ import {
   typeText,
   showmore,
   remake_sub_chart_of_Pie,
+  remove_sub_chart,
+  remake_sub_chart_of_Column,
 } from "./events.js";
 
 export function makeSegmentPrice(
@@ -36,27 +38,29 @@ export function makeSegmentPrice(
         { name: "Trên 200 triệu/m²", y: over_200 },
       ];
       const id = `price_segment_of_${name}`;
-
+      
       let chartContainer = document.getElementById(id);
       if (!chartContainer) {
         chartContainer = document.createElement("div");
         chartContainer.id = id;
-        chartContainer.style.position = "absolute";
-        chartContainer.style.left = `${left}px`; // Đặt vị trí từ tham số left
-        chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
-        chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
-        chartContainer.style.height = `${height}%`; // Chiều cao mặc định
-        chartContainer.style.transition = "opacity 0.5s ease";
-        chartContainer.style.zIndex = 5;
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
         chartContainer.className = className;
         document.body.appendChild(chartContainer);
       }
 
       // Khởi tạo Pie Chart
-      Highcharts.chart(id, {
+      const chart = Highcharts.chart(id, {
         chart: {
           type: "pie",
           backgroundColor: null,
+          events: {
+            load: function () {
+              this.isShow = false;
+            },
+          },
         },
         title: {
           text: `Phân khúc mức giá`,
@@ -69,18 +73,12 @@ export function makeSegmentPrice(
           pie: {
             allowPointSelect: true,
             cursor: "pointer",
-            dataLabels: {
-              enabled: true,
-            },
-            point: {
-              events: {
-                click: function () {
-                  // Gọi hàm tùy chỉnh của bạn
-                  remake_sub_chart_of_Pie(this.name);
-
-                  // Hiệu ứng tách lát mặc định (không cần xử lý thủ công slice())
-                  // Highcharts tự quản lý trạng thái này
-                },
+            events: {
+              click: function (event) {
+                const clickedName = event.point.name;
+                if (chartContainer.isShow == true) {
+                  remake_sub_chart_of_Pie(clickedName);
+                }
               },
             },
           },
@@ -100,8 +98,7 @@ export function makeSegmentPrice(
                 {
                   text: "As The Center",
                   onclick: function () {
-                    const chart_price_segment = document.getElementById(id);
-                    move(chart_price_segment, -450, 180);
+                    move(chartContainer, -450, 180);
                   },
                 },
                 "separator",
@@ -109,13 +106,14 @@ export function makeSegmentPrice(
                   text: "Return To Default",
                   onclick: function () {
                     returnToDefalut();
+                    chartContainer.isShow = false;
                   },
                 },
                 {
                   text: "Show more",
                   onclick: function () {
-                    const chart_price_segment = document.getElementById(id);
-                    showmore(chart_price_segment, -850, 50, 1.3);
+                    showmore(chartContainer, -850, 40, 1.2);
+                    chartContainer.isShow = true;
                   },
                 },
               ],
@@ -158,13 +156,10 @@ export function makeHistoryPrice(
       if (!chartContainer) {
         chartContainer = document.createElement("div");
         chartContainer.id = id;
-        chartContainer.style.position = "absolute";
         chartContainer.style.left = `${left}px`; // Đặt vị trí từ tham số left
         chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
         chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
         chartContainer.style.height = `${height}%`; // Chiều cao mặc định
-        chartContainer.style.transition = "opacity 0.5s ease";
-        chartContainer.style.zIndex = 5;
         chartContainer.className = className;
         document.body.appendChild(chartContainer);
       }
@@ -174,6 +169,11 @@ export function makeHistoryPrice(
         chart: {
           type: "line",
           backgroundColor: null,
+          events: {
+            load: function () {
+              this.isShow = false;
+            },
+          },
         },
         title: {
           text: "Biến động giá",
@@ -375,8 +375,7 @@ export function makeHistoryPrice(
                 {
                   text: "As The Center",
                   onclick: function () {
-                    const chart_history_price = document.getElementById(id);
-                    move(chart_history_price, -450, -150); // Gọi hàm beCenter và truyền vào container
+                    move(chartContainer, -450, -150); // Gọi hàm beCenter và truyền vào container
                   },
                 },
                 "separator",
@@ -390,9 +389,8 @@ export function makeHistoryPrice(
                 {
                   text: "Show more",
                   onclick: function () {
-                    const chart_history_price = document.getElementById(id);
-                    showmore(chart_history_price, -880, -200, 1.3);
-
+                    showmore(chartContainer, -880, -200, 1.3);
+                    chartContainer.isShow = true;
                     const fluctuationIn2Years =
                       Math.round(
                         (averagePrices[categories[24]] /
@@ -475,14 +473,11 @@ export function makeCorrelation(
       if (!chartContainer) {
         chartContainer = document.createElement("div");
         chartContainer.id = id;
-        chartContainer.style.position = "absolute";
         chartContainer.style.left = `${left}px`;
         chartContainer.style.bottom = `${bottom}px`;
         chartContainer.style.width = `${width}%`;
         chartContainer.style.height = `${height}%`;
-        chartContainer.style.zIndex = 5;
         chartContainer.classList.add(className);
-        chartContainer.style.transition = "opacity 1s ease";
         chartContainer.style.opacity = "0";
 
         document.body.appendChild(chartContainer);
@@ -496,18 +491,20 @@ export function makeCorrelation(
       Highcharts.chart(id, {
         chart: {
           type: "heatmap",
-          marginTop: 40,
-          marginBottom: 80,
-          plotBorderWidth: 1,
+          marginTop: 50,
+          marginBottom: 140,
+          plotBorderWidth: 2,
           backgroundColor: null,
         },
         title: {
           text: "Biểu đồ tương quan",
-          style: { color: "#ffffff", fontSize: "14px" },
+          align: "center",
+          style: { color: "#ffffff", fontSize: "16px" },
         },
         xAxis: {
           categories: categories,
-          labels: { enabled: false, style: { color: "#ffffff" } },
+          title: null,
+          labels: { style: { color: "#ffffff" } },
         },
         yAxis: {
           categories: categories,
@@ -518,16 +515,28 @@ export function makeCorrelation(
           min: -1,
           max: 1,
           stops: [
-            [0, "#d4e7ed"],
-            [0.5, "#0189bb"],
-            [1, "#011a4a"],
+            [0, "#fee5d9"],
+            [0.5, "#fcae91"],
+            [1, "#fb6a4a"],
           ],
+          layout: "horizontal", // Đặt thanh màu dọc
+          align: "center", // Đặt bên phải vùng vẽ biểu đồ
+          x: 20, // Dịch thanh màu ra ngoài vùng vẽ
+          y: 0, // Không dịch theo chiều dọc
+          symbolHeight: 200, // Chiều cao của thanh màu
         },
         series: [
           {
             name: "Tương quan",
             borderWidth: 1,
             data: heatmapData,
+            dataLabels: {
+              enabled: true,
+              color: "#000000",
+              formatter: function () {
+                return this.point.value.toFixed(2);
+              },
+            },
           },
         ],
         tooltip: {
@@ -572,3 +581,297 @@ export function makeCorrelation(
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON (Heatmap):", error));
 }
+
+export function makeSegmentCount(
+  type,
+  pricetype,
+  name,
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 0,
+  height = 0,
+  className
+) {
+  // Lấy dữ liệu từ tệp JSON
+  fetch(`../Data/Json/Segment/${type}/count/${pricetype}/${name}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const chartData = Object.keys(data).map((key) => ({
+        name: key,
+        y: data[key],
+      }));
+
+      const id = `donut_chart_of_${name}`;
+
+      // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.left = `${left}px`; // Đặt vị trí từ tham số left
+        chartContainer.style.bottom = `${bottom}px`; // Đặt vị trí từ tham số bottom
+        chartContainer.style.width = `${width}%`; // Chiều rộng mặc định
+        chartContainer.style.height = `${height}%`; // Chiều cao mặc định
+        chartContainer.className = className;
+        document.body.appendChild(chartContainer);
+      }
+
+      // Khởi tạo biểu đồ hình bánh donut
+      Highcharts.chart(id, {
+        chart: {
+          type: "pie", // Loại biểu đồ pie
+          backgroundColor: null,
+        },
+        title: {
+          text: `Phân khúc Bất động sản `,
+          style: { color: "white", fontSize: "13px" },
+        },
+        tooltip: {
+          pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+        },
+        plotOptions: {
+          pie: {
+            innerSize: "50%", // Tạo hình donut bằng cách thiết lập innerSize
+            allowPointSelect: true,
+            cursor: "pointer",
+            dataLabels: {
+              enabled: true,
+              format: "{point.name}: {point.y}", // Hiển thị tên và giá trị khi hover
+            },
+          },
+        },
+        series: [
+          {
+            name: "Phân khúc",
+            colorByPoint: true,
+            data: chartData,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "As The Center",
+                  onclick: function () {
+                    move(chartContainer, +450, 180);
+                  },
+                },
+                "separator",
+                {
+                  text: "Return To Default",
+                  onclick: function () {
+                    returnToDefalut();
+                  },
+                },
+                {
+                  text: "Show more",
+                  onclick: function () {
+                    showmore(chartContainer, -800, 200, 1.3);
+                  },
+                },
+              ],
+            },
+          },
+        },
+      });
+    })
+    .catch((error) =>
+      console.error("Lỗi tải dữ liệu JSON (Donut Chart):", error)
+    );
+}
+
+export function makeNumPropertyType(
+  type,
+  name,
+  menu = false,
+  left = 900,
+  bottom = 0,
+  width = 0,
+  height = 0,
+  className
+) {
+  // Lấy dữ liệu từ tệp JSON
+  fetch(`../Data/Json/Number_Of_Type_Property/${type}/${name}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const categories = Object.keys(data); // Các loại bất động sản
+      const values = Object.values(data);    // Số lượng tương ứng
+
+      const id = `column_chart_of_count_classify_of_${name}`;
+
+      let chartContainer = document.getElementById(id);
+
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.left = `${left}px`; // Vị trí từ tham số left
+        chartContainer.style.bottom = `${bottom}px`; // Vị trí từ tham số bottom
+        chartContainer.style.width = `${width}%`; // Chiều rộng
+        chartContainer.style.height = `${height}%`; // Chiều cao
+        chartContainer.className = className;
+        document.body.appendChild(chartContainer);
+      } 
+
+      // Khởi tạo biểu đồ cột
+      Highcharts.chart(id, {
+        chart: {
+          type: "column", // Biểu đồ dạng cột
+          backgroundColor: null,
+          events: {
+            load: function () {
+              this.isShow = false;
+            },
+          },
+        },
+        title: {
+          text: `Biểu đồ số lượng bất động sản theo loại hình`,
+          style: { color: "white", fontSize: "13px" },
+        },
+        xAxis: {
+          categories: categories, // Các loại bất động sản (trục X)
+          title: {
+            text: 'Loại bất động sản',
+            style: {color: "white", fontSize: "13px", align: 'center'},
+          },
+          labels: {
+            enabled: false,
+          }
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: "Số lượng",
+            style: {color: "white", fontSize: "13px" },
+          },
+        },
+        plotOptions: {
+          column: {
+            cursor: "pointer",
+            events: {
+              click: function (event) {
+                const clickedName = event.point.category;
+                if (chartContainer.isShow == true) {
+                  remake_sub_chart_of_Column(clickedName);
+                }
+              },
+            },
+          },
+        },
+        series: [
+          {
+            name: "Số lượng",
+            data: values, // Dữ liệu của biểu đồ cột
+            colorByPoint: true,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+          buttons: {
+            contextButton: {
+              menuItems: [
+                {
+                  text: "Di chuyển ra giữa ",
+                  onclick: function () {
+                    move(chartContainer, +450, 180);
+                  },
+                },
+                "separator",
+                {
+                  text: "Quay lại mặc định",
+                  onclick: function () {
+                    returnToDefalut();
+                    chartContainer.isShow = false;
+                  },
+                },
+                {
+                  text: "Hiển thị thêm",
+                  onclick: function () {
+                    showmore(chartContainer, 50, 0, 1.3);
+                    chartContainer.isShow = true;
+                  },
+                },
+              ],
+            },
+          },
+        },
+      });
+    })
+    .catch((error) => console.error("Lỗi tải dữ liệu JSON (Column Chart):", error));
+}
+
+export function makeAveragePriceChart(
+  type,
+  name,
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 0,
+  height = 0,
+  className
+) {
+  fetch(`../Data/Json/Mean_Price//${type}/${name}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const categories = Object.keys(data); // Các loại bất động sản
+      const values = Object.values(data);   // Giá trung bình
+
+      const id = `column_chart_avg_price_of_${name}`;
+
+      // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
+        chartContainer.className = className;
+        document.body.appendChild(chartContainer);
+      }
+
+      // Khởi tạo biểu đồ cột
+      Highcharts.chart(id, {
+        chart: {
+          type: "column",
+          backgroundColor: null,
+        },
+        title: {
+          text: `Biểu đồ giá trung bình theo loại hình bất động sản`,
+          style: { color: "white", fontSize: "16px" },
+        },
+        xAxis: {
+          categories: categories,
+          title: {
+            text: "Loại bất động sản",
+            style: { color: "white", fontSize: "13px" },
+          },
+          labels: {
+            enabled: false,
+          }
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: "Giá trung bình (triệu đồng)",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        series: [
+          {
+            name: "Giá trung bình",
+            data: values,
+            colorByPoint: true,
+          },
+        ],
+        exporting: {
+          enabled: menu,
+        },
+      });
+    })
+    .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
+}
+

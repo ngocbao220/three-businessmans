@@ -5,7 +5,7 @@ from folium.features import GeoJsonTooltip
 import branca.colormap as cm
 
 # Đọc dữ liệu bất động sản từ file CSV
-data = pd.read_csv('../Data/cleanedData/cleaned_data.csv')
+data = pd.read_csv('../Data/cleanedData/cleaned_data_new.csv')
 
 # Loại bỏ các hàng có giá trị thiếu trong cột 'Quận/Huyện' và 'Mức giá'
 heatmap_data = data.dropna(subset=['Quận/Huyện', 'Mức giá'])
@@ -66,3 +66,4 @@ colormap.add_to(m)
 
 
 m.save('Hanoimap.html')
+m

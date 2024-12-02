@@ -1,21 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    Highcharts.chart('container', {
-      chart: {
-        type: 'pie'
-      },
-      title: {
-        text: 'Biểu đồ tròn đơn giản'
-      },
-      series: [{
-        name: 'Tỷ lệ',
-        colorByPoint: true,
-        data: [
-          { name: 'Nhóm A', y: 40 },
-          { name: 'Nhóm B', y: 30 },
-          { name: 'Nhóm C', y: 20 },
-          { name: 'Nhóm D', y: 10 }
-        ]
-      }]
-    });
-  });
-  
+import {
+  makeSegmentPrice,
+  makeHistoryPrice,
+  makeCorrelation,
+} from "./makechart.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  makeSegmentPrice("area", "ha_noi", true);
+  makeHistoryPrice("area", "ha_noi", true);
+  makeCorrelation("area", "ha_noi", true);
+
+});

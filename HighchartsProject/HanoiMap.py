@@ -5,7 +5,7 @@ from folium.features import GeoJsonTooltip
 import branca.colormap as cm
 
 # Đọc dữ liệu bất động sản từ file CSV
-data = pd.read_csv('../../Data/cleanedData/cleaned_data.csv')
+data = pd.read_csv('../Data/cleanedData/cleaned_data.csv')
 
 # Loại bỏ các hàng có giá trị thiếu trong cột 'Quận/Huyện' và 'Mức giá'
 heatmap_data = data.dropna(subset=['Quận/Huyện', 'Mức giá'])
@@ -17,12 +17,9 @@ heatmap_data['Mức giá'] = pd.to_numeric(heatmap_data['Mức giá'], errors='c
 avg_price_by_district = heatmap_data.groupby('Quận/Huyện')['Mức giá'].mean().reset_index()
 
 # Đọc shapefile của Việt Nam và lọc lấy Hà Nội
-vietnam_map = gpd.read_file('../../VisualizationData/Map/HaNoiMap')
+vietnam_map = gpd.read_file('../VisualizationData/Map/HaNoiMap')
 hanoi_map = vietnam_map[vietnam_map['NAME_1'] == 'Hà Nội']
-district_names = hanoi_map['NAME_2'].unique()
-print("Danh sách các quận/huyện trong vietnam_map:")
-for district in district_names:
-    print(district)
+
 # Ghép dữ liệu giá trung bình vào bản đồ Hà Nội
 hanoi_map = hanoi_map.merge(avg_price_by_district, left_on='NAME_2', right_on='Quận/Huyện', how='left')
 
@@ -61,9 +58,9 @@ geojson = folium.GeoJson(
     ),
     
 ).add_to(m)
+
 colormap.height = 35
 colormap.width = 350
-
 # Thêm colormap vào bản đồ
 colormap.add_to(m)
 

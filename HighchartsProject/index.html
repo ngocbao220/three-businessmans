@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Charts</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Thư viện Highcharts -->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-  </head>
-  <body>
-    <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
-    <div id="chart-container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Divs</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Thư viện Highcharts -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+  <div class="corner top-left">
+    <div class="child" id="child1">
       <!-- Biểu đồ Phân khúc giá -->
-      <div id="price_segment" class="chart"></div>
-      <!-- Biểu đồ Biến động giá -->
-      <div id="his_prices" class="chart"></div>
-      
-      <!-- Container chứa icon -->1
-      <div id="icon-container">
-        <img id="pie_icon" src="./image/pie_icon.png" alt="pie_icon" />
-        <img id="column_icon" src="./image/column_icon.png" alt="column_icon" />
-      </div>
-      <div class="map">
-        
-        <div class="xaphuong-container">
-          <iframe class="xaphuong" src="heatmap/Hà_Đông.html"></iframe>
-        </div>
-        <div class="map-container">
-          <iframe class="Hanoimap" src="heatmap/Hanoimap.html"></iframe>
-        </div>
-        
-      </div>
-      
-      <!-- Điều hướng -->
-      
+      <div id="price_segment_of_ha_noi" class="childrent chart chart-container"></div>
+      <button class="action-btn">Options</button>
     </div>
+  </div>
+  <div class="corner top-right">
+    <div class="child" id="child2">
+      <!-- Biểu đồ Biến động giá -->
+      <div id="history_price_of_ha_noi" class="childrent chart chart-container"></div>
+      <button class="action-btn">Options</button>
+    </div>
+  </div>
+  <div class="corner bottom-left">
+    <div class="child" id="child3">
+      <h1>3</h1>
+      <button class="action-btn">Options</button>
+    </div>
+  </div>
+  <div class="corner bottom-right">
+    <div class="child" id="child4">
+      <h2>4</h2>
+      <button class="action-btn">Options</button>
+    </div>
+  </div>
+  <div class="center">
+    <div class="child" id="childCenter">
+      <iframe class="childrent Hanoimap chart-container" src="heatmap/Hanoimap.html"></iframe>
+      <button class="action-btn">Options</button>
+    </div>
+  </div>
 
-    <!-- Tập lệnh javaScript -->
-    <script type="module" src="events.js"></script>
-    <script type="module" src="chart.js"></script>
-
-
-  </body>
+  <div id="menu" class="menu">
+    <button id="asCenter" class="menu-btn">As the Center</button>
+    <button id="return" class="menu-btn">Return</button>
+  </div>
+  <script type="module" src="events.js"></script>
+  <script type="module" src="chart.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
 </html>

@@ -17,6 +17,9 @@ def normalize_name(area_name):
     area_name = ''.join(ch for ch in area_name if unicodedata.category(ch) != 'Mn')
     
     area_name = area_name.replace('đ', 'd')
+    area_name = area_name.replace('Đ', 'd')
+    area_name = area_name.replace('_', 'd')
+    area_name = area_name.replace('-', 'd')
     # Chuyển tất cả sang chữ thường
     area_name = area_name.lower()
 
@@ -82,9 +85,19 @@ districts_hanoi = [
 project_names = dataProject['Tên dự án'].drop_duplicates().to_list()
 
 for area_name in districts_hanoi:
-    sPA = meanPriceOfType('area', area_name)
-    sPA.toJson()
+    try:
+        sPA = meanPriceOfType('area', area_name)
+        sPA.toJson()
+        print('Thành công: ', area_name)
+    except Exception as e:
+        print('Lỗi: ', e)
+        print('Không thành công: ', area_name)
 
 for project_name in project_names:
-    sPP = meanPriceOfType('project', project_name)
-    sPP.toJson()
+    try:
+        sPP = meanPriceOfType('project', project_name)
+        sPP.toJson()
+        print('Thành công: ', project_name)
+    except Exception as e:
+        print('Lỗi: ', e)
+        print('Không thành công: ', project_name)

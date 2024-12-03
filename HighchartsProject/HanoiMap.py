@@ -28,6 +28,7 @@ minx, miny, maxx, maxy = hanoi_map.total_bounds
 
 # Tạo một bản đồ nền bằng folium với nền mờ
 m = folium.Map(
+    zoom_start=9,
     tiles="CartoDB Positron",  # Nền mờ
     max_bounds=True,           # Giữ bản đồ trong giới hạn
     dragging=True,            # Không cho phép kéo bản đồ
@@ -65,5 +66,5 @@ colormap.width = 350
 colormap.add_to(m)
 
 
-m.save('Hanoimap.html')
+m.save('heatmap/Hanoimap.html')
 m

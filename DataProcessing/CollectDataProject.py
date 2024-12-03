@@ -17,11 +17,8 @@ data_Project_only_Path = 'Data\\originalData\\data_project_only.csv'
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 df = pd.read_csv(data_Project_new_Path)
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 20)
 
-# Lọc ra DataFrame chỉ chứa các hàng có giá trị "Giá cuối" không null
-df_result = df[["Xã/Phường", "Quận/Huyện", "Tên dự án", "Chủ đầu tư"]]
-df_result.drop_duplicates(inplace = True)
 
 def change_name_to_url(ProjectName):
     # Chuyển thành chữ thường
@@ -31,35 +28,63 @@ def change_name_to_url(ProjectName):
     ProjectName = re.sub(r"\s+", "-", ProjectName)  # Thay thế khoảng trắng bằng gạch ngang
     return ProjectName
 
-df_result['Tên dự án URL'] = df_result['Tên dự án'].apply(change_name_to_url)
-df_result.drop_duplicates(inplace = True)
+df['Tên dự án URL'] = df['Tên dự án'].apply(change_name_to_url)
 
-df_result = df_result.drop(df_result[df_result['Tên dự án URL'] == 'chung-cu-1517-ngoc-khanh'].index)
+df = df.drop_duplicates(subset='Tên dự án', keep='first')
 
-df_result = df_result.drop(df_result[df_result['Chủ đầu tư'] == 'Đang cập nhật'].index)
+print(df.shape[0])
+total = 589
+count_data = 0
+for index, row in df.iterrows():
+    if count_data < total:
+        count_data = count_data + 1
+        continue
 
-#print(df_result)
-
-area = []
-number_of_buildings = []
-number_of_apartments = []
-legal_status = []
-list_of_projectID = []
-list_of_links = []
-utilities_list = []
-for url_name in df_result["Tên dự án URL"]:
+    commune_ward = row["Xã/Phường"]
+    district = row["Quận/Huyện"]
+    province_city = row["Tỉnh/Thành phố"]
+    project_name = row["Tên dự án"]
+    investor = row["Chủ đầu tư"]
+    url_name = row["Tên dự án URL"]
+    area = 'Không có thông tin'
+    number_of_apartments = 'Không có thông tin'
+    number_of_buildings = 'Không có thông tin'
+    legal_status = 'Không có thông tin'
+    list_of_links = []
+    utilities = []
+    projectID = 'Không có thông tin'
+    history_price = row["Lịch sử giá"]
 
     url = 'https://batdongsan.com.vn/nha-dat-ban-' + url_name
     driver.get(url)
+    time.sleep(1)
 
     try:
         button = driver.find_element(By.XPATH, '//a[text()="Xem chi tiết dự án"]')
-        time.sleep(0.5)
+        time.sleep(1)
         # Click vào nút
         ActionChains(driver).move_to_element(button).click().perform()
         time.sleep(1)
     except:
         print('Không ấn được nút:' + url)
+        new_row = pd.DataFrame([{
+                'Xã/Phường': commune_ward,
+                'Quận/Huyện': district,
+                'Tỉnh/Thành phố': province_city,
+                'Tên dự án': project_name,
+                'Chủ đầu tư': investor,
+                'Diện tích': area,
+                'Số căn hộ': number_of_apartments,
+                'Số tòa': number_of_buildings,
+                'Pháp lý': legal_status,
+                'Link ảnh': 'Không có thông tin',
+                'Tiện ích': 'Không có thông tin',
+                'Project ID': projectID,
+                'Lịch sử giá': history_price,
+            }])
+        new_row.to_csv(data_Project_only_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+        
+        continue
 
 
     try:
@@ -75,6 +100,8 @@ for url_name in df_result["Tên dự án URL"]:
         
     except:
         print('Không chuyển được tab')
+        
+        continue
 
 
     try:
@@ -101,13 +128,11 @@ for url_name in df_result["Tên dự án URL"]:
                 video_links.append(video_tag)
                 #print(video_tag)
 
-        list_of_link = video_links + image_links
-        
-        list_of_links.append(list_of_link)
+        list_of_links = video_links + image_links
     except:
         list_of_links.append('Không có hình ảnh')
         print('Không có hình ảnh')
-        continue
+        
 
     
     wait.until(
@@ -117,11 +142,7 @@ for url_name in df_result["Tên dự án URL"]:
     # Tìm phần tử biểu tượng mũi tên xuống và nhấp vào
     toggle_icon = driver.find_element(By.CSS_SELECTOR, ".re__toogle-icon.re__icon-chevron-down")
     toggle_icon.click()  # Nhấp vào để mở thông tin
-    
-    # Đợi phần tử thông tin chi tiết xuất hiện
-    wait.until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, ".re__project-box-wrap"))
-    )
+    time.sleep(2)
     
     # Lấy tất cả các phần tử `.re__project-box-wrap`
     box_wrap_divs = driver.find_elements(By.CSS_SELECTOR, ".re__project-box-wrap")
@@ -137,34 +158,24 @@ for url_name in df_result["Tên dự án URL"]:
                 label = item.find_element(By.CSS_SELECTOR, "label").text.strip()  # Lấy tên thông tin
                 value = item.find_element(By.CSS_SELECTOR, "span").text.strip()   
                 #print(label, value)
-                d1 = d2 = d3 = d4 = 0
+                
                 if label == 'Diện tích':
-                    area.append(value)
-                    d1 = 1
+                    area = value
+                    
                 elif label == 'Diện tích xây dựng':
-                    area.append(value)
-                    d1 = 1
+                    area = value
+                    
                 elif label == 'Số tòa':
-                    number_of_buildings.append(value)
-                    d2 = 1
+                    number_of_buildings = value
+                    
                 elif label == 'Số căn hộ':
-                    number_of_apartments.append(value)
-                    d3 = 1
+                    number_of_apartments = value
+                    
                 elif label == 'Pháp lý':
-                    legal_status.append(value)
-                    d4 = 1
-
-                if d1 == 0:
-                    area.append('Không có thông tin')
-                if d2 == 0:
-                    number_of_buildings.append('Không có thông tin')
-                if d3 == 0:
-                    number_of_apartments.append('Không có thông tin')
-                if d4 == 0:
-                    legal_status.append('Không có thông tin')
+                    legal_status = value
             except:
                 print('Không có thông tin')
-                continue
+                
 
     try:
         wait.until(
@@ -173,8 +184,9 @@ for url_name in df_result["Tên dự án URL"]:
         
         # Tìm phần tử biểu tượng mũi tên xuống của phần Tiện ích và nhấp vào
         toggle_icon = driver.find_element(By.CSS_SELECTOR, ".re__project-toogle.re__prj-facilities .re__toogle-icon.re__icon-chevron-down")
+       
         toggle_icon.click()  # Nhấp vào để mở phần tiện ích
-
+        time.sleep(2)
         # Đợi phần tử thông tin tiện ích xuất hiện
         wait.until(
             EC.presence_of_element_located((By.CSS_SELECTOR, ".js__toogle-detail.re__toogle-detail"))
@@ -183,35 +195,40 @@ for url_name in df_result["Tên dự án URL"]:
         # Lấy tất cả các mục tiện ích trong danh sách
         list_items = driver.find_elements(By.CSS_SELECTOR, ".js__toogle-detail.re__toogle-detail ul li")
 
-        utilities = []
+        
         # Duyệt qua tất cả các phần tử li và lấy thông tin
         for item in list_items:
             # Lấy tên của từng mục
             item_name = item.text.strip()
             utilities.append(item_name)
             #print(item_name)
-        utilities_list.append(utilities)
+        
     except:
-        utilities_list.append('Không có thông tin')
+        utilities.append('Không có thông tin')
         print('Không có thông tin Tiện ích')
-        continue
+        
 
     try:
         projectID = driver.execute_script("return window.dataLayer.find(item => item.event === 'pageInfo').pro;")
-
-        list_of_projectID.append(projectID)
     except:
-        list_of_projectID.append('Không có thông tin ID')
+        projectID = 'Không có thông tin ID'
     #print(projectID)
 
-
-df_result['Diện tích'] = area
-df_result['Số tòa'] = number_of_buildings
-df_result['Số căn hộ'] = number_of_apartments
-df_result['Pháp lý'] = legal_status
-df_result['Link ảnh'] = list_of_links
-df_result['Tiện ích'] = utilities_list
-df_result['Project ID'] = list_of_projectID
-df_result['Lịch sử giá'] = df["Lịch sử giá"]
-
-df_result.to_csv(data_Project_only_Path, mode='a', index=False, encoding='utf-8-sig')
+    new_row = pd.DataFrame([{
+                'Xã/Phường': commune_ward,
+                'Quận/Huyện': district,
+                'Tỉnh/Thành phố': province_city,
+                'Tên dự án': project_name,
+                'Chủ đầu tư': investor,
+                'Diện tích': area,
+                'Số căn hộ': number_of_apartments,
+                'Số tòa': number_of_buildings,
+                'Pháp lý': legal_status,
+                'Link ảnh': list_of_links,
+                'Tiện ích': utilities,
+                'Project ID': projectID,
+                'Lịch sử giá': history_price,
+            }])
+    #print(new_row)
+    new_row.to_csv(data_Project_only_Path, mode='a', index=False, header=False, encoding='utf-8-sig')
+    

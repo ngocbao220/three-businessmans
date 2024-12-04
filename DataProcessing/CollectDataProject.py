@@ -28,13 +28,15 @@ def change_name_to_url(ProjectName):
     ProjectName = re.sub(r"\s+", "-", ProjectName)  # Thay thế khoảng trắng bằng gạch ngang
     return ProjectName
 
+
 df['Tên dự án URL'] = df['Tên dự án'].apply(change_name_to_url)
 
 df = df.drop_duplicates(subset='Tên dự án', keep='first')
 
 print(df.shape[0])
-total = 589
+total = 0
 count_data = 0
+
 for index, row in df.iterrows():
     if count_data < total:
         count_data = count_data + 1

@@ -49,6 +49,7 @@ export function makeSegmentPrice(
         chart: {
           type: "pie",
           backgroundColor: null,
+
         },
         title: {
           text: `Phân khúc mức giá`,
@@ -495,8 +496,10 @@ export function makeCorrelation(
             [0.5, "#0189bb"],
             [1, "#011a4a"],
           ],
-          // Tăng khoảng cách giữa colorAxis và biểu đồ
-          offset: 2000, // Thay đổi giá trị để tạo khoảng cách
+          layout: "horizontal",        // Đặt theo chiều ngang
+          align: "center",             // Canh giữa theo chiều ngang
+          verticalAlign: "bottom",     // Canh dưới
+          y: 3000,     
         },
         series: [
           {

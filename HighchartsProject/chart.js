@@ -496,10 +496,7 @@ export function makeCorrelation(
             [0.5, "#0189bb"],
             [1, "#011a4a"],
           ],
-          layout: "horizontal",        // Đặt theo chiều ngang
-          align: "center",             // Canh giữa theo chiều ngang
-          verticalAlign: "bottom",     // Canh dưới
-          y: 3000,     
+          offset: 100,    
         },
         series: [
           {

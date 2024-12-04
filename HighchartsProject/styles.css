@@ -51,11 +51,8 @@ body::after {
 
 .chart {
   width: 100%;
-  max-width: 900px; /* Giới hạn chiều rộng tối đa */
-  height: 600px;     /* Đặt chiều cao cố định cho biểu đồ */
-  box-sizing: border-box; /* Bao gồm padding và border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-  border-radius: 8px; /* Bo tròn góc */
+  max-width: 900px; 
+  height: 1500px;     
 }
 
 
@@ -70,6 +67,14 @@ body::after {
   position: relative;
   width: 140%;
   height: 60%;
+}
+
+
+
+#correlation_of_ha_noi {
+  bottom: 50px;  
+  width: 90%;    
+  height: 60%;    
 }
 
 
@@ -113,12 +118,6 @@ body::after {
   left: 540px;
 }
 
-#correlation_of_ha_noi {
-  bottom: 50px;  /* Tăng khoảng cách từ dưới lên */
-  width: 90%;    /* Đặt chiều rộng lớn hơn */
-  height: 60%;   /* Đặt chiều cao lớn hơn */
-  z-index: 15;   /* Đảm bảo biểu đồ có độ ưu tiên hiển thị cao */
-}
 
 
 .custom-button:hover {

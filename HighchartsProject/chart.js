@@ -52,7 +52,7 @@ export function makeSegmentPrice(
         },
         title: {
           text: `Phân khúc mức giá`,
-          style: { color: "white", fontSize: "13px" },
+          style: { color: "white", fontSize: "16px" },
         },
         tooltip: {
           pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
@@ -156,7 +156,7 @@ export function makeHistoryPrice(
         },
         title: {
           text: "Biến động giá",
-          style: { color: "#ffffff", fontSize: "13px" },
+          style: { color: "#ffffff", fontSize: "16px" },
         },
         xAxis: {
           categories: categories.map((key) => key.replace("Giá ", "")),
@@ -466,14 +466,17 @@ export function makeCorrelation(
       Highcharts.chart(id, {
         chart: {
           type: "heatmap",
-          marginTop: 40,
-          marginBottom: 80,
+          marginTop: 25, // Khoảng cách từ trên của biểu đồ
+          marginBottom: 50, // Khoảng cách từ dưới của biểu đồ
           plotBorderWidth: 1,
           backgroundColor: null,
+          // Đặt kích thước của biểu đồ tại đây
+          width: 900,  // Thay đổi chiều rộng
+          height: 600,  // Thay đổi chiều cao
         },
         title: {
           text: "Biểu đồ tương quan",
-          style: { color: "#ffffff", fontSize: "14px" },
+          style: { color: "#ffffff", fontSize: "16px" },
         },
         xAxis: {
           categories: categories,
@@ -492,6 +495,8 @@ export function makeCorrelation(
             [0.5, "#0189bb"],
             [1, "#011a4a"],
           ],
+          // Tăng khoảng cách giữa colorAxis và biểu đồ
+          offset: 2000, // Thay đổi giá trị để tạo khoảng cách
         },
         series: [
           {
@@ -502,9 +507,7 @@ export function makeCorrelation(
         ],
         tooltip: {
           formatter: function () {
-            return `<b>${categories[this.point.x]} và ${
-              categories[this.point.y]
-            }</b><br>
+            return `<b>${categories[this.point.x]} và ${categories[this.point.y]}</b><br>
               Hệ số tương quan: <b>${this.point.value.toFixed(2)}</b>`;
           },
         },
@@ -542,6 +545,7 @@ export function makeCorrelation(
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON (Heatmap):", error));
 }
+
 
 
 export function makeSegmentCount(
@@ -588,7 +592,7 @@ export function makeSegmentCount(
         },
         title: {
           text: `Phân khúc Bất động sản `,
-          style: { color: "white", fontSize: "13px" },
+          style: { color: "white", fontSize: "16px" },
         },
         tooltip: {
           pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",

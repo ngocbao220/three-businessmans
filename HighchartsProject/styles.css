@@ -1,29 +1,32 @@
-body {
+html, body {
   position: relative;
   margin: 0;
   height: 100vh;
+  overflow-y: auto;
   background-image: url("./image/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body::after {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7); /* Lớp phủ màn đen */
   pointer-events: none;
-  z-index: -1;
+  z-index: 3;
 }
+
 
 /* Main Title */
 #main-title {
-  position: absolute;
-  top: 5%;
+  position: relative;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 22px;
@@ -31,39 +34,44 @@ body::after {
   font-weight: bold;
   text-align: center;
   margin: 0;
-  z-index: 10;
+  z-index: 5;
 }
 
 /* Container for Charts */
 #chart-container {
   position: relative;
-  color: #09dd73;
-  width: 100%;
-  height: 100%;
-  outline: 1px solid red;
+  display: flex;
+  flex-direction: column; /* Xếp theo chiều dọc */
+  align-items: center;
+  gap: 200px; /* Khoảng cách giữa các biểu đồ */
+  padding: 20px;
+  min-height: 100vh; /* Để nội dung kéo dài toàn trang */
+  z-index: 4;
 }
 
 .chart {
-  opacity: 1;
-  position: absolute;
-
-  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
-  z-index: 15;
+  width: 100%;
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  height: 600px;     /* Đặt chiều cao cố định cho biểu đồ */
+  box-sizing: border-box; /* Bao gồm padding và border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  border-radius: 8px; /* Bo tròn góc */
 }
+
+
 /* Price segment positioning */
-#price_segment_of_ha_noi {
-  bottom: 400px;
-  left: 930px;
-  width: 30%;
-  height: 40%;
+#price_segment_of_ha_noi,
+#donut_chart_of_ha_noi,
+#column_chart_top_projects,
+#column_chart_of_count_classify,
+#column_chart_avg_price,
+#history_price_of_ha_noi,
+#correlation_of_ha_noi {
+  position: relative;
+  width: 90%;
+  height: 90%;
 }
 
-#history_price_of_ha_noi {
-  bottom: 0px;
-  left: 930px;
-  width: 30%;
-  height: 50%;
-}
 
 #bot {
   position: absolute;
@@ -106,11 +114,13 @@ body::after {
 }
 
 #correlation_of_ha_noi {
-  bottom: 0px;
-  left: 0px;
-  width: 30%;
-  height: 45%;
+  bottom: 50px;  /* Tăng khoảng cách từ dưới lên */
+  left: 150px;    /* Tăng khoảng cách từ trái sang */
+  width: 90%;    /* Đặt chiều rộng lớn hơn */
+  height: 60%;   /* Đặt chiều cao lớn hơn */
+  z-index: 15;   /* Đảm bảo biểu đồ có độ ưu tiên hiển thị cao */
 }
+
 
 .custom-button:hover {
   background-color: #005f6b;

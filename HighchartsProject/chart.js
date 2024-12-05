@@ -168,7 +168,7 @@ export function makeHistoryPrice(
       Highcharts.chart(id, {
         chart: {
           type: "line",
-          backgroundColor: null,
+          backgroundColor: '#F5F5DC',
           events: {
             load: function () {
               this.isShow = false;
@@ -177,34 +177,34 @@ export function makeHistoryPrice(
         },
         title: {
           text: "Biến động giá",
-          style: { color: "#ffffff", fontSize: "13px" },
+          style: { color: "#000000", fontSize: "16px" },
         },
         xAxis: {
           categories: categories.map((key) => key.replace("Giá ", "")),
-          labels: { enabled: true, style: { color: "#ffffff" } },
+          labels: { enabled: true, style: { color: "#000000" } },
           plotLines: [
             {
               value: categories.length - 2,
-              color: "rgba(255, 255, 255, 0.5)", // Màu đường kẻ
+              color: "#000", // Màu đường kẻ
               width: 2, // Độ dày của đường
               dashStyle: "Solid", // Kiểu đường liền
               label: {
                 text: "Current",
-                align: "center",
+                align: "center solid",
                 verticalAlign: "top",
                 style: {
-                  color: "#ffffff",
-                  fontSize: "12px",
+                  color: "#000000",
+                  fontSize: "13px",
                 },
               },
             },
           ],
         },
         yAxis: {
-          labels: { enabled: true, style: { color: "#ffffff" } },
+          labels: { enabled: true, style: { color: "#000000" } },
           title: {
             text: "Triệu/m²",
-            style: { color: "#ffffff", fontSize: "12px" },
+            style: { color: "#000000", fontSize: "12px" },
           },
         },
         tooltip: {
@@ -236,7 +236,7 @@ export function makeHistoryPrice(
                   const chart = this.series.chart;
                   chart.xAxis[0].addPlotLine({
                     id: "hover-line",
-                    color: "rgba(255, 255, 255, 0.5)",
+                    color: "black",
                     width: 1,
                     value: this.x,
                   });
@@ -337,7 +337,7 @@ export function makeHistoryPrice(
           {
             name: "Mean",
             data: Object.values(averagePrices),
-            color: "#33b5ff",
+            color: "#33b5ff", 
             lineWidth: 2,
             zoneAxis: "x",
             zones: [
@@ -425,15 +425,15 @@ export function makeHistoryPrice(
         legend: {
           enabled: true,
           itemStyle: {
-            color: "#f0f0f0",
+            color: "#000",
             fontWeight: "bold",
             fontSize: "13px",
           },
           itemHoverStyle: {
-            color: "#ffffff",
+            color: "#000",
           },
           itemHiddenStyle: {
-            color: "#999999",
+            color: "#000",
           },
           align: "center",
           verticalAlign: "bottom",

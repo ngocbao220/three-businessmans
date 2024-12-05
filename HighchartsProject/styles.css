@@ -2,22 +2,10 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
-  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0.2);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  pointer-events: none;
-  z-index: -1;
 }
 
 /* Main Title */
@@ -27,7 +15,7 @@ body::after {
   left: 50%;
   transform: translateX(-50%);
   font-size: 22px;
-  color: white;
+  color: rgb(24, 19, 19);
   font-weight: bold;
   text-align: center;
   margin: 0;
@@ -39,6 +27,11 @@ body::after {
   position: absolute;
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 15;
+  background-color: #F5F5DC; /* Màu nền */
+  border-radius: 15px; /* Bo góc */
+  padding: 10px; /* Tạo khoảng cách từ biểu đồ tới viền */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+  display: inline-block; /* Đảm bảo kích thước tự điều chỉnh */
 }
 
 .sub_chart {
@@ -47,7 +40,6 @@ body::after {
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 15;
 }
-
 
 #bot {
   position: absolute;
@@ -58,6 +50,8 @@ body::after {
   opacity: 0;
   transition: opacity 1s ease;
 }
+
+
 
 .notification {
   position: absolute;
@@ -90,10 +84,37 @@ body::after {
   left: 540px;
 }
 
+
+.Hanoimap {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  border-width: 5px;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#button_change_type {
+  position: absolute;
+  top: 80px;
+  left: 530px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border-width: 1px;
+  opacity: 0.5;
+}
+
+
 .custom-button:hover {
   background-color: #005f6b;
 }
-
 .highcharts-contextbutton {
   opacity: 0.1;
 }

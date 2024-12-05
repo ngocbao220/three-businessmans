@@ -1,0 +1,87 @@
+import pandas as pd
+import geopandas as gpd
+import folium
+from folium.features import GeoJsonTooltip
+from branca.colormap import linear
+import re
+import unicodedata
+
+# HÀM HỖ TRỢ
+def normalize_name(area_name):
+    """Chuẩn hóa tên khu vực để lưu file."""
+    area_name = unicodedata.normalize('NFD', area_name)
+    area_name = ''.join(ch for ch in area_name if unicodedata.category(ch) != 'Mn')
+    area_name = re.sub(r'\s+|, ', '_', area_name.lower().replace('đ', 'd').replace('-', ' '))
+    return area_name
+
+def add_colormap_to_map(gdf, column, map_obj, tooltip_fields, tooltip_aliases):
+    """Thêm dữ liệu GeoJSON vào bản đồ với colormap."""
+    colormap = linear.YlOrRd_09.scale(gdf[column].min(), gdf[column].max())
+    geojson = folium.GeoJson(
+        gdf,
+        style_function=lambda feature: {
+            'fillColor': colormap(feature['properties'][column]) if feature['properties'][column] else 'lightblue',
+            'color': 'black',
+            'weight': 1,
+            'fillOpacity': 0.6,
+        },
+        tooltip=GeoJsonTooltip(fields=tooltip_fields, aliases=tooltip_aliases, localize=True),
+    )
+    colormap.add_to(map_obj)
+    geojson.add_to(map_obj)
+
+def create_base_map(bounds):
+    """Tạo bản đồ nền dựa trên Bounding Box."""
+    minx, miny, maxx, maxy = bounds
+    m = folium.Map(
+        tiles="CartoDB Positron",
+        max_bounds=True,
+        dragging=True,
+        zoom_control=False,
+        scrollWheelZoom=True,
+    )
+    m.fit_bounds([[miny, minx], [maxy, maxx]])
+    return m
+
+# ĐỌC DỮ LIỆU
+data = pd.read_csv('../../Data/cleanedData/cleaned_data_new.csv')
+avg_price_by_ward = data.groupby('Xã/Phường')['Mức giá'].mean().reset_index()
+avg_price_by_district = data.groupby('Quận/Huyện')['Mức giá'].mean().reset_index()
+
+vietnam_map = gpd.read_file('../../Data/Map/village')
+district_map = gpd.read_file('../../Data/Map/district')
+
+# BẢN ĐỒ XÃ/PHƯỜNG
+def create_district_map(district_name):
+    """Tạo bản đồ nhiệt cho quận/huyện."""
+    district_gdf = vietnam_map[(vietnam_map['NAME_1'] == 'Hà Nội') & (vietnam_map['NAME_2'] == district_name)]
+    if district_gdf.empty:
+        print(f"Không tìm thấy dữ liệu cho quận/huyện: {district_name}")
+        return None
+
+    # Chuyển đổi CRS, tính centroid, và ghép dữ liệu
+    district_gdf = district_gdf.to_crs(epsg=3857)
+    district_center = [district_gdf.geometry.centroid.y.mean(), district_gdf.geometry.centroid.x.mean()]
+    district_gdf = district_gdf.to_crs(epsg=4326)
+    district_gdf = district_gdf.merge(avg_price_by_ward, left_on='NAME_3', right_on='Xã/Phường', how='left')
+
+    # Tạo bản đồ và thêm dữ liệu
+    m_district = folium.Map(location=district_center, tiles="CartoDB Positron", zoom_start=12)
+    add_colormap_to_map(district_gdf, 'Mức giá', m_district, ['NAME_3', 'Mức giá'], ['Xã/Phường', 'Giá trung bình (triệu VND)'])
+
+    return m_district
+
+district_names = vietnam_map[vietnam_map['NAME_1'] == 'Hà Nội']['NAME_2'].unique()
+for district_name in district_names:
+    map_output = create_district_map(district_name)
+    if map_output:
+        map_output.save(f'../../HighchartsProject/data_for_map/{normalize_name(district_name)}.html')
+
+# BẢN ĐỒ QUẬN/HUYỆN
+hanoi_gdf = district_map[district_map['NAME_1'] == 'Hà Nội']
+hanoi_gdf = hanoi_gdf.merge(avg_price_by_district, left_on='NAME_2', right_on='Quận/Huyện', how='left')
+
+# Tạo bản đồ cho toàn Hà Nội
+hanoi_map = create_base_map(hanoi_gdf.total_bounds)
+add_colormap_to_map(hanoi_gdf, 'Mức giá', hanoi_map, ['NAME_2', 'Mức giá'], ['Quận/Huyện', 'Giá trung bình (triệu VND)'])
+hanoi_map.save('../../HighchartsProject/data_for_map/ha_noi.html')

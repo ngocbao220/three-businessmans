@@ -18,8 +18,16 @@
       <p id="fluctuationIn2Years" class="notification"></p>
       <p id="meanOfFluctuation" class="notification"></p>
     </div>
+    <div class="heatmap">
+      <h3 style="top: 80px; left: 140px; position: relative">
+        Biểu đồ giá trung bình trên các Quận/Huyện
+      </h3>
+      <button id="button_change_type">Fluctuation</button>
+      <iframe class="Hanoimap" src="data_for_map/mean_price/ha_noi.html"></iframe>
+    </div>
+
     <img src="./image/pie_icon.png" alt="pie_icon" id="bot" />
-    
+
     <!-- Tập lệnh javaScript -->
     <script type="module" src="events.js"></script>
     <script type="module" src="chart.js"></script>

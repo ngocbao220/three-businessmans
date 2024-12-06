@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Divs</title>
+  <link rel="stylesheet" href="slide.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+        }
+    </style>
+  <!-- Thư viện Highcharts -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  
+  <!-- Font Awesome -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  >
+</head>
+<body>
+  <div class="container">
+    <ul class="navigation"></ul>
+
+    <div class="content"></div>
+
+    <div class="slider">
+        <button class="prev-btn">PREV</button>
+        <button class="next-btn">NEXT</button>
+        <ul class="slider-wrapper" style="--index: 0"></ul>
+    </div>
+  </div>
+
+  <!-- Đảm bảo đóng thẻ script và body -->
+  <script src="slide.js"></script>
+</body>
+</html>

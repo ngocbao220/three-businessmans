@@ -65,31 +65,8 @@ export function returnToDefalut() {
   });
 }
 
-export function typeText(elementId, text, delay = 100, hideDelay = 1000) {
-  const element = document.getElementById(elementId);
-  const bot_img = document.getElementById("bot");
-  bot_img.style.opacity = 1;
-  element.style.opacity = 1;
-  element.textContent = "";
-  let index = 0;
+export function show_amount(elementId, text, difference) {
 
-  // Hàm hiển thị từng ký tự
-  function type() {
-    if (index < text.length) {
-      element.textContent += text.charAt(index); // Thêm từng ký tự
-      index++;
-      setTimeout(type, delay); // Tiếp tục gọi lại chính nó với delay
-    } else {
-      // Khi gõ xong, bắt đầu hiệu ứng ẩn sau hideDelay
-      setTimeout(() => {
-        element.style.transition = "opacity 0.5s ease"; // Hiệu ứng mờ dần
-        element.style.opacity = 0;
-        bot_img.style.opacity = 0;
-      }, hideDelay);
-    }
-  }
-
-  type(); // Bắt đầu hiệu ứng
 }
 
 export function showmore(c, x, y, scale = 1) {

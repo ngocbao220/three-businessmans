@@ -13,20 +13,27 @@
   </head>
   <body>
     <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
-    <div id="paragrapth">
-      <p id="fluctuation" class="notification"></p>
-      <p id="fluctuationIn2Years" class="notification"></p>
-      <p id="meanOfFluctuation" class="notification"></p>
-    </div>
+
     <div class="heatmap">
-      <h3 style="top: 80px; left: 140px; position: relative">
+      <h3 style="top: 55px; left: 140px; position: absolute">
         Biểu đồ giá trung bình trên các Quận/Huyện
       </h3>
       <button id="button_change_type">Fluctuation</button>
-      <iframe class="Hanoimap" src="data_for_map/mean_price/ha_noi.html"></iframe>
+      <iframe
+        class="Hanoimap"
+        src="data_for_map/mean_price/ha_noi.html"
+      ></iframe>
     </div>
 
-    <img src="./image/pie_icon.png" alt="pie_icon" id="bot" />
+    <div id="chart-area">
+      <button class="arrow left" id="btnLeft">&#9664;</button>
+      <div id="chart-container"></div>
+      <button class="arrow right" id="btnRight">&#9654;</button>
+    </div>
+
+    <div id="fluctuation">
+      
+    </div>
 
     <!-- Tập lệnh javaScript -->
     <script type="module" src="events.js"></script>

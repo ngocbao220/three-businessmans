@@ -1,0 +1,10 @@
+{
+  "cSpell.enabledFileTypes": {
+    "python": false,
+    "javascript": false,
+    "html": false,
+    "csv": false,
+    "json": false
+  },
+  "liveServer.settings.port": 5501
+}

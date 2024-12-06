@@ -1,0 +1,68 @@
+{
+    "columns": [
+        "Diện tích",
+        "Mức giá",
+        "Số phòng ngủ",
+        "Số toilet",
+        "Pháp lý",
+        "Nội thất"
+    ],
+    "index": [
+        "Diện tích",
+        "Mức giá",
+        "Số phòng ngủ",
+        "Số toilet",
+        "Pháp lý",
+        "Nội thất"
+    ],
+    "data": [
+        [
+            1.0,
+            -0.5463620403,
+            0.9768047991,
+            0.4765396136,
+            null,
+            null
+        ],
+        [
+            -0.5463620403,
+            1.0,
+            -0.4961106547,
+            0.4104055317,
+            null,
+            null
+        ],
+        [
+            0.9768047991,
+            -0.4961106547,
+            1.0,
+            0.5773502692,
+            null,
+            null
+        ],
+        [
+            0.4765396136,
+            0.4104055317,
+            0.5773502692,
+            1.0,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    ]
+}

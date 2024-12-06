@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Charts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Thư viện Highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+  </head>
+  <body>
+    <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
+
+    <div class="heatmap">
+      <h3 style="top: 55px; left: 140px; position: absolute">
+        Biểu đồ giá trung bình trên các Quận/Huyện
+      </h3>
+      <button id="button_change_type">Fluctuation</button>
+      <iframe
+        class="Hanoimap"
+        src="data_for_map/mean_price/ha_noi.html"
+      ></iframe>
+    </div>
+
+    <div id="chart-area">
+      <button class="arrow left" id="btnLeft">&#9664;</button>
+      <div id="chart-container"></div>
+      <button class="arrow right" id="btnRight">&#9654;</button>
+    </div>
+
+    <div id="fluctuation">
+      
+    </div>
+
+    <!-- Tập lệnh javaScript -->
+    <script type="module" src="events.js"></script>
+    <script type="module" src="chart.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

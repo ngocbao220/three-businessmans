@@ -88,9 +88,9 @@ body {
   border-style: solid;
   border-color: #000;
   border-width: 1px;
-}
+} 
 
-#fluctuation {
+#fta_comment {
   position: absolute;
   background-color: #fff;
   width: 500px;
@@ -103,6 +103,7 @@ body {
   border-style: solid; /* Đảm bảo có đường viền */
   z-index: 1; /* Đảm bảo nó không bị che khuất */
   display: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #fta-container {
@@ -165,18 +166,6 @@ body {
   left: 25%;
   transform: translate(-50%, -50%);
   z-index: 1;
-}
-
-#button_change_type {
-  position: absolute;
-  top: 80px;
-  left: 530px;
-  font-size: 18px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  border-width: 1px;
-  opacity: 0.5;
-  cursor: pointer;
 }
 
 .custom-button:hover {

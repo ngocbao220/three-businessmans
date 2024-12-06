@@ -1,11 +1,10 @@
 import {
   move,
-  returnToDefalut,
-  showmore,
   remake_sub_chart_of_Pie,
-  remove_sub_chart,
   remake_sub_chart_of_Column,
   show_amount,
+  showComment,
+  hideComment
 } from "./events.js";
 
 export function makeSegmentPrice(
@@ -103,24 +102,16 @@ export function makeSegmentPrice(
             contextButton: {
               menuItems: [
                 {
-                  text: "As The Center",
+                  text: "Show Comment",
                   onclick: function () {
-                    move(chartContainer, -450, 180);
+                    showComment('sgm_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Return To Default",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                    chartContainer.isShow = false;
-                  },
-                },
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    showmore(chartContainer, -850, 40, 1.2);
-                    chartContainer.isShow = true;
+                    hideComment('sgm_comment')
                   },
                 },
               ],
@@ -380,49 +371,16 @@ export function makeHistoryPrice(
             contextButton: {
               menuItems: [
                 {
-                  text: "As The Center",
+                  text: "Show Comment",
                   onclick: function () {
-                    move(chartContainer, -450, -150); // Gọi hàm beCenter và truyền vào container
+                    showComment('fta_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Return To Default",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                  },
-                },
-                "separator",
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    showmore(chartContainer, -880, -200, 1.3);
-                    chartContainer.isShow = true;
-                    const fluctuationIn2Years =
-                      Math.round(
-                        (averagePrices[categories[24]] /
-                          averagePrices[categories[0]] -
-                          1) *
-                          10000
-                      ) / 100;
-                    const meanOfFluctuation =
-                      Math.round(fluctuationIn2Years * 4) / 100;
-
-                    const fluctuationIn2YearsText = `Giá Bất động sản tại khu vực Hà Nội đã tăng ${fluctuationIn2Years} % trong 2 năm qua!`;
-                    const meanOfFluctuationText = `Mức tăng trung bình ${meanOfFluctuation} % trên tháng`;
-
-                    typeText(
-                      "fluctuationIn2Years",
-                      fluctuationIn2YearsText,
-                      20,
-                      4000
-                    );
-                    typeText(
-                      "meanOfFluctuation",
-                      meanOfFluctuationText,
-                      20,
-                      4000
-                    );
+                    hideComment('fta_comment')
                   },
                 },
               ],
@@ -560,24 +518,16 @@ export function makeCorrelation(
             contextButton: {
               menuItems: [
                 {
-                  text: "As The Center",
+                  text: "Show Comment",
                   onclick: function () {
-                    const chart_correlation = document.getElementById(id);
-                    move(chart_correlation, 470, -200);
+                    showComment('crl_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Return To Default",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                  },
-                },
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    const chart_correlation = document.getElementById(id);
-                    showmore(chart_correlation, 0, -200);
+                    hideComment('crl_comment')
                   },
                 },
               ],
@@ -789,24 +739,16 @@ export function makeNumPropertyType(
             contextButton: {
               menuItems: [
                 {
-                  text: "Di chuyển ra giữa ",
+                  text: "Show Comment",
                   onclick: function () {
-                    move(chartContainer, +450, 180);
+                    showComment('type_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Quay lại mặc định",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                    chartContainer.isShow = false;
-                  },
-                },
-                {
-                  text: "Hiển thị thêm",
-                  onclick: function () {
-                    showmore(chartContainer, 50, 0, 1.3);
-                    chartContainer.isShow = true;
+                    hideComment('type_comment')
                   },
                 },
               ],

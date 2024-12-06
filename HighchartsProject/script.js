@@ -16,5 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   makeHistoryPrice("area", "ha_noi", true, 0, 0, 96.3, 95, "history");
   makeCorrelation("area", "ha_noi", true, 0, 0, 96.3, 95, "correlation");
   makeNumPropertyType("area", "ha_noi", true, 0, 0, 96.3, 95, "type");
+
+  // Thiết lập cấu trúc
   set_Scene();
+
+  
 });

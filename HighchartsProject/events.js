@@ -24,50 +24,9 @@ function normalizeName(areaName) {
   return areaName;
 }
 
-export function move(c, x, y) {
-  const charts = document.querySelectorAll(".chart");
-
-  // Reset styles for all charts
-  charts.forEach((chart) => {
-    chart.style.opacity = 0.7;
-    chart.style.transform = "scale(0.8)";
-    chart.style.pointerEvents = "auto";
-  });
-
-  // Highlight the target chart
-  c.style.opacity = 1;
-  c.style.transform = `translateX(${x}px) translateY(${y}px) scale(1.2)`;
-
-  // Reset previous center chart if it's not the current chart
-  if (center_chart && center_chart !== c) {
-    center_chart.style.transform = "translateX(0px) translateY(0px) scale(0.8)";
-  }
-
-  // Update the center chart
-  center_chart = c;
-}
-
-export function returnToDefalut() {
-  const charts = document.querySelectorAll(".chart");
-  const sub_chart = document.querySelectorAll(".sub_chart");
-  // Reset styles for all charts
-  charts.forEach((chart) => {
-    chart.style.opacity = 1;
-    chart.style.transform = "translateX(0px) translateY(0px) scale(1)";
-    chart.style.pointerEvents = "auto";
-  });
-
-  sub_chart.forEach((chart) => {
-    chart.style.opacity = 0;
-    setTimeout(() => {
-      chart.remove();
-    }, 2000);
-  });
-}
-
 export function show_amount(month1, month2, difference) {
   const fta_para = document.getElementById("fta-para");
-  const text_container = document.getElementById("fluctuation");
+  const text_container = document.getElementById("fta_comment");
   const icon_up = document.getElementById("icon_up");
   const icon_down = document.getElementById("icon_down");
   const fta_num = document.getElementById("fta-number");
@@ -77,13 +36,13 @@ export function show_amount(month1, month2, difference) {
     icon_up.style.display = "none"; // Ẩn biểu tượng tăng
     icon_down.style.display = "block"; // Hiện biểu tượng giảm
     text_container.style.borderColor = "red"; // Đổi màu viền sang đỏ
-    const text = `Từ ${month1} đến ${month2}, giá trung bình giảm`;
+    const text = `Giá tại khu vực giảm, từ ${month1} đến ${month2}`;
     fta_para.innerHTML = `<strong>${text}</strong>`; // Cập nhật nội dung và in đậm
   } else {
     icon_down.style.display = "none"; // Ẩn biểu tượng giảm
     icon_up.style.display = "block"; // Hiện biểu tượng tăng
     text_container.style.borderColor = "green"; // Đổi màu viền sang xanh
-    const text = `Từ ${month1} đến ${month2}, giá trung bình tăng`;
+    const text = `Giá tại khu vực tăng, từ ${month1} đến ${month2}`;
     fta_para.innerHTML = `<strong>${text}</strong>`;
   }
 
@@ -92,95 +51,6 @@ export function show_amount(month1, month2, difference) {
     Math.round(Math.abs(difference) * 10) / 10
   } %</strong>`; // Dùng giá trị tuyệt đối và in đậm
 }
-
-export function showmore(c, x, y, scale = 1) {
-  const charts = document.querySelectorAll(".chart");
-
-  charts.forEach((chart) => {
-    chart.style.opacity = 0;
-    chart.style.pointerEvents = "none";
-  });
-
-  c.style.opacity = 1;
-  c.style.pointerEvents = "auto";
-  c.style.transform = `translateX(${x}px) translateY(${y}px) scale(${scale})`;
-
-  const segment = document.getElementById("price_segment_of_ha_noi");
-  const history_price = document.getElementById("history_price_of_ha_noi");
-  const number_of_type_property = document.getElementById(
-    "column_chart_of_count_classify_of_ha_noi"
-  );
-  if (c == segment) {
-    makeCorrelation("segment", "under_50", false, 900, 0, 30, 50, "sub_chart");
-    makeNumPropertyType("segment");
-  } else if (c == number_of_type_property) {
-    makeHistoryPrice(
-      "type",
-      "can_ho_chung_cu",
-      false,
-      600,
-      200,
-      30,
-      40,
-      "sub_chart"
-    );
-  }
-}
-
-export function remake_sub_chart_of_Pie(range_name) {
-  const sub_charts = document.querySelectorAll(".sub_chart");
-  let name;
-  // Xác định đường dẫn tệp JSON theo range_name
-  switch (range_name) {
-    case "Dưới 50 triệu/m²":
-      name = "under_50";
-      break;
-    case "50 đến 100 triệu/m²":
-      name = "between_50_100";
-      break;
-    case "100 đến 150 triệu/m²":
-      name = "between_100_150";
-      break;
-    case "150 đến 200 triệu/m²":
-      name = "between_150_200";
-      break;
-    case "Trên 200 triệu/m²":
-      name = "over_200";
-      break;
-    default:
-      console.error("Giá trị range_name không hợp lệ:", range_name);
-      return;
-  }
-
-  sub_charts.forEach((sub_chart) => {
-    sub_chart.remove();
-  });
-
-  makeCorrelation("segment", name, false, 900, 0, 30, 50, "sub_chart");
-}
-
-export function remake_sub_chart_of_Column(range_name) {
-  const sub_charts = document.querySelectorAll(".sub_chart");
-  let name = normalizeName(range_name);
-
-  sub_charts.forEach((sub_chart) => {
-    sub_chart.remove();
-  });
-
-  makeHistoryPrice("type", name, false, 900, 0, 30, 50, "sub_chart");
-}
-
-export function remove_sub_chart() {
-  const sub_charts = document.querySelectorAll(".sub_chart");
-
-  sub_charts.forEach((chart) => {
-    chart.style.opacity = 0;
-    setTimeout(() => {
-      chart.remove();
-    }, 2000);
-  });
-}
-
 
 export function set_Scene() {
   // Đợi biểu đồ được tạo
@@ -196,7 +66,7 @@ export function set_Scene() {
     ];
 
     // Nút điều hướng
-    let fta = document.getElementById("fluctuation");
+    let fta = document.getElementById("fta_comment");
     const btnRight = document.getElementById("btnRight");
     const btnLeft = document.getElementById("btnLeft");
 
@@ -252,4 +122,94 @@ export function set_Scene() {
     // Cập nhật trạng thái nút ban đầu
     updateButtonState();
   }, 1000);
+}
+
+export function hideComment(cmt_ctn) {
+  const container = document.getElementById(cmt_ctn);
+
+  container.style.opacity = 0;
+}
+
+export function showComment(cmt_cnt) {
+  const container = document.getElementById(cmt_cnt);
+
+  container.style.opacity = 1;
+}
+
+
+export function move(c, x, y) {
+  const charts = document.querySelectorAll(".chart");
+
+  // Reset styles for all charts
+  charts.forEach((chart) => {
+    chart.style.opacity = 0.7;
+    chart.style.transform = "scale(0.8)";
+    chart.style.pointerEvents = "auto";
+  });
+
+  // Highlight the target chart
+  c.style.opacity = 1;
+  c.style.transform = `translateX(${x}px) translateY(${y}px) scale(1.2)`;
+
+  // Reset previous center chart if it's not the current chart
+  if (center_chart && center_chart !== c) {
+    center_chart.style.transform = "translateX(0px) translateY(0px) scale(0.8)";
+  }
+
+  // Update the center chart
+  center_chart = c;
+}
+
+export function remake_sub_chart_of_Pie(range_name) {
+  const sub_charts = document.querySelectorAll(".sub_chart");
+  let name;
+  // Xác định đường dẫn tệp JSON theo range_name
+  switch (range_name) {
+    case "Dưới 50 triệu/m²":
+      name = "under_50";
+      break;
+    case "50 đến 100 triệu/m²":
+      name = "between_50_100";
+      break;
+    case "100 đến 150 triệu/m²":
+      name = "between_100_150";
+      break;
+    case "150 đến 200 triệu/m²":
+      name = "between_150_200";
+      break;
+    case "Trên 200 triệu/m²":
+      name = "over_200";
+      break;
+    default:
+      console.error("Giá trị range_name không hợp lệ:", range_name);
+      return;
+  }
+
+  sub_charts.forEach((sub_chart) => {
+    sub_chart.remove();
+  });
+
+  makeCorrelation("segment", name, false, 900, 0, 30, 50, "sub_chart");
+}
+
+export function remake_sub_chart_of_Column(range_name) {
+  const sub_charts = document.querySelectorAll(".sub_chart");
+  let name = normalizeName(range_name);
+
+  sub_charts.forEach((sub_chart) => {
+    sub_chart.remove();
+  });
+
+  makeHistoryPrice("type", name, false, 900, 0, 30, 50, "sub_chart");
+}
+
+export function remove_sub_chart() {
+  const sub_charts = document.querySelectorAll(".sub_chart");
+
+  sub_charts.forEach((chart) => {
+    chart.style.opacity = 0;
+    setTimeout(() => {
+      chart.remove();
+    }, 2000);
+  });
 }

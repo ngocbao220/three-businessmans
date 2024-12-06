@@ -6,10 +6,9 @@ body {
   display: flex;
   justify-content: flex-end; /* Đưa #chart-area sang phải */
   align-items: flex-end; /* Đưa #chart-area xuống dưới */
-  background-color: #f4f4f4; /* Màu nền toàn màn hình */
+  background-color: #c7c6c6; /* Màu nền toàn màn hình */
 }
 
-/* Main Title */
 #main-title {
   position: absolute;
   top: 5%;
@@ -55,6 +54,8 @@ body {
 .arrow.left {
   top: 40%;
   left: 30px;
+  opacity: 0.3;
+  cursor: default;
 }
 
 .arrow.right {
@@ -77,34 +78,78 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
 }
 
-.notification {
+.words-container {
   position: absolute;
-  font-size: 13px; /* Kích thước chữ */
-  font-family: "Arial", sans-serif; /* Font chữ */
-  background-color: #000000;
-  color: #ffffff; /* Màu xanh ngọc */
-  padding: 10px 20px; /* Khoảng cách bên trong */
-  border: 2px solid #264653; /* Viền đậm màu xanh đen */
-  border-radius: 8px; /* Bo tròn các góc */
-  text-align: center; /* Canh giữa */
-  display: inline-block; /* Hiển thị inline để vừa khít đoạn text */
-  opacity: 0;
-  padding: 10px 20px; /* Khoảng cách bên trong */
-  z-index: 10;
+  width: 45%;
+  height: 20%;
+  left: 49%;
+  bottom: 500px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
 }
 
 #fluctuation {
   position: absolute;
   background-color: #fff;
   width: 500px;
-  height: 30px;
-  left: 730px;
+  height: 40px;
+  left: 750px;
   bottom: 440px;
-  border-radius: 16px;
+  border-radius: 5px;
   border-color: green;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid; /* Đảm bảo có đường viền */
-  z-index: 10; /* Đảm bảo nó không bị che khuất */
+  z-index: 1; /* Đảm bảo nó không bị che khuất */
+  display: none;
+}
+
+#fta-container {
+  position: relative;
+  width: 70px; /* Kích thước cố định của vùng chứa */
+  height: 35px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-color: rgb(241, 241, 248);
+  border-radius: 20px; /* Bo tròn vùng chứa */
+  display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  overflow: hidden; /* Ẩn nội dung thừa nếu có */
+}
+
+#fta-number {
+  font-family: "Lexend Medium", Roboto, Arial !important;
+  font-size: 20px;
+  font-weight: normal;
+  color: #07a35d;
+  letter-spacing: -0.2px;
+  white-space: nowrap; /* Ngăn xuống dòng */
+}
+
+#fta-para {
+  position: relative;
+  font-family: "Lexend Medium", Roboto, Arial !important;
+  font-size: 18px;
+  left: 100px;
+  bottom: 27px;
+}
+
+#icon_up {
+  position: absolute;
+  width: 60px;
+  left: -65px;
+  bottom: -5px;
+  display: block;
+}
+
+#icon_down {
+  position: absolute;
+  width: 60px;
+  left: -65px;
+  bottom: -5px;
+  display: none;
 }
 
 .Hanoimap {
@@ -131,6 +176,7 @@ body {
   border-radius: 10px;
   border-width: 1px;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .custom-button:hover {

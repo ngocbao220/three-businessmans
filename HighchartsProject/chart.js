@@ -5,7 +5,7 @@ import {
   remake_sub_chart_of_Pie,
   remove_sub_chart,
   remake_sub_chart_of_Column,
-  show_amount
+  show_amount,
 } from "./events.js";
 
 export function makeSegmentPrice(
@@ -296,12 +296,11 @@ export function makeHistoryPrice(
                     // Calculate the difference in months
                     const difference = (point2.value / point1.value - 1) * 100;
 
-                    // Display the change in months
-                    const textContent = `${point1.month} đến ${
-                      point2.month
-                    }: ${Math.round(difference * 100) / 100}% `;
+                    const month1 = point1.month.replace("Giá ", "");
+                    const month2 = point2.month.replace("Giá ", "");
 
-                    show_amount("fluctuation", textContent, difference);
+                    // Gọi hàm show_amount với các giá trị đã được xử lý
+                    show_amount(month1, month2, difference);
 
                     // Reset selection state
                     count = 0;
@@ -462,7 +461,7 @@ export function makeCorrelation(
   bottom = 0,
   width = 0,
   height = 0,
-  className
+  id
 ) {
   fetch(`../Data/Json/Correlation/${type}/${name}.json`)
     .then((response) => response.json())
@@ -475,7 +474,6 @@ export function makeCorrelation(
         });
       });
 
-      const id = `correlation_of_${name}`;
       let chartContainer = document.getElementById(id);
 
       if (!chartContainer) {
@@ -485,10 +483,11 @@ export function makeCorrelation(
         chartContainer.style.bottom = `${bottom}px`;
         chartContainer.style.width = `${width}%`;
         chartContainer.style.height = `${height}%`;
-        chartContainer.classList.add(className);
+        chartContainer.id = id;
+        chartContainer.class = 'chart';
         chartContainer.style.opacity = "0";
 
-        document.body.appendChild(chartContainer);
+        document.getElementById("chart-container").appendChild(chartContainer);
 
         requestAnimationFrame(() => {
           chartContainer.style.opacity = "1"; // Sáng dần lên
@@ -507,16 +506,16 @@ export function makeCorrelation(
         title: {
           text: "Biểu đồ tương quan",
           align: "center",
-          style: { color: "#ffffff", fontSize: "16px" },
+          style: { color: "#000", fontSize: "16px" },
         },
         xAxis: {
           categories: categories,
           title: null,
-          labels: { style: { color: "#ffffff" } },
+          labels: { style: { color: "#000" } },
         },
         yAxis: {
           categories: categories,
-          labels: { enabled: false, style: { color: "#ffffff" } },
+          labels: { enabled: false, style: { color: "#000" } },
           reversed: true,
         },
         colorAxis: {
@@ -699,16 +698,24 @@ export function makeNumPropertyType(
   bottom = 0,
   width = 0,
   height = 0,
-  className
+  id
 ) {
   // Lấy dữ liệu từ tệp JSON
   fetch(`../Data/Json/Number_Of_Type_Property/${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
-      const categories = Object.keys(data); // Các loại bất động sản
-      const values = Object.values(data); // Số lượng tương ứng
+      // Chuyển đổi dữ liệu thành mảng các đối tượng [{category: ..., value: ...}]
+      const dataArray = Object.entries(data).map(([category, value]) => ({
+        category,
+        value,
+      }));
 
-      const id = `column_chart_of_count_classify_of_${name}`;
+      // Sắp xếp mảng theo số lượng giảm dần
+      dataArray.sort((a, b) => b.value - a.value);
+
+      // Tách lại mảng `categories` và `values` từ mảng đã sắp xếp
+      const categories = dataArray.map((item) => item.category);
+      const values = dataArray.map((item) => item.value);
 
       let chartContainer = document.getElementById(id);
 
@@ -719,8 +726,9 @@ export function makeNumPropertyType(
         chartContainer.style.bottom = `${bottom}px`; // Vị trí từ tham số bottom
         chartContainer.style.width = `${width}%`; // Chiều rộng
         chartContainer.style.height = `${height}%`; // Chiều cao
-        chartContainer.className = className;
-        document.body.appendChild(chartContainer);
+        chartContainer.className = "chart";
+        chartContainer.id = id;
+        document.getElementById("chart-container").appendChild(chartContainer);
       }
 
       // Khởi tạo biểu đồ cột
@@ -736,13 +744,13 @@ export function makeNumPropertyType(
         },
         title: {
           text: `Biểu đồ số lượng bất động sản theo loại hình`,
-          style: { color: "white", fontSize: "13px" },
+          style: { color: "black", fontSize: "13px" },
         },
         xAxis: {
           categories: categories, // Các loại bất động sản (trục X)
           title: {
             text: "Loại bất động sản",
-            style: { color: "white", fontSize: "13px", align: "center" },
+            style: { color: "black", fontSize: "13px", align: "center" },
           },
           labels: {
             enabled: false,
@@ -752,7 +760,7 @@ export function makeNumPropertyType(
           min: 0,
           title: {
             text: "Số lượng",
-            style: { color: "white", fontSize: "13px" },
+            style: { color: "black", fontSize: "13px" },
           },
         },
         plotOptions: {

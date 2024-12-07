@@ -155,3 +155,7 @@ export function remove_sub_chart() {
     }, 2000);
   });
 }
+
+
+
+

@@ -16,9 +16,9 @@ if not os.path.exists('Data'):
     os.makedirs('Data')
 
 # Đường dẫn tới file
-page_new_Path = 'D:\\AI - năm hai\\Kì I\\LT xử lý dữ liệu\\BTL\\three-businessmans\\Data\\page_number_new.txt'
-data_new_Path = 'D:\\AI - năm hai\\Kì I\\LT xử lý dữ liệu\BTL\\three-businessmans\\Data\\originalData\\data_original_new.csv'
-data_Project_new_Path = 'D:\\AI - năm hai\\Kì I\LT xử lý dữ liệu\\BTL\\three-businessmans\\Data\\originalData\\data_project_new.csv'
+page_new_Path = 'Data/page_number_new.txt'
+data_new_Path = 'Data/originalData/data_original_new.csv'
+data_Project_new_Path = 'Data/originalData/data_project_new.csv'
 
 # Tạo trình điều khiển Chrome
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))

@@ -879,3 +879,151 @@ export function makeAveragePriceChart(
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
 }
+
+export function makeStdDevChart(
+  type,
+  name,
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 100, // mặc định 100% chiều rộng
+  height = 60  // mặc định 60% chiều cao
+) {
+  const stddevPath = `../Data/Json/Std_And_Variance/Std/${type}/${name}.json`;
+
+  fetch(stddevPath)
+    .then((response) => response.json())
+    .then((stddevData) => {
+      console.log("Dữ liệu độ lệch chuẩn được tải thành công:", stddevData);
+
+      const categories = Object.keys(stddevData);
+      const stddevSeries = Object.values(stddevData);
+
+      const id = `stddev_chart_${name}`;
+
+      // Tạo thẻ chứa biểu đồ nếu chưa tồn tại
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.position = "absolute";
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
+        document.body.appendChild(chartContainer);
+      }
+
+      // Vẽ biểu đồ
+      Highcharts.chart(id, {
+        chart: {
+          type: "column",
+          backgroundColor: null,
+        },
+        title: {
+          text: `Biểu đồ Độ Lệch Chuẩn (${name})`,
+          style: { color: "white", fontSize: "16px" },
+        },
+        xAxis: {
+          categories: categories,
+          title: {
+            text: "Tháng",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: "Độ Lệch Chuẩn",
+            style: { color: "white", fontSize: "13px" },
+          },
+        },
+        series: [
+          {
+            name: "Độ lệch chuẩn",
+            data: stddevSeries,
+            color: "#434348",
+          },
+        ],
+        exporting: {
+          enabled: menu,
+        },
+      });
+    })
+    .catch((error) => console.error("Lỗi tải dữ liệu độ lệch chuẩn:", error));
+}
+
+export function makeVarianceChart(
+  type,
+  name,
+  menu = false,
+  left = 0,
+  bottom = 0,
+  width = 100, // mặc định 100% chiều rộng
+  height = 60  // mặc định 60% chiều cao
+) {
+  const variancePath = `../Data/Json/Std_And_Variance/Variance/${type}/${name}.json`;
+
+  fetch(variancePath)
+    .then((response) => response.json())
+    .then((varianceData) => {
+      console.log("Dữ liệu phương sai được tải thành công:", varianceData);
+
+      const categories = Object.keys(varianceData);  // Danh sách các tháng
+      const varianceSeries = Object.values(varianceData);  // Giá trị phương sai
+
+      const id = `variance_chart_${name}`;
+
+      // Tạo thẻ chứa biểu đồ nếu chưa tồn tại
+      let chartContainer = document.getElementById(id);
+      if (!chartContainer) {
+        chartContainer = document.createElement("div");
+        chartContainer.id = id;
+        chartContainer.style.position = "absolute";
+        chartContainer.style.left = `${left}px`;
+        chartContainer.style.bottom = `${bottom}px`;
+        chartContainer.style.width = `${width}%`;
+        chartContainer.style.height = `${height}%`;
+        document.body.appendChild(chartContainer);
+      }
+
+      // Vẽ biểu đồ cột
+      Highcharts.chart(id, {
+        chart: {
+          type: 'column',
+          backgroundColor: null,  // Không có nền
+        },
+        title: {
+          text: 'Biểu đồ phương sai theo tháng',
+          style: { color: 'white', fontSize: '16px' },
+        },
+        xAxis: {
+          categories: categories,
+          title: {
+            text: 'Tháng',
+            style: { color: 'white', fontSize: '13px' },
+          },
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: 'Giá trị',
+            style: { color: 'white', fontSize: '13px' },
+          },
+        },
+        tooltip: {
+          headerFormat: "<b>{point.x}</b><br/>",
+          pointFormat: "{series.name}: {point.y}",
+        },
+        series: [{
+          name: 'Giá trị phương sai',
+          data: varianceSeries,
+          color: '#7cb5ec',  // Màu cho cột
+        }],
+        credits: {
+          enabled: menu,  // Nếu muốn tắt credits thì set là false
+        },
+      });
+    })
+    .catch((error) => console.error('Lỗi khi tải dữ liệu JSON:', error));
+}

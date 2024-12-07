@@ -19,6 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Thiết lập cấu trúc
   set_Scene();
-
   
 });

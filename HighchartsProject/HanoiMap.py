@@ -25,23 +25,34 @@ hanoi_map = hanoi_map.merge(avg_price_by_district, left_on='NAME_2', right_on='Q
 
 # Lấy Bounding Box của Hà Nội
 minx, miny, maxx, maxy = hanoi_map.total_bounds
+colormap = cm.linear.YlOrRd_09.scale(hanoi_map['Mức giá'].min(), hanoi_map['Mức giá'].max())
 
 # Tạo một bản đồ nền bằng folium với nền mờ
+# Tạo bản đồ với các thiết lập như trước
 m = folium.Map(
     zoom_start=9,
-    tiles="CartoDB Positron",  # Nền mờ
-    max_bounds=True,           # Giữ bản đồ trong giới hạn
-    dragging=True,            # Không cho phép kéo bản đồ
-    zoom_control=False,        # Tắt nút thu phóng
-    scrollWheelZoom=True
-          # Tắt thu phóng bằng cuộn chuột
+    tiles=None,  # Không sử dụng lớp nền mặc định
+    max_bounds=True,
+    dragging=True,
+    zoom_control=False,
+    scrollWheelZoom=True,
 )
 
-# Cập nhật phạm vi hiển thị theo Bounding Box
-m.fit_bounds([[miny, minx], [maxy, maxx]])
+expansion_factor = 0.5  # Điều chỉnh hệ số mở rộng (đơn vị là độ)
+bounds = [
+    [miny - expansion_factor, minx - expansion_factor],  # Góc dưới cùng bên trái
+    [maxy + expansion_factor, maxx + expansion_factor],  # Góc trên cùng bên phải
+]
+folium.Rectangle(
+    bounds=bounds,
+    color=None,
+    fill=True,
+    fill_color='#f48b4a',
+    fill_opacity=1,
+).add_to(m)
 
-# Tạo colormap
-colormap = cm.linear.YlOrRd_09.scale(hanoi_map['Mức giá'].min(), hanoi_map['Mức giá'].max())
+# Thêm lớp bản đồ nền mờ (nếu cần giữ layer của bản đồ)
+folium.TileLayer('CartoDB Positron', name="CartoDB Positron").add_to(m)
 
 # Chuyển đổi GeoDataFrame thành GeoJson và thêm vào bản đồ
 geojson = folium.GeoJson(
@@ -57,14 +68,15 @@ geojson = folium.GeoJson(
         aliases=['Quận/Huyện', 'Giá trung bình (triệu VND)'],
         localize=True
     ),
-    
 ).add_to(m)
 
+# Thêm colormap
 colormap.height = 35
 colormap.width = 350
-# Thêm colormap vào bản đồ
 colormap.add_to(m)
 
+# Cập nhật phạm vi hiển thị
+m.fit_bounds([[miny, minx], [maxy, maxx]])
 
+# Lưu bản đồ
 m.save('heatmap/Hanoimap.html')
-m

@@ -26,22 +26,22 @@ button {
     --transition: 0.5s ease-in-out;
 }
 
-.strawberry {
+.History_Pice {
     --color-light: #eb5e5e;
     --color-medium: #992d2d;
     --color-dark: #7a1d1d;
 }
 
-.mango {
-    --color-light: #eb5e5e;
-    --color-medium: #992d2d;
-    --color-dark: #7a1d1d;
+.column_chart {
+    --color-light: #fad748;
+    --color-medium: #2B2B4F;
+    --color-dark: #e9abfa;
 }
 
 .grape {
-    --color-light: #a7e074;
-    --color-medium: #6ba32d;
-    --color-dark: #7a1d1d;
+    --color-light: #e76e8b;
+    --color-medium: #2F4F4F;
+    --color-dark: #513939;
 }
 
 .peach {
@@ -52,8 +52,8 @@ button {
 
 .orange {
     --color-light: #ff9a00;
-    --color-medium: #992d2d;
-    --color-dark: #7a1d1d;
+    --color-medium: #f48b4a;
+    --color-dark: #d9d9d9;
 }
 
 .body {
@@ -303,7 +303,7 @@ button {
 }
 
 .container .slider {
-    --item-width: 350px;
+    --item-width: 400px;
     position: relative;
     height: 100%;
     display: flex;
@@ -315,7 +315,7 @@ button {
 
 .slider .prev-btn, .slider .next-btn {
     position: absolute;
-    left: calc(var(--item-width) - 50px);
+    left: calc(var(--item-width) - 10px);
     width: 100px;
     height: 100px;
     border-radius: 50%;

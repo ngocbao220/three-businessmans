@@ -1,7 +1,7 @@
 const data = [
     {
-        flavor: "strawberry",
-        describe: "super very unbelievable, siu ngon từ hương vị",
+        flavor: "History_Pice",
+        describe: "Biến động giá của các loại hình tăng đột biến với nhiều mức cụ thể khác nhau",
         calories: {
             number: 140,
             percentage: 6,
@@ -22,20 +22,10 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartData: {
-            // Dữ liệu biểu đồ cụ thể cho Highcharts
-            type: 'pie',
-            data: [
-                ['Calories', 140],
-                ['Fat', 140],
-                ['Sodium', 140],
-                ['Carb', 140],
-                ['Protein', 140]
-            ]
-        }
+        chartContainer: '<div id="history_price_of_ha_noi" class="slider-chart"></div>'
     },
     {
-        flavor: "mango",
+        flavor: "column_chart",
         describe: "super very unbelievable, siu ngon từ hương vị",
         calories: {
             number: 140,
@@ -57,50 +47,7 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartData: {
-            type: 'pie',
-            data: [
-                ['Calories', 140],
-                ['Fat', 140],
-                ['Sodium', 140],
-                ['Carb', 140],
-                ['Protein', 140]
-            ]
-        }
-    },
-    {
-        flavor: "orange",
-        describe: "super very unbelievable, siu ngon từ hương vị",
-        calories: {
-            number: 140,
-            percentage: 6,
-        },
-        fat: {
-            number: 140,
-            percentage: 6,
-        },
-        sodium: {
-            number: 140,
-            percentage: 6,
-        },
-        carb: {
-            number: 140,
-            percentage: 6,
-        },
-        protein: {
-            number: 140,
-            percentage: 6,
-        },
-        chartData: {
-            type: 'pie',
-            data: [
-                ['Calories', 140],
-                ['Fat', 140],
-                ['Sodium', 140],
-                ['Carb', 140],
-                ['Protein', 140]
-            ]
-        }
+        chartContainer: '<div id="column_chart_of_count_classify_of_ha_noi" class="slider-chart"></div>'
     },
     {
         flavor: "grape",
@@ -125,19 +72,10 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartData: {
-            type: 'line', 
-            data: [
-            { name: 'Calories', y: 140 },
-            { name: 'Fat', y: 140 },
-            { name: 'Sodium', y: 140 },
-            { name: 'Carb', y: 140 },
-            { name: 'Protein', y: 140 }
-            ]
-        }
+        chartContainer: '<div id="price_segment_of_ha_noi" class="slider-chart"></div>'
     },
     {
-        flavor: "peach",
+        flavor: "orange",
         describe: "super very unbelievable, siu ngon từ hương vị",
         calories: {
             number: 140,
@@ -159,17 +97,8 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartData: {
-            type: 'pie',
-            data: [
-                ['Calories', 140],
-                ['Fat', 140],
-                ['Sodium', 140],
-                ['Carb', 140],
-                ['Protein', 140]
-            ]
-        }
-    }
+        chartContainer: '<iframe class="slider-chart" src="heatmap/Hanoimap.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+    },
 ];
 
 
@@ -183,7 +112,7 @@ navigation.innerHTML = "";
 content.innerHTML = "";
 sliderWrapper.innerHTML = "";
 
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i < data.length; i++) {
     navigation.innerHTML += `
         <li class="navigation-item">
             <span></span>
@@ -230,9 +159,9 @@ for (let i = 0; i < 1; i++) {
             </div>
             <div class="add-to-cart">
                 <div class="add-to-cart-btn">
-                    <span>Add to cart</span>
+                    <span>price segment</span>
                     <span class="cart-icon">
-                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </span>
                 </div>
                 <span class="heart">
@@ -241,34 +170,12 @@ for (let i = 0; i < 1; i++) {
             </div>
         </div>
     `;
-    
     sliderWrapper.innerHTML += `
         <li class="slider-item">
-            <div id="slider-chart-${i}" class="slider-chart"></div>
+           ${currentData.chartContainer}
         </li>
     `;
-
 }
-
-
-    Highcharts.chart(`slider-chart-${i}`, {
-        chart: {
-            type: currentData.chartData.type,
-            backgroundColor: 'transparent'
-        },
-        title: {
-            text: `${currentData.flavor} Juice Nutrition`
-        },
-        series: [{
-            name: 'Amount',
-            data: currentData.chartData.data
-        }],
-        exporting: { enabled: false
-         // Tắt menu xuất
-        },
-    });
-
-
 
 
 navigation.children[0].classList.add("active");

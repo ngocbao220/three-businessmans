@@ -99,6 +99,31 @@ const data = [
         },
         chartContainer: '<iframe class="slider-chart" src="heatmap/Hanoimap.html" style="width: 100%; height: 100%; border: none;"></iframe>'
     },
+    {
+        flavor: "grape",
+        describe: "super very unbelievable, siu ngon từ hương vị",
+        calories: {
+            number: 140,
+            percentage: 6,
+        },
+        fat: {
+            number: 140,
+            percentage: 6,
+        },
+        sodium: {
+            number: 140,
+            percentage: 6,
+        },
+        carb: {
+            number: 140,
+            percentage: 6,
+        },
+        protein: {
+            number: 140,
+            percentage: 6,
+        },
+        chartContainer: '<div id="column_chart_avg_price_of_ha_noi" class="slider-chart"></div>'
+    },
 ];
 
 

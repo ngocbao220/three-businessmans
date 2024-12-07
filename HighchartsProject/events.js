@@ -213,3 +213,13 @@ export function remove_sub_chart() {
     }, 2000);
   });
 }
+
+export function chosse_project() {
+  const sub_charts = document.querySelectorAll(".sub_chart");
+  sub_charts.forEach((chart) => {
+    chart.style.opacity = 0;
+    setTimeout(() => {
+      chart.remove();
+    }, 2000);
+  });
+}

@@ -1,11 +1,10 @@
 import {
   move,
-  returnToDefalut,
-  showmore,
   remake_sub_chart_of_Pie,
-  remove_sub_chart,
   remake_sub_chart_of_Column,
-  show_amount
+  show_amount,
+  showComment,
+  hideComment
 } from "./events.js";
 
 export function makeSegmentPrice(
@@ -31,11 +30,11 @@ export function makeSegmentPrice(
 
       // Dữ liệu cho Pie Chart
       const chartData = [
-        { name: "Dưới 50 triệu/m²", y: under_50 },
-        { name: "50 đến 100 triệu/m²", y: between_50_100 },
-        { name: "100 đến 150 triệu/m²", y: between_100_150 },
-        { name: "150 đến 200 triệu/m²", y: between_150_200 },
-        { name: "Trên 200 triệu/m²", y: over_200 },
+        { name: "Dưới 50 triệu/m²", y: under_50, pricetype: "gia_loai_1" },
+        { name: "50 đến 100 triệu/m²", y: between_50_100, pricetype: "gia_loai_2" },
+        { name: "100 đến 150 triệu/m²", y: between_100_150, pricetype: "gia_loai_3" },
+        { name: "150 đến 200 triệu/m²", y: between_150_200, pricetype: "gia_loai_4" },
+        { name: "Trên 200 triệu/m²", y: over_200, pricetype: "gia_loai_5" },
       ];
 
       let chartContainer = document.getElementById(id);
@@ -75,6 +74,9 @@ export function makeSegmentPrice(
             events: {
               click: function (event) {
                 const clickedName = event.point.name;
+                const clickedPricetype = event.point.pricetype; // Lấy giá trị pricetype từ event.point
+                // Gọi makeSegmentCount với pricetype từ sự kiện
+                makeSegmentCount(type, clickedPricetype, name, true, 0, 0, 100, 50, "segment-count");
                 if (chartContainer.isShow == true) {
                   remake_sub_chart_of_Pie(clickedName);
                 }
@@ -103,24 +105,16 @@ export function makeSegmentPrice(
             contextButton: {
               menuItems: [
                 {
-                  text: "As The Center",
+                  text: "Show Comment",
                   onclick: function () {
-                    move(chartContainer, -450, 180);
+                    showComment('sgm_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Return To Default",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                    chartContainer.isShow = false;
-                  },
-                },
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    showmore(chartContainer, -850, 40, 1.2);
-                    chartContainer.isShow = true;
+                    hideComment('sgm_comment')
                   },
                 },
               ],
@@ -133,6 +127,7 @@ export function makeSegmentPrice(
       console.error("Lỗi tải dữ liệu JSON (Pie Chart):", error)
     );
 }
+
 
 export function makeHistoryPrice(
   type,
@@ -294,14 +289,13 @@ export function makeHistoryPrice(
                     }; // Store the month and index of the second point
 
                     // Calculate the difference in months
-                    const difference = point2.value - point1.value;
+                    const difference = (point2.value / point1.value - 1) * 100;
 
-                    // Display the change in months
-                    const textContent = `${point1.month} đến ${
-                      point2.month
-                    }: ${Math.round(difference * 100) / 100}% `;
+                    const month1 = point1.month.replace("Giá ", "");
+                    const month2 = point2.month.replace("Giá ", "");
 
-                    show_amount("fluctuation", textContent, difference);
+                    // Gọi hàm show_amount với các giá trị đã được xử lý
+                    show_amount(month1, month2, difference);
 
                     // Reset selection state
                     count = 0;
@@ -381,49 +375,16 @@ export function makeHistoryPrice(
             contextButton: {
               menuItems: [
                 {
-                  text: "As The Center",
+                  text: "Show Comment",
                   onclick: function () {
-                    move(chartContainer, -450, -150); // Gọi hàm beCenter và truyền vào container
+                    showComment('fta_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Return To Default",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                  },
-                },
-                "separator",
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    showmore(chartContainer, -880, -200, 1.3);
-                    chartContainer.isShow = true;
-                    const fluctuationIn2Years =
-                      Math.round(
-                        (averagePrices[categories[24]] /
-                          averagePrices[categories[0]] -
-                          1) *
-                          10000
-                      ) / 100;
-                    const meanOfFluctuation =
-                      Math.round(fluctuationIn2Years * 4) / 100;
-
-                    const fluctuationIn2YearsText = `Giá Bất động sản tại khu vực Hà Nội đã tăng ${fluctuationIn2Years} % trong 2 năm qua!`;
-                    const meanOfFluctuationText = `Mức tăng trung bình ${meanOfFluctuation} % trên tháng`;
-
-                    typeText(
-                      "fluctuationIn2Years",
-                      fluctuationIn2YearsText,
-                      20,
-                      4000
-                    );
-                    typeText(
-                      "meanOfFluctuation",
-                      meanOfFluctuationText,
-                      20,
-                      4000
-                    );
+                    hideComment('fta_comment')
                   },
                 },
               ],
@@ -461,9 +422,9 @@ export function makeCorrelation(
   left = 0,
   bottom = 0,
   width = 0,
-  height = 0
+  height = 0,
+  id
 ) {
-  // Fetch và vẽ biểu đồ tương quan (Heatmap)
   fetch(`../Data/Json/Correlation/${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
@@ -475,8 +436,8 @@ export function makeCorrelation(
         });
       });
 
-      const id = `correlation_of_${name}`;
       let chartContainer = document.getElementById(id);
+
       if (!chartContainer) {
         chartContainer = document.createElement("div");
         chartContainer.id = id;
@@ -484,11 +445,17 @@ export function makeCorrelation(
         chartContainer.style.bottom = `${bottom}px`;
         chartContainer.style.width = `${width}%`;
         chartContainer.style.height = `${height}%`;
-        chartContainer.classList.add(className);
+        chartContainer.id = id;
+        chartContainer.class = 'chart';
         chartContainer.style.opacity = "0";
 
-        document.body.appendChild(chartContainer);
+        document.getElementById("chart-container").appendChild(chartContainer);
+
+        requestAnimationFrame(() => {
+          chartContainer.style.opacity = "1"; // Sáng dần lên
+        });
       }
+
       // Khởi tạo Heatmap
       Highcharts.chart(id, {
         chart: {
@@ -497,23 +464,20 @@ export function makeCorrelation(
           marginBottom: 140,
           plotBorderWidth: 2,
           backgroundColor: null,
-          // Đặt kích thước của biểu đồ tại đây
-          width: 900,  // Thay đổi chiều rộng
-          height: 600,  // Thay đổi chiều cao
         },
         title: {
           text: "Biểu đồ tương quan",
           align: "center",
-          style: { color: "#ffffff", fontSize: "16px" },
+          style: { color: "#000", fontSize: "16px" },
         },
         xAxis: {
           categories: categories,
           title: null,
-          labels: { style: { color: "#ffffff" } },
+          labels: { style: { color: "#000" } },
         },
         yAxis: {
           categories: categories,
-          labels: { enabled: false, style: { color: "#ffffff" } },
+          labels: { enabled: false, style: { color: "#000" } },
           reversed: true,
         },
         colorAxis: {
@@ -546,7 +510,9 @@ export function makeCorrelation(
         ],
         tooltip: {
           formatter: function () {
-            return `<b>${categories[this.point.x]} và ${categories[this.point.y]}</b><br>
+            return `<b>${categories[this.point.x]} và ${
+              categories[this.point.y]
+            }</b><br>
               Hệ số tương quan: <b>${this.point.value.toFixed(2)}</b>`;
           },
         },
@@ -556,24 +522,16 @@ export function makeCorrelation(
             contextButton: {
               menuItems: [
                 {
-                  text: "As The Center",
+                  text: "Show Comment",
                   onclick: function () {
-                    const chart_correlation = document.getElementById(id);
-                    move(chart_correlation, 470, -200); // Gọi hàm beCenter và truyền vào container
+                    showComment('crl_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Return To Default",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                  },
-                },
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    const chart_correlation = document.getElementById(id);
-                    showmore(chart_correlation, 0, -200);
+                    hideComment('crl_comment')
                   },
                 },
               ],
@@ -593,19 +551,17 @@ export function makeSegmentCount(
   left = 0,
   bottom = 0,
   width = 0,
-  height = 0,
-  className
+  height = 50,
+  id
 ) {
   // Lấy dữ liệu từ tệp JSON
   fetch(`../Data/Json/Segment/${type}/count/${pricetype}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
       const chartData = Object.keys(data).map((key) => ({
-        name: key,
+        name: key.replace(",", "<br>"), // Thay dấu ',' bằng thẻ <br> để tách dòng
         y: data[key],
       }));
-
-      const id = `donut_chart_of_${name}`;
 
       // Kiểm tra và tạo thẻ div cho biểu đồ nếu chưa có
       let chartContainer = document.getElementById(id);
@@ -620,6 +576,19 @@ export function makeSegmentCount(
         document.body.appendChild(chartContainer);
       }
 
+      let text = "Phân khúc"; // Giá trị mặc định
+      if (pricetype === "gia_loai_1") {
+        text = "Phân khúc Bất động sản dưới 50 triệu";
+      } else if (pricetype === "gia_loai_2") {
+        text = "Phân khúc Bất động sản từ 50 đến 100 triệu";
+      } else if (pricetype === "gia_loai_3") {
+        text = "Phân khúc Bất động sản từ 100 đến 150 triệu";
+      } else if (pricetype === "gia_loai_4") {
+        text = "Phân khúc Bất động sản từ 150 đến 200 triệu";
+      } else if (pricetype === "gia_loai_5") {
+        text = "Phân khúc Bất động sản trên 200 triệu";
+      }
+
       // Khởi tạo biểu đồ hình bánh donut
       Highcharts.chart(id, {
         chart: {
@@ -627,8 +596,9 @@ export function makeSegmentCount(
           backgroundColor: null,
         },
         title: {
-          text: `Phân khúc Bất động sản `,
-          style: { color: "white", fontSize: "13px" },
+          text: text,
+          align: "center",
+          style: { color: "black", fontSize: "13px" },
         },
         tooltip: {
           pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
@@ -640,7 +610,7 @@ export function makeSegmentCount(
             cursor: "pointer",
             dataLabels: {
               enabled: true,
-              format: "{point.name}: {point.y}", // Hiển thị tên và giá trị khi hover
+              format: "{point.name}<br>{point.y}", // Hiển thị tên và giá trị dưới nhau
             },
           },
         },
@@ -652,32 +622,7 @@ export function makeSegmentCount(
           },
         ],
         exporting: {
-          enabled: menu,
-          buttons: {
-            contextButton: {
-              menuItems: [
-                {
-                  text: "As The Center",
-                  onclick: function () {
-                    move(chartContainer, +450, 180);
-                  },
-                },
-                "separator",
-                {
-                  text: "Return To Default",
-                  onclick: function () {
-                    returnToDefalut();
-                  },
-                },
-                {
-                  text: "Show more",
-                  onclick: function () {
-                    showmore(chartContainer, -800, 200, 1.3);
-                  },
-                },
-              ],
-            },
-          },
+          enabled: false,
         },
       });
     })
@@ -694,16 +639,24 @@ export function makeNumPropertyType(
   bottom = 0,
   width = 0,
   height = 0,
-  className
+  id
 ) {
   // Lấy dữ liệu từ tệp JSON
   fetch(`../Data/Json/Number_Of_Type_Property/${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
-      const categories = Object.keys(data); // Các loại bất động sản
-      const values = Object.values(data); // Số lượng tương ứng
+      // Chuyển đổi dữ liệu thành mảng các đối tượng [{category: ..., value: ...}]
+      const dataArray = Object.entries(data).map(([category, value]) => ({
+        category,
+        value,
+      }));
 
-      const id = `column_chart_of_count_classify_of_${name}`;
+      // Sắp xếp mảng theo số lượng giảm dần
+      dataArray.sort((a, b) => b.value - a.value);
+
+      // Tách lại mảng `categories` và `values` từ mảng đã sắp xếp
+      const categories = dataArray.map((item) => item.category);
+      const values = dataArray.map((item) => item.value);
 
       let chartContainer = document.getElementById(id);
 
@@ -714,8 +667,9 @@ export function makeNumPropertyType(
         chartContainer.style.bottom = `${bottom}px`; // Vị trí từ tham số bottom
         chartContainer.style.width = `${width}%`; // Chiều rộng
         chartContainer.style.height = `${height}%`; // Chiều cao
-        chartContainer.className = className;
-        document.body.appendChild(chartContainer);
+        chartContainer.className = "chart";
+        chartContainer.id = id;
+        document.getElementById("chart-container").appendChild(chartContainer);
       }
 
       // Khởi tạo biểu đồ cột
@@ -731,13 +685,13 @@ export function makeNumPropertyType(
         },
         title: {
           text: `Biểu đồ số lượng bất động sản theo loại hình`,
-          style: { color: "white", fontSize: "13px" },
+          style: { color: "black", fontSize: "13px" },
         },
         xAxis: {
           categories: categories, // Các loại bất động sản (trục X)
           title: {
             text: "Loại bất động sản",
-            style: { color: "white", fontSize: "13px", align: "center" },
+            style: { color: "black", fontSize: "13px", align: "center" },
           },
           labels: {
             enabled: false,
@@ -747,7 +701,7 @@ export function makeNumPropertyType(
           min: 0,
           title: {
             text: "Số lượng",
-            style: { color: "white", fontSize: "13px" },
+            style: { color: "black", fontSize: "13px" },
           },
         },
         plotOptions: {
@@ -776,24 +730,16 @@ export function makeNumPropertyType(
             contextButton: {
               menuItems: [
                 {
-                  text: "Di chuyển ra giữa ",
+                  text: "Show Comment",
                   onclick: function () {
-                    move(chartContainer, +450, 180);
+                    showComment('type_comment');
                   },
                 },
                 "separator",
                 {
-                  text: "Quay lại mặc định",
+                  text: "Hide Comment",
                   onclick: function () {
-                    returnToDefalut();
-                    chartContainer.isShow = false;
-                  },
-                },
-                {
-                  text: "Hiển thị thêm",
-                  onclick: function () {
-                    showmore(chartContainer, 50, 0, 1.3);
-                    chartContainer.isShow = true;
+                    hideComment('type_comment')
                   },
                 },
               ],
@@ -879,15 +825,15 @@ export function makeAveragePriceChart(
     })
     .catch((error) => console.error("Lỗi tải dữ liệu JSON:", error));
 }
-
 export function makeStdDevChart(
   type,
   name,
   menu = false,
   left = 0,
   bottom = 0,
-  width = 100, // mặc định 100% chiều rộng
-  height = 60  // mặc định 60% chiều cao
+  width = 50, // mặc định 100% chiều rộng
+  height = 60,  // mặc định 60% chiều cao
+  id
 ) {
   const stddevPath = `../Data/Json/Std_And_Variance/Std/${type}/${name}.json`;
 
@@ -899,7 +845,6 @@ export function makeStdDevChart(
       const categories = Object.keys(stddevData);
       const stddevSeries = Object.values(stddevData);
 
-      const id = `stddev_chart_${name}`;
 
       // Tạo thẻ chứa biểu đồ nếu chưa tồn tại
       let chartContainer = document.getElementById(id);
@@ -946,7 +891,7 @@ export function makeStdDevChart(
           },
         ],
         exporting: {
-          enabled: menu,
+          enabled: false,
         },
       });
     })
@@ -959,8 +904,9 @@ export function makeVarianceChart(
   menu = false,
   left = 0,
   bottom = 0,
-  width = 100, // mặc định 100% chiều rộng
-  height = 60  // mặc định 60% chiều cao
+  width = 50, // mặc định 100% chiều rộng
+  height = 60,  // mặc định 60% chiều cao
+  id
 ) {
   const variancePath = `../Data/Json/Std_And_Variance/Variance/${type}/${name}.json`;
 
@@ -971,8 +917,6 @@ export function makeVarianceChart(
 
       const categories = Object.keys(varianceData);  // Danh sách các tháng
       const varianceSeries = Object.values(varianceData);  // Giá trị phương sai
-
-      const id = `variance_chart_${name}`;
 
       // Tạo thẻ chứa biểu đồ nếu chưa tồn tại
       let chartContainer = document.getElementById(id);
@@ -1020,8 +964,8 @@ export function makeVarianceChart(
           data: varianceSeries,
           color: '#7cb5ec',  // Màu cho cột
         }],
-        credits: {
-          enabled: menu,  // Nếu muốn tắt credits thì set là false
+        exporting: {
+          enabled: false,  // Nếu muốn tắt credits thì set là false
         },
       });
     })

@@ -1,1 +1,5 @@
-https://batdongsan.com.vn/ban-loai-bat-dong-san-khac-dong-anh/p1
+makeSegmentPrice
+makeSegmentCount
+makeAveragePriceChart
+makeStdDevChart
+makeVarianceChart

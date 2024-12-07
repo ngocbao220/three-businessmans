@@ -154,20 +154,20 @@ class countSegment:
             min_price = 0
             max_price = 50
             type_path = 'gia_loai_1'
-        if type_segment == '50 đến 75 triệu':
+        if type_segment == '50 đến 100 triệu':
             min_price = 50
-            max_price = 175
+            max_price = 100
             type_path = 'gia_loai_2'
-        if type_segment == '75 đến 100 triệu':
-            min_price = 75
+        if type_segment == '100 đến 150 triệu':
+            min_price = 150
             max_price = 100
             type_path = 'gia_loai_3'
-        if type_segment == '100 đến 125 triệu':
-            min_price = 100
-            max_price = 125
+        if type_segment == '150 đến 200 triệu':
+            min_price = 150
+            max_price = 200
             type_path = 'gia_loai_4'
-        if type_segment == 'Trên 125 triệu':
-            min_price = 125
+        if type_segment == 'Trên 200 triệu':
+            min_price = 200
             max_price = 1000000000
             type_path = 'gia_loai_5'
 
@@ -181,7 +181,7 @@ class countSegment:
             total += self.total_type[property_type]
         
         for property_type in property_types:
-            self.persent_type[property_type] = float(self.total_type[property_type] / total) * 100
+            self.persent_type[property_type] = round(float(self.total_type[property_type] / total) * 100, 2)
         
     def toJson(self):
         # Chuyển dữ liệu cần thiết thành dictionary
@@ -196,7 +196,7 @@ project_names = data['Tên dự án'].drop_duplicates().to_list()
 
 
 
-segment = {'Dưới 50 triệu', '50 đến 75 triệu', '75 đến 100 triệu', '100 đến 125 triệu', 'Trên 125 triệu'}
+segment = {'Dưới 50 triệu', '50 đến 100 triệu', '100 đến 150 triệu', '150 đến 200 triệu', 'Trên 200 triệu'}
 
 for type_segment in segment:
     for area_name in districts_hanoi:
@@ -207,14 +207,14 @@ for type_segment in segment:
         except Exception as e:
             print('Lỗi: ', e)
             print('Không thành công : ', area_name)
-    for project_name in project_names:
-        try:
-            sPP = countSegment(type_segment, project_name)
-            sPP.toJson()
-            print('Thành công : ', project_name)
-        except Exception as e:
-            print('Lỗi: ', e)
-            print('Không thành công : ', project_name)
+    # for project_name in project_names:
+    #     try:
+    #         sPP = countSegment(type_segment, project_name)
+    #         sPP.toJson()
+    #         print('Thành công : ', project_name)
+    #     except Exception as e:
+    #         print('Lỗi: ', e)
+    #         print('Không thành công : ', project_name)
 
 
 # for area_name in districts_hanoi:

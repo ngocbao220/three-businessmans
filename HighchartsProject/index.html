@@ -15,22 +15,25 @@
   <body>
     <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
 
-    <div class="heatmap">
-      <h3 style="top: 55px; left: 140px; position: absolute">
-        Biểu đồ giá trung bình trên các Quận/Huyện
-      </h3>
-      <button id="button_change_type">Fluctuation</button>
-      <iframe
-        class="Hanoimap"
-        src="data_for_map/mean_price/ha_noi.html"
-      ></iframe>
+    <div class="container">
+      <div class="heatmap">
+        <h3 style="top: 55px; left: 140px; position: absolute">
+          Biểu đồ giá trung bình trên các Quận/Huyện
+        </h3>
+        <button id="button_change_type">Fluctuation</button>
+        <iframe
+          class="Hanoimap"
+          src="data_for_map/mean_price/ha_noi.html"
+        ></iframe>
+      </div>
+    
+      <div id="chart-area">
+        <button class="arrow left" id="btnLeft">&#9664;</button>
+        <div id="chart-container"></div>
+        <button class="arrow right" id="btnRight">&#9654;</button>
+      </div>
     </div>
-
-    <div id="chart-area">
-      <button class="arrow left" id="btnLeft">&#9664;</button>
-      <div id="chart-container"></div>
-      <button class="arrow right" id="btnRight">&#9654;</button>
-    </div>
+    
 
     
 
@@ -38,7 +41,23 @@
       
     </div>
     
-    <div style="height: 150px;"></div>
+    <div id="segment-container">
+      <div id="segment"></div>
+
+      <div id="segment-count"></div>
+    </div>
+
+    <div class="heatmap2">
+      <h3 style="top: 55px; left: 140px; position: absolute">
+        Biểu đồ giá trung bình trên các Quận/Huyện
+      </h3>
+      <button id="button_change_type2">Fluctuation</button>
+      <iframe
+        class="Hanoimap2"
+        src="data_for_map/mean_price/ha_noi.html"
+      ></iframe>
+    </div>
+    
 
     <!-- Tập lệnh javaScript -->
     <script type="module" src="events.js"></script>

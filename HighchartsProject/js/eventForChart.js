@@ -62,8 +62,8 @@ function see_deeply() {
 
     // Thay đổi nút
     document.getElementById("eye").innerText = "close";
-    
-    map_title.innerHTML = 'Khu vực hiện tại: Hà Nội';
+
+    map_title.innerHTML = "Khu vực hiện tại: Hà Nội";
   } else {
     ward_map.style.display = "none";
     district_map.style.width = "40%";
@@ -80,13 +80,25 @@ function see_deeply() {
   isDeeplyVisible = !isDeeplyVisible;
 }
 
-function update_list_chart(district) {
-  makeSegmentPrice("area", district, true, 0, 0, 96.3, 95, "segment");
-  makeHistoryPrice("area", district, true, 0, 0, 96.3, 95, "history");
-  makeCorrelation("area", district, true, 0, 0, 96.3, 95, "correlation");
-  makeNumPropertyType("area", district, true, 0, 0, 96.3, 95, "type");
+export function update_list_chart(type, district) {
+  setTimeout(
+    makeSegmentPrice(type, district, true, 0, 0, 96.3, 95, "segment"),
+    1000
+  );
+  setTimeout(
+    makeHistoryPrice(type, district, true, 0, 0, 96.3, 95, "history"),
+    1000
+  );
+  setTimeout(
+    makeCorrelation(type, district, true, 0, 0, 96.3, 95, "correlation"),
+    1000
+  );
+  setTimeout(
+    makeNumPropertyType(type, district, true, 0, 0, 96.3, 95, "type"),
+    1000
+  );
 
-  set_Scene();
+  setTimeout(set_Scene(), 1000);
 }
 
 district.addEventListener("load", () => {
@@ -117,7 +129,7 @@ district.addEventListener("load", () => {
         // Cập nhật src cho iframe xã/phường
         ward.src = newSrc;
         // Thay đổi biểu đồ liên quan
-        if (isDeeplyVisible) update_list_chart(formattedName);
+        if (isDeeplyVisible) update_list_chart('area', formattedName);
 
         console.log(`Chuyển sang bản đồ xã/phường: ${newSrc}`);
       });
@@ -145,40 +157,83 @@ export function get_info_of_iframe(
 
     elements.forEach((element) => {
       element.addEventListener("click", () => {
-        // Kiểm tra sự tồn tại của các thẻ con
+        const details = element.querySelector(".details");
+
+        // Tên dự án
         const projectNameElement = element.querySelector("h2");
-        const projectName = projectNameElement
-          ? projectNameElement.textContent.trim()
-          : "Tên dự án không có sẵn";
+        const projectName =
+          projectNameElement?.textContent.trim() || "Tên dự án không có sẵn";
 
-        const viewsElement = element.querySelectorAll("p")[0];
-        const views = viewsElement
-          ? viewsElement.textContent.trim()
-          : "Không có lượt xem";
+        update_list_chart('project', normalizeName(projectName.replace('Tên dự án: ', '')));
+        setTimeout(set_Scene(), 1000);
 
-        const investorElement = element.querySelectorAll("p")[1];
-        const investor = investorElement
-          ? investorElement.textContent.trim()
-          : "Không có thông tin chủ đầu tư";
+        // Lượt xem
+        const views =
+          element.querySelectorAll("p")[0]?.textContent.trim() ||
+          "Không có lượt xem";
 
-        const districtElement = element.querySelectorAll("p")[2];
-        const district = districtElement
-          ? districtElement.textContent.trim()
-          : "Không có thông tin quận/huyện";
+        // Chủ đầu tư
+        const investor =
+          element.querySelectorAll("p")[1]?.textContent.trim() ||
+          "Không có thông tin chủ đầu tư";
 
-        const legalStatusElement = element.querySelectorAll("p")[3];
-        const legalStatus = legalStatusElement
-          ? legalStatusElement.textContent.trim()
-          : "Không có thông tin pháp lý";
+        // Quận/Huyện
+        const district =
+          element.querySelectorAll("p")[2]?.textContent.trim() ||
+          "Không có thông tin quận/huyện";
 
+        // Pháp lý
+        const legalStatus =
+          element.querySelectorAll("p")[3]?.textContent.trim() ||
+          "Không có thông tin pháp lý";
+
+        // Thông tin chi tiết (Diện tích, Số căn hộ, Số tòa, Tiện ích)
+        const area =
+          details.querySelector("p:nth-child(1)")?.textContent.trim() ||
+          "Không có thông tin diện tích";
+        const apartments =
+          details.querySelector("p:nth-child(2)")?.textContent.trim() ||
+          "Không có thông tin số căn hộ";
+        const buildings =
+          details.querySelector("p:nth-child(3)")?.textContent.trim() ||
+          "Không có thông tin số tòa";
+        const amenities =
+          details.querySelector("p:nth-child(4)")?.textContent.trim() ||
+          "Không có thông tin tiện ích";
+
+        // Chia tiện ích thành 3 cột
+        function splitAmenitiesIntoColumns(amenities, columns = 3) {
+          const amenitiesArray = amenities
+            .split(",")
+            .map((item) => item.trim());
+          const columnSize = Math.ceil(amenitiesArray.length / columns);
+
+          const columnsArray = Array.from({ length: columns }, (_, index) => {
+            return amenitiesArray.slice(
+              index * columnSize,
+              (index + 1) * columnSize
+            );
+          });
+
+          return columnsArray
+            .map(
+              (col) => `
+              <ul>
+                ${col.map((amenity) => `<li>${amenity}</li>`).join("")}
+              </ul>
+            `
+            )
+            .join("");
+        }
+
+        const amenitiesHTML = splitAmenitiesIntoColumns(amenities);
+
+        // Kết hợp các thông tin thành một chuỗi HTML
         const content = `
-          <h2 style="display: inline-block; margin-right: 10px; font-size: 20px">${projectName}</h2><br>
-          <p style="position: relative; left: 80%">${views}</p>
-          <p>${investor}</p>
-          <p>${district}</p>
-          <p>${legalStatus}</p>
-        `;
-
+        <div style="display: flex; justify-content: space-between; font-size: 13px">
+          ${amenitiesHTML}
+        </div>
+      `;
         pro_info.innerHTML = content; // Cập nhật nội dung vào thẻ pro_info
       });
     });
@@ -239,10 +294,6 @@ export function set_Scene() {
       }
     });
 
-    eye.addEventListener("click", () => {
-      see_deeply();
-    });
-
     // Hàm cập nhật vị trí biểu đồ
     function updatePosition() {
       charts.forEach((chart, index) => {
@@ -270,16 +321,10 @@ export function set_Scene() {
 }
 
 export function set_Event() {
-  let eyeClicked = false;
-
   let project_showed = false;
 
   eye.addEventListener("click", () => {
-    if (!eyeClicked) {
-      eyeClicked = true;
-    } else {
-      eyeClicked = false;
-    }
+    see_deeply();
   });
 
   // Gắn sự kiện click

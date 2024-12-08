@@ -4,7 +4,7 @@ import ast
 # Đọc dữ liệu từ hai file CSV
 file1 = pd.read_csv('Data/originalData/data_project_only.csv', encoding='utf-8')
 file2 = pd.read_csv('Data/originalData/data_project_view.csv', encoding='utf-8')
-htmlPath = 'HighchartsProject/listProject.html'
+htmlPath = 'HighchartsProject/addInfoProject.html'
 
 # Chuẩn hóa tên cột
 file1.columns = file1.columns.str.strip()
@@ -81,19 +81,11 @@ html_content = '''<!DOCTYPE html>
 # Lặp qua các dòng dữ liệu và tạo thẻ HTML
 for _, row in result.iterrows():
     html_content += f'''
-    <div class="project-card">
-        <h2>Tên dự án: {row['Tên dự án']}</h2>
-        <p>Lượt xem: {row['Lượt xem']}</p>
-        <p>Chủ đầu tư: {row['Chủ đầu tư']}</p>
-        <p>Quận/Huyện: {row['Quận/Huyện']}</p>
-        <p>Pháp lý: {row['Pháp lý']}</p>
-        <button class="toggle-button" onclick="toggleDetails(this)">Chi tiết</button>
-        <div class="details">
-            <p>Diện tích: {row['Diện tích']}</p>
-            <p>Số căn hộ: {row['Số căn hộ']}</p>
-            <p>Số tòa: {row['Số tòa']}</p>
-            <p>Tiện ích: {row['Tiện ích']}</p>
-        </div>
+    <div class="project-card-2">
+        <p>Diện tích: {row['Diện tích']}</p>
+        <p>Số căn hộ: {row['Số căn hộ']}</p>
+        <p>Số tòa: {row['Số tòa']}</p>
+        <p>Tiện ích: {row['Tiện ích']}</p>
     </div>
     '''
 

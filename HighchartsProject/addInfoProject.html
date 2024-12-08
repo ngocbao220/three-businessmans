@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh sách dự án</title>
+    <style>
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .project-card h2 {
+            margin: 0;
+            color: #007BFF;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleDetails(button) {
+            const details = button.parentElement.querySelector('.details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                button.textContent = 'Thu gọn';
+            } else {
+                details.style.display = 'none';
+                button.textContent = 'Chi tiết';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="project-card-2">
+        <p>Diện tích: 420 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 66 tòa</p>
+        <p>Tiện ích: Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 280 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 457,92 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.390 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.867.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Sân bóng đá, Công viên, HT An ninh, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Trường mẫu giáo, Trường tiểu học, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 183,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Coffee, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Trạm y tế, Trung tâm thương mại, Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Đường chạy bộ, HT An ninh, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 200 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng đá, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Trường tiểu học, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 294 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 137,56 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng đá, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 20,95 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 26,9 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 186 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trường mẫu giáo, Trường tiểu học, Nhà hàng, Thang máy, Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 30 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Siêu thị, Cửa hàng tiện lợi, Nhà hàng, Thang máy, Trung tâm thương mại, Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 17 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 6 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, HT An ninh, Hệ thống PCCC, Siêu thị, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 394,14 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại, Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 20.390 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.900 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 94,1 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Trường mẫu giáo, Trường tiểu học, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 25,4 ha</p>
+        <p>Số căn hộ: 12.000 căn</p>
+        <p>Số tòa: 21 tòa</p>
+        <p>Tiện ích: Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,11 ha</p>
+        <p>Số căn hộ: 3.599 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Sân Tennis, Sân bóng rổ, Sân bóng đá, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 284.768 m²</p>
+        <p>Số căn hộ: 3.922 căn</p>
+        <p>Số tòa: 5 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,45 ha</p>
+        <p>Số căn hộ: 1.478 căn</p>
+        <p>Số tòa: 5 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.500 m²</p>
+        <p>Số căn hộ: 1.544 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,75 ha</p>
+        <p>Số căn hộ: 3.837 căn</p>
+        <p>Số tòa: 6 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7,5 ha</p>
+        <p>Số căn hộ: 3.727 căn</p>
+        <p>Số tòa: 12 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,4 ha</p>
+        <p>Số căn hộ: 2.600 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Yoga, HT An ninh, HT Điều hòa, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.665 m²</p>
+        <p>Số căn hộ: 2.368 căn</p>
+        <p>Số tòa: 6 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Thang máy, Bãi đỗ xe, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 17,63 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Trạm y tế, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11.390 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.004 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,36 ha</p>
+        <p>Số căn hộ: 1.800 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,7 ha</p>
+        <p>Số căn hộ: 9.500 căn</p>
+        <p>Số tòa: 13 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Hệ thống PCCC, Sân bóng rổ, Hồ bơi, Sân bóng đá, Phòng sinh hoạt, Công viên, Vui chơi trẻ em, Đường chạy bộ, Siêu thị, Phòng Gym, Cửa hàng tiện lợi, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Lễ tân, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.552 m²</p>
+        <p>Số căn hộ: 2.000 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 23,9 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.582 m²</p>
+        <p>Số căn hộ: 324 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 39,8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Sân Tennis, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,9 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng đá, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: 1.564 căn</p>
+        <p>Số tòa: 7 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,28 ha</p>
+        <p>Số căn hộ: 2.000 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Trường tiểu học, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,88 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,2 ha</p>
+        <p>Số căn hộ: 4.014 căn</p>
+        <p>Số tòa: 5 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.970 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Lễ tân, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại, Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 55,3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 74 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 197,3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Coffee, Trường mẫu giáo, Trường tiểu học, Thang máy, Bãi đỗ xe, Sân bóng đá, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 62 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Siêu thị, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,13 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Spa, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.200 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 27 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Trường mẫu giáo, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.000 m²</p>
+        <p>Số căn hộ: 1.800 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Đường chạy bộ, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11.797 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 50 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Vui chơi trẻ em, Spa</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.600 m²</p>
+        <p>Số căn hộ: 891 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 78 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,56 ha</p>
+        <p>Số căn hộ: 1.328 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 17.420 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,1 ha</p>
+        <p>Số căn hộ: 1.248 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.773 m²</p>
+        <p>Số căn hộ: 932 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.981 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 16.287 m²</p>
+        <p>Số căn hộ: 3.922 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, BBQ, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 120.000 m²</p>
+        <p>Số căn hộ: 1.468 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Lễ tân, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 45 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.250 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trung tâm thương mại, Bãi đỗ xe, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 12.277 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.900 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 196.161 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trung tâm thương mại, Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 15.993 m²</p>
+        <p>Số căn hộ: 950 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Coffee, Thang máy, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Bãi đỗ xe, Sân bóng đá, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4 ha</p>
+        <p>Số căn hộ: 1.058 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Lễ tân, Thang máy, Trung tâm thương mại, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Bãi đỗ xe, Sân Tennis, BBQ, Công viên</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,78 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 28.100 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 36 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,85 ha</p>
+        <p>Số căn hộ: 976 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Sân Tennis, BBQ, Công viên, Đường chạy bộ, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,23 ha</p>
+        <p>Số căn hộ: 3.040 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,59 ha</p>
+        <p>Số căn hộ: 804 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.601.483 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng đá, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,37 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Nhà hàng, Thang máy, Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,65 ha</p>
+        <p>Số căn hộ: 1.248 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Bãi đỗ xe, BBQ, Công viên, Phòng xông hơi, Phòng Gym, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 77 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 17,32 ha</p>
+        <p>Số căn hộ: 1.176 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,03 ha</p>
+        <p>Số căn hộ: 3.000 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.895 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 5 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Lễ tân, Spa, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.263 m²</p>
+        <p>Số căn hộ: 448 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 22,31 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Siêu thị, Cửa hàng tiện lợi, Coffee, Trường tiểu học, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,3 ha</p>
+        <p>Số căn hộ: 3.000 căn</p>
+        <p>Số tòa: 5 tòa</p>
+        <p>Tiện ích: Sân Tennis, Sân bóng rổ, Sân bóng đá, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 95,33 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.046 m²</p>
+        <p>Số căn hộ: 498 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 22,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 25,57 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Công viên, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 44.106 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng đá, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.417 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 30,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, Công viên, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Trường mẫu giáo, Nhà hàng, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.639 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: 285 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 50.388 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em, Cửa hàng tiện lợi, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: 1.200 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.301 m²</p>
+        <p>Số căn hộ: 432 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Lễ tân, Spa, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 700 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4,48 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 24,8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Nhà hàng, Thang máy, Công viên, HT An ninh, Lối thoát hiểm</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,06 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 39,41 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,6 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 40 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11.076 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,02 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.970 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.320 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.600 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,99 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trạm y tế, Thang máy, Trung tâm thương mại, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Bãi đỗ xe, Sân Tennis, Sân bóng rổ, Sân bóng đá, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.115 m²</p>
+        <p>Số căn hộ: 336 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 34,1 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4,16 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.646 m²</p>
+        <p>Số căn hộ: 1.020 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 38 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.365 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Đường chạy bộ, HT An ninh, HT Điều hòa, Hệ thống PCCC, Vui chơi trẻ em, Siêu thị, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 16,74 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trạm y tế, Thang máy, Bãi đỗ xe, Sân bóng rổ, BBQ, Đường chạy bộ, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Siêu thị, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.630 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Trường mẫu giáo, Trạm y tế, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 10.675 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Spa, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,7 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 76 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 30.488 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.624 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 40 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, BBQ, Công viên, Đường chạy bộ, Phòng Yoga, HT An ninh, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Coffee, Nhà hàng</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.032 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 29,45 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.073 m²</p>
+        <p>Số căn hộ: 398 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Spa, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.650 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.275 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,15 ha</p>
+        <p>Số căn hộ: 736 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Sân bóng đá, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 40.918 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Sân bóng đá, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, ATM & Ngân hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.980 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 39.860 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Đường chạy bộ, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Vui chơi trẻ em, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 39.860 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Đường chạy bộ, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Vui chơi trẻ em, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 39.860 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Đường chạy bộ, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Vui chơi trẻ em, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 39.860 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân bóng rổ, Đường chạy bộ, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Vui chơi trẻ em, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.222 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,86 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 31.865 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.410 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.004 m²</p>
+        <p>Số căn hộ: 217 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 12.499,2 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.190 m²</p>
+        <p>Số căn hộ: 350 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại, Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 10.721,4 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,24 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 500 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,74 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 30,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em, Spa, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.997 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.500 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 168.290 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 24,42 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 98.168 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 23 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Spa, Trường mẫu giáo, Trường tiểu học, Nhà hàng, Trạm y tế, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.136 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Lễ tân, Spa, Thang máy, Trung tâm thương mại, Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 60,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.437 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.156,4 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.333 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 14,6 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.563,2 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.360 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.629 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.600 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.134 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.686 m²</p>
+        <p>Số căn hộ: 435 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Lễ tân, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,1 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.361 m²</p>
+        <p>Số căn hộ: 480 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.632 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.395 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,48 ha</p>
+        <p>Số căn hộ: 334 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Coffee, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5,6 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 14 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,2 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.676 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.435 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.025 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Lễ tân, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.071 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Lễ tân, Spa, Coffee, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,19 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 55.978 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 14,1 ha</p>
+        <p>Số căn hộ: 927 căn</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.289 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.032 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 10.305 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, BBQ, Công viên, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.544 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.753 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Đường chạy bộ, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.710 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7,58 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 27,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,58 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.672 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.370 m²</p>
+        <p>Số căn hộ: 408 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.056,4 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.555,4 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.182 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,01 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.840 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5,13 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 10.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.737 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hồ bơi, Vui chơi trẻ em, Lễ tân, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,2 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 17,6 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,2 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11.080 m²</p>
+        <p>Số căn hộ: 910 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Thang máy, Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.883 m²</p>
+        <p>Số căn hộ: 5.000 căn</p>
+        <p>Số tòa: 6 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Nhà hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11,26 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.137 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 10 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.838 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.262 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.754 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,95 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 92.655 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi vô cực, Phòng sinh hoạt, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.001 m²</p>
+        <p>Số căn hộ: 562 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Nhà hàng, Thang máy, Trung tâm thương mại, Công viên, Phòng xông hơi, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Coffee, ATM & Ngân hàng, Bãi đỗ xe, Sân Tennis</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.093 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.652 m²</p>
+        <p>Số căn hộ: 624 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.090 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.913 m²</p>
+        <p>Số căn hộ: 176 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9,2 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.000 m²</p>
+        <p>Số căn hộ: 322 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.166 m²</p>
+        <p>Số căn hộ: 378 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Thang máy, Trung tâm thương mại, Bãi đỗ xe, BBQ, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Nhà hàng</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11.221 m²</p>
+        <p>Số căn hộ: 600 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.200 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 24.311 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.500 m²</p>
+        <p>Số căn hộ: 472 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,97 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9,44 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Spa, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.254 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.986 m²</p>
+        <p>Số căn hộ: 532 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6.468 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,71 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,58 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.269 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.920,2 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.670 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.467 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Thang máy, Bãi đỗ xe, Sân Tennis, Sân bóng rổ, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Spa, Coffee, Trường mẫu giáo</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,38 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.234 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 152.644 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Lễ tân</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 100,9 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Đường chạy bộ, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.220 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.647 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,32 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.140 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,55 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6,04 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.553 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.014 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,9 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Sân bóng rổ, BBQ, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường tiểu học, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.128 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.373 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: 299 căn</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.290 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.606 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.900 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.629 m²</p>
+        <p>Số căn hộ: 336 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.015 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,97 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.115 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,7 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,63 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 15,16 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.363,7 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.023,7 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 980 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.088 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.018 m²</p>
+        <p>Số căn hộ: 448 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.673 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,39 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.120 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.525,8 m²</p>
+        <p>Số căn hộ: 665 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Lễ tân, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,11 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.390 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.370 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.108 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 48,5 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.052 m²</p>
+        <p>Số căn hộ: 575 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5,66 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.152 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.334 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.952 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.648 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: ATM & Ngân hàng, Nhà hàng, Trạm y tế, Thang máy, Trung tâm thương mại, Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng xông hơi, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Trường mẫu giáo, Trường tiểu học</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 15,6 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.807 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 13,7 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.576 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.349 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,38 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.600 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7,07 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.956 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, ATM & Ngân hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 101 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9,03 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.662 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,02 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.250 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.507 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, ATM & Ngân hàng, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.993 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.490 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.520 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,28 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.935 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.118 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 61,66 m²</p>
+        <p>Số căn hộ: 388 căn</p>
+        <p>Số tòa: 4 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Đường chạy bộ, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Trường mẫu giáo, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 287,8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.800 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.691,9 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.799 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.758 m²</p>
+        <p>Số căn hộ: 237 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Lễ tân, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.016 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.410 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,48 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.045 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.181 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.318 m²</p>
+        <p>Số căn hộ: 242 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 11.390 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 28.352 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.003,6 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,28 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6,04 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.600 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.250 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.425 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 3 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.293 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.555 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,2 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.471 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9,89 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,58 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.730 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.120 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8.570 m²</p>
+        <p>Số căn hộ: 575 căn</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Sân bóng đá, Công viên, Phòng Gym, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Coffee, ATM & Ngân hàng, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.052,7 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.228 m²</p>
+        <p>Số căn hộ: 350 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.965 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.759 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Đường chạy bộ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Spa, Coffee, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: HT An ninh, Hệ thống PCCC, Thang máy</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 6,32 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.773 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 64 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Sân Tennis, BBQ, Phòng xông hơi, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Hồ bơi vô cực, Vui chơi trẻ em, Siêu thị, Spa, Coffee, Nhà hàng, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,6 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Vui chơi trẻ em, Cửa hàng tiện lợi, Coffee</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7,8 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 200.237 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.445 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.244 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: 2 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.800 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,59 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 215 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.517 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,39 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9.000 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 8,3 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Sân Tennis, BBQ, Công viên, Đường chạy bộ, Phòng Gym, HT An ninh, Lối thoát hiểm, Hệ thống PCCC, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Spa, Coffee, Trường mẫu giáo, Trường tiểu học, ATM & Ngân hàng, Nhà hàng, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,9 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.400 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.930 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.086 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.886 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.082 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 9,86 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Đường chạy bộ, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Hệ thống PCCC, Phòng sinh hoạt, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Coffee, Trường mẫu giáo, Nhà hàng, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.065 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3,4 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.515 m²</p>
+        <p>Số căn hộ: 252 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Bãi đỗ xe, Công viên, Phòng xông hơi, Phòng Gym, Lối thoát hiểm, Hồ bơi, Vui chơi trẻ em, Siêu thị, Cửa hàng tiện lợi, Lễ tân, Thang máy, Trung tâm thương mại</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.148 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.672 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.512 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,75 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2,1 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 64.077 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 7.605 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 5.756,7 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.044,78 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.400 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.314 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 2.136 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.658 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1.385 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 1,39 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Lễ tân, Coffee, Thang máy, Bãi đỗ xe, Công viên, Phòng Gym, Phòng Yoga, HT An ninh, HT Điều hòa, Lối thoát hiểm, Hệ thống PCCC, Hồ bơi, Phòng sinh hoạt, Siêu thị</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 3.288 m²</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: Không có thông tin</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 4,33 ha</p>
+        <p>Số căn hộ: Không có thông tin</p>
+        <p>Số tòa: Không có thông tin</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+    <div class="project-card-2">
+        <p>Diện tích: 736 m²</p>
+        <p>Số căn hộ: 69 căn</p>
+        <p>Số tòa: 1 tòa</p>
+        <p>Tiện ích: Không có thông tin</p>
+    </div>
+    
+</body>
+</html>

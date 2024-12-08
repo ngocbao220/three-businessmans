@@ -1,7 +1,6 @@
 import {
-  makeSegmentPrice,
   makeCorrelation,
-  makeHistoryPrice,
+
   makeNumPropertyType,
 } from "./chart.js";
 
@@ -157,54 +156,7 @@ function toggleDropdown() {
   }
 }
 
-// Close the dropdown if clicked outside
-window.onclick = function(event) {
-  const dropdownList = document.getElementById('dropdownList');
-  const button = document.querySelector('.dropdown-button');
-  if (!button.contains(event.target) && !dropdownList.contains(event.target)) {
-      dropdownList.style.display = 'none';
-  }
-};
-function swapWithAnimation() {
-  const child1 = document.getElementById('child1');
-  const child2 = document.getElementById('child2');
 
-  // Lấy tọa độ hiện tại của hai phần tử
-  const rect1 = child1.getBoundingClientRect();
-  const rect2 = child2.getBoundingClientRect();
-
-  // Tính khoảng cách di chuyển
-  const deltaX1 = rect2.left - rect1.left;
-  const deltaY1 = rect2.top - rect1.top;
-
-  const deltaX2 = rect1.left - rect2.left;
-  const deltaY2 = rect1.top - rect2.top;
-
-  // Thêm class để tạo hiệu ứng
-  child1.classList.add('moving');
-  child2.classList.add('moving');
-
-  // Di chuyển các phần tử
-  child1.style.transform = `translate(${deltaX1}px, ${deltaY1}px)`;
-  child2.style.transform = `translate(${deltaX2}px, ${deltaY2}px)`;
-
-  // Sau khi animation kết thúc, đổi chỗ thật sự
-  setTimeout(() => {
-    child1.classList.remove('moving');
-    child2.classList.remove('moving');
-
-    // Reset vị trí
-    child1.style.transform = '';
-    child2.style.transform = '';
-
-    // Thực sự đổi chỗ
-    const parent1 = child1.parentNode;
-    const parent2 = child2.parentNode;
-
-    parent1.appendChild(child2);
-    parent2.appendChild(child1);
-  }, 1000); // Thời gian khớp với duration của animation (1s)
-}
 const menu = document.getElementById("menu");
 const asCenterBtn = document.getElementById("asCenter");
 const returnBtn = document.getElementById("return");
@@ -294,11 +246,6 @@ function returnToLastSwapped() {
 }
 
 // Close menu when clicking outside
-document.addEventListener("click", (e) => {
-  if (!menu.contains(e.target) && !e.target.classList.contains("action-btn")) {
-    menu.style.display = "none";
-  }
-});
 // Function to handle showmore click
 function handleShowmoreClick(parent) {
   // Get the showmore-board element
@@ -349,4 +296,30 @@ function handleShowmoreClick(parent) {
 }
 
 
+export function show_amount(month1, month2, difference) {
+  const fta_para = document.getElementById("fta-para");
+  const text_container = document.getElementById("fta_comment");
+  const icon_up = document.getElementById("icon_up");
+  const icon_down = document.getElementById("icon_down");
+  const fta_num = document.getElementById("fta-number");
 
+  // Kiểm tra biến động giá
+  if (difference < 0) {
+    icon_up.style.display = "none"; // Ẩn biểu tượng tăng
+    icon_down.style.display = "block"; // Hiện biểu tượng giảm
+    text_container.style.borderColor = "red"; // Đổi màu viền sang đỏ
+    const text = `Giá tại khu vực giảm, từ ${month1} đến ${month2}`;
+    fta_para.innerHTML = `<strong>${text}</strong>`; // Cập nhật nội dung và in đậm
+  } else {
+    icon_down.style.display = "none"; // Ẩn biểu tượng giảm
+    icon_up.style.display = "block"; // Hiện biểu tượng tăng
+    text_container.style.borderColor = "green"; // Đổi màu viền sang xanh
+    const text = `Giá tại khu vực tăng, từ ${month1} đến ${month2}`;
+    fta_para.innerHTML = `<strong>${text}</strong>`;
+  }
+
+  // Hiển thị tỷ lệ biến động giá
+  fta_num.innerHTML = `<strong>${
+    Math.round(Math.abs(difference) * 10) / 10
+  } %</strong>`; // Dùng giá trị tuyệt đối và in đậm
+}

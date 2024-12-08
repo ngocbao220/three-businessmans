@@ -1,7 +1,7 @@
 const data = [
     {
         flavor: "History_Pice",
-        describe: "Biến động giá của các loại hình tăng đột biến với nhiều mức cụ thể khác nhau",
+        describe: ".......",
         calories: {
             number: 140,
             percentage: 6,
@@ -22,32 +22,7 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartContainer: '<div id="history_price_of_ha_noi" class="slider-chart"></div>'
-    },
-    {
-        flavor: "column_chart",
-        describe: "super very unbelievable, siu ngon từ hương vị",
-        calories: {
-            number: 140,
-            percentage: 6,
-        },
-        fat: {
-            number: 140,
-            percentage: 6,
-        },
-        sodium: {
-            number: 140,
-            percentage: 6,
-        },
-        carb: {
-            number: 140,
-            percentage: 6,
-        },
-        protein: {
-            number: 140,
-            percentage: 6,
-        },
-        chartContainer: '<div id="column_chart_of_count_classify_of_ha_noi" class="slider-chart"></div>'
+        chartContainer: '<div id="column_chart_avg_price_of_ha_noi" class="slider-chart"></div>'
     },
     {
         flavor: "grape",
@@ -72,7 +47,7 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartContainer: '<div id="price_segment_of_ha_noi" class="slider-chart"></div>'
+        chartContainer: '<div id="column_chart_of_count_classify_of_ha_noi" class="slider-chart"></div>'
     },
     {
         flavor: "orange",
@@ -98,31 +73,6 @@ const data = [
             percentage: 6,
         },
         chartContainer: '<iframe class="slider-chart" src="heatmap/Hanoimap.html" style="width: 100%; height: 100%; border: none;"></iframe>'
-    },
-    {
-        flavor: "grape",
-        describe: "super very unbelievable, siu ngon từ hương vị",
-        calories: {
-            number: 140,
-            percentage: 6,
-        },
-        fat: {
-            number: 140,
-            percentage: 6,
-        },
-        sodium: {
-            number: 140,
-            percentage: 6,
-        },
-        carb: {
-            number: 140,
-            percentage: 6,
-        },
-        protein: {
-            number: 140,
-            percentage: 6,
-        },
-        chartContainer: '<div id="column_chart_avg_price_of_ha_noi" class="slider-chart"></div>'
     },
 ];
 

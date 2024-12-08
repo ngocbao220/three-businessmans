@@ -3,8 +3,8 @@ import geopandas as gpd
 import folium
 from folium.features import GeoJsonTooltip
 from folium import LayerControl
+from branca.colormap import linear as cm
 import json
-from branca.colormap import linear
 import os
 
 # HÀM HỖ TRỢ
@@ -19,7 +19,7 @@ def normalize_name(area_name):
 
 def add_colormap_to_layer(gdf, column, map_obj, layer_name, tooltip_fields, tooltip_aliases):
     """Thêm dữ liệu GeoJSON vào bản đồ với colormap, lưu dưới dạng một lớp."""
-    colormap = linear.YlOrRd_09.scale(gdf[column].min(), gdf[column].max())
+    colormap = cm.YlOrRd_09.scale(gdf[column].min(), gdf[column].max())
     geojson = folium.GeoJson(
         gdf,
         name=layer_name,  # Đặt tên lớp
@@ -135,58 +135,8 @@ add_colormap_to_layer(
 LayerControl().add_to(hanoi_map)
 
 # LƯU FILE HTML
-output_path = './HighchartsProject/data_for_map/hanoi.html'
+output_path = './HighchartsProject/html/data_for_map/ha_noi.html'
 os.makedirs(os.path.dirname(output_path), exist_ok=True)
 hanoi_map.save(output_path)
 
 print(f"Bản đồ Hà Nội đã được lưu tại: {output_path}")
-
-
-
-
-
-# Cho các Xã/Phường
-def add_colormap_to_map(gdf, column, map_obj, tooltip_fields, tooltip_aliases):
-    """Thêm dữ liệu GeoJSON vào bản đồ với colormap."""
-    colormap = linear.YlOrRd_09.scale(gdf[column].min(), gdf[column].max())
-    geojson = folium.GeoJson(
-        gdf,
-        style_function=lambda feature: {
-            'fillColor': colormap(feature['properties'][column]) if feature['properties'][column] else 'lightblue',
-            'color': 'black',
-            'weight': 1,
-            'fillOpacity': 0.6,
-        },
-        tooltip=GeoJsonTooltip(fields=tooltip_fields, aliases=tooltip_aliases, localize=True),
-    )
-    colormap.add_to(map_obj)
-    geojson.add_to(map_obj)
-
-vietnam_map = gpd.read_file('./Data/Map/village')
-district_map = gpd.read_file('./Data/Map/district')
-
-# BẢN ĐỒ XÃ/PHƯỜNG
-def create_district_map(district_name):
-    """Tạo bản đồ nhiệt cho quận/huyện."""
-    district_gdf = vietnam_map[(vietnam_map['NAME_1'] == 'Hà Nội') & (vietnam_map['NAME_2'] == district_name)]
-    if district_gdf.empty:
-        print(f"Không tìm thấy dữ liệu cho quận/huyện: {district_name}")
-        return None
-
-    # Chuyển đổi CRS, tính centroid, và ghép dữ liệu
-    district_gdf = district_gdf.to_crs(epsg=3857)
-    district_center = [district_gdf.geometry.centroid.y.mean(), district_gdf.geometry.centroid.x.mean()]
-    district_gdf = district_gdf.to_crs(epsg=4326)
-    district_gdf = district_gdf.merge(avg_price_by_ward, left_on='NAME_3', right_on='Xã/Phường', how='left')
-
-    # Tạo bản đồ và thêm dữ liệu
-    m_district = folium.Map(location=district_center, tiles="CartoDB Positron", zoom_start=12)
-    add_colormap_to_map(district_gdf, 'Mức giá', m_district, ['NAME_3', 'Mức giá'], ['Xã/Phường', 'Giá trung bình (triệu VND)'])
-
-    return m_district
-
-district_names = vietnam_map[vietnam_map['NAME_1'] == 'Hà Nội']['NAME_2'].unique()
-for district_name in district_names:
-    map_output = create_district_map(district_name)
-    if map_output:
-        map_output.save(f'./HighchartsProject/data_for_map/{normalize_name(district_name)}.html')

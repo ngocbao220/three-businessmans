@@ -3,11 +3,8 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: flex-end; /* Đưa #chart-area sang phải */
-  align-items: flex-end; /* Đưa #chart-area xuống dưới */
+  display: table-cell;
   background-color: #c7c6c6; /* Màu nền toàn màn hình */
-  overflow: hidden;
 }
 
 #vertical-bar {
@@ -15,7 +12,7 @@ body {
   height: 80%; /* Chiều cao chiếm toàn bộ */
   background-color: #0f0f0f; /* Màu sắc của thanh */
   position: absolute; /* Đặt thanh ở vị trí cố định */
-  left: 640px; /* Canh giữa theo chiều ngang */
+  left: 695px; /* Canh giữa theo chiều ngang */
   top: 100px; /* Bắt đầu từ trên cùng */
   opacity: 0.6;
 }
@@ -54,11 +51,16 @@ body {
   height: 30px;
   transform: translateX(-50%);
 }
+#district_map {
+  position: fixed;
+  right: 50%;
+  border-width: 5px;
+}
 
 #words-title {
   position: absolute;
   left: 800px;
-  bottom: 660px;
+  bottom: 700px;
   width: 400px;
   height: 40px;
   font-size: 20px;
@@ -80,12 +82,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   border-radius: 10px;
   top: 55%;
   left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
 .Hanoimap {
@@ -103,12 +103,12 @@ body {
 }
 
 #chart-container {
-  position: absolute; /* Để căn giữa bên trong #chart-area */
-  top: 50%; /* Căn giữa dọc */
-  left: 50%; /* Căn giữa ngang */
+  position: relative; /* Để căn giữa bên trong #chart-area */
+  top: 18%; /* Căn giữa dọc */
+  left: 135%; /* Căn giữa ngang */
   transform: translate(-50%, -50%); /* Dịch chuyển tâm */
   width: 80%; /* Chiều rộng của chart-container */
-  height: 100%; /* Chiều cao của chart-container */
+  height: 25%; /* Chiều cao của chart-container */
   border-radius: 20px;
   overflow: hidden;
 }
@@ -124,15 +124,15 @@ body {
 }
 
 .arrow.left {
-  top: 40%;
-  left: 30px;
+  top: 15%;
+  left: 89%;
   opacity: 0.3;
   cursor: default;
 }
 
 .arrow.right {
-  top: 40%;
-  right: 30px;
+  top: 15%;
+  left: 176%;
 }
 
 .arrow:focus {
@@ -377,7 +377,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   border-radius: 10px;
   border-width: 5px;
   top: 141%;
@@ -386,7 +386,7 @@ body {
 }
 
 #title-stdvar {
-  position: absolute;
+  position: relative;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -396,7 +396,7 @@ body {
 
 #stddev-var {
   position: relative;
-  top: -140px;
+  top: -0px;
   width: 95%;
   left: 2%;
   display: flex;

@@ -406,9 +406,18 @@ body {
   z-index: 1;
 }
 
+#title-stdvar {
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  top: 240%; 
+  left: 30%;
+}
+
 #stddev-var {
   position: relative;
-  top: -150px;
+  top: -140px;
   width: 95%;
   left: 2%;
   display: flex;

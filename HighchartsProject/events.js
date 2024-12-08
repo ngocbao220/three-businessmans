@@ -57,7 +57,7 @@ export function set_Scene() {
   setTimeout(() => {
     console.log("Biểu đồ đã được khởi tạo");
 
-    // Danh sách phần tử cần lướt
+    // Biểu đồ
     const charts = [
       document.getElementById("segment"),
       document.getElementById("history"),
@@ -65,13 +65,29 @@ export function set_Scene() {
       document.getElementById("correlation"),
     ];
 
+    // Comment
+    const comments = [
+      document.getElementById("sgm_comment"),
+      document.getElementById("fta_comment"),
+      document.getElementById("type_comment"),
+      document.getElementById("crl_comment"),
+    ];
+
     // Nút điều hướng
-    let fta = document.getElementById("fta_comment");
     const btnRight = document.getElementById("btnRight");
     const btnLeft = document.getElementById("btnLeft");
 
+    // Bản đồ nhiệt
+    const map = document.getElementById("Hanoimap");
+    const btn_project = document.getElementById("btn-project");
+    const lst_project = document.getElementById("lst-project");
+
+    // Mắt xem chi tiết quận/huyện
+    const eye = document.getElementById("eye");
+
     // Khởi tạo trạng thái
     let currentIndex = 0;
+    let eyeClicked = false;
     const totalCharts = charts.length;
 
     // Thiết lập CSS ban đầu cho các biểu đồ
@@ -80,14 +96,16 @@ export function set_Scene() {
       chart.style.transition = "transform 0.5s";
     });
 
+    comments.forEach((comment, index) => {
+      comment.style.transform = `translateX(${index * 150}%)`;
+      comment.style.transition = "transform 0.5s";
+    });
+
     // Xử lý sự kiện nút Right
     btnRight.addEventListener("click", () => {
       if (currentIndex < totalCharts - 1) {
         currentIndex++;
-        if (currentIndex == 1) {
-          fta.style.display = 'block';
-        } else fta.style.display = 'none';
-        updateChartPosition();
+        updatePosition();
         updateButtonState();
       }
     });
@@ -96,18 +114,21 @@ export function set_Scene() {
     btnLeft.addEventListener("click", () => {
       if (currentIndex > 0) {
         currentIndex--;
-        if (currentIndex == 1) {
-          fta.style.display = 'block';
-        } else fta.style.display = 'none';
-        updateChartPosition();
+        updatePosition();
         updateButtonState();
       }
     });
 
     // Hàm cập nhật vị trí biểu đồ
-    function updateChartPosition() {
+    function updatePosition() {
       charts.forEach((chart, index) => {
         chart.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+      });
+
+      comments.forEach((comment, index) => {
+        comment.style.transform = `translateX(${
+          (index - currentIndex) * 150
+        }%)`;
       });
     }
 
@@ -116,8 +137,47 @@ export function set_Scene() {
       btnLeft.style.opacity = currentIndex === 0 ? 0.3 : 1;
       btnLeft.style.cursor = currentIndex === 0 ? "default" : "pointer";
       btnRight.style.opacity = currentIndex === totalCharts - 1 ? 0.3 : 1;
-      btnRight.style.cursor = currentIndex === totalCharts - 1 ? "default" : "pointer";
+      btnRight.style.cursor =
+        currentIndex === totalCharts - 1 ? "default" : "pointer";
     }
+
+    eye.addEventListener("click", () => {
+      if (!eyeClicked) {
+        eyeClicked = true;
+        map.style.cursor = "url('./image/back_icon.png'), pointer";
+      } else {
+        eyeClicked = false;
+        map.style.cursor = "auto";
+      }
+    });
+
+    let project_showed = false;
+    const map_title = document.getElementById("heat_title");
+
+    // Gắn sự kiện click
+    btn_project.addEventListener("click", () => {
+      map.style.transition = "transform 0.5s ease"; // Thêm hiệu ứng mượt mà
+      lst_project.style.transition = "transform 0.5s ease";
+
+      map_title.style.transition = "opacity 0.5s ease";
+      eye.style.transition = "opacity 0.5s ease";
+
+      if (!project_showed) {
+        map.style.transform = "translateY(900px)"; // Di chuyển map xuống 100px
+        lst_project.style.transform = "translateX(750px)";
+
+        map_title.style.opacity = 0;
+        eye.style.opacity = 0;
+        project_showed = true;
+      } else {
+        map.style.transform = "translateY(0px)";
+        lst_project.style.transform = "translateX(0px)";
+
+        map_title.style.opacity = 1;
+        eye.style.opacity = 1;
+        project_showed = false;
+      }
+    });
 
     // Cập nhật trạng thái nút ban đầu
     updateButtonState();
@@ -135,7 +195,6 @@ export function showComment(cmt_cnt) {
 
   container.style.opacity = 1;
 }
-
 
 export function move(c, x, y) {
   const charts = document.querySelectorAll(".chart");
@@ -214,12 +273,7 @@ export function remove_sub_chart() {
   });
 }
 
-export function chosse_project() {
-  const sub_charts = document.querySelectorAll(".sub_chart");
-  sub_charts.forEach((chart) => {
-    chart.style.opacity = 0;
-    setTimeout(() => {
-      chart.remove();
-    }, 2000);
-  });
+export function see_more(district_name) {
+  const map = document.getElementById("Hanoimap");
+  map.style.display = "none";
 }

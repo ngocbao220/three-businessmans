@@ -1,0 +1,90 @@
+/* Tổng quan */
+body {
+    font-family: 'Roboto', 'Lato', 'Open Sans', sans-serif; /* Chọn font ưu tiên */
+    color: #333; /* Màu chữ tối */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tiêu đề */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Font chuyên dùng cho tiêu đề */
+    color: #222; /* Màu chữ nổi bật hơn */
+    font-weight: 700; /* Chữ đậm */
+    margin-bottom: 10px;
+}
+
+/* Đoạn văn bản */
+p {
+    font-family: 'Lato', sans-serif;
+    color: #444;
+    font-weight: 300; /* Chữ nhẹ hơn */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Danh sách */
+ul, ol {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Nút bấm */
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #bdac19;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9e9625;
+}
+
+/* Liên kết */
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Chữ in đậm */
+b, strong {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Chữ nghiêng */
+em, i {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+/* Căn giữa */
+.center-text {
+    text-align: center;
+}
+
+/* Mục tiêu riêng cho các tiêu đề */
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}

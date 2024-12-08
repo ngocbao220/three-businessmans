@@ -448,7 +448,7 @@ export function makeCorrelation(
         chartContainer.style.width = `${width}%`;
         chartContainer.style.height = `${height}%`;
         chartContainer.id = id;
-        chartContainer.class = 'chart';
+        chartContainer.className = 'chart';
         chartContainer.style.opacity = "0";
 
         document.getElementById("chart-container").appendChild(chartContainer);

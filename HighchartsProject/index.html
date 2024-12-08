@@ -12,12 +12,13 @@
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script src="https://code.highcharts.com/modules/heatmap.js"></script>
   </head>
+
   <body>
     <h1 id="main-title">Tổng quan về Bất động sản tại Hà Nội</h1>
 
     <div class="container">
       <div class="heatmap">
-        <h3 style="top: 55px; left: 140px; position: absolute">
+        <h3 style="top: 110px; left: 160px; position: absolute">
           Biểu đồ giá trung bình trên các Quận/Huyện
         </h3>
         <button id="button_change_type">Fluctuation</button>
@@ -34,29 +35,36 @@
       </div>
     </div>
     
-
-    
-
     <div id="fluctuation">
       
-    </div>
-    
+    </div>\
+
+
+    <h1 id="title-segment">Phân khúc các Bất động sản tại Hà Nội</h1>
+
+
     <div id="segment-container">
-      <div id="segment"></div>
+      <div id="segment1"></div>
 
       <div id="segment-count"></div>
     </div>
 
     <div class="heatmap2">
-      <h3 style="top: 55px; left: 140px; position: absolute">
-        Biểu đồ giá trung bình trên các Quận/Huyện
-      </h3>
       <button id="button_change_type2">Fluctuation</button>
       <iframe
         class="Hanoimap2"
         src="data_for_map/mean_price/ha_noi.html"
       ></iframe>
     </div>
+
+    <div id="stddev-var"> 
+      <div id="stddev"></div>
+      <div id="variance"></div>
+    </div>
+
+    
+
+    
     
 
     <!-- Tập lệnh javaScript -->

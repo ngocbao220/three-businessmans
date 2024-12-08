@@ -5,13 +5,10 @@ html, body {
   overflow-y: auto; /* Cho phép cuộn dọc */
 }
 body {
-  
   margin: 0;
   padding: 0;
   width: 100vw;
-  display: flex;
-  justify-content: flex-end; /* Đưa #chart-area sang phải */
-  align-items: flex-end; /* Đưa #chart-area xuống dưới */
+  display: table-cell;
   background-color: #c7c6c6; /* Màu nền toàn màn hình */
   background-attachment: scroll;
   overflow-x: hidden;
@@ -22,7 +19,7 @@ body {
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 22px;
+  font-size: 28px;
   color: rgb(24, 19, 19);
   font-weight: bold;
   text-align: center;
@@ -31,7 +28,7 @@ body {
 }
 
 #chart-area {
-  top: 40%;
+  top: 45%;
   left: 45%;
   position: absolute; /* Để chứa #chart-container */
   width: 50%; /* Chiều rộng của chart-area */
@@ -43,11 +40,11 @@ body {
 
 #chart-container {
   position: absolute; /* Để căn giữa bên trong #chart-area */
-  top: 50%; /* Căn giữa dọc */
+  top: 70%; /* Căn giữa dọc */
   left: 50%; /* Căn giữa ngang */
   transform: translate(-50%, -50%); /* Dịch chuyển tâm */
   width: 80%; /* Chiều rộng của chart-container */
-  height: 100%; /* Chiều cao của chart-container */
+  height: 83%; /* Chiều cao của chart-container */
   border-radius: 20px;
   overflow: hidden;
 }
@@ -65,14 +62,14 @@ body {
 }
 
 .arrow.left {
-  top: 40%;
+  top: 55%;
   left: 30px;
   opacity: 0.3;
   cursor: default;
 }
 
 .arrow.right {
-  top: 40%;
+  top: 55%;
   right: 30px;
 }
 
@@ -83,6 +80,7 @@ body {
 .chart {
   opacity: 1;
   position: absolute;
+  top: -13%;
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 15;
   background-color: #f0f0dc; /* Màu nền */
@@ -175,14 +173,14 @@ body {
   position: absolute;
   border-radius: 10px;
   border-width: 5px;
-  top: 55%;
+  top: 60%;
   left: 24%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .Hanoimap2 {
-  width: 45%;
+  width: 42%;
   height: 65%;
   display: flex;
   justify-content: center;
@@ -190,9 +188,8 @@ body {
   position: absolute;
   border-radius: 10px;
   border-width: 5px;
-  top: 100%;
-  left: 27%;
-  transform: translate(50%, 50%);
+  top: 141%;
+  left: 53%;
   z-index: 1;
 }
 
@@ -213,16 +210,37 @@ body {
   margin-bottom: 20px;
 }
 
+#title-segment {
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  top: 110%;
+  left: 30%;
+}
+
+
+
+.container {
+  
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column; /* Để các phần tử con xếp theo cột */
+  justify-content: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  padding: 20px;
+}
+
 #segment-container {
-  left: 0;
+  position: relative; /* Đặt vị trí tương đối */
+  left: 2%;
   height: 90%;
-  margin-top: 66%; /* Thêm khoảng cách từ phần tử trước */
-  padding: 20px; /* Giảm padding để tránh đẩy phần tử quá xa */
-  background-color: #f0f0f0; /* Thêm màu nền để dễ nhìn */
-  border-radius: 10px; /* Góc bo tròn */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng đổ */
-  display: block; /* Đảm bảo các phần tử con không bị đè lên nhau */
-  transform: translateX(-115%); /* Dịch sang trái 50% chiều rộng của chính nó */
+  width: 45%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-top: 65%; /* Khoảng cách từ trên */
 }
 
 #segment-count {
@@ -231,10 +249,25 @@ body {
   margin-bottom: 80px; /* Khoảng cách giữa các biểu đồ */
 }
 
+#stddev-var {
+  position: relative;
+  margin-top: 50px;
+  width: 95%;
+  left: 2%;
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
 #stddev, #variance {
-  margin-top: 20px; /* Thêm khoảng cách từ phần tử trước */
-  height: 400px; /* Chỉ định chiều cao cho từng biểu đồ */
-  background-color: #c7c6c642; /* Nền trắng cho biểu đồ */
-  border: 1px solid #ccc; /* Đường viền mỏng */
+  flex: 1; /* Chia đều không gian giữa các phần tử */
+  border: 1px solid #007BFF; /* Viền của từng phần tử để kiểm tra */
+  padding: 10px;
+  text-align: center; /* Canh giữa nội dung bên trong */
+  background-color: antiquewhite;
 }
 

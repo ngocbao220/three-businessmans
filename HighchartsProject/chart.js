@@ -48,6 +48,7 @@ export function makeSegmentPrice(
         chartContainer.className = "chart";
         document.getElementById("chart-container").appendChild(chartContainer);
       }
+      let isSegmentCountVisible = false;
 
       // Khởi tạo Pie Chart
       const chart = Highcharts.chart(id, {
@@ -75,8 +76,9 @@ export function makeSegmentPrice(
               click: function (event) {
                 const clickedName = event.point.name;
                 const clickedPricetype = event.point.pricetype; // Lấy giá trị pricetype từ event.point
-                // Gọi makeSegmentCount với pricetype từ sự kiện
-                makeSegmentCount(type, clickedPricetype, name, true, 0, 0, 100, 50, "segment-count");
+                if (id == "segment1") {
+                  makeSegmentCount(type, clickedPricetype, name, true, 0, 0, 100, 50, "segment-count");
+                }
                 if (chartContainer.isShow == true) {
                   remake_sub_chart_of_Pie(clickedName);
                 }
@@ -867,7 +869,7 @@ export function makeStdDevChart(
         },
         title: {
           text: `Biểu đồ Độ Lệch Chuẩn (${name})`,
-          style: { color: "white", fontSize: "16px" },
+          style: { color: "black", fontSize: "16px" },
         },
         xAxis: {
           categories: categories,
@@ -939,7 +941,7 @@ export function makeVarianceChart(
         },
         title: {
           text: 'Biểu đồ phương sai theo tháng',
-          style: { color: 'white', fontSize: '16px' },
+          style: { color: 'black', fontSize: '16px' },
         },
         xAxis: {
           categories: categories,

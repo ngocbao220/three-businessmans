@@ -30,11 +30,11 @@ export function makeSegmentPrice(
 
       // Dữ liệu cho Pie Chart
       const chartData = [
-        { name: "Dưới 50 triệu/m²", y: under_50, pricetype: "gia_loai_1" },
-        { name: "50 đến 100 triệu/m²", y: between_50_100, pricetype: "gia_loai_2" },
-        { name: "100 đến 150 triệu/m²", y: between_100_150, pricetype: "gia_loai_3" },
-        { name: "150 đến 200 triệu/m²", y: between_150_200, pricetype: "gia_loai_4" },
-        { name: "Trên 200 triệu/m²", y: over_200, pricetype: "gia_loai_5" },
+        { name: "Dưới 50 triệu/m²", y: under_50, pricetype: "gia_loai_1", segment: "under_50"},
+        { name: "50 đến 100 triệu/m²", y: between_50_100, pricetype: "gia_loai_2", segment: "between_50_100"},
+        { name: "100 đến 150 triệu/m²", y: between_100_150, pricetype: "gia_loai_3", segment: "between_100_150"},
+        { name: "150 đến 200 triệu/m²", y: between_150_200, pricetype: "gia_loai_4", segment: "between_150_200"},
+        { name: "Trên 200 triệu/m²", y: over_200, pricetype: "gia_loai_5", segment: "over_200"},
       ];
 
       let chartContainer = document.getElementById(id);
@@ -76,8 +76,15 @@ export function makeSegmentPrice(
               click: function (event) {
                 const clickedName = event.point.name;
                 const clickedPricetype = event.point.pricetype; // Lấy giá trị pricetype từ event.point
+                const clickedSegment = event.point.segment;
                 if (id == "segment1") {
+                  let newSrc = `data_for_map/number_of_segment/${clickedSegment}.html`;
                   makeSegmentCount(type, clickedPricetype, name, true, 0, 0, 100, 50, "segment-count");
+                  
+                  const iframe = document.querySelector(".Hanoimap2"); // Lấy iframe qua class hoặc id
+                  if (iframe) {
+                      iframe.src = newSrc;
+                  }
                 }
                 if (chartContainer.isShow == true) {
                   remake_sub_chart_of_Pie(clickedName);
@@ -868,21 +875,21 @@ export function makeStdDevChart(
           backgroundColor: null,
         },
         title: {
-          text: `Biểu đồ Độ Lệch Chuẩn (${name})`,
+          text: `Biểu đồ Độ Lệch Chuẩn`,
           style: { color: "black", fontSize: "16px" },
         },
         xAxis: {
           categories: categories,
           title: {
             text: "Tháng",
-            style: { color: "white", fontSize: "13px" },
+            style: { color: "black", fontSize: "13px" },
           },
         },
         yAxis: {
           min: 0,
           title: {
             text: "Độ Lệch Chuẩn",
-            style: { color: "white", fontSize: "13px" },
+            style: { color: "black", fontSize: "13px" },
           },
         },
         series: [
@@ -947,14 +954,14 @@ export function makeVarianceChart(
           categories: categories,
           title: {
             text: 'Tháng',
-            style: { color: 'white', fontSize: '13px' },
+            style: { color: 'black', fontSize: '13px' },
           },
         },
         yAxis: {
           min: 0,
           title: {
             text: 'Giá trị',
-            style: { color: 'white', fontSize: '13px' },
+            style: { color: 'black', fontSize: '13px' },
           },
         },
         tooltip: {

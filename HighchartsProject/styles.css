@@ -63,7 +63,7 @@ body {
 #words-title {
   position: absolute;
   left: 800px;
-  bottom: 660px;
+  bottom: 630px;
   width: 400px;
   height: 40px;
   font-size: 20px;
@@ -100,7 +100,7 @@ body {
 }
 
 #chart-area {
-  top: 45%;
+  top: 40%;
   left: 45%;
   position: absolute; /* Để chứa #chart-container */
   width: 50%; /* Chiều rộng của chart-area */
@@ -112,7 +112,7 @@ body {
 
 #chart-container {
   position: absolute; /* Để căn giữa bên trong #chart-area */
-  top: 70%; /* Căn giữa dọc */
+  top: 65%; /* Căn giữa dọc */
   left: 50%; /* Căn giữa ngang */
   transform: translate(-50%, -50%); /* Dịch chuyển tâm */
   width: 80%; /* Chiều rộng của chart-container */
@@ -166,7 +166,7 @@ body {
   width: 45%;
   height: 20%;
   left: 49%;
-  bottom: 500px;
+  bottom:450px;
   border-radius: 10px;
   border-style: solid;
   border-color: #000;
@@ -360,7 +360,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: block;
-  margin-top: 65%; /* Khoảng cách từ trên */
+  margin-top: 75%; /* Khoảng cách từ trên */
 }
 
 #segment-count {
@@ -368,6 +368,30 @@ body {
   height: 400px; /* Chỉ định chiều cao cho từng biểu đồ */
   margin-bottom: 80px; /* Khoảng cách giữa các biểu đồ */
 }
+
+.words-container-2 {
+  position: relative;
+  width: 40%;
+  height: 20%;
+  left: 53%;
+  bottom:870px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+#heat_title_2 {
+  position: relative;
+  top: -860px;
+  left: 25%;
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(24, 19, 19);
+  text-align: center;
+}
+
 .Hanoimap2 {
   width: 42%;
   height: 65%;
@@ -384,7 +408,7 @@ body {
 
 #stddev-var {
   position: relative;
-  margin-top: 50px;
+  top: -150px;
   width: 95%;
   left: 2%;
   display: flex;

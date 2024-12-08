@@ -30,7 +30,7 @@
     <div class="heatmap">
       <button id="eye">eye</button>
       <div class="title">
-        <h3 id="heat_title">Biểu đồ giá trung bình trên các Quận/Huyện</h3>
+        <h3 id="heat_title">Biểu đồ biến động giá trên các Quận/Huyện</h3>
       </div>
       <iframe
         class="Hanoimap"
@@ -110,18 +110,55 @@
       <div id="segment-count"></div>
     </div>
 
+    <div class="words-container-2">
+      <ul>
+        <li>Phân khúc Bất động sản trên thành phố như thế nào?</li>
+        <li>Mỗi phân khúc ta có thể thấy sự chiếm lĩnh của một vài loại hình</li>
+        <li>Nhận xét gì về biến động giá trong 2 năm?</li>
+        <li>Đâu là khu vực có mức biến động cao nhất?</li>
+      </ul>
+    </div>
+
     <div class="heatmap2">
-      <button id="button_change_type2">Fluctuation</button>
+      <h3 id="heat_title_2">Biểu đồ tỷ lệ phân khúc BĐS trên các Quận/Huyện</h3>
       <iframe
         class="Hanoimap2"
-        src="data_for_map/mean_price/ha_noi.html"
+        src="data_for_map/avg_price/ha_noi.html"
       ></iframe>
     </div>
 
-    <div id="stddev-var"> 
+    <div id="stddev-var">
+      <form>
+        <label for="district">Chọn quận huyện:</label><br>
+        <select id="district" name="district">
+          <option value="ha_noi">Hà Nội</option><br>
+          <option value="ba_dinh">Ba Đình</option><br>
+          <option value="hoan_kiem">Hoàn Kiếm</option><br>
+          <option value="dong_da">Đống Đa</option><br>
+          <option value="hai_ba_trung">Hai Bà Trưng</option><br>
+          <option value="hoang_mai">Hoàng Mai</option><br>
+          <option value="long_bien">Long Biên</option><br>
+          <option value="nam_tu_liem">Nam Từ Liêm</option><br>
+          <option value="bac_tu_liem">Bắc Từ Liêm</option><br>
+          <option value="tay_ho">Tây Hồ</option><br>
+          <option value="chuong_my">Chương Mỹ</option><br>
+          <option value="soc_son">Sóc Sơn</option><br>
+          <option value="thuong_tin">Thường Tín</option><br>
+          <option value="gia_lam">Gia Lâm</option><br>
+          <option value="my_duc">Mỹ Đức</option><br>
+          <option value="phuc_tho">Phúc Thọ</option><br>
+          <option value="ba_vi">Ba Vì</option><br>
+          <option value="hoai_duc">Hoài Đức</option><br>
+          <option value="dan_phuong">Đan Phượng</option><br>
+          <option value="thanh_oai">Thanh Oai</option><br>
+          <option value="son_tay">Sơn Tây</option><br>
+        </select>
+
+      </form>
       <div id="stddev"></div>
       <div id="variance"></div>
     </div>
+    
 
     <!-- Tập lệnh javaScript -->
     <script type="module" src="events.js"></script>

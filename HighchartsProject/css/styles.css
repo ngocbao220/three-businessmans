@@ -308,3 +308,112 @@ body {
 .highcharts-contextbutton {
   opacity: 0.1;
 }
+
+#title-segment {
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  top: 110%;
+  left: 30%;
+}
+
+
+
+.container {
+  
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column; /* Để các phần tử con xếp theo cột */
+  justify-content: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  padding: 20px;
+}
+
+#segment-container {
+  position: relative; /* Đặt vị trí tương đối */
+  left: 2%;
+  height: 90%;
+  width: 45%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-top: 75%; /* Khoảng cách từ trên */
+}
+
+#segment-count {
+  margin-top: 20px; /* Thêm khoảng cách từ phần tử trước */
+  height: 400px; /* Chỉ định chiều cao cho từng biểu đồ */
+  margin-bottom: 80px; /* Khoảng cách giữa các biểu đồ */
+}
+
+.words-container-2 {
+  position: relative;
+  width: 40%;
+  height: 20%;
+  left: 53%;
+  bottom:870px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+#heat_title_2 {
+  position: relative;
+  top: -860px;
+  left: 25%;
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(24, 19, 19);
+  text-align: center;
+}
+
+.Hanoimap2 {
+  width: 42%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  border-width: 5px;
+  top: 141%;
+  left: 53%;
+  z-index: 1;
+}
+
+#title-stdvar {
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  top: 240%; 
+  left: 30%;
+}
+
+#stddev-var {
+  position: relative;
+  top: -140px;
+  width: 95%;
+  left: 2%;
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+#stddev, #variance {
+  flex: 1; /* Chia đều không gian giữa các phần tử */
+  border: 1px solid #007BFF; /* Viền của từng phần tử để kiểm tra */
+  padding: 10px;
+  text-align: center; /* Canh giữa nội dung bên trong */
+  background-color: antiquewhite;
+}
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Charts</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <!-- Thư viện Highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="main-title">BẤT ĐỘNG SẢN HÀ NỘI</h1>
+
+    <button id="btn-project">pro</button>
+    <button id="eye">eye</button>
+
+    <div class="title">
+      <h3 id="heat_title">Khu vực hiện tại: Hà Nội</span></h3>
+    </div>
+    <div class="district_map">
+      <iframe class="district" src="./data_for_map/ha_noi.html"></iframe>
+    </div>
+
+    <div class="ward_map">
+      <iframe class="ward"></iframe>
+    </div>
+
+    <div class="list-project">
+      <h3 id="lst-pro-title">
+        Danh sách dự án theo số lượt xem <i>(trong 7 ngày)</i>
+      </h3>
+      <iframe id="lst-project" src="listProject.html"></iframe>
+    </div>
+
+    <div class="card-info">
+      <div id="card-info-project">Đây là thông tin của dự án</div>
+    </div>
+
+    <div id="vertical-bar"></div>
+
+    <div id="chart-area">
+      <button class="arrow left" id="btnLeft">&#9664;</button>
+      <div id="chart-container"></div>
+      <button class="arrow right" id="btnRight">&#9654;</button>
+    </div>
+
+    <div class="comment">
+      <div id="fta_comment">
+        <div id="fta-container">
+          <div id="fta-number"><b>36.4%</b></div>
+        </div>
+        <div id="fta-para"><b>Giá tại khu vực này đã tăng trong 2 năm!</b></div>
+        <div class="fta-icon">
+          <img src="../image/icon_up.png" alt="icon_up" id="icon_up" />
+          <img src="../image/icon_down.png" alt="icon_down" id="icon_down" />
+        </div>
+      </div>
+
+      <div id="sgm_comment">
+        <div id="sgm_para">
+          <b>Phân khúc giá tập trung vào tầm trung đến cao cấp</b>
+        </div>
+        <div class="sgm-icon">
+          <img src="../image/sgm_icon.png" alt="icon_up" id="icon_royal" />
+        </div>
+      </div>
+
+      <div id="type_comment">
+        <div id="type_para">
+          <b>Chung cư và Nhà riêng chiếm phần lớn số lượng</b>
+        </div>
+        <div class="type-icon">
+          <img
+            src="../image/department.png"
+            alt="icon_department"
+            id="department"
+          />
+          <img src="../image/home.png" alt="icon_home" id="icon_home" />
+        </div>
+      </div>
+
+      <div id="crl_comment">
+        <div id="crl_para">
+          <b>Tương quan bất thường cho thấy hiện tượng thổi giá</b>
+        </div>
+        <div class="crl-icon">
+          <img src="../image/corr.png" alt="icon_up" id="toilet" />
+        </div>
+      </div>
+    </div>
+
+    <div id="words-title">Giải đáp câu hỏi</div>
+
+    <div class="words-container">
+      <ul>
+        <li>
+          Phân bố giá Bất động sản tại các khu vực trên thành phố như thế nào?
+        </li>
+        <li>Phân khúc giá tập chung vào khoảng nào?</li>
+        <li>Nhận xét gì về biến động giá trong 2 năm?</li>
+        <li>Đâu là khu vực có mức biến động cao nhất?</li>
+      </ul>
+    </div>
+
+    <!-- Tập lệnh javaScript -->
+    <script type="module" src="../js/animation.js"></script>
+    <script type="module" src="../js/createCharts.js"></script>
+    <script type="module" src="../js/eventForChart.js"></script>
+    <script type="module" src="../js/script.js"></script>
+  </body>
+</html>

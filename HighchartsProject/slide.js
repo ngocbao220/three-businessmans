@@ -72,7 +72,32 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartContainer: '<iframe class="slider-chart" src="heatmap/Hanoimap.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+        chartContainer: '<iframe class="slider-chart" src="heatmap/lNumber_of _types.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+    },
+    {
+        flavor: "peach",
+        describe: "super very unbelievable, siu ngon từ hương vị",
+        calories: {
+            number: 140,
+            percentage: 6,
+        },
+        fat: {
+            number: 140,
+            percentage: 6,
+        },
+        sodium: {
+            number: 140,
+            percentage: 6,
+        },
+        carb: {
+            number: 140,
+            percentage: 6,
+        },
+        protein: {
+            number: 140,
+            percentage: 6,
+        },
+        chartContainer: '<iframe class="slider-chart" src="heatmap/Average_price_of_type.html" style="width: 100%; height: 100%; border: none;"></iframe>'
     },
 ];
 
@@ -143,6 +168,21 @@ for (let i = 0; i < data.length; i++) {
                     <i class="fa-regular fa-heart"></i>
                 </span>
             </div>
+            <div class="radio-inputs" style="display: none;">
+                <label class="radio">
+                    <input type="radio" name="radio" value="CHCC" checked="">
+                    <span class="name">CHCC</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="radio" value="Nha_rieng">
+                    <span class="name">Nhà riêng</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="radio" value="vu">
+                    <span class="name">Vu</span>
+                </label>
+            </div>
+
         </div>
     `;
     sliderWrapper.innerHTML += `
@@ -211,3 +251,23 @@ prevBtn.addEventListener("click", () => {
 
     handleTransition(prevIndex, currentIndex);
 });
+
+const addToCartBtn = document.querySelector('.add-to-cart-btn');
+const radioInputs = document.querySelector('.radio-inputs');
+
+// Xử lý khi click vào add-to-cart-btn
+addToCartBtn.addEventListener('click', function () {
+    if (radioInputs.style.display === 'none' || radioInputs.style.display === '') {
+        radioInputs.style.display = 'block';
+    } else {
+        radioInputs.style.display = 'none';
+    }
+});
+
+// Ẩn radioInputs khi click bên ngoài
+document.addEventListener('click', function (e) {
+    if (!e.target.closest('.add-to-cart') && !e.target.closest('.radio-inputs')) {
+        radioInputs.style.display = 'none';
+    }
+});
+

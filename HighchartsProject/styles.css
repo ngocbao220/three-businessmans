@@ -15,328 +15,13 @@ body {
   overflow: hidden;
 }
 
-#vertical-bar {
-  width: 1px; /* Độ rộng của thanh */
-  height: 80%; /* Chiều cao chiếm toàn bộ */
-  background-color: #0f0f0f; /* Màu sắc của thanh */
-  position: absolute; /* Đặt thanh ở vị trí cố định */
-  left: 640px; /* Canh giữa theo chiều ngang */
-  top: 100px; /* Bắt đầu từ trên cùng */
-  opacity: 0.6;
-}
-
-#main-title {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 28px;
-  color: rgb(24, 19, 19);
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-  z-index: 10;
-}
-
-#lst-project {
-  position: absolute;
-  width: 40%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  top: 15%;
-  left: -50%;
-  z-index: 3;
-}
-
-.title {
-  position: absolute;
-  top: -8%;
-  left: 50%;
-  width: 400px;
-  height: 30px;
-  transform: translateX(-50%);
-}
-
-#words-title {
-  position: absolute;
-  left: 800px;
-  bottom: 630px;
-  width: 400px;
-  height: 40px;
-  font-size: 20px;
-}
-
-#heat_title {
-  position: relative;
-  cursor: url('./image/home.png'), pointer;
-  margin-top: 3px;
-  font-size: 20px;
-  font-weight: normal;
-  color: rgb(24, 19, 19);
-  text-align: center;
-}
-
-.heatmap {
-  width: 40%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  border-radius: 10px;
-  top: 55%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.Hanoimap {
-  width: 100%;
-  height: 100%;
-  border-width: 5px;
-}
-
-#chart-area {
-  top: 40%;
-  left: 45%;
-  position: absolute; /* Để chứa #chart-container */
-  width: 50%; /* Chiều rộng của chart-area */
-  height: 50%; /* Chiều cao của chart-area */
-  margin: 40px; /* Khoảng cách từ góc màn hình */
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-#chart-container {
-  position: absolute; /* Để căn giữa bên trong #chart-area */
-  top: 65%; /* Căn giữa dọc */
-  left: 50%; /* Căn giữa ngang */
-  transform: translate(-50%, -50%); /* Dịch chuyển tâm */
-  width: 80%; /* Chiều rộng của chart-container */
-  height: 83%; /* Chiều cao của chart-container */
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-
-
-.arrow {
-  position: absolute;
-  color: #000;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  opacity: 0.5;
-}
-
-.arrow.left {
-  top: 55%;
-  left: 30px;
-  opacity: 0.3;
-  cursor: default;
-}
-
-.arrow.right {
-  top: 55%;
-  right: 30px;
-}
-
-.arrow:focus {
-  outline: none;
-}
-
-.chart {
-  opacity: 1;
-  position: absolute;
-  top: -13%;
-  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
-  z-index: 15;
-  background-color: #f0f0dc; /* Màu nền */
-  border-radius: 15px; /* Bo góc */
-  padding: 10px; /* Tạo khoảng cách từ biểu đồ tới viền */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
-}
-
-.words-container {
-  position: absolute;
-  width: 45%;
-  height: 20%;
-  left: 49%;
-  bottom:450px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #000;
-  border-width: 1px;
-}
-
-.comment {
-  position: absolute;
-  left: 700px;
-  bottom: 430px;
-  width: 600px;
-  height: 60px;
-  overflow: hidden;
-}
-
-#fta_comment,
-#sgm_comment,
-#crl_comment {
-  position: absolute;
-  background-color: #fff;
-  width: 500px;
-  height: 40px;
-  margin-left: 60px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border-color: green;
-  border-width: 1px;
-  border-style: solid; /* Đảm bảo có đường viền */
-  z-index: 1; /* Đảm bảo nó không bị che khuất */
-  transition: opacity 0.3s ease-in-out;
-}
-
-#type_comment {
-  position: absolute;
-  background-color: #fff;
-  width: 450px;
-  height: 40px;
-  margin-left: 60px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border-color: green;
-  border-width: 1px;
-  border-style: solid; /* Đảm bảo có đường viền */
-  z-index: 1; /* Đảm bảo nó không bị che khuất */
-  transition: opacity 0.3s ease-in-out;
-}
-
-#fta-container {
-  position: relative;
-  width: 70px; /* Kích thước cố định của vùng chứa */
-  height: 35px;
-  margin-top: 3px;
-  margin-left: 5px;
-  background-color: rgb(241, 241, 248);
-  border-radius: 20px; /* Bo tròn vùng chứa */
-  display: flex; /* Sử dụng flexbox để căn giữa nội dung */
-  align-items: center; /* Căn giữa nội dung theo chiều dọc */
-  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-  overflow: hidden; /* Ẩn nội dung thừa nếu có */
-}
-
-#fta-number {
-  font-family: "Lexend Medium", Roboto, Arial !important;
-  font-size: 20px;
-  font-weight: normal;
-  color: #07a35d;
-  letter-spacing: -0.2px;
-  white-space: nowrap; /* Ngăn xuống dòng */
-}
-
-#fta-para {
-  position: relative;
-  font-family: "Lexend Medium", Roboto, Arial !important;
-  font-size: 18px;
-  left: 100px;
-  bottom: 27px;
-}
-
-.fta-icon {
-  position: relative;
-  width: 64px;
-  height: 59px;
-  left: -60px;
-  bottom: 70px;
-}
-
-#icon_up {
-  position: relative;
-  width: 64px;
-  height: 59px;
-  display: inline;
-}
-
-#icon_down {
-  position: relative;
-  width: 64px;
-  height: 59px;
-  display: none;
-}
-
-#sgm_para,
-#type_para,
-#crl_para {
-  position: relative;
-  font-family: "Lexend Medium", Roboto, Arial !important;
-  font-size: 18px;
-  margin-top: 10px;
-  left: 30px;
-  bottom: 0px;
-}
-
-#icon_royal,
-#toilet,
-#department {
-  position: relative;
-  width: 64px;
-  height: 59px;
-  display: inline;
-  left: -65px;
-  bottom: 43px;
-}
-
-#icon_home {
-  position: relative;
-  width: 64px;
-  height: 59px;
-  display: inline;
-  left:400px;
-  bottom: 43px;
-}
-
-#eye {
-  position: absolute;
-  left: 10px;
-  bottom: 630px;
-}
-
-#btn-project {
-  position: absolute;
-  left: 10px;
-  bottom: 600px;
-}
-
-#eye:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.custom-button:hover {
-  background-color: #005f6b;
-}
-.highcharts-contextbutton {
-  opacity: 0.1;
-}
-
-.scrollable-section {
-  right: 100p;
-  max-height: 4000px;
-  overflow-y: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 #title-segment {
   position: absolute;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  top: 110%;
-  left: 30%;
+  top: 0%;
+  left: 33%;
 }
 
 
@@ -360,7 +45,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: block;
-  margin-top: 75%; /* Khoảng cách từ trên */
+  margin-top: 8%; /* Khoảng cách từ trên */
 }
 
 #segment-count {
@@ -401,7 +86,7 @@ body {
   position: absolute;
   border-radius: 10px;
   border-width: 5px;
-  top: 141%;
+  top: 33%;
   left: 53%;
   z-index: 1;
 }
@@ -411,13 +96,13 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  top: 240%; 
-  left: 30%;
+  top: 105%; 
+  left: 35%;
 }
 
 #stddev-var {
   position: relative;
-  top: -140px;
+  top: -130px;
   width: 95%;
   left: 2%;
   display: flex;

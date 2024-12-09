@@ -1,105 +1,195 @@
 const data = [
     {
-        flavor: "History_Pice",
-        describe: ".......",
+        IDClass: "History_Pice",
+        flavor: "Chart of average price",
+        describe: "Biểu đồ này minh họa giá trung bình của các loại hình bất động sản khác nhau tại Hà Nội. Nó cung cấp cái nhìn sâu sắc về xu hướng giá cả và giúp xác định sự khác biệt giữa các loại hình bất động sản.",
         calories: {
-            number: 140,
-            percentage: 6,
+            tilte: "Nhà Phố",
+            number: 399.2,
+            percentage: "Cao Nhất",
         },
         fat: {
-            number: 140,
-            percentage: 6,
+            tilte: "Trang Trại",
+            number: 25.5,
+            percentage: "Thấp Nhất",
         },
         sodium: {
-            number: 140,
-            percentage: 6,
+            tilte: "Nhà Riêng",
+            number: 200.9,
+            percentage: "Phổ Biến",
         },
         carb: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 72.1,
+            percentage: "Ít Nhất",
         },
         protein: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 373.7,
+            percentage: "Cao Nhất",
         },
         chartContainer: '<div id="column_chart_avg_price_of_ha_noi" class="slider-chart"></div>'
     },
     {
-        flavor: "grape",
-        describe: "super very unbelievable, siu ngon từ hương vị",
+        IDClass: "grape",
+        flavor: "Bar chart of quantity",
+        describe: "Biểu đồ cột này minh họa số lượng các loại hình bất động sản khác nhau tại Hà Nội. Nó làm nổi bật sự phân bố giữa các loại hình, giúp so sánh rõ ràng về mức độ phổ biến của từng loại.",
         calories: {
-            number: 140,
-            percentage: 6,
+            tilte: "Nhà Riêng",
+            number: 4751,
+            percentage: "Cao Nhất",
         },
         fat: {
-            number: 140,
-            percentage: 6,
+            tilte: "Nhà Xưởng",
+            number: 3,
+            percentage: "Thấp Nhất",
         },
         sodium: {
-            number: 140,
-            percentage: 6,
+            tilte: "Căn Hộ Chung Cư",
+            number: 4115,
+            percentage: "Phổ Biến",
         },
         carb: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 636,
+            percentage: "Ít Nhất",
         },
         protein: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 4738,
+            percentage: "Cao Nhất",
         },
         chartContainer: '<div id="column_chart_of_count_classify_of_ha_noi" class="slider-chart"></div>'
     },
     {
-        flavor: "peach",
-        describe: "super very unbelievable, siu ngon từ hương vị",
+        IDClass: "peach",
+        flavor: "Heatmap of average prices",
+        describe: "Biểu đồ nhiệt này thể hiện giá trung bình của một loại hình bất động sản cụ thể tại các quận huyện ở Hà Nội. Nó làm nổi bật sự chênh lệch giá theo khu vực và giúp xác định các khu vực có xu hướng giá trị thị trường cao hoặc thấp hơn",
         calories: {
-            number: 140,
-            percentage: 6,
+            tilte: "Hoàn Kiếm",
+            number: 240.1,
+            percentage: "Cao Nhất",
         },
         fat: {
-            number: 140,
-            percentage: 6,
+            tilte: "Quốc Oai",
+            number: 30.4,
+            percentage: "Thấp Nhất",
         },
         sodium: {
-            number: 140,
-            percentage: 6,
+            tilte: "Tây Hồ",
+            number: 96.1,
+            percentage: "Phổ Biến",
         },
         carb: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 135,
+            percentage: "Ít Nhất",
         },
         protein: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 209.7,
+            percentage: "Cao Nhất",
         },
         chartContainer: '<iframe id="Average_price_of_type" class="slider-chart" src="heatmap/Average_price_of_type_CC.html" style="width: 100%; height: 100%; border: none;"></iframe>'
     },
     {
-        flavor: "orange",
-        describe: "super very unbelievable, siu ngon từ hương vị",
+        IDClass: "orange",
+        flavor: "Heatmap of quantity",
+        describe: "Biểu đồ nhiệt này trình bày sự phân bố của một loại hình bất động sản cụ thể tại các quận huyện ở Hà Nội. Nó làm nổi bật các khu vực có mật độ cao và thấp, cung cấp cái nhìn rõ ràng về xu hướng phân bố theo khu vực.",
         calories: {
-            number: 140,
-            percentage: 6,
+            tilte: "Nam Từ Liêm",
+            number: 1011,
+            percentage: "Cao Nhất",
         },
         fat: {
-            number: 140,
-            percentage: 6,
+            tilte: "Quốc Oai",
+            number: 2,
+            percentage: "Thấp Nhất",
         },
         sodium: {
-            number: 140,
-            percentage: 6,
+            tilte: "Cầu giấy",
+            number: 494,
+            percentage: "Phổ Biến",
         },
         carb: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 517,
+            percentage: "Ít Nhất",
         },
         protein: {
-            number: 140,
-            percentage: 6,
+            tilte: "Chênh lệch",
+            number: 1009,
+            percentage: "Cao Nhất",
         },
         chartContainer: '<iframe id="Number_of_types" class="slider-chart" src="heatmap/Number_of_types_CC.html" style="width: 100%; height: 100%; border: none;"></iframe>'
     },
 ];
+
+const data_Replace =[
+    {
+        IDClass: "peach",
+        flavor: "Heatmap of average prices",
+        describe: "This heatmap shows the average prices of a specific real estate type across different districts in Hanoi. It highlights regional price variations and helps identify areas with higher or lower market value trends.",
+        calories: {
+            tilte: "Cầu Giấy",
+            number: 275.1,
+            percentage: "Cao Nhất",
+        },
+        fat: {
+            tilte: "Mĩ Đức",
+            number: 17.9,
+            percentage: "Thấp Nhất",
+        },
+        sodium: {
+            tilte: "Tây Hồ",
+            number: 242.3,
+            percentage: "Phổ Biến",
+        },
+        carb: {
+            tilte: "Chênh lệch",
+            number: 31,
+            percentage: "Ít Nhất",
+        },
+        protein: {
+            tilte: "Chênh lệch",
+            number: 257.2,
+            percentage: "Cao Nhất",
+        },
+        chartContainer: '<iframe id="Average_price_of_type" class="slider-chart" src="heatmap/Average_price_of_type_CC.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+    },
+    {
+        IDClass: "orange",
+        flavor: "Heatmap of quantity",
+        describe: "This heatmap showcases the distribution of a specific type of real estate across districts in Hanoi. It highlights areas with high and low concentrations, offering a clear visual of regional patterns.",
+        calories: {
+            tilte: "Hà Đông",
+            number: 603,
+            percentage: "Cao Nhất",
+        },
+        fat: {
+            tilte: "Phú Xuyên",
+            number: 4,
+            percentage: "Thấp Nhất",
+        },
+        sodium: {
+            tilte: "Nam Từ Liêm",
+            number: 444,
+            percentage: "Phổ Biến",
+        },
+        carb: {
+            tilte: "Chênh lệch",
+            number: 35,
+            percentage: "Ít Nhất",
+        },
+        protein: {
+            tilte: "Chênh lệch",
+            number: 599,
+            percentage: "Cao Nhất",
+        },
+        chartContainer: '<iframe id="Number_of_types" class="slider-chart" src="heatmap/Number_of_types_CC.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+    },
+];
+
 
 
 const container = document.querySelector(".container");
@@ -107,7 +197,7 @@ const navigation = container.querySelector(".navigation");
 const content = container.querySelector(".content");
 const sliderWrapper = container.querySelector(".slider .slider-wrapper");
 
-container.classList.add(`${data[0].flavor}`);
+container.classList.add(`${data[0].IDClass}`);
 navigation.innerHTML = "";
 content.innerHTML = "";
 sliderWrapper.innerHTML = "";
@@ -129,44 +219,36 @@ for (let i = 0; i < data.length; i++) {
             <p class="juice-describe">${currentData.describe}</p>
 
             <div class="juice-nutrition">
-                <h4>Nutrition Facts</h4>
+                <h4>Parameter</h4>
                 <ul class="juice-nutrition-items">
                     <li class="juice-nutrition-item">
-                        <span>Calories</span>
+                        <span style="font-family:Arial;" >${currentData.calories.tilte}</span>
                         <span>${currentData.calories.number}</span>
-                        <span>${currentData.calories.percentage}%</span>
+                        <span>${currentData.calories.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Total fat</span>
+                        <span style="font-family:Arial;">${currentData.fat.tilte}</span>
                         <span>${currentData.fat.number}</span>
-                        <span>${currentData.fat.percentage}%</span>
+                        <span>${currentData.fat.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Sodium</span>
+                        <span style="font-family:Arial;">${currentData.sodium.tilte}</span>
                         <span>${currentData.sodium.number}</span>
-                        <span>${currentData.sodium.percentage}%</span>
+                        <span>${currentData.sodium.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Total Carb</span>
+                        <span style="font-family:Arial;">${currentData.carb.tilte}</span>
                         <span>${currentData.carb.number}</span>
-                        <span>${currentData.carb.percentage}%</span>
+                        <span>${currentData.carb.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Protein</span>
+                        <span style="font-family:Arial;">${currentData.protein.tilte}</span>
                         <span>${currentData.protein.number}</span>
-                        <span>${currentData.protein.percentage}%</span>
+                        <span>${currentData.protein.percentage}</span>
                     </li>
                 </ul>
             </div>
-            <div class="add-to-cart">
-                <div class="add-to-cart-btn">
-                    <span>Add to cart</span>
-                    <span class="cart-icon">
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </span>
-                </div>
-                <span class="heart">
-            </div>
+            
 
         </div>
     `;
@@ -178,32 +260,32 @@ for (let i = 0; i < data.length; i++) {
             <p class="juice-describe">${currentData.describe}</p>
 
             <div class="juice-nutrition">
-                <h4>Nutrition Facts</h4>
+                <h4>Parameter</h4>
                 <ul class="juice-nutrition-items">
                     <li class="juice-nutrition-item">
-                        <span>Calories</span>
-                        <span>${currentData.calories.number}</span>
-                        <span>${currentData.calories.percentage}%</span>
+                        <span style="font-family:Arial;" id="calories_tilte${i}">${currentData.calories.tilte}</span>
+                        <span id="calories_number${i}">${currentData.calories.number}</span>
+                        <span id="calories_per${i}">${currentData.calories.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Total fat</span>
-                        <span>${currentData.fat.number}</span>
-                        <span>${currentData.fat.percentage}%</span>
+                        <span style="font-family:Arial;" id="fat_tilte${i}">${currentData.fat.tilte}</span>
+                        <span id="fat_number${i}">${currentData.fat.number}</span>
+                        <span id="fat_per${i}">${currentData.fat.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Sodium</span>
-                        <span>${currentData.sodium.number}</span>
-                        <span>${currentData.sodium.percentage}%</span>
+                        <span style="font-family:Arial;" id="sodium_tilte${i}">${currentData.sodium.tilte}</span>
+                        <span id="sodium_number${i}">${currentData.sodium.number}</span>
+                        <span id="sodium_per${i}">${currentData.sodium.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Total Carb</span>
-                        <span>${currentData.carb.number}</span>
-                        <span>${currentData.carb.percentage}%</span>
+                        <span style="font-family:Arial;" id="carb_tilte${i}">${currentData.carb.tilte}</span>
+                        <span id="carb_number${i}">${currentData.carb.number}</span>
+                        <span id="carb_per${i}">${currentData.carb.percentage}</span>
                     </li>
                     <li class="juice-nutrition-item">
-                        <span>Protein</span>
-                        <span>${currentData.protein.number}</span>
-                        <span>${currentData.protein.percentage}%</span>
+                        <span style="font-family:Arial;" id="protein_tilte${i}">${currentData.protein.tilte}</span>
+                        <span id="protein_number${i}">${currentData.protein.number}</span>
+                        <span id="protein_per${i}">${currentData.protein.percentage}</span>
                     </li>
                 </ul>
             </div>
@@ -236,8 +318,8 @@ var prevIndex = 0;
 var currentIndex = 0;
 
 const handleTransition = (prevIndex, currentIndex) => {
-    container.classList.add(`${data[currentIndex].flavor}`);
-    container.classList.remove(`${data[prevIndex].flavor}`);
+    container.classList.add(`${data[currentIndex].IDClass}`);
+    container.classList.remove(`${data[prevIndex].IDClass}`);
 
     content.children[prevIndex].classList.remove("show");
     content.children[currentIndex].classList.add("show");
@@ -297,8 +379,10 @@ document.querySelectorAll('input[name="radio_2"]').forEach(radio => {
             setTimeout(() => { // Đợi cho hiệu ứng mờ dần hoàn tất trước khi thay đổi src
                 if (this.value === 'Nha_rieng' && this.checked) {
                     averagePriceOfTypeIframe.src = 'heatmap/Average_price_of_type_NR.html';
+                    updateData(data_Replace[0], 2);
                 } else if (this.value === 'CHCC' && this.checked) {
                     averagePriceOfTypeIframe.src = 'heatmap/Average_price_of_type_CC.html';
+                    updateData(data[2], 2);
                 }
                 averagePriceOfTypeIframe.onload = () => { // Khi iframe đã tải xong nội dung mới
                     averagePriceOfTypeIframe.classList.remove('hidden'); // Hiển thị lại iframe với hiệu ứng mờ dần
@@ -317,8 +401,10 @@ document.querySelectorAll('input[name="radio_3"]').forEach(radio => {
             setTimeout(() => { // Đợi cho hiệu ứng mờ dần hoàn tất trước khi thay đổi src
                 if (this.value === 'Nha_rieng' && this.checked) {
                     numberOfTypesIframe.src = 'heatmap/Number_of_types_NR.html';
+                    updateData(data_Replace[1], 3);
                 } else if (this.value === 'CHCC' && this.checked) {
                     numberOfTypesIframe.src = 'heatmap/Number_of_types_CC.html';
+                    updateData(data[3], 3);
                 }
                 numberOfTypesIframe.onload = () => { // Khi iframe đã tải xong nội dung mới
                     numberOfTypesIframe.classList.remove('hidden'); // Hiển thị lại iframe với hiệu ứng mờ dần
@@ -328,4 +414,45 @@ document.querySelectorAll('input[name="radio_3"]').forEach(radio => {
     });
 });
 
+function updateData(data, i) {
+    // Helper function to update element with fade effect
+    function updateElementWithFade(elementId, newValue) {
+        const element = document.getElementById(elementId);
+        if (!element) return;  // Check if element exists
 
+        // Fade out
+        element.style.transition = "opacity 0.3s ease-in-out"; // Smooth transition
+        element.style.opacity = "0";
+
+        // Wait for fade-out effect to complete
+        setTimeout(() => {
+            element.textContent = newValue; // Update content
+            element.style.opacity = "1"; // Fade back in
+        }, 300); // Match the duration in CSS
+    }
+
+    // Update Calories Information
+    updateElementWithFade(`calories_tilte${i}`, data.calories.tilte);
+    updateElementWithFade(`calories_number${i}`, data.calories.number);
+    updateElementWithFade(`calories_per${i}`, data.calories.percentage);
+
+    // Update Fat Information
+    updateElementWithFade(`fat_tilte${i}`, data.fat.tilte);
+    updateElementWithFade(`fat_number${i}`, data.fat.number);
+    updateElementWithFade(`fat_per${i}`, data.fat.percentage);
+
+    // Update Sodium Information
+    updateElementWithFade(`sodium_tilte${i}`, data.sodium.tilte);
+    updateElementWithFade(`sodium_number${i}`, data.sodium.number);
+    updateElementWithFade(`sodium_per${i}`, data.sodium.percentage);
+
+    // Update Carb Information
+    updateElementWithFade(`carb_tilte${i}`, data.carb.tilte);
+    updateElementWithFade(`carb_number${i}`, data.carb.number);
+    updateElementWithFade(`carb_per${i}`, data.carb.percentage);
+
+    // Update Protein Information
+    updateElementWithFade(`protein_tilte${i}`, data.protein.tilte);
+    updateElementWithFade(`protein_number${i}`, data.protein.number);
+    updateElementWithFade(`protein_per${i}`, data.protein.percentage);
+}

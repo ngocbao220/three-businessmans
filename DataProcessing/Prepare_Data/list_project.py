@@ -57,10 +57,12 @@ for _, row in result.iterrows():
         <p>Lượt xem: {row['Lượt xem']}</p>
         <p>Quận/Huyện: {row['Quận/Huyện']}</p>
         <p>Pháp lý: {row['Pháp lý']}</p>
-        <p>Diện tích: {row['Diện tích']}</p>
-        <p>Số căn hộ: {row['Số căn hộ']}</p>
-        <p>Số tòa: {row['Số tòa']}</p>
-        <p>Mức giá: {row['Mức giá']}</p>
+        <div class="details">
+            <p>Diện tích: {row['Diện tích']}</p>
+            <p>Số căn hộ: {row['Số căn hộ']}</p>
+            <p>Số tòa: {row['Số tòa']}</p>
+            <p>Mức giá: {row['Mức giá']}</p>
+        </div>
     </div>
     '''
 

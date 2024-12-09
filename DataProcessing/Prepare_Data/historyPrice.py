@@ -297,12 +297,4 @@ for type_name in property_types:
     except Exception as e:  # Bắt lỗi nếu có
         print('Lỗi:', e)
         print('Không thành công : ', type_name)
-
-    try:
-        hPS = historyPriceOfSegment(segment_type)
-        hPS.toJson()
-        print('Thành công : ', segment_type)
-    except Exception as e:  # Bắt lỗi nếu có
-        print('Lỗi:', e)
-        print('Không thành công : ', segment_type)
     

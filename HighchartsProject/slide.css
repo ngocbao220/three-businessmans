@@ -231,17 +231,17 @@ button {
 }
 
 .juice-nutrition-item span:nth-child(1) {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     margin-top: 11px;
 }
 
 .juice-nutrition-item span:nth-child(2) {
-    font-size: 2 rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .juice-nutrition-item span:nth-child(3) {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     width: 100px;
     height: 25px;
     display: flex;
@@ -408,41 +408,77 @@ button {
     position: relative;
 }
 
+/* Cấu trúc chung của radio-inputs */
 .radio-inputs {
-    position: relative;
+    --index: 3;
     display: flex;
-    flex-wrap: wrap;
-    border-radius: 0.5rem;
-    background-color: #EEE;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    border-radius: 60px;
+    padding: 5px;
+    background-color: var(--gray-color); /* Màu nền giống như .add-to-cart */
     box-sizing: border-box;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-    padding: 0.25rem;
-    width: 300px;
-    font-size: 14px;
+    transition: 0.25s ease-in-out;
   }
   
+  /* Kiểu cho các label radio */
   .radio-inputs .radio {
     flex: 1 1 auto;
     text-align: center;
   }
   
+  /* Ẩn input radio */
   .radio-inputs .radio input {
     display: none;
   }
   
+  /* Kiểu cho phần tên radio */
   .radio-inputs .radio .name {
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: .5rem 0;
-    color: rgba(51, 65, 85, 1);
-    transition: all .15s ease-in-out;
+    border-radius: 60px; /* Đảm bảo góc tròn giống .add-to-cart */
+    padding: 0.5rem 0;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
   }
   
+  /* Tạo hiệu ứng hover cho các phần tử */
+  .radio-inputs > * {
+    transition: 0.5s ease-in-out;
+  }
+  
+  .radio-inputs > *:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+  }
+  
+  /* Màu nền và hiệu ứng khi radio được chọn */
   .radio-inputs .radio input:checked + .name {
-    background-color: #fff;
+    background-color: var(--color-light); /* Màu nền khi được chọn */
+    color: white; /* Màu chữ khi được chọn */
     font-weight: 600;
   }
+  
+  /* Tạo hiệu ứng cho phần icon bên trong radio button */
+  .radio-inputs .radio input:checked + .name::before {
+    content: "\2713"; /* Thêm dấu check vào */
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  /* CSS cho hiệu ứng mờ dần */
+iframe.slider-chart {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+iframe.slider-chart.hidden {
+    opacity: 0;
+}

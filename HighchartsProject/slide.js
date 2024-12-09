@@ -50,31 +50,6 @@ const data = [
         chartContainer: '<div id="column_chart_of_count_classify_of_ha_noi" class="slider-chart"></div>'
     },
     {
-        flavor: "orange",
-        describe: "super very unbelievable, siu ngon từ hương vị",
-        calories: {
-            number: 140,
-            percentage: 6,
-        },
-        fat: {
-            number: 140,
-            percentage: 6,
-        },
-        sodium: {
-            number: 140,
-            percentage: 6,
-        },
-        carb: {
-            number: 140,
-            percentage: 6,
-        },
-        protein: {
-            number: 140,
-            percentage: 6,
-        },
-        chartContainer: '<iframe class="slider-chart" src="heatmap/lNumber_of _types.html" style="width: 100%; height: 100%; border: none;"></iframe>'
-    },
-    {
         flavor: "peach",
         describe: "super very unbelievable, siu ngon từ hương vị",
         calories: {
@@ -97,7 +72,32 @@ const data = [
             number: 140,
             percentage: 6,
         },
-        chartContainer: '<iframe class="slider-chart" src="heatmap/Average_price_of_type.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+        chartContainer: '<iframe id="Average_price_of_type" class="slider-chart" src="heatmap/Average_price_of_type_CC.html" style="width: 100%; height: 100%; border: none;"></iframe>'
+    },
+    {
+        flavor: "orange",
+        describe: "super very unbelievable, siu ngon từ hương vị",
+        calories: {
+            number: 140,
+            percentage: 6,
+        },
+        fat: {
+            number: 140,
+            percentage: 6,
+        },
+        sodium: {
+            number: 140,
+            percentage: 6,
+        },
+        carb: {
+            number: 140,
+            percentage: 6,
+        },
+        protein: {
+            number: 140,
+            percentage: 6,
+        },
+        chartContainer: '<iframe id="Number_of_types" class="slider-chart" src="heatmap/Number_of_types_CC.html" style="width: 100%; height: 100%; border: none;"></iframe>'
     },
 ];
 
@@ -121,6 +121,7 @@ for (let i = 0; i < data.length; i++) {
     `;
     
     const currentData = data[i];
+    if(i <= data.length - 3)
     content.innerHTML += `
         <div class="content-wrapper">
             <h1 class="juice-flavor">${currentData.flavor}</h1>
@@ -159,32 +160,66 @@ for (let i = 0; i < data.length; i++) {
             </div>
             <div class="add-to-cart">
                 <div class="add-to-cart-btn">
-                    <span>price segment</span>
+                    <span>Add to cart</span>
                     <span class="cart-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
                     </span>
                 </div>
                 <span class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                </span>
-            </div>
-            <div class="radio-inputs" style="display: none;">
-                <label class="radio">
-                    <input type="radio" name="radio" value="CHCC" checked="">
-                    <span class="name">CHCC</span>
-                </label>
-                <label class="radio">
-                    <input type="radio" name="radio" value="Nha_rieng">
-                    <span class="name">Nhà riêng</span>
-                </label>
-                <label class="radio">
-                    <input type="radio" name="radio" value="vu">
-                    <span class="name">Vu</span>
-                </label>
             </div>
 
         </div>
     `;
+    else {
+        content.innerHTML += `
+        <div class="content-wrapper">
+            <h1 class="juice-flavor">${currentData.flavor}</h1>
+
+            <p class="juice-describe">${currentData.describe}</p>
+
+            <div class="juice-nutrition">
+                <h4>Nutrition Facts</h4>
+                <ul class="juice-nutrition-items">
+                    <li class="juice-nutrition-item">
+                        <span>Calories</span>
+                        <span>${currentData.calories.number}</span>
+                        <span>${currentData.calories.percentage}%</span>
+                    </li>
+                    <li class="juice-nutrition-item">
+                        <span>Total fat</span>
+                        <span>${currentData.fat.number}</span>
+                        <span>${currentData.fat.percentage}%</span>
+                    </li>
+                    <li class="juice-nutrition-item">
+                        <span>Sodium</span>
+                        <span>${currentData.sodium.number}</span>
+                        <span>${currentData.sodium.percentage}%</span>
+                    </li>
+                    <li class="juice-nutrition-item">
+                        <span>Total Carb</span>
+                        <span>${currentData.carb.number}</span>
+                        <span>${currentData.carb.percentage}%</span>
+                    </li>
+                    <li class="juice-nutrition-item">
+                        <span>Protein</span>
+                        <span>${currentData.protein.number}</span>
+                        <span>${currentData.protein.percentage}%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="radio-inputs">
+                <label class="radio">
+                    <input type="radio" name="radio_${i}" value="CHCC" checked="">
+                    <span class="name">CHCC</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="radio_${i}" value="Nha_rieng">
+                    <span class="name">Nhà riêng</span>
+                </label>
+            </div>
+        </div>`;
+            
+    }
     sliderWrapper.innerHTML += `
         <li class="slider-item">
            ${currentData.chartContainer}
@@ -252,22 +287,45 @@ prevBtn.addEventListener("click", () => {
     handleTransition(prevIndex, currentIndex);
 });
 
-const addToCartBtn = document.querySelector('.add-to-cart-btn');
-const radioInputs = document.querySelector('.radio-inputs');
-
-// Xử lý khi click vào add-to-cart-btn
-addToCartBtn.addEventListener('click', function () {
-    if (radioInputs.style.display === 'none' || radioInputs.style.display === '') {
-        radioInputs.style.display = 'block';
-    } else {
-        radioInputs.style.display = 'none';
-    }
+// Sự kiện thay đổi cho radio "Average_price_of_type"
+document.querySelectorAll('input[name="radio_2"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        const averagePriceOfTypeIframe = document.getElementById('Average_price_of_type');
+        
+        if (averagePriceOfTypeIframe) {
+            averagePriceOfTypeIframe.classList.add('hidden'); // Ẩn iframe để tạo hiệu ứng mờ dần
+            setTimeout(() => { // Đợi cho hiệu ứng mờ dần hoàn tất trước khi thay đổi src
+                if (this.value === 'Nha_rieng' && this.checked) {
+                    averagePriceOfTypeIframe.src = 'heatmap/Average_price_of_type_NR.html';
+                } else if (this.value === 'CHCC' && this.checked) {
+                    averagePriceOfTypeIframe.src = 'heatmap/Average_price_of_type_CC.html';
+                }
+                averagePriceOfTypeIframe.onload = () => { // Khi iframe đã tải xong nội dung mới
+                    averagePriceOfTypeIframe.classList.remove('hidden'); // Hiển thị lại iframe với hiệu ứng mờ dần
+                };
+            }, 500); // Thời gian chờ cho hiệu ứng mờ dần (tương đương với giá trị trong CSS)
+        }
+    });
 });
 
-// Ẩn radioInputs khi click bên ngoài
-document.addEventListener('click', function (e) {
-    if (!e.target.closest('.add-to-cart') && !e.target.closest('.radio-inputs')) {
-        radioInputs.style.display = 'none';
-    }
+document.querySelectorAll('input[name="radio_3"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        const numberOfTypesIframe = document.getElementById('Number_of_types');
+        
+        if (numberOfTypesIframe) {
+            numberOfTypesIframe.classList.add('hidden'); // Ẩn iframe để tạo hiệu ứng mờ dần
+            setTimeout(() => { // Đợi cho hiệu ứng mờ dần hoàn tất trước khi thay đổi src
+                if (this.value === 'Nha_rieng' && this.checked) {
+                    numberOfTypesIframe.src = 'heatmap/Number_of_types_NR.html';
+                } else if (this.value === 'CHCC' && this.checked) {
+                    numberOfTypesIframe.src = 'heatmap/Number_of_types_CC.html';
+                }
+                numberOfTypesIframe.onload = () => { // Khi iframe đã tải xong nội dung mới
+                    numberOfTypesIframe.classList.remove('hidden'); // Hiển thị lại iframe với hiệu ứng mờ dần
+                };
+            }, 500); // Thời gian chờ cho hiệu ứng mờ dần (tương đương với giá trị trong CSS)
+        }
+    });
 });
+
 

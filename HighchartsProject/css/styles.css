@@ -1,0 +1,386 @@
+/* Cấu hình chung */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end; /* Đưa #chart-area sang phải */
+  align-items: flex-end; /* Đưa #chart-area xuống dưới */
+  background-color: #c7c6c6; /* Màu nền toàn màn hình */
+  overflow: hidden;
+}
+
+/* Thanh dọc */
+#vertical-bar {
+  width: 1px;
+  height: 80%;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 640px;
+  top: 100px;
+  opacity: 0.6;
+}
+
+/* Tiêu đề */
+#main-title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  color: rgb(24, 19, 19);
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  z-index: 10;
+}
+
+/* Danh sách dự án */
+#lst-project {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  top: 15%;
+  left: -50%;
+  z-index: 3;
+}
+
+/* Tiêu đề của danh sách dự án */
+#lst-pro-title {
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  width: 500px;
+  height: 30px;
+  display: none;
+}
+
+/* Thẻ thông tin dự án */
+.card-info {
+  position: absolute;
+  width: 46%;
+  height: 21%;
+  left: 665px;
+  bottom: 500px;
+  transition: transform 0.5s;
+  transform: translateX(150%);
+  background-color: #fff;
+  z-index: 2;
+}
+
+/* Thông tin dự án */
+#card-info-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của khu vực */
+.title {
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  width: 400px;
+  height: 30px;
+  transform: translateX(-50%);
+}
+
+/* Thông tin chi tiết */
+#words-title {
+  position: absolute;
+  left: 900px;
+  bottom: 650px;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#cur-place {
+  color: #007bff;
+  font-style: italic;
+}
+
+#heat_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Bản đồ */
+.district_map,
+.ward_map {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.district_map {
+  z-index: 1;
+}
+
+.ward_map {
+  display: none;
+  z-index: 0;
+}
+
+.district,
+.ward {
+  width: 100%;
+  height: 100%;
+  border-width: 5px;
+}
+
+/* Vùng chứa biểu đồ */
+#chart-area {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin: 40px;
+  border-radius: 20px;
+}
+
+/* Vùng chứa biểu đồ cụ thể */
+#chart-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Mũi tên điều hướng */
+.arrow {
+  position: absolute;
+  color: #000;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.arrow.left {
+  top: 40%;
+  left: 30px;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.arrow.right {
+  top: 40%;
+  right: 30px;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+/* Biểu đồ */
+.chart {
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
+  z-index: 15;
+  background-color: #f0f0dc;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Thông tin phụ */
+.words-container {
+  position: absolute;
+  width: 45%;
+  height: 20%;
+  left: 49%;
+  bottom: 500px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+/* Bình luận */
+.comment {
+  position: absolute;
+  left: 700px;
+  bottom: 430px;
+  width: 600px;
+  height: 60px;
+  overflow: hidden;
+}
+
+#fta_comment,
+#sgm_comment,
+#crl_comment {
+  position: absolute;
+  background-color: #fff;
+  width: 500px;
+  height: 40px;
+  margin-left: 60px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid; /* Đảm bảo có đường viền */
+  z-index: 1; /* Đảm bảo nó không bị che khuất */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#type_comment {
+  position: absolute;
+  background-color: #fff;
+  width: 450px;
+  height: 40px;
+  margin-left: 60px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid; /* Đảm bảo có đường viền */
+  z-index: 1; /* Đảm bảo nó không bị che khuất */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#fta-container {
+  position: relative;
+  width: 70px; /* Kích thước cố định của vùng chứa */
+  height: 35px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-color: rgb(241, 241, 248);
+  border-radius: 20px; /* Bo tròn vùng chứa */
+  display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  overflow: hidden; /* Ẩn nội dung thừa nếu có */
+}
+
+#fta-number {
+  font-family: "Lexend Medium", Roboto, Arial !important;
+  font-size: 20px;
+  font-weight: normal;
+  color: #07a35d;
+  letter-spacing: -0.2px;
+  white-space: nowrap; /* Ngăn xuống dòng */
+}
+
+#fta-para {
+  position: relative;
+  font-family: "Lexend Medium", Roboto, Arial !important;
+  font-size: 18px;
+  left: 100px;
+  bottom: 27px;
+}
+
+.fta-icon {
+  position: relative;
+  width: 64px;
+  height: 59px;
+  left: -60px;
+  bottom: 70px;
+}
+
+#icon_up {
+  position: relative;
+  width: 64px;
+  height: 59px;
+  display: inline;
+}
+
+#icon_down {
+  position: relative;
+  width: 64px;
+  height: 59px;
+  display: none;
+}
+
+#sgm_para,
+#type_para,
+#crl_para {
+  position: relative;
+  font-family: "Lexend Medium", Roboto, Arial !important;
+  font-size: 18px;
+  margin-top: 10px;
+  left: 30px;
+  bottom: 0px;
+}
+
+#icon_royal,
+#toilet,
+#department {
+  position: relative;
+  width: 64px;
+  height: 59px;
+  display: inline;
+  left: -65px;
+  bottom: 43px;
+}
+
+#icon_home {
+  position: relative;
+  width: 64px;
+  height: 59px;
+  display: inline;
+  left: 400px;
+  bottom: 43px;
+}
+
+#eye {
+  position: absolute;
+  width: 80px;
+  left: -5px;
+  bottom: 620px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#btn-project {
+  position: absolute;
+  width: 70px;
+  left: 0px;
+  bottom: 550px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/* Hover hiệu ứng */
+#eye:hover,
+#btn-project:hover {
+  background-color: rgba(213, 216, 213, 0.5);
+}
+
+.custom-button:hover {
+  background-color: #005f6b;
+}
+
+.highcharts-contextbutton {
+  opacity: 0.7;
+}

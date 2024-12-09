@@ -211,6 +211,10 @@ export function get_info_of_iframe(
         const buildings =
           details.querySelector("p:nth-child(3)")?.textContent.trim() ||
           "Không có thông tin số tòa";
+        
+        const minPrice =
+        details.querySelector("p:nth-child(4)")?.textContent.trim() ||
+        "Không có thông tin giá thấp nhất";
         // Kết hợp các thông tin thành một chuỗi HTML
         const content = `
           <div style="
@@ -261,8 +265,8 @@ export function get_info_of_iframe(
 
               <!-- Cột 3: Mức giá -->
               <div style="flex: 1;">
-                <p style="font-size: 16px; font-weight: bold; margin: 0;">Mức giá</p>
-                <p style="font-size: 14px; color: #555; margin: 5px 0;">${views}</p>
+                <p style="font-size: 16px; font-weight: bold; margin: 0;">Giá bán</p>
+                <p style="font-size: 14px; color: #555; margin: 5px 0;">${minPrice} triệu/m²</p>
               </div>
             </div>
           </div>

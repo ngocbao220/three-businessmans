@@ -1,0 +1,5291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh sách dự án</title>
+    <style>
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;;
+        }
+        .project-card h2 {
+            margin: 0;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body>
+
+    <div class="project-card">
+        <h2>Vinhomes Ocean Park Gia Lâm</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 22458</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Sổ hồng sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 420 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 66 tòa</p>
+            <p>Mức giá: 41.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Smart City</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 14842</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hổng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 280 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Green Bay Mễ Trì</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 8810</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3.390 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 39.29</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Thanh Hà Mường Thanh</h2>
+        <p>Chủ đầu tư: Tập đoàn Mường Thanh</p>
+        <p>Lượt xem: 8694</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng, sổ đỏ sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3.867.000 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 30.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Riverside</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 5414</p>
+        <p>Quận/Huyện: Long Biên</p>
+        <p>Pháp lý: Sổ đỏ vĩnh viễn</p>
+        <div class="details">
+            <p>Diện tích: 183,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 225.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Linh Đàm</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 5399</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 200 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.31</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Royal City</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 5335</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 68.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Geleximco - Lê Trọng Tấn</h2>
+        <p>Chủ đầu tư: Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco</p>
+        <p>Lượt xem: 5243</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 137,56 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 118.34</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Times City</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 5119</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 67.44</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Xa La</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 4664</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 20,95 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 31.51</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Kim Văn - Kim Lũ (Golden Silk)</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng số 2 - Vinaconex2</p>
+        <p>Lượt xem: 4386</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ đỏ chính chủ</p>
+        <div class="details">
+            <p>Diện tích: 26,9 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.63</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>KĐT Tây Hồ Tây - Starlake Hà Nội</h2>
+        <p>Chủ đầu tư: Công ty TNHH Phát triển T.H.T</p>
+        <p>Lượt xem: 4356</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sở hữu lâu dài đối với người Việt. Người nước ngoài sở hữu 50 năm</p>
+        <div class="details">
+            <p>Diện tích: 186 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 70.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Trung Hòa - Nhân Chính</h2>
+        <p>Chủ đầu tư: Tổng công ty CP Xuất nhập khẩu và Xây dựng Việt Nam</p>
+        <p>Lượt xem: 4242</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 30 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 48.1</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Đại Thanh</h2>
+        <p>Chủ đầu tư: Xí nghiệp Xây dựng Tư nhân Số 1 Lai Châu</p>
+        <p>Lượt xem: 4127</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 17 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 6 tòa</p>
+            <p>Mức giá: 33.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Nam Thăng Long - Ciputra</h2>
+        <p>Chủ đầu tư: Công ty TNHH phát triển khu đô thị Nam Thăng Long</p>
+        <p>Lượt xem: 3955</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sổ hồng và sổ đỏ từng căn</p>
+        <div class="details">
+            <p>Diện tích: 394,14 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.85</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu Ngoại Giao Đoàn</h2>
+        <p>Chủ đầu tư: Tổng công ty Xây dựng Hà Nội</p>
+        <p>Lượt xem: 3642</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4.900 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 72.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Văn Phú</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Văn Phú - Invest</p>
+        <p>Lượt xem: 3184</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ đỏ</p>
+        <div class="details">
+            <p>Diện tích: 94,1 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 159.26</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Masteri West Heights</h2>
+        <p>Chủ đầu tư: Masterise Homes</p>
+        <p>Lượt xem: 3118</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài đối với người Việt Nam. Sở hữu 50 năm đối với người nước ngoài</p>
+        <div class="details">
+            <p>Diện tích: 2,11 ha</p>
+            <p>Số căn hộ: 3.599 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 52.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Imperia Smart City</h2>
+        <p>Chủ đầu tư: Tập đoàn MIK Corporation</p>
+        <p>Lượt xem: 3116</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 284.768 m²</p>
+            <p>Số căn hộ: 3.922 căn</p>
+            <p>Số tòa: 5 tòa</p>
+            <p>Mức giá: 51.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mulberry Lane</h2>
+        <p>Chủ đầu tư: CapitaLand Development (Việt Nam)</p>
+        <p>Lượt xem: 3029</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 2,45 ha</p>
+            <p>Số căn hộ: 1.478 căn</p>
+            <p>Số tòa: 5 tòa</p>
+            <p>Mức giá: 43.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Metropolis - Liễu Giai</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 3019</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 6.500 m²</p>
+            <p>Số căn hộ: 1.544 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 99.88</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Masteri Waterfront</h2>
+        <p>Chủ đầu tư: Masterise Homes</p>
+        <p>Lượt xem: 2994</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Sở hữu lâu dài dành cho người Việt Nam. Sở hữu 50 năm dành cho người nước ngoài</p>
+        <div class="details">
+            <p>Diện tích: 3,75 ha</p>
+            <p>Số căn hộ: 3.837 căn</p>
+            <p>Số tòa: 6 tòa</p>
+            <p>Mức giá: 59.52</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Times City - Park Hill</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 2981</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 7,5 ha</p>
+            <p>Số căn hộ: 3.727 căn</p>
+            <p>Số tòa: 12 tòa</p>
+            <p>Mức giá: 68.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Pavilion - Vinhomes Ocean Park</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 2948</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2,4 ha</p>
+            <p>Số căn hộ: 2.600 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 46.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunshine City</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 2933</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 6.665 m²</p>
+            <p>Số căn hộ: 2.368 căn</p>
+            <p>Số tòa: 6 tòa</p>
+            <p>Mức giá: 263.59</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Eurowindow River Park</h2>
+        <p>Chủ đầu tư: Công ty CP Eurowindow Holding</p>
+        <p>Lượt xem: 2903</p>
+        <p>Quận/Huyện: Đông Anh</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 30.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Gardenia</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 2884</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 17,63 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.75</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Pride</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land)</p>
+        <p>Lượt xem: 2866</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 11.390 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 35.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Skylake</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 2844</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 1,36 ha</p>
+            <p>Số căn hộ: 1.800 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 46.51</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HH1 Linh Đàm</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 2744</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 3.552 m²</p>
+            <p>Số căn hộ: 2.000 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 37.35</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Văn Khê</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà Thăng Long</p>
+        <p>Lượt xem: 2731</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 23,9 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 36.57</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Matrix One</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Đầu tư Mai Linh</p>
+        <p>Lượt xem: 2609</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 39,8 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.76</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Manor Central Park</h2>
+        <p>Chủ đầu tư: Tập đoàn Bitexco</p>
+        <p>Lượt xem: 2573</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng</p>
+        <div class="details">
+            <p>Diện tích: 8,9 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 212.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Làng Việt Kiều Châu Âu Euroland</h2>
+        <p>Chủ đầu tư: Công ty TSQ Việt Nam</p>
+        <p>Lượt xem: 2557</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ đỏ sử dụng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 8 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.23</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mipec City View</h2>
+        <p>Chủ đầu tư: Công ty CP Hóa Dầu Quân Đội</p>
+        <p>Lượt xem: 2533</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Đã có sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: 1.564 căn</p>
+            <p>Số tòa: 7 tòa</p>
+            <p>Mức giá: 39.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hà Nội Melody Residences</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Hưng Thịnh</p>
+        <p>Lượt xem: 2514</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,28 ha</p>
+            <p>Số căn hộ: 2.000 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 40.63</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Zenpark</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 2513</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,88 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 47.23</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Heritage West Lake</h2>
+        <p>Chủ đầu tư: CapitaLand Development (Việt Nam)</p>
+        <p>Lượt xem: 2495</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sở hữu lâu dài cho người Việt Nam và 50 năm cho người nước ngoài</p>
+        <div class="details">
+            <p>Diện tích: 8.970 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 73.17</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HUD Me Linh Central</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 2454</p>
+        <p>Quận/Huyện: Mê Linh</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 55,3 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Dương Nội</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 2438</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 197,3 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Văn Quán</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 2419</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 62 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 197.73</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hà Nội Paragon</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Thương mại Thăng Long</p>
+        <p>Lượt xem: 2340</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 8.200 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Đại Kim</h2>
+        <p>Chủ đầu tư: Công ty Đầu tư Xây dựng số 2 Hà Nội</p>
+        <p>Lượt xem: 2329</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 27 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.68</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Eco Green City</h2>
+        <p>Chủ đầu tư: Công ty TNHH Bất động sản và Xây dựng Việt Hưng</p>
+        <p>Lượt xem: 2312</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 7.000 m²</p>
+            <p>Số căn hộ: 1.800 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 45.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Định Công</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 2251</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 227.68</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Rose Town 79 Ngọc Hồi</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng Xuân Mai</p>
+        <p>Lượt xem: 2239</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 11.797 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 32.21</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xanh Villas</h2>
+        <p>Chủ đầu tư: Công ty TNHH Bất Động Sản Xuân Cầu</p>
+        <p>Lượt xem: 2203</p>
+        <p>Quận/Huyện: Thạch Thất</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 50 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 46.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Zei Mỹ Đình</h2>
+        <p>Chủ đầu tư: HD Mon Holdings</p>
+        <p>Lượt xem: 2180</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4.600 m²</p>
+            <p>Số căn hộ: 891 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 45.22</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Gamuda Gardens</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Gamuda Land Việt Nam</p>
+        <p>Lượt xem: 2167</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ đỏ lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 78 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 195.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Terra An Hưng</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Văn Phú - Invest</p>
+        <p>Lượt xem: 2142</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,56 ha</p>
+            <p>Số căn hộ: 1.328 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 55.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Nam Trung Yên</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 2130</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 17.420 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 59.23</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Feliz Homes</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần KLB</p>
+        <p>Lượt xem: 2129</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2,1 ha</p>
+            <p>Số căn hộ: 1.248 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 55.42</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunshine Riverside</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 2119</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3.773 m²</p>
+            <p>Số căn hộ: 932 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 63.54</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xuân Mai Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng Xuân Mai</p>
+        <p>Lượt xem: 2114</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 5.981 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 40.19</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Imperia Garden</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Phát triển Hòa Bình - HBI</p>
+        <p>Lượt xem: 2072</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 16.287 m²</p>
+            <p>Số căn hộ: 3.922 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 57.14</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>IA20 Ciputra</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Bất động sản Đông Đô - BQP</p>
+        <p>Lượt xem: 2068</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 120.000 m²</p>
+            <p>Số căn hộ: 1.468 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 250.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hồ Gươm Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP may Hồ Gươm - HOGARSCO</p>
+        <p>Lượt xem: 1998</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 5.250 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hateco Apollo</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hạ tầng và Công trình Kiến trúc Hà Nội</p>
+        <p>Lượt xem: 1994</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 12.277 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Home City Trung Kính</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Văn Phú - Invest</p>
+        <p>Lượt xem: 1982</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 196.161 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 67.35</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hateco Laroma</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hạ tầng và Công trình Kiến trúc Hà Nội</p>
+        <p>Lượt xem: 1982</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 87.1</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mỹ Đình Pearl</h2>
+        <p>Chủ đầu tư: Công ty CP tập đoàn S.S.G</p>
+        <p>Lượt xem: 1973</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 15.993 m²</p>
+            <p>Số căn hộ: 950 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 53.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Thăng Long Number One</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 1972</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4 ha</p>
+            <p>Số căn hộ: 1.058 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 46.15</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Gelexia Riverside</h2>
+        <p>Chủ đầu tư: Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco</p>
+        <p>Lượt xem: 1950</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng riêng</p>
+        <div class="details">
+            <p>Diện tích: 28.100 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 56.1</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình Sông Đà - Sudico</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phát triển Đô thị và KCN Sông Đà - Sudico</p>
+        <p>Lượt xem: 1943</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 36 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.88</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mipec Rubik 360</h2>
+        <p>Chủ đầu tư: Công ty CP Hóa Dầu Quân Đội</p>
+        <p>Lượt xem: 1937</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,85 ha</p>
+            <p>Số căn hộ: 976 căn</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 64.77</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes West Point</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 1931</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài.</p>
+        <div class="details">
+            <p>Diện tích: 2,4 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.47</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Roman Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hải Phát</p>
+        <p>Lượt xem: 1903</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,59 ha</p>
+            <p>Số căn hộ: 804 căn</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Seasons Avenue</h2>
+        <p>Chủ đầu tư: CapitaLand Development (Việt Nam)</p>
+        <p>Lượt xem: 1849</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,37 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.8</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Green Park Trần Thủ Độ</h2>
+        <p>Chủ đầu tư: Công ty TNHH MTV đầu tư Phương Đông</p>
+        <p>Lượt xem: 1840</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 1,65 ha</p>
+            <p>Số căn hộ: 1.248 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 52.83</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>ParkCity Hà Nội</h2>
+        <p>Chủ đầu tư: Công ty CP Phát triển Đô thị Quốc tế Việt Nam</p>
+        <p>Lượt xem: 1802</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 77 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 241.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>6th Element</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng và Thương mại Bắc Hà</p>
+        <p>Lượt xem: 1799</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 17,32 ha</p>
+            <p>Số căn hộ: 1.176 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 70.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>FLC Garden City</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tập đoàn FLC</p>
+        <p>Lượt xem: 1789</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 7.895 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 229.59</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Iris Garden</h2>
+        <p>Chủ đầu tư: Vimefulland</p>
+        <p>Lượt xem: 1775</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu từng căn</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 5 tòa</p>
+            <p>Mức giá: 28.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>D’. El Dorado</h2>
+        <p>Chủ đầu tư: Tân Hoàng Minh Group</p>
+        <p>Lượt xem: 1764</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1.263 m²</p>
+            <p>Số căn hộ: 448 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 75.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình I</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư phát triển nhà và đô thị Bộ Quốc Phòng</p>
+        <p>Lượt xem: 1756</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng, sở hưu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 22,31 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Miami</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 1748</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,3 ha</p>
+            <p>Số căn hộ: 3.000 căn</p>
+            <p>Số tòa: 5 tòa</p>
+            <p>Mức giá: 49.13</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Thành phố Giao Lưu</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng Quốc tế Vigeba</p>
+        <p>Lượt xem: 1741</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 95,33 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 260.87</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>D’. Le Roi Soleil</h2>
+        <p>Chủ đầu tư: Tân Hoàng Minh Group</p>
+        <p>Lượt xem: 1739</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4.046 m²</p>
+            <p>Số căn hộ: 498 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 68.49</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Dịch Vọng</h2>
+        <p>Chủ đầu tư: Công ty CP Phát triển Đô thị Từ Liêm - LIDECO, JSC</p>
+        <p>Lượt xem: 1738</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 22,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.55</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hyundai Hillstate</h2>
+        <p>Chủ đầu tư: Công ty TNHH Hyundai RNC Hà Tây</p>
+        <p>Lượt xem: 1724</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.73</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mandarin Garden</h2>
+        <p>Chủ đầu tư: Tập đoàn Hòa Phát</p>
+        <p>Lượt xem: 1717</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 9.417 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 64.62</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mon City</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hải Đăng</p>
+        <p>Lượt xem: 1717</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 44.106 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 61.19</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Louis City Hoàng Mai</h2>
+        <p>Chủ đầu tư: Tập đoàn Lã Vọng</p>
+        <p>Lượt xem: 1656</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng vĩnh viễn</p>
+        <div class="details">
+            <p>Diện tích: 30,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 268.42</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Ecolife Capitol</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Thương mại Thủ Đô</p>
+        <p>Lượt xem: 1655</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.639 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.03</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>MHD Trung Văn</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Đầu Tư MHD Hà Nội</p>
+        <p>Lượt xem: 1634</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: 285 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 26.93</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Pháp Vân - Tứ Hiệp</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1619</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 50.388 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.97</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunshine Garden</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 1604</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 46.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Tonkin - Vinhomes Smart City</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 1597</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: 1.200 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 38.46</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Park Kiara</h2>
+        <p>Chủ đầu tư: Công ty CP Phát triển Đô thị Quốc tế Việt Nam</p>
+        <p>Lượt xem: 1577</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.301 m²</p>
+            <p>Số căn hộ: 432 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 91.46</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Manor - Hà Nội</h2>
+        <p>Chủ đầu tư: Tập đoàn Bitexco</p>
+        <p>Lượt xem: 1571</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4,48 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 66.04</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Resco</h2>
+        <p>Chủ đầu tư: Công ty TNHH Nhà nước MTV Kinh doanh Dịch vụ nhà Hà Nội</p>
+        <p>Lượt xem: 1552</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 24,8 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 338.98</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Đặng Xá 1</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 1543</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3,06 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.58</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Udic Westlake</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC</p>
+        <p>Lượt xem: 1542</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 39,41 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sun Grand City</h2>
+        <p>Chủ đầu tư: Tập đoàn Sun Group</p>
+        <p>Lượt xem: 1520</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,6 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 120.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Dream Town</h2>
+        <p>Chủ đầu tư: Công ty CP Cơ khí Xây dựng Đại Mỗ - Coma 6</p>
+        <p>Lượt xem: 1502</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 11.076 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.57</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Discovery Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Thương mại Dịch vụ Cầu Giấy</p>
+        <p>Lượt xem: 1489</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,02 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 55.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Dolphin Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP TID</p>
+        <p>Lượt xem: 1474</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.970 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.01</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Eco Lake View</h2>
+        <p>Chủ đầu tư: Công ty CP Eco Land</p>
+        <p>Lượt xem: 1458</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 6.320 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 52.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tòa Tháp Thiên Niên Kỷ - Hatay Millennium</h2>
+        <p>Chủ đầu tư: Công ty TSQ Việt Nam</p>
+        <p>Lượt xem: 1441</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 5.600 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 66.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Yên Hòa</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC</p>
+        <p>Lượt xem: 1439</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 3,99 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 52.64</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Phú Lương</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà 2</p>
+        <p>Lượt xem: 1411</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 34,1 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 157.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>PentStudio</h2>
+        <p>Chủ đầu tư: Công ty TNHH Đầu tư C.T.L</p>
+        <p>Lượt xem: 1396</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 71.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Golden Palace</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Đầu tư Mai Linh</p>
+        <p>Lượt xem: 1372</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 7.646 m²</p>
+            <p>Số căn hộ: 1.020 căn</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 40.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xuân Phương Tasco</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tasco</p>
+        <p>Lượt xem: 1368</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 38 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 158.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Việt Đức Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Xây dựng và Thiết bị Công nghiệp CIE Corp</p>
+        <p>Lượt xem: 1354</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 5.365 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 35.51</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mễ Trì Hạ</h2>
+        <p>Chủ đầu tư: Công ty CP Tu tạo và Phát triển nhà - Handico</p>
+        <p>Lượt xem: 1346</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,3 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hinode City</h2>
+        <p>Chủ đầu tư: Tổng Công ty CP Thương mại Xây dựng</p>
+        <p>Lượt xem: 1340</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Đã có sổ hồng</p>
+        <div class="details">
+            <p>Diện tích: 2,8 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 84.83</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Emerald</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần bất động sản Mỹ Đình</p>
+        <p>Lượt xem: 1330</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 6.630 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 42.86</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HPC Landmark 105</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hải Phát</p>
+        <p>Lượt xem: 1324</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 10.675 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 43.31</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu nhà ở 90 Nguyễn Tuân</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà 7</p>
+        <p>Lượt xem: 1321</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Lâu dài với người Việt Nam; 50 năm với người nước ngoài</p>
+        <div class="details">
+            <p>Diện tích: 3,7 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.76</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tây Nam Hồ Linh Đàm</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1319</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 76 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Lancaster Hà Nội</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Trung Thủy</p>
+        <p>Lượt xem: 1278</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.624 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 71.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Văn Phú Victoria</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Văn Phú - Invest</p>
+        <p>Lượt xem: 1273</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.86</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hateco Hoàng Mai</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hạ tầng và Công trình Kiến trúc Hà Nội</p>
+        <p>Lượt xem: 1270</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.032 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.09</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới An Hưng</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Đô thị An Hưng</p>
+        <p>Lượt xem: 1270</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 29,45 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Park Home</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 1268</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4.073 m²</p>
+            <p>Số căn hộ: 398 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 70.09</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>La Casta Văn Phú</h2>
+        <p>Chủ đầu tư: Công ty TNHH Hibrand Việt Nam</p>
+        <p>Lượt xem: 1260</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài đối với người Viêt Nam và 50 năm với người nước ngoài</p>
+        <div class="details">
+            <p>Diện tích: 6,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 76.11</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Vesta</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hải Phát</p>
+        <p>Lượt xem: 1259</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.78</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Intracom Riverside</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng Hạ tầng và Giao Thông</p>
+        <p>Lượt xem: 1238</p>
+        <p>Quận/Huyện: Đông Anh</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 8.275 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 52.24</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tecco Garden</h2>
+        <p>Chủ đầu tư: Tập đoàn Tecco</p>
+        <p>Lượt xem: 1237</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Sổ hồng sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,15 ha</p>
+            <p>Số căn hộ: 736 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 37.95</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>VOV Mễ Trì</h2>
+        <p>Chủ đầu tư: Tổng công ty Phát triển Phát thanh Truyền hình Thông tin Emico</p>
+        <p>Lượt xem: 1219</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 40.918 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Indochina Plaza Hanoi</h2>
+        <p>Chủ đầu tư: Công ty TNHH Indochina Land</p>
+        <p>Lượt xem: 1214</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ đỏ lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 6.980 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 70.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình II</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1213</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 39.860 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình II</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1213</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình II</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1213</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình II</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1213</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 39.860 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình II</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1213</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 39.860 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỹ Đình II</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1213</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 39.860 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Goldsilk Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Bất động sản Hanovid</p>
+        <p>Lượt xem: 1204</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.222 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.22</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Zurich - Vinhomes Ocean Park</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 1202</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,86 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 3 tòa</p>
+            <p>Mức giá: 53.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 671 Hoàng Hoa Thám</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 1196</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 61.05</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Imperial Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Thương mại Thăng Long</p>
+        <p>Lượt xem: 1195</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 31.865 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunshine Golden River</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 1187</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 9.004 m²</p>
+            <p>Số căn hộ: 217 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 86.25</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hong Kong Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Đô thị Kang Long</p>
+        <p>Lượt xem: 1187</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.410 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 78.74</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hapulico Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Bất động sản Hapulico</p>
+        <p>Lượt xem: 1150</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 12.499,2 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.85</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư The Nine</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Bất động sản Toàn Cầu (GP Invest)</p>
+        <p>Lượt xem: 1148</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 5.190 m²</p>
+            <p>Số căn hộ: 350 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 66.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Green Pearl 378 Minh Khai</h2>
+        <p>Chủ đầu tư: Tổng công ty CP Phong Phú</p>
+        <p>Lượt xem: 1140</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 10.721,4 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 68.75</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Gamuda City</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Gamuda Land Việt Nam</p>
+        <p>Lượt xem: 1130</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 500 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 200.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sun Grand City Ancora Residence</h2>
+        <p>Chủ đầu tư: Tập đoàn Sun Group</p>
+        <p>Lượt xem: 1127</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 90.77</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sun Grand City Ancora Residence</h2>
+        <p>Chủ đầu tư: Tập đoàn Sun Group</p>
+        <p>Lượt xem: 1127</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,4 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 90.77</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hòa Bình Green City</h2>
+        <p>Chủ đầu tư: Công ty CP Nông sản Agrexim</p>
+        <p>Lượt xem: 1121</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,74 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Louis City</h2>
+        <p>Chủ đầu tư: Tập đoàn Lã Vọng</p>
+        <p>Lượt xem: 1118</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng riêng</p>
+        <div class="details">
+            <p>Diện tích: 30,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 213.64</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Legend Tower 109 Nguyễn Tuân</h2>
+        <p>Chủ đầu tư: Công ty CP Đại Việt Trí Tuệ</p>
+        <p>Lượt xem: 1103</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.997 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.09</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Keangnam Hanoi Landmark Tower</h2>
+        <p>Chủ đầu tư: Tập đoàn Keangnam Enterprise</p>
+        <p>Lượt xem: 1097</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 63.36</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>New Skyline</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 1088</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.500 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 64.15</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Cầu Bươu</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 1087</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 168.290 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 40.7</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunny Garden City</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn C.E.O</p>
+        <p>Lượt xem: 1080</p>
+        <p>Quận/Huyện: Quốc Oai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 24,42 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.28</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Liền kề Tổng cục 5 Tân Triều</h2>
+        <p>Chủ đầu tư: Công ty CP HTG</p>
+        <p>Lượt xem: 1063</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: sổ đỏ vĩnh viễn</p>
+        <div class="details">
+            <p>Diện tích: 23 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 168.18</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư X2 Đại Kim</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư phát triển nhà và Đô thị Bộ Quốc phòng MHDI</p>
+        <p>Lượt xem: 1057</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 6.136 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xuân Mai Tower - CT2 Tô Hiệu</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng Xuân Mai</p>
+        <p>Lượt xem: 1044</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.437 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.77</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Cầu Giấy Center Point</h2>
+        <p>Chủ đầu tư: Công ty Đầu tư Xây dựng số 2 Hà Nội</p>
+        <p>Lượt xem: 1042</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.156,4 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.15</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Golden Land</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Dịch vụ Tài chính Hoàng Huy</p>
+        <p>Lượt xem: 1027</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.333 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 48.19</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Xuân Phương</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 1027</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 14,6 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>VP5 Linh Đàm</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 1026</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.563,2 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.66</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Nhà ở xã hội @Home</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng NHS</p>
+        <p>Lượt xem: 1021</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.360 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.09</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tứ Hiệp Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP Thương mại và Dịch vụ Tổng hợp Vinh Hạnh</p>
+        <p>Lượt xem: 1001</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 8.629 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 39.52</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Samsora Premier</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Sài Gòn - Hà Nội</p>
+        <p>Lượt xem: 997</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.600 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Nguyễn Chí Thanh</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 992</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 6.134 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 101.8</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Helios Tower 75 Tam Trinh</h2>
+        <p>Chủ đầu tư: Công ty CP Phát triển Đô thị Từ Liêm - LIDECO, JSC</p>
+        <p>Lượt xem: 991</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.000 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 69.08</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hà Nội Center Point</h2>
+        <p>Chủ đầu tư: Công ty Đầu tư Xây dựng số 2 Hà Nội</p>
+        <p>Lượt xem: 986</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2.686 m²</p>
+            <p>Số căn hộ: 435 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 35.29</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HH2 Linh Đàm</h2>
+        <p>Chủ đầu tư: Xí nghiệp Xây dựng Tư nhân Số 1 Lai Châu</p>
+        <p>Lượt xem: 977</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.632 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Nam Xa La</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Kinh doanh và Phát triển hạ tầng KCN Phúc Hà</p>
+        <p>Lượt xem: 977</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.395 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 30.77</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hoàng Thành Pearl</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư & Phát triển Hạ tầng Hoàng Thành</p>
+        <p>Lượt xem: 972</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,48 ha</p>
+            <p>Số căn hộ: 334 căn</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 61.73</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Golden Westlake</h2>
+        <p>Chủ đầu tư: Công ty Liên doanh Hà Việt – Tungshing</p>
+        <p>Lượt xem: 962</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 86.96</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Sparks</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 961</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5,6 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 14 tòa</p>
+            <p>Mức giá: 41.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Nghĩa Đô</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng số 1 Hà Nội</p>
+        <p>Lượt xem: 958</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 8,2 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 450.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>FLC Star Tower</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tập đoàn FLC</p>
+        <p>Lượt xem: 956</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.435 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.24</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tràng An Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Bất động sản Toàn Cầu (GP Invest)</p>
+        <p>Lượt xem: 956</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4.676 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 78.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Grandeur Palace Giảng Võ</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Văn Phú - Invest</p>
+        <p>Lượt xem: 952</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 9.025 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 114.94</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Grand Hà Nội</h2>
+        <p>Chủ đầu tư: Masterise Homes</p>
+        <p>Lượt xem: 943</p>
+        <p>Quận/Huyện: Hoàn Kiếm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.071 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 483.87</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>C14 - Bộ Công An</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng và Thương mại Bắc Hà</p>
+        <p>Lượt xem: 941</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,19 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.04</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Vĩnh Hoàng</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng Phát triển nhà số 7 Hà Nội</p>
+        <p>Lượt xem: 940</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 55.978 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.56</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mandarin Garden 2</h2>
+        <p>Chủ đầu tư: Tập đoàn Hòa Phát</p>
+        <p>Lượt xem: 910</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.289 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 73.44</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Ecolife Tây Hồ</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Thương mại Thủ Đô</p>
+        <p>Lượt xem: 908</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.032 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.81</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Bamboo Airways Tower</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tập đoàn FLC</p>
+        <p>Lượt xem: 905</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 10.305 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 8.48</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Sails Tower</h2>
+        <p>Chủ đầu tư: Công ty TNHH Khải Hưng</p>
+        <p>Lượt xem: 898</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.544 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.97</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Golden Palm Lê Văn Lương</h2>
+        <p>Chủ đầu tư: Công ty CP xây dựng số 1 Hà Nội</p>
+        <p>Lượt xem: 895</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.753 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tây Hồ Residence</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng Phát triển nhà số 7 Hà Nội</p>
+        <p>Lượt xem: 877</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,4 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 82.35</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Đồng Phát Park View Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Đồng Phát</p>
+        <p>Lượt xem: 876</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.710 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 52.56</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mễ Trì Thượng</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 872</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 7,58 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 44.79</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Anland LakeView</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 868</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,58 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT36 - Dream Home</h2>
+        <p>Chủ đầu tư: Tổng công ty 36 - Bộ quốc phòng</p>
+        <p>Lượt xem: 852</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.672 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.62</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Lancaster Luminaire</h2>
+        <p>Chủ đầu tư: Công ty CP Tân Phú Long</p>
+        <p>Lượt xem: 847</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 6.056,4 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 69.09</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tháp doanh nhân Tower</h2>
+        <p>Chủ đầu tư: Tập đoàn Anh Quân Strong</p>
+        <p>Lượt xem: 847</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng riêng</p>
+        <div class="details">
+            <p>Diện tích: 1.370 m²</p>
+            <p>Số căn hộ: 408 căn</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>SDU - 143 Trần Phú</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu Tư Xây Dựng và Phát Triển Đô Thị Sông Đà</p>
+        <p>Lượt xem: 846</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.555,4 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 47.86</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Golden Field Mỹ Đình</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Địa ốc MB</p>
+        <p>Lượt xem: 845</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.182 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.17</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Eco Dream Nguyễn Xiển</h2>
+        <p>Chủ đầu tư: Công ty TNHH Bất động sản và Xây dựng Việt Hưng</p>
+        <p>Lượt xem: 840</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,01 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 44.9</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Toà nhà 93 Lò Đúc - Kinh Đô Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Phát triển Thương mại Kinh Đô</p>
+        <p>Lượt xem: 834</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5,13 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 72.97</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Florence Mỹ Đình</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Phục Hưng Holdings</p>
+        <p>Lượt xem: 834</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 10.000 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.65</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 187 Tây Sơn</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 834</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.840 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 69.23</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Golden West</h2>
+        <p>Chủ đầu tư: Tổng công ty Cơ khí Xây dựng - Coma</p>
+        <p>Lượt xem: 833</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 8.737 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.91</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Rice City Linh Đàm</h2>
+        <p>Chủ đầu tư: Công ty CP BIC Việt Nam</p>
+        <p>Lượt xem: 832</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,2 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 52.57</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sol Lake Villa</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 822</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.000 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 105.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Cổ Nhuế</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 816</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 17,6 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 263.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT2 Xuân Phương</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà 7</p>
+        <p>Lượt xem: 808</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,2 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 39.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sky Central</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng HUD1</p>
+        <p>Lượt xem: 793</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng vĩnh viễn</p>
+        <div class="details">
+            <p>Diện tích: 11.080 m²</p>
+            <p>Số căn hộ: 910 căn</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 67.37</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Booyoung</h2>
+        <p>Chủ đầu tư: Công ty Booyoung</p>
+        <p>Lượt xem: 792</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.883 m²</p>
+            <p>Số căn hộ: 5.000 căn</p>
+            <p>Số tòa: 6 tòa</p>
+            <p>Mức giá: 63.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>King Palace</h2>
+        <p>Chủ đầu tư: Công ty CP Hoa Anh Đào</p>
+        <p>Lượt xem: 791</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.137 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 72.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Eurowindow Twin Parks</h2>
+        <p>Chủ đầu tư: Công ty CP Eurowindow Holding</p>
+        <p>Lượt xem: 791</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 10 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 182.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Dự án Học Viện Quốc Phòng</h2>
+        <p>Chủ đầu tư: Công ty CP tập đoàn ĐTXD phát triển Đông Đô - BQP</p>
+        <p>Lượt xem: 791</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 11,26 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.74</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tecco Skyville Tower</h2>
+        <p>Chủ đầu tư: Tập đoàn Tecco</p>
+        <p>Lượt xem: 791</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 6.838 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 25.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Ha Do Park View</h2>
+        <p>Chủ đầu tư: Tập đoàn Hà Đô</p>
+        <p>Lượt xem: 788</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.262 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 66.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>An Bình Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco</p>
+        <p>Lượt xem: 788</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.754 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xuân Phương Residence</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tasco</p>
+        <p>Lượt xem: 784</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3,95 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 42.76</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Nam Đô Complex 609 Trương Định</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Bất động sản Toàn Cầu (GP Invest)</p>
+        <p>Lượt xem: 775</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.093 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 56.25</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>New Horizon City - 87 Lĩnh Nam</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng và Kỹ thuật Việt Nam</p>
+        <p>Lượt xem: 769</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 8.090 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>ICID Complex</h2>
+        <p>Chủ đầu tư: Công ty TNHH Đầu tư Xây dựng và Phát triển Hạ tầng</p>
+        <p>Lượt xem: 769</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Đã có sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2.652 m²</p>
+            <p>Số căn hộ: 624 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 52.94</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Usilk City</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà Thăng Long</p>
+        <p>Lượt xem: 763</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 9,2 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.02</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Phùng Khoang</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 762</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 237.04</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Dreamland Bonanza</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư BĐS Vinaland</p>
+        <p>Lượt xem: 755</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2.166 m²</p>
+            <p>Số căn hộ: 378 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 46.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>SME Hoàng Gia</h2>
+        <p>Chủ đầu tư: Công ty CP SME Hoàng Gia</p>
+        <p>Lượt xem: 746</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.200 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 35.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>An Quý Villa - KĐT Dương Nội</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 745</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 166.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Him Lam Vạn Phúc</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Him Lam</p>
+        <p>Lượt xem: 738</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 24.311 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 435.19</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mỹ Đình Plaza 2</h2>
+        <p>Chủ đầu tư: Công ty CP Xây lắp Điện 1</p>
+        <p>Lượt xem: 736</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.500 m²</p>
+            <p>Số căn hộ: 472 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 54.55</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>N05 - KDT Đông Nam Trần Duy Hưng</h2>
+        <p>Chủ đầu tư: Tổng công ty CP Xuất nhập khẩu và Xây dựng Việt Nam</p>
+        <p>Lượt xem: 736</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,97 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Bộ Tổng Tham Mưu</h2>
+        <p>Chủ đầu tư: Tổng công ty 789</p>
+        <p>Lượt xem: 732</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 9,44 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 5.25</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>C37 Bộ Công An - Bắc Hà Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng và Thương mại Bắc Hà</p>
+        <p>Lượt xem: 728</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,4 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 44.64</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Star Tower 283 Khương Trung</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư - Thiết kế và Xây dựng Việt Nam</p>
+        <p>Lượt xem: 724</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.254 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hà Nội Aqua Central</h2>
+        <p>Chủ đầu tư: Công ty CP Tháp nước Hà Nội</p>
+        <p>Lượt xem: 719</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 6.468 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 116.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Viện 103</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà 7</p>
+        <p>Lượt xem: 715</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,71 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vimeco II - Nguyễn Chánh</h2>
+        <p>Chủ đầu tư: Công ty CP Vimeco</p>
+        <p>Lượt xem: 697</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2.269 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.71</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Lộc Ninh Singashine</h2>
+        <p>Chủ đầu tư: Công ty CP Lộc Ninh</p>
+        <p>Lượt xem: 696</p>
+        <p>Quận/Huyện: Chương Mỹ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.920,2 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 27.34</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HUD3 Nguyễn Đức Cảnh</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 694</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.670 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 61.46</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>FLC Landmark Tower</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tập đoàn FLC</p>
+        <p>Lượt xem: 692</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.467 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 31.45</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>An Vượng Villa</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 690</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 130.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Noble Crystal Tây Hồ</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 673</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 152.644 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 175.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tòa nhà Intracom1 - Trung Văn</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng Hạ tầng và Giao Thông</p>
+        <p>Lượt xem: 673</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,38 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.9</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Star City Lê Văn Lương</h2>
+        <p>Chủ đầu tư: OCEAN GROUP - Tập Đoàn Đại Dương</p>
+        <p>Lượt xem: 673</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.234 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 62.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Đại Kim - Định Công</h2>
+        <p>Chủ đầu tư: Công ty CP Kinh doanh Phát triển nhà và Đô thị Hà Nội (HanHud)</p>
+        <p>Lượt xem: 670</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 100,9 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.47</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Rivera Park Hà Nội</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Phát triển Đô thị Long Giang</p>
+        <p>Lượt xem: 649</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.220 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 64.24</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Park Hill Premium - Times City</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 648</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 87.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Trung Yên Plaza</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC</p>
+        <p>Lượt xem: 647</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 72.03</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Trung Văn - Vinaconex 3</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng số 3 - VINACONEX3</p>
+        <p>Lượt xem: 646</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 267.96</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tây Hà Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư – Xây dựng Tây Hà</p>
+        <p>Lượt xem: 642</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.647 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.65</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Thăng Long Garden</h2>
+        <p>Chủ đầu tư: Công ty CP May Thăng Long</p>
+        <p>Lượt xem: 642</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,32 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 56.76</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hei Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Điện lực Hà Nội</p>
+        <p>Lượt xem: 640</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.140 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.37</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sun Square</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phát triển Đô thị Thăng Long</p>
+        <p>Lượt xem: 632</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,55 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 47.27</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT2 Yên Nghĩa</h2>
+        <p>Chủ đầu tư: Tổng công ty đầu tư phát triển nhà và đô thị Bộ Quốc Phòng</p>
+        <p>Lượt xem: 630</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 6,04 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 36.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Kiến Hưng Luxury</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phát triển Đô thị Kiến Hưng</p>
+        <p>Lượt xem: 628</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 227.14</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HH3 Linh Đàm</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 625</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.553 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 34.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Jade Square</h2>
+        <p>Chủ đầu tư: Vimefulland</p>
+        <p>Lượt xem: 617</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 8,9 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 160.26</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Tây Mỗ</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 613</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 8,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 148.94</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tòa nhà 197 Trần Phú</h2>
+        <p>Chủ đầu tư: Công ty CP Thương mại Hà Tây</p>
+        <p>Lượt xem: 611</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1.128 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 48.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Nhà ở xã hội Bộ Tư lệnh Tăng Thiết Giáp</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư phát triển nhà và đô thị Bộ Quốc Phòng</p>
+        <p>Lượt xem: 607</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: 299 căn</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.25</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Eurowindow Multi Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư xây dựng và phát triển Công nghệ cao - Decotech</p>
+        <p>Lượt xem: 605</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.290 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 57.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Riverside Garden</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư - Thiết kế và Xây dựng Việt Nam</p>
+        <p>Lượt xem: 599</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.606 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 71.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>N04 - KĐT Đông Nam Trần Duy Hưng</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Công nghiệp ICC</p>
+        <p>Lượt xem: 592</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.900 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 80.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Harmony Square</h2>
+        <p>Chủ đầu tư: Công ty TNHH Đầu tư Bất động sản DLC</p>
+        <p>Lượt xem: 590</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sổ hồng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 4.629 m²</p>
+            <p>Số căn hộ: 336 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 68.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>VP3 Linh Đàm</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 589</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 56.23</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Golden Armor</h2>
+        <p>Chủ đầu tư: Tổng công ty 36 - Bộ quốc phòng</p>
+        <p>Lượt xem: 589</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.015 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 100.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu nhà ở Bắc Hà</h2>
+        <p>Chủ đầu tư: Tổng Công ty CP Đầu tư Xây dựng và Thương mại Việt Nam</p>
+        <p>Lượt xem: 587</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,97 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 34.42</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Garden Hills - 99 Trần Bình</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần BIDGROUP</p>
+        <p>Lượt xem: 581</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.115 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.41</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Đền Lừ II</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC</p>
+        <p>Lượt xem: 577</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 8,7 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Charm An Hưng</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Đô thị An Hưng</p>
+        <p>Lượt xem: 572</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1,63 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 60.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>TSQ Galaxy</h2>
+        <p>Chủ đầu tư: Công ty TSQ Việt Nam</p>
+        <p>Lượt xem: 571</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 15,16 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 264.37</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Licogi 13 Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Licogi 13</p>
+        <p>Lượt xem: 569</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.363,7 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 55.56</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Pacific Place</h2>
+        <p>Chủ đầu tư: Tập đoàn Jaccar Bourbon</p>
+        <p>Lượt xem: 566</p>
+        <p>Quận/Huyện: Hoàn Kiếm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Yên Hòa Thăng Long</h2>
+        <p>Chủ đầu tư: Công ty TNHH Thăng Long</p>
+        <p>Lượt xem: 562</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.2</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Bình Vượng Tower</h2>
+        <p>Chủ đầu tư: Công ty TNHH Xây dựng và Thương mại Bình Vượng</p>
+        <p>Lượt xem: 558</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.023,7 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 32.09</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HH2 - Bắc Hà</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng và Thương mại Bắc Hà</p>
+        <p>Lượt xem: 552</p>
+        <p>Quận/Huyện: Quận Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 980 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.59</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Diamond Flower Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Phát triển nhà số 6 Hà Nội</p>
+        <p>Lượt xem: 545</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.088 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.48</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>VP6 Linh Đàm</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 542</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.673 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 39.86</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị 54 Hạ Đình</h2>
+        <p>Chủ đầu tư: Công ty CP Thi công cơ giới xây lắp</p>
+        <p>Lượt xem: 533</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,39 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 48.78</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CTM Building - 299 Cầu Giấy</h2>
+        <p>Chủ đầu tư: Công ty CP thương mại Cầu Giấy CTM</p>
+        <p>Lượt xem: 532</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 59.72</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư M3 - M4 Nguyễn Chí Thanh</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 529</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.120 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 52.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tecco Diamond</h2>
+        <p>Chủ đầu tư: Tập đoàn Tecco</p>
+        <p>Lượt xem: 527</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 7.525,8 m²</p>
+            <p>Số căn hộ: 665 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 54.29</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 183 Hoàng Văn Thái</h2>
+        <p>Chủ đầu tư: Tập đoàn Hà Đô</p>
+        <p>Lượt xem: 527</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,11 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.56</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Geleximco Southern Star</h2>
+        <p>Chủ đầu tư: Công ty CP Xuất nhập khẩu tổng hợp Hà Nội - Geleximco</p>
+        <p>Lượt xem: 524</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng vĩnh viễn</p>
+        <div class="details">
+            <p>Diện tích: 9.390 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hồng Hà Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Phát triển Hồng Hà</p>
+        <p>Lượt xem: 523</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.000 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.67</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Platinum Residences</h2>
+        <p>Chủ đầu tư: Công ty CP Hạ tầng và Bất động sản Việt Nam</p>
+        <p>Lượt xem: 522</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.370 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 73.73</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Kiến Hưng</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng HUD3</p>
+        <p>Lượt xem: 515</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 48,5 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 180.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Anland Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 514</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng từng căn</p>
+        <div class="details">
+            <p>Diện tích: 7.052 m²</p>
+            <p>Số căn hộ: 575 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 64.81</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tổ hợp 173 Xuân Thủy</h2>
+        <p>Chủ đầu tư: Công ty Thương mại Dịch vụ Tràng Thi</p>
+        <p>Lượt xem: 510</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5,66 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.55</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sông Hồng Park View</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Địa ốc Sông Hồng</p>
+        <p>Lượt xem: 505</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.152 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 61.57</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 15-17 Ngọc Khánh</h2>
+        <p>Chủ đầu tư: Công ty TNHH Nhà nước một thành viên Thăng Long GTC</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 73.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hòa Bình Green Apartment</h2>
+        <p>Chủ đầu tư: Công ty TNHH Hoà Bình</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 76.19</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư D2 Giảng Võ</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phát triển nhà Gia Bảo</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.952 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 69.23</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Garden</h2>
+        <p>Chủ đầu tư: Tập đoàn Bitexco</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 68.81</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mỹ Đình Plaza</h2>
+        <p>Chủ đầu tư: Công ty CP Xây lắp Điện 1</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.136 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinaconex 7</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng số 7</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.385 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 42.31</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Thành Công Tower 57 Láng Hạ</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng số 1 Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Ba Đình</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4,33 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 62.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Đại Mỗ - Hà Nội</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,1 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 177.78</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes Green Villas</h2>
+        <p>Chủ đầu tư: Tập đoàn Vingroup</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 13,7 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 143.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Trung Văn - Hancic</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư - Xây dựng Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 15,6 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 283.81</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT1 Trung Văn - Vinaconex 3</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng số 3 - VINACONEX3</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,38 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 62.86</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sapphire Palace</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Kinh doanh Bất động sản Hà Nội Sông Hồng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.807 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 96 Định Công</h2>
+        <p>Chủ đầu tư: Công ty CP Mộc và Xây dựng Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,02 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 45.61</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Trinity Tower</h2>
+        <p>Chủ đầu tư: Hợp Tác Xã Thành Công</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sổ hồng lâu dài với căn hộ, 50 năm với officetel</p>
+        <div class="details">
+            <p>Diện tích: 2.758 m²</p>
+            <p>Số căn hộ: 237 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>PVV-Vinapharm 60B Nguyễn Huy Tưởng</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng Vinaconex - PVC</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Times Tower Lê Văn Lương</h2>
+        <p>Chủ đầu tư: Công ty CP xây dựng số 1 Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.662 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 66.41</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Ban cơ yếu Chính phủ</h2>
+        <p>Chủ đầu tư: Tổng công ty đầu tư phát triển nhà và đô thị Bộ Quốc Phòng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 61,66 m²</p>
+            <p>Số căn hộ: 388 căn</p>
+            <p>Số tòa: 4 tòa</p>
+            <p>Mức giá: 56.1</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Phú Gia Residence</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phát triển Hợp Phú</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.118 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 62.63</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sông Đà Hà Đông Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu Tư Xây Dựng và Phát Triển Đô Thị Sông Đà</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.555 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>PCC1 Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Xây lắp Điện 1</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.730 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 47.17</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tổ hợp chung cư Thủy Lợi Tower</h2>
+        <p>Chủ đầu tư: Công ty CP tư vấn Thủy Lợi Hà Tây</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.120 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.28</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Cienco1</h2>
+        <p>Chủ đầu tư: Tổng Công ty xây dựng công trình giao thông 1</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 61.29</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Trung tâm thương mại TSQ</h2>
+        <p>Chủ đầu tư: Công ty TSQ Việt Nam</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 6,32 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.2</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới La Khê</h2>
+        <p>Chủ đầu tư: Tổng công ty CP Xuất nhập khẩu và Xây dựng Việt Nam</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 101 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Nàng Hương - 583 Nguyễn Trãi</h2>
+        <p>Chủ đầu tư: Công ty CP Xây lắp Điện 1</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 9.507 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 53.06</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 57 Vũ Trọng Phụng</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Xây dựng số 12 - Vinaconex 12</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.691,9 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 49.07</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xuân Mai Sparks Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng Xuân Mai</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.520 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vimeco Phạm Hùng</h2>
+        <p>Chủ đầu tư: Công ty CP Vimeco</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng sử dụng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.22</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Central Field Trung Kính</h2>
+        <p>Chủ đầu tư: Công ty TNHH 19-12 Bắc Hà</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2.759 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 74.29</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>C3 Tower - Golden Palace</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.935 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 75.51</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HDI Homes Nguyễn Tuân</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng Phát triển nhà số 7 Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.993 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 408.16</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Thanh Xuân Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Phát triển Thanh Xuân</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,48 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 78.86</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Mỹ Sơn Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xuất nhập khẩu Mỹ Sơn</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2.016 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 47.37</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Hạ Đình</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Lắp máy Điện nước Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.490 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 302.73</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>A10-A14 Nam Trung Yên</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 59.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hạ Đình Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư 135</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.045 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 47.46</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Gold Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Dịch vụ Tài chính Hoàng Huy</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 57.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Handi Resco Lê Văn Lương</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.410 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 75.71</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị mới Cầu Giấy</h2>
+        <p>Chủ đầu tư: Tổng công ty CP Xuất nhập khẩu và Xây dựng Việt Nam</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 287,8 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 262.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tòa nhà Vinaconex 1</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Số 1</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 4.181 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.27</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>An Khang Villa</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 170.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>AZ Lâm Viên Complex</h2>
+        <p>Chủ đầu tư: Công ty CP Bất động sản AZ (AZ Land)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 66.4</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Mansions</h2>
+        <p>Chủ đầu tư: Công ty CP Phát triển Đô thị Quốc tế Việt Nam</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 337.66</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Vinaconex 21</h2>
+        <p>Chủ đầu tư: Công ty CP Vinaconex 21</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,28 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 37.11</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Lucky House Kiến Hưng</h2>
+        <p>Chủ đầu tư: Công ty CP Vinaconex 21</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.003,6 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 40.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>An Phú Shop Villa</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 28.352 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 126.05</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>An Lạc - Nam La Khê</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư An Lạc</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.250 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 36.74</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Hemisco Xa La</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà 1.01</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.600 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 39.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Xuân Mai Riverside</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Xây dựng Xuân Mai</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.293 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 53.73</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HP Landmark Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Kinh doanh Bất động sản Hải Phát (Hải Phát Land)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 11.390 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 52.72</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu nhà ở Hưng Thịnh</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phát triển Đô thị Kiến Hưng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 42.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT1 Yên Nghĩa</h2>
+        <p>Chủ đầu tư: Tổng công ty đầu tư phát triển nhà và đô thị Bộ Quốc Phòng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 48.51</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Rue De Charme</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Lắp máy Điện nước Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 9,03 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 254.03</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Artemis</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Đầu tư IMG</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Xuân</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 8.956 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 75.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Anland Premium</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Nam Cường Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 8.570 m²</p>
+            <p>Số căn hộ: 575 căn</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 58.82</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Athena Fulland</h2>
+        <p>Chủ đầu tư: Vimefulland</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Sổ hồng sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2,2 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 313.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Park View City</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.965 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 78.4</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT3 Tây Nam Linh Đàm</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.400 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 56.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tây Hồ River View</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Phú Thượng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 1.515 m²</p>
+            <p>Số căn hộ: 252 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 54.35</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Oriental Westlake</h2>
+        <p>Chủ đầu tư: Công ty CP xây dựng số 1 Hà Nội</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.044,78 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 58.4</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Kita Capital Crown - Ciputra</h2>
+        <p>Chủ đầu tư: Kita Group</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 300.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>D22 Bộ Tư Lệnh Biên Phòng</h2>
+        <p>Chủ đầu tư: Bộ Tham Mưu - Bộ Tư Lệnh Bộ Đội Biên Phòng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 47.03</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Mỗ Lao</h2>
+        <p>Chủ đầu tư: Công ty Booyoung</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 64 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 167.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tiểu khu đô thị mới Vạn Phúc</h2>
+        <p>Chủ đầu tư: Công ty CP SIMCO Sông Đà</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3,3 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 132.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tiểu khu đô thị Nam La Khê</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư An Lạc</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hà Đông</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1,58 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 213.33</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Dự án Viện bỏng Lê Hữu Trác</h2>
+        <p>Chủ đầu tư: Công ty CP Sông Đà 7</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 44.81</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunshine Capital Tây Thăng Long</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng riêng, sở hữu lâu dài</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 190.48</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Avenue Garden</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Quản Lý Tài Sản Sông Nhuệ</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Sổ hồng lâu dài</p>
+        <div class="details">
+            <p>Diện tích: 2,6 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 85.71</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Housinco Premium</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Xây dựng và Kinh doanh Nhà Hà Nội số 35</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Thanh Trì</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.228 m²</p>
+            <p>Số căn hộ: 350 căn</p>
+            <p>Số tòa: 1 tòa</p>
+            <p>Mức giá: 49.14</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Vườn Xuân - 71 Nguyễn Chí Thanh</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Công nghiệp - DESCON</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 64.52</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>B1-B2 Tây Nam Linh Đàm</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư Phát triển Nhà và Đô thị HUD</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.88</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The One Residence - Gamuda Garden</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Gamuda Land Việt Nam</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7.517 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.38</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Momota -151A Nguyễn Đức Cảnh</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần 118 – Momota</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.086 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 46.92</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HH4 Linh Đàm</h2>
+        <p>Chủ đầu tư: Doanh nghiệp tư nhân xây dựng số 1 tỉnh Điện Biên</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 39.47</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Ruby Tower</h2>
+        <p>Chủ đầu tư: Công ty TNHH Đá quý Thế giới</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.930 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 71.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>N01-T5 Ngoại Giao Đoàn</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Lạc Hồng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Bắc Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 93.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Khu đô thị Đặng Xá 2</h2>
+        <p>Chủ đầu tư: Tổng Công ty Viglacera</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3,9 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 40.06</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Vinhomes D'Capitale</h2>
+        <p>Chủ đầu tư: Tân Hoàng Minh Group</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Cầu Giấy</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 38.89</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Toà nhà hỗn hợp Vườn Đào</h2>
+        <p>Chủ đầu tư: Công ty CP Lắp Máy Điện nước và Xây Dựng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>T&T Riverview</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn T&T</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.0</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>HDI Tower</h2>
+        <p>Chủ đầu tư: Tổng Công ty Đầu tư và Phát triển nhà Hà Nội (HANDICO)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.082 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 149.56</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tòa nhà Licogi 12</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Licogi 12</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.512 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.55</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>T&T Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn T&T</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 65.17</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 536A Minh Khai</h2>
+        <p>Chủ đầu tư: Công ty CP đầu tư phát triển nhà và đô thị VINACONEX</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 72.55</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>The Two Residence - Gamuda Garden</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Gamuda Land Việt Nam</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 5.773 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 63.29</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>South Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Thiết bị Vật tư Du Lịch</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 48.18</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư B4 - B14 Kim Liên</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng Sông Hồng - Incomex</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 535.71</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>D’. Le Pont D’or - Hoàng Cầu</h2>
+        <p>Chủ đầu tư: Tân Hoàng Minh Group</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.244 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: 2 tòa</p>
+            <p>Mức giá: 99.26</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Dự án Thuận An</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư Hải Phát</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Gia Lâm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 143.68</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tòa nhà 282 Lĩnh Nam</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư và Phát triển nhà Hà Nội 22 (Handico 22)</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hoàng Mai</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 41.96</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư 122 Vĩnh Tuy</h2>
+        <p>Chủ đầu tư: Tổng công ty Đầu tư Phát triển Hạ tầng đô thị - UDIC</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.314 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 63.08</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Hoàng Thành Tower</h2>
+        <p>Chủ đầu tư: Công ty CP Trần Hưng Đạo</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.400 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 74.59</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Amber Riverside</h2>
+        <p>Chủ đầu tư: Công ty CP Kỹ nghệ và Hạ tầng Talin</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.065 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 66.88</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Tổ hợp 310 Minh Khai</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng số 3 - VINACONEX3</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Hai Bà Trưng</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2,75 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 51.02</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sunshine Center</h2>
+        <p>Chủ đầu tư: Công ty CP Tập đoàn Sunshine</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.288 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 67.59</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CT2 Viettel Trung Văn</h2>
+        <p>Chủ đầu tư: Công ty CP Đầu tư XD và xuất nhập khẩu Phục Hưng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 7,07 ha</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 43.31</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>CHCC 257 Giải Phóng</h2>
+        <p>Chủ đầu tư: Công ty CP Xây dựng và Phát triển Đô thị Hòa Phát</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 200.237 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 59.41</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>FLC Complex 36 Phạm Hùng</h2>
+        <p>Chủ đầu tư: Công ty Cổ phần Tập đoàn FLC</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Nam Từ Liêm</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 1.576 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 54.13</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Sky City Towers-88 Láng Hạ</h2>
+        <p>Chủ đầu tư: Công ty TNHH Hanotex</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Đống Đa</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 90.12</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>D’. El Dorado II</h2>
+        <p>Chủ đầu tư: Tân Hoàng Minh Group</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 3.148 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 67.5</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư CT36 Xuân La</h2>
+        <p>Chủ đầu tư: Tổng công ty 36 - Bộ quốc phòng</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: 2.672 m²</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 71.43</p>
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <h2>Chung cư Packexim</h2>
+        <p>Chủ đầu tư: Công ty CP Sản xuất và Xuất nhập khẩu Bao bì</p>
+        <p>Lượt xem: 0</p>
+        <p>Quận/Huyện: Tây Hồ</p>
+        <p>Pháp lý: Không có thông tin</p>
+        <div class="details">
+            <p>Diện tích: Không có thông tin</p>
+            <p>Số căn hộ: Không có thông tin</p>
+            <p>Số tòa: Không có thông tin</p>
+            <p>Mức giá: 50.41</p>
+        </div>
+    </div>
+    
+</body>
+</html>

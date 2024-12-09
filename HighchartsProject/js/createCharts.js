@@ -1,12 +1,6 @@
-import {
-  show_amount,
-  showComment,
-  hideComment
-} from "./eventForChart.js";
+import { show_amount, showComment, hideComment } from "./eventForChart.js";
 
-import {
-  move
-} from "./animation.js"
+import { move } from "./animation.js";
 
 export function makeSegmentPrice(
   type,
@@ -21,14 +15,15 @@ export function makeSegmentPrice(
   fetch(`../../Data/Json/Segment/${type}/${name}.json`)
     .then((response) => response.json())
     .then((data) => {
-      const {
-        under_50,
-        between_50_100,
-        between_100_150,
-        between_150_200,
-        over_200,
-      } = data;
+      // Hàm tạo dữ liệu cho Pie Chart
+      function generateChartData(data, ranges) {
+        return ranges.map(({ name, key }) => ({
+          name,
+          y: data[key] || 0, // Nếu không có key trong data, mặc định là 0
+        }));
+      }
 
+<<<<<<< HEAD
       // Dữ liệu cho Pie Chart
       const chartData = [
         { name: "Dưới 50 triệu/m²", y: under_50, pricetype: "gia_loai_1", segment: "under_50"},
@@ -36,7 +31,31 @@ export function makeSegmentPrice(
         { name: "100 đến 150 triệu/m²", y: between_100_150, pricetype: "gia_loai_3", segment: "between_100_150"},
         { name: "150 đến 200 triệu/m²", y: between_150_200, pricetype: "gia_loai_4", segment: "between_150_200"},
         { name: "Trên 200 triệu/m²", y: over_200, pricetype: "gia_loai_5", segment: "over_200"},
+=======
+      // Cấu hình khoảng giá trị
+      let ranges = [
+        { name: "Dưới 50 triệu/m²", key: "under_50" },
+        { name: "50 đến 100 triệu/m²", key: "between_50_100" },
+        { name: "100 đến 150 triệu/m²", key: "between_100_150" },
+        { name: "150 đến 200 triệu/m²", key: "between_150_200" },
+        { name: "Trên 200 triệu/m²", key: "over_200" },
+>>>>>>> ngocbao
       ];
+
+      // Nếu là type = 'project', cập nhật khoảng giá trị
+      if (type === "project") {
+        console.error("Đã chọn project");
+        ranges = [
+          { name: "Dưới 50 triệu/m²", key: "under_50" },
+          { name: "50 đến 75 triệu/m²", key: "between_50_75" },
+          { name: "75 đến 100 triệu/m²", key: "between_75_100" },
+          { name: "100 đến 125 triệu/m²", key: "between_100_125" },
+          { name: "Trên 125 triệu/m²", key: "over_125" },
+        ];
+      }
+
+      // Tạo Pie Chart Data
+      let chartData = generateChartData(data, ranges);
 
       let chartContainer = document.getElementById(id);
       if (!chartContainer) {
@@ -117,14 +136,14 @@ export function makeSegmentPrice(
                 {
                   text: "Show Comment",
                   onclick: function () {
-                    showComment('sgm_comment');
+                    showComment("sgm_comment");
                   },
                 },
                 "separator",
                 {
                   text: "Hide Comment",
                   onclick: function () {
-                    hideComment('sgm_comment')
+                    hideComment("sgm_comment");
                   },
                 },
               ],
@@ -387,14 +406,14 @@ export function makeHistoryPrice(
                 {
                   text: "Show Comment",
                   onclick: function () {
-                    showComment('fta_comment');
+                    showComment("fta_comment");
                   },
                 },
                 "separator",
                 {
                   text: "Hide Comment",
                   onclick: function () {
-                    hideComment('fta_comment')
+                    hideComment("fta_comment");
                   },
                 },
               ],
@@ -456,7 +475,7 @@ export function makeCorrelation(
         chartContainer.style.width = `${width}%`;
         chartContainer.style.height = `${height}%`;
         chartContainer.id = id;
-        chartContainer.className = 'chart';
+        chartContainer.className = "chart";
         chartContainer.style.opacity = "0";
 
         document.getElementById("chart-container").appendChild(chartContainer);
@@ -534,14 +553,14 @@ export function makeCorrelation(
                 {
                   text: "Show Comment",
                   onclick: function () {
-                    showComment('crl_comment');
+                    showComment("crl_comment");
                   },
                 },
                 "separator",
                 {
                   text: "Hide Comment",
                   onclick: function () {
-                    hideComment('crl_comment')
+                    hideComment("crl_comment");
                   },
                 },
               ],
@@ -742,14 +761,14 @@ export function makeNumPropertyType(
                 {
                   text: "Show Comment",
                   onclick: function () {
-                    showComment('type_comment');
+                    showComment("type_comment");
                   },
                 },
                 "separator",
                 {
                   text: "Hide Comment",
                   onclick: function () {
-                    hideComment('type_comment')
+                    hideComment("type_comment");
                   },
                 },
               ],

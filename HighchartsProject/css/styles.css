@@ -1,3 +1,4 @@
+/* Cấu hình chung */
 body {
   margin: 0;
   padding: 0;
@@ -7,16 +8,27 @@ body {
   background-color: #c7c6c6; /* Màu nền toàn màn hình */
 }
 
+/* Thanh dọc */
 #vertical-bar {
+<<<<<<< HEAD
   width: 1px; /* Độ rộng của thanh */
   height: 80%; /* Chiều cao chiếm toàn bộ */
   background-color: #0f0f0f; /* Màu sắc của thanh */
   position: absolute; /* Đặt thanh ở vị trí cố định */
   left: 695px; /* Canh giữa theo chiều ngang */
   top: 100px; /* Bắt đầu từ trên cùng */
+=======
+  width: 1px;
+  height: 80%;
+  background-color: #0f0f0f;
+  position: absolute;
+  left: 640px;
+  top: 100px;
+>>>>>>> ngocbao
   opacity: 0.6;
 }
 
+/* Tiêu đề */
 #main-title {
   position: absolute;
   top: 5%;
@@ -30,6 +42,7 @@ body {
   z-index: 10;
 }
 
+/* Danh sách dự án */
 #lst-project {
   position: absolute;
   width: 40%;
@@ -43,15 +56,64 @@ body {
   z-index: 3;
 }
 
+<<<<<<< HEAD
 .title {
   position: absolute;
   top: -8%;
   left: 50%;
+=======
+/* Tiêu đề của danh sách dự án */
+#lst-pro-title {
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  width: 500px;
+  height: 30px;
+  display: none;
+}
+
+/* Thẻ thông tin dự án */
+.card-info {
+  position: absolute;
+  width: 46%;
+  height: 21%;
+  left: 665px;
+  bottom: 500px;
+  transition: transform 0.5s;
+  transform: translateX(150%);
+  background-color: #fff;
+  z-index: 2;
+}
+
+/* Thông tin dự án */
+#card-info-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của khu vực */
+.title {
+  position: absolute;
+  top: 8%;
+  left: 30%;
+>>>>>>> ngocbao
   width: 400px;
   height: 30px;
   transform: translateX(-50%);
 }
 
+<<<<<<< HEAD
 
 #words-title {
   position: absolute;
@@ -66,6 +128,27 @@ body {
   position: relative;
   cursor: url('./image/home.png'), pointer;
   margin-top: 3px;
+=======
+/* Thông tin chi tiết */
+#words-title {
+  position: absolute;
+  left: 900px;
+  bottom: 650px;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#cur-place {
+  color: #007bff;
+  font-style: italic;
+}
+
+#heat_title {
+>>>>>>> ngocbao
   font-size: 20px;
   font-weight: normal;
   color: rgb(24, 19, 19);
@@ -109,7 +192,9 @@ body {
   overflow: hidden;
 }
 
-.district_map{
+/* Bản đồ */
+.district_map,
+.ward_map {
   width: 40%;
   height: 80%;
   display: flex;
@@ -121,35 +206,52 @@ body {
   left: 25%;
   transform: translate(-50%, -50%);
   transition: all 0.5s ease-in-out;
+}
+
+.district_map {
   z-index: 1;
 }
 
 .ward_map {
-  width: 40%;
-  height: 80%;
   display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  border-radius: 10px;
-  top: 55%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-in-out;
   z-index: 0;
 }
 
-.district, .ward {
+.district,
+.ward {
   width: 100%;
   height: 100%;
   border-width: 5px;
 }
 
+<<<<<<< HEAD
+=======
+/* Vùng chứa biểu đồ */
+#chart-area {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin: 40px;
+  border-radius: 20px;
+}
 
+/* Vùng chứa biểu đồ cụ thể */
+#chart-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+>>>>>>> ngocbao
+
+/* Mũi tên điều hướng */
 .arrow {
   position: absolute;
   color: #000;
-  border: none;
   padding: 10px;
   cursor: pointer;
   font-size: 18px;
@@ -172,17 +274,19 @@ body {
   outline: none;
 }
 
+/* Biểu đồ */
 .chart {
   opacity: 1;
   position: absolute;
   transition: opacity 0.5s ease, transform 1s ease, scale 1.5s ease;
   z-index: 15;
-  background-color: #f0f0dc; /* Màu nền */
-  border-radius: 15px; /* Bo góc */
-  padding: 10px; /* Tạo khoảng cách từ biểu đồ tới viền */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+  background-color: #f0f0dc;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Thông tin phụ */
 .words-container {
   position: absolute;
   width: 45%;
@@ -195,6 +299,7 @@ body {
   border-width: 1px;
 }
 
+/* Bình luận */
 .comment {
   position: absolute;
   left: 700px;
@@ -322,24 +427,34 @@ body {
 
 #eye {
   position: absolute;
-  left: 10px;
-  bottom: 630px;
+  width: 80px;
+  left: -5px;
+  bottom: 620px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 #btn-project {
   position: absolute;
-  left: 10px;
-  bottom: 600px;
+  width: 70px;
+  left: 0px;
+  bottom: 550px;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
-#eye:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+/* Hover hiệu ứng */
+#eye:hover,
+#btn-project:hover {
+  background-color: rgba(213, 216, 213, 0.5);
 }
+
 .custom-button:hover {
   background-color: #005f6b;
 }
+
 .highcharts-contextbutton {
-  opacity: 0.1;
+  opacity: 0.7;
 }
 
 #title-segment {

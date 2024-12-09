@@ -2,15 +2,22 @@ import pandas as pd
 import ast
 
 # Đọc dữ liệu từ hai file CSV
+<<<<<<< HEAD
 file1 = pd.read_csv('Data/originalData/data_project_only.csv', encoding='utf-8')
 file2 = pd.read_csv('Data/originalData/data_project_view.csv', encoding='utf-8')
 file3 = pd.read_csv('Data/originalData/data_lowest_price_pro.csv', encoding='utf-8')
 htmlPath = 'HighchartsProject/addInfoProject.html'
+=======
+file1 = pd.read_csv('./Data/originalData/data_project_only.csv', encoding='utf-8')
+file2 = pd.read_csv('./Data/originalData/data_project_view.csv', encoding='utf-8')
+htmlPath = './HighchartsProject/html/listProject.html'
+>>>>>>> ngocbao
 
 # Chuẩn hóa tên cột
 file1.columns = file1.columns.str.strip()
 file2.columns = file2.columns.str.strip()
 
+<<<<<<< HEAD
 # Gộp file1 và file2 dựa trên 'Tên dự án'
 merged_data_1 = pd.merge(file1, file2, on='Tên dự án', how='inner')
 
@@ -18,30 +25,58 @@ merged_data_1 = pd.merge(file1, file2, on='Tên dự án', how='inner')
 merged_data = pd.merge(merged_data_1, file3, on='Tên dự án', how='inner')
 
 print(merged_data.columns)
+=======
+# Gộp dữ liệu bằng cột "Tên dự án"
+merged_data = pd.merge(file1, file2, on='Tên dự án', how='inner')
+
+>>>>>>> ngocbao
 # Kiểm tra số lượng dự án gộp được
 print(f"Số lượng dự án gộp được: {len(merged_data)}")
 
 # Lọc các cột cần thiết
+<<<<<<< HEAD
 result = merged_data[['Tên dự án', 'Chủ đầu tư', 'Lượt xem', 'Quận/Huyện', 'Pháp lý','Diện tích','Số căn hộ', 'Số tòa', 'Mức giá']]
+=======
+result = merged_data[['Tên dự án', 'Chủ đầu tư', 'Lượt xem', 'Quận/Huyện', 'Pháp lý','Diện tích','Số căn hộ', 'Số tòa']]
+>>>>>>> ngocbao
 result = result.sort_values(by='Lượt xem', ascending=False)
 
 # Tạo danh sách thẻ HTML
 # Mở đầu file HTML
+<<<<<<< HEAD
 # Phần mở đầu file HTML
+=======
+>>>>>>> ngocbao
 html_content = '''<!DOCTYPE html>
 <html>
 <head>
     <title>Danh sách dự án</title>
     <style>
+<<<<<<< HEAD
         .project-card-2 {
+=======
+        .project-card {
+>>>>>>> ngocbao
             border: 1px solid #ccc;
             padding: 10px;
             margin: 10px;
             border-radius: 5px;
+<<<<<<< HEAD
             background-color: #f9f9f9;
         }
         .project-card-2 p {
             margin: 5px 0;
+=======
+            position: relative;
+        }
+        .project-card h2 {
+            margin: 0;
+            color: #007BFF;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+>>>>>>> ngocbao
         }
     </style>
 </head>
@@ -52,6 +87,7 @@ html_content = '''<!DOCTYPE html>
 for _, row in result.iterrows():
     html_content += f'''
     <div class="project-card-2">
+<<<<<<< HEAD
         <h2>{row['Tên dự án']}</h2>
         <p>Chủ đầu tư: {row['Chủ đầu tư']}</p>
         <p>Lượt xem: {row['Lượt xem']}</p>
@@ -63,6 +99,11 @@ for _, row in result.iterrows():
             <p>Số tòa: {row['Số tòa']}</p>
             <p>Mức giá: {row['Mức giá']}</p>
         </div>
+=======
+        <p>Diện tích: {row['Diện tích']}</p>
+        <p>Số căn hộ: {row['Số căn hộ']}</p>
+        <p>Số tòa: {row['Số tòa']}</p>
+>>>>>>> ngocbao
     </div>
     '''
 

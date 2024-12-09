@@ -187,9 +187,97 @@ class historyPriceOfProject:
 area_names = ['Hà Nội', 'Nam Từ Liêm', 'Bắc Từ Liêm', 'Hà Đông', 'Tây Hồ']
 # project_names = ['Vinhomes Ocean Park Gia Lâm']
 
+<<<<<<< HEAD
 for area_name in area_names:
     hPA = historyPriceOfArea(area_name)
     hPA.toJson()
 # for project_name in project_names:
 #     hPP = historyPriceOfProject(project_name)
 #     hPP.toJson()
+=======
+        for col in self.allPrices.columns:
+            less.clear()
+            mean.clear()
+            max.clear()
+            for row in self.allPrices[col]:
+                if isinstance(row, str):
+                    row_values = row.split()
+                    less.append(float(row_values[0]))
+                    mean.append(float(row_values[1]))
+                    max.append(float(row_values[2]))
+            if (less != []) :
+                self.mean_price[col] = [round(np.min(less), 2), round(np.mean(mean), 2), round(np.max(max), 2)]
+    
+    # Thêm phần dự đoán
+    def addPredictionData(self):
+        predictor_max = Predictor(self.mean_price.columns.str.replace('Giá', ""), self.mean_price.loc[2,:])
+        predictor_mean = Predictor(self.mean_price.columns.str.replace('Giá', ""), self.mean_price.loc[1,:])
+        predictor_min = Predictor(self.mean_price.columns.str.replace('Giá', ""), self.mean_price.loc[0,:])
+
+        self.mean_price['Giá T11/24'] = [
+        round(predictor_min.prediction(), 2),
+        round(predictor_mean.prediction(), 2),
+        round(predictor_max.prediction(), 2)
+        ]
+    
+    # Ghi dữ liệu giá vào tệp JSON
+    def toJson(self):
+        self.makeMeanPrice()
+        self.addPredictionData()
+        json_path = os.path.join(f"./Data/Json/History_Price/type/{normalize_name(self.type_name)}.json")
+        self.mean_price.to_json(json_path, orient="records", indent=4, force_ascii=False)
+
+# Thực hiện chạy các hàm để thêm dữ liệu vào file Json
+# ĐÔng anh Phú Xuyên Phúc Thọ Quốc Oai Sóc Sơn Thanh Oai Ứng Hòa Ba Vì Sơn Tây
+districts_hanoi = [
+    'Hà Nội',"Ba Đình", "Hoàn Kiếm", "Hai Bà Trưng", "Đống Đa", "Tây Hồ", "Cầu Giấy",
+    "Thanh Xuân", "Hoàng Mai", "Long Biên", "Hà Đông", "Bắc Từ Liêm", "Nam Từ Liêm",
+    "Đan Phượng", "Đông Anh", "Gia Lâm", "Hoài Đức", "Mê Linh", "Mỹ Đức",
+    "Phú Xuyên", "Phúc Thọ", "Quốc Oai", "Sóc Sơn", "Thạch Thất", "Thanh Oai",
+    "Thanh Trì", "Thường Tín", "Ứng Hòa", "Ba Vì", "Chương Mỹ", "Sơn Tây"  # Sơn Tây là thị xã
+]
+
+project_names = data['Tên dự án'].drop_duplicates().to_list()
+
+property_types = [
+    "Căn hộ chung cư",
+    "Chung cư mini, căn hộ dịch vụ",
+    "Nhà riêng",
+    "Nhà Biệt thự, liền kề",
+    "Nhà mặt phố",
+    "Shophouse, nhà phố thương mại",
+    "Bán đất",
+    "Bất động sản khác",
+    "Trang trại, khu nghỉ dưỡng",
+    "Condotel",
+    "Kho, nhà xưởng"
+]
+
+for area_name in districts_hanoi:
+    try:
+        hPA = historyPriceOfArea(area_name)
+        hPA.toJson()
+        print('Thành công : ', area_name)
+    except Exception as e:  # Bắt lỗi nếu có
+        print('Lỗi:', e)
+        print('Không thành công : ', area_name)
+    
+for project_name in project_names:
+    try:
+        hPP = historyPriceOfProject(project_name)
+        hPP.toJson()
+        print('Thành công : ', project_name)
+    except Exception as e:  # Bắt lỗi nếu có
+        print('Lỗi:', e)
+        print('Không thành công : ', project_name)
+
+for type_name in property_types:
+    try:
+        hPT = historyPriceOfType(type_name)
+        hPT.toJson()
+        print('Thành công : ', type_name)
+    except Exception as e:  # Bắt lỗi nếu có
+        print('Lỗi:', e)
+        print('Không thành công : ', type_name)
+    
+>>>>>>> ngocbao

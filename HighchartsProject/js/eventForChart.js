@@ -61,9 +61,9 @@ function see_deeply() {
     district_map.style.transform = "translateX(-270px) translateY(-300px)";
 
     // Thay đổi nút
-    document.getElementById("eye").innerText = "close";
-    
-    map_title.innerHTML = 'Khu vực hiện tại: Hà Nội';
+    document.getElementById("eye").style.opacity = 0.5;
+
+    map_title.innerHTML = "Khu vực hiện tại: Hà Nội";
   } else {
     ward_map.style.display = "none";
     district_map.style.width = "40%";
@@ -72,7 +72,11 @@ function see_deeply() {
     district_map.style.transform = "translateX(-49%) translateY(-305px)";
 
     // Thay đổi nút
-    document.getElementById("eye").innerText = "open";
+    document.getElementById("eye").style.opacity = 1;
+
+    update_list_chart("area", "ha_noi");
+    set_Scene();
+
     map_title.style.display = "block";
   }
 
@@ -80,13 +84,25 @@ function see_deeply() {
   isDeeplyVisible = !isDeeplyVisible;
 }
 
-function update_list_chart(district) {
-  makeSegmentPrice("area", district, true, 0, 0, 96.3, 95, "segment");
-  makeHistoryPrice("area", district, true, 0, 0, 96.3, 95, "history");
-  makeCorrelation("area", district, true, 0, 0, 96.3, 95, "correlation");
-  makeNumPropertyType("area", district, true, 0, 0, 96.3, 95, "type");
+export function update_list_chart(type, district) {
+  setTimeout(
+    makeSegmentPrice(type, district, true, 0, 0, 96.3, 95, "segment"),
+    1000
+  );
+  setTimeout(
+    makeHistoryPrice(type, district, true, 0, 0, 96.3, 95, "history"),
+    1000
+  );
+  setTimeout(
+    makeCorrelation(type, district, true, 0, 0, 96.3, 95, "correlation"),
+    1000
+  );
+  setTimeout(
+    makeNumPropertyType(type, district, true, 0, 0, 96.3, 95, "type"),
+    1000
+  );
 
-  set_Scene();
+  setTimeout(set_Scene(), 1000);
 }
 
 district.addEventListener("load", () => {
@@ -117,7 +133,10 @@ district.addEventListener("load", () => {
         // Cập nhật src cho iframe xã/phường
         ward.src = newSrc;
         // Thay đổi biểu đồ liên quan
-        if (isDeeplyVisible) update_list_chart(formattedName);
+        if (isDeeplyVisible) {
+          update_list_chart("area", formattedName);
+          map_title.innerHTML = `Khu vực hiện tại: ${districtName}`;
+        }
 
         console.log(`Chuyển sang bản đồ xã/phường: ${newSrc}`);
       });
@@ -142,44 +161,123 @@ export function get_info_of_iframe(
 
     const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
     const elements = iframeDoc.querySelectorAll(ele_class);
+    let previousElement = null;
 
     elements.forEach((element) => {
       element.addEventListener("click", () => {
-        // Kiểm tra sự tồn tại của các thẻ con
+        if (previousElement) {
+          previousElement.style.backgroundColor = "";
+        }
+
+        element.style.backgroundColor = "#F29F58";
+
+        // Cập nhật phần tử được click trước đó
+        previousElement = element;
+
+        const details = element.querySelector(".details");
+
+        // Tên dự án
         const projectNameElement = element.querySelector("h2");
-        const projectName = projectNameElement
-          ? projectNameElement.textContent.trim()
-          : "Tên dự án không có sẵn";
+        const projectName =
+          projectNameElement?.textContent.trim() || "Tên dự án không có sẵn";
 
-        const viewsElement = element.querySelectorAll("p")[0];
-        const views = viewsElement
-          ? viewsElement.textContent.trim()
-          : "Không có lượt xem";
+        // Lượt xem
+        const views =
+          element.querySelectorAll("p")[0]?.textContent.trim() ||
+          "Không có lượt xem";
 
-        const investorElement = element.querySelectorAll("p")[1];
-        const investor = investorElement
-          ? investorElement.textContent.trim()
-          : "Không có thông tin chủ đầu tư";
+        // Chủ đầu tư
+        const investor =
+          element.querySelectorAll("p")[1]?.textContent.trim() ||
+          "Không có thông tin chủ đầu tư";
 
-        const districtElement = element.querySelectorAll("p")[2];
-        const district = districtElement
-          ? districtElement.textContent.trim()
-          : "Không có thông tin quận/huyện";
+        // Quận/Huyện
+        const district =
+          element.querySelectorAll("p")[2]?.textContent.trim() ||
+          "Không có thông tin quận/huyện";
 
-        const legalStatusElement = element.querySelectorAll("p")[3];
-        const legalStatus = legalStatusElement
-          ? legalStatusElement.textContent.trim()
-          : "Không có thông tin pháp lý";
+        // Pháp lý
+        const legalStatus =
+          element.querySelectorAll("p")[3]?.textContent.trim() ||
+          "Không có thông tin pháp lý";
 
+        // Thông tin chi tiết (Diện tích, Số căn hộ, Số tòa, Tiện ích)
+        const area =
+          details.querySelector("p:nth-child(1)")?.textContent.trim() ||
+          "Không có thông tin diện tích";
+        const apartments =
+          details.querySelector("p:nth-child(2)")?.textContent.trim() ||
+          "Không có thông tin số căn hộ";
+        const buildings =
+          details.querySelector("p:nth-child(3)")?.textContent.trim() ||
+          "Không có thông tin số tòa";
+        
+        const minPrice =
+        details.querySelector("p:nth-child(4)")?.textContent.trim() ||
+        "Không có thông tin giá thấp nhất";
+        // Kết hợp các thông tin thành một chuỗi HTML
         const content = `
-          <h2 style="display: inline-block; margin-right: 10px; font-size: 20px">${projectName}</h2><br>
-          <p style="position: relative; left: 80%">${views}</p>
-          <p>${investor}</p>
-          <p>${district}</p>
-          <p>${legalStatus}</p>
-        `;
+          <div style="
+            position: relative;
+            left: -15px;
+            bottom: 10px;
+            width: 100%;
+            font-family: Arial, sans-serif; 
+            border: 1px solid #ddd; 
+            padding: 20px;
+            background-color: #f9f9f9; 
+            border-radius: 8px; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          ">
+            <!-- Tiêu đề -->
+            <h1 style="
+              font-size: 20px; 
+              color: #333; 
+              text-align: center; 
+              margin: 0 0 10px;
+            ">
+              ${projectName} - ${investor}
+            </h1>
 
+            <!-- Quận huyện -->
+            <p style="
+              font-size: 14px; 
+              color: #777; 
+              text-align: center; 
+              margin: 0 0 20px;
+            ">
+              ${district}
+            </p>
+
+            <!-- 3 cột: Số tầng, Số tòa, Mức giá -->
+            <div style="display: flex; justify-content: space-between; text-align: center; margin-top: 20px;">
+              <!-- Cột 1: Số tầng -->
+              <div style="flex: 1;">
+                <p style="font-size: 16px; font-weight: bold; margin: 0;">Số căn hộ</p>
+                <p style="font-size: 14px; color: #555; margin: 5px 0;">${apartments}</p>
+              </div>
+
+              <!-- Cột 2: Số tòa -->
+              <div style="flex: 1; border-left: 1px solid #ddd; border-right: 1px solid #ddd; padding: 0 10px;">
+                <p style="font-size: 16px; font-weight: bold; margin: 0;">Số tòa</p>
+                <p style="font-size: 14px; color: #555; margin: 5px 0;">${buildings}</p>
+              </div>
+
+              <!-- Cột 3: Mức giá -->
+              <div style="flex: 1;">
+                <p style="font-size: 16px; font-weight: bold; margin: 0;">Giá bán</p>
+                <p style="font-size: 14px; color: #555; margin: 5px 0;">${minPrice} triệu/m²</p>
+              </div>
+            </div>
+          </div>
+        `;
         pro_info.innerHTML = content; // Cập nhật nội dung vào thẻ pro_info
+
+        update_list_chart(
+          "project",
+          normalizeName(projectName.replace("Tên dự án: ", ""))
+        );
+        setTimeout(set_Scene(), 1000);
       });
     });
   };
@@ -205,6 +303,8 @@ export function set_Scene() {
       document.getElementById("type_comment"),
       document.getElementById("crl_comment"),
     ];
+
+    hideAllComment(comments);
 
     // Khởi tạo trạng thái
     let currentIndex = 0;
@@ -239,10 +339,6 @@ export function set_Scene() {
       }
     });
 
-    eye.addEventListener("click", () => {
-      see_deeply();
-    });
-
     // Hàm cập nhật vị trí biểu đồ
     function updatePosition() {
       charts.forEach((chart, index) => {
@@ -270,16 +366,10 @@ export function set_Scene() {
 }
 
 export function set_Event() {
-  let eyeClicked = false;
-
   let project_showed = false;
 
   eye.addEventListener("click", () => {
-    if (!eyeClicked) {
-      eyeClicked = true;
-    } else {
-      eyeClicked = false;
-    }
+    see_deeply();
   });
 
   // Gắn sự kiện click
@@ -316,6 +406,9 @@ export function set_Event() {
       pro_title.style.opacity = 0;
       pro_title.style.display = "none";
       project_showed = false;
+
+      update_list_chart("area", "ha_noi");
+      set_Scene();
 
       pro_info.style.transform = "translateX(150%)";
     }
@@ -354,6 +447,12 @@ export function hideComment(cmt_ctn) {
   const container = document.getElementById(cmt_ctn);
 
   container.style.opacity = 0;
+}
+
+export function hideAllComment(comments) {
+  comments.forEach((comment) => {
+    comment.style.opacity = "0";
+  });
 }
 
 export function showComment(cmt_cnt) {

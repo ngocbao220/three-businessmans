@@ -3719,7 +3719,11 @@ Vĩnh Ngọc,Đông Anh,Công ty CP Đầu tư Xây dựng Hạ tầng và Giao 
 Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",62.5,240.9600067138672,8.0,6.0,3,1,5.0,13.0,5.0,,,Đông - Bắc,Tây - Nam,N
 Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",138.9,334.5572509765625,10.0,8.0,3,1,9.0,17.0,5.0,,,Tây - Nam,Đông - Nam,N
 Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",62.5,271.67999267578125,8.0,6.0,3,1,5.0,17.0,5.0,,,Tây - Nam,Đông - Bắc,N
+<<<<<<< HEAD
 Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Shophouse, nhà phố thương mại",152.0,44.73684310913086,3.0,3.0,Sở hữu lâu dài,4,6.800000190734863,8.0,3.0,4.0,2058.0,Đông - Bắc,Đông - Bắc,M
+=======
+Đông Hội,Đông Anh,Công ty CP Eurowindow Holding,Eurowindow River Park,"Shophouse, nhà phố thương mại",152.0,44.73684310913086,3.0,3.0,4,4,6.800000190734863,8.0,3.0,4.0,2058.0,Đông - Bắc,Đông - Bắc,M
+>>>>>>> ngocbao
 Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",80.0,325.0,5.0,5.0,4,1,5.0,30.0,5.0,,,Tây - Bắc,Tây - Bắc,N
 Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",85.0,331.76470947265625,6.0,5.0,4,1,5.0,17.0,5.0,,,Đông - Bắc,Đông - Bắc,N
 Đông Hội,Đông Anh,Tập đoàn Vingroup,Vinhomes Cổ Loa,"Shophouse, nhà phố thương mại",75.0,306.6666564941406,5.0,5.0,4,1,5.0,13.0,5.0,,,Tây - Bắc,Tây - Bắc,N
@@ -4128,7 +4132,11 @@ Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Miami,Căn hộ chung cư,59.
 Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Sapphire-Vinhomes Smart City,Căn hộ chung cư,63.4,56.78233337402344,2.0,2.0,4,3,Không có thông tin,,,14.0,,Không có thông tin,Không có thông tin,N
 Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Tonkin - Vinhomes Smart City,Căn hộ chung cư,59.6,78.85906219482422,2.0,2.0,4,3,Không có thông tin,,,2.0,1200.0,Không có thông tin,Không có thông tin,M
 Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Miami,Căn hộ chung cư,54.8,60.21897888183594,2.0,1.0,4,1,Không có thông tin,,,5.0,3000.0,Không có thông tin,Không có thông tin,M
+<<<<<<< HEAD
 Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,Căn hộ chung cư,76.0,69.7368392944336,3.0,2.0,4,- Bàn giao NB CĐT,Không có thông tin,,,5.0,3922.0,Tây - Nam,Đông - Bắc,M
+=======
+Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,Căn hộ chung cư,76.0,69.7368392944336,3.0,2.0,4,2,Không có thông tin,,,5.0,3922.0,Tây - Nam,Đông - Bắc,M
+>>>>>>> ngocbao
 Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,Căn hộ chung cư,55.0,63.6363639831543,2.0,1.0,4,4,Không có thông tin,,,5.0,3922.0,Đông - Bắc,Tây - Nam,M
 Tây Mỗ,Nam Từ Liêm,Tập đoàn MIK Corporation,Imperia Smart City,Căn hộ chung cư,76.0,69.7368392944336,3.0,2.0,4,3,Không có thông tin,,,5.0,3922.0,Đông - Bắc,Không có thông tin,M
 Tây Mỗ,Nam Từ Liêm,Tập đoàn Vingroup,The Canopy Residences - Vinhomes Smart City,Căn hộ chung cư,74.0,66.21621704101562,2.0,2.0,3,2,Không có thông tin,,,3.0,1758.0,Tây - Bắc,Đông - Nam,N

@@ -7,10 +7,11 @@ import {
   makeSegmentCount,
 } from "./createCharts.js";
 
-import {set_Scene, get_info_of_iframe, set_Event}
+import {set_Scene, get_info_of_iframe, set_Event, update_list_chart}
 from "./eventForChart.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+<<<<<<< HEAD
   // Gọi các hàm để tạo các biểu đồ
   makeSegmentPrice("area", "ha_noi", false, 0, 0, 96.3, 95, "segment");
   makeSegmentPrice("area", "ha_noi", false, 0, 0, 96.3, 95, "segment1");
@@ -43,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // get_info_of_iframe();
 
   setTimeout(set_Scene(), 1000);
+=======
+  update_list_chart('area','ha_noi');
+>>>>>>> ngocbao
   setTimeout(set_Event(), 1000);
   setTimeout(get_info_of_iframe(), 1000);
 });

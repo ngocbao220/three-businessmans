@@ -30,6 +30,14 @@ const pro_info = document.querySelector(".card-info");
 const map_title = document.getElementById("heat_title");
 const pro_title = document.getElementById("lst-pro-title");
 
+// Comment
+const comments = [
+  document.getElementById("sgm_comment"),
+  document.getElementById("fta_comment"),
+  document.getElementById("type_comment"),
+  document.getElementById("crl_comment"),
+];
+
 function normalizeName(areaName) {
   // Bỏ dấu tiếng Việt
   areaName = areaName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -63,7 +71,7 @@ function see_deeply() {
     // Thay đổi nút
     document.getElementById("eye").style.opacity = 0.5;
 
-    map_title.innerHTML = "Khu vực hiện tại: Hà Nội";
+    hideAllComment();
   } else {
     ward_map.style.display = "none";
     district_map.style.width = "40%";
@@ -78,6 +86,8 @@ function see_deeply() {
     set_Scene();
 
     map_title.style.display = "block";
+    map_title.innerHTML = "Khu vực hiện tại: Hà Nội";
+    showAllComment();
   }
 
   // Cập nhật trạng thái
@@ -169,7 +179,7 @@ export function get_info_of_iframe(
           previousElement.style.backgroundColor = "";
         }
 
-        element.style.backgroundColor = "#F29F58";
+        element.style.backgroundColor = "#F5F0CD";
 
         // Cập nhật phần tử được click trước đó
         previousElement = element;
@@ -296,16 +306,6 @@ export function set_Scene() {
       document.getElementById("correlation"),
     ];
 
-    // Comment
-    const comments = [
-      document.getElementById("sgm_comment"),
-      document.getElementById("fta_comment"),
-      document.getElementById("type_comment"),
-      document.getElementById("crl_comment"),
-    ];
-
-    hideAllComment(comments);
-
     // Khởi tạo trạng thái
     let currentIndex = 0;
     const totalCharts = charts.length;
@@ -395,6 +395,7 @@ export function set_Event() {
       project_showed = true;
 
       pro_info.style.transform = "translateX(0)";
+      hideAllComment();
     } else {
       district.style.transform = "translateY(0px)";
       lst_project.style.transform = "translateX(0px)";
@@ -411,6 +412,7 @@ export function set_Event() {
       set_Scene();
 
       pro_info.style.transform = "translateX(150%)";
+      showAllComment();
     }
   });
 }
@@ -449,7 +451,7 @@ export function hideComment(cmt_ctn) {
   container.style.opacity = 0;
 }
 
-export function hideAllComment(comments) {
+export function hideAllComment() {
   comments.forEach((comment) => {
     comment.style.opacity = "0";
   });
@@ -459,4 +461,10 @@ export function showComment(cmt_cnt) {
   const container = document.getElementById(cmt_cnt);
 
   container.style.opacity = 1;
+}
+
+export function showAllComment() {
+  comments.forEach((comment) => {
+    comment.style.opacity = "1";
+  });
 }

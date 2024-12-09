@@ -70,7 +70,7 @@ body {
   bottom: 500px;
   transition: transform 0.5s;
   transform: translateX(150%);
-  background-color: #fff;
+  background-color: #f9f9f9;
   z-index: 2;
 }
 
@@ -93,7 +93,7 @@ body {
 /* Tiêu đề của khu vực */
 .title {
   position: absolute;
-  top: 8%;
+  top: 6%;
   left: 30%;
   width: 400px;
   height: 30px;
@@ -133,7 +133,7 @@ body {
   align-items: center;
   position: absolute;
   border-radius: 10px;
-  top: 55%;
+  top: 54%;
   left: 25%;
   transform: translate(-50%, -50%);
   transition: all 0.5s ease-in-out;

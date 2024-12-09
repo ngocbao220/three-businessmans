@@ -60,6 +60,27 @@ def create_district_map(district_map, avg_price_by_ward, colormap):
 
     return m_district
 
+def insert_css(file_path):
+    """
+    Chèn CSS tùy chỉnh để xoay thanh màu.
+    """
+    custom_css = """
+    <style>
+        .legend {
+            position: relative;
+            transform: translate(-50%, -50%);
+            z-index = 10;
+        }
+    </style>
+    """
+    with open(file_path, 'r+', encoding='utf-8') as file:
+        content = file.read()
+        if '</head>' in content:
+            content = content.replace('</head>', f'{custom_css}</head>')
+        file.seek(0)
+        file.write(content)
+        file.truncate()
+
 # ĐỌC DỮ LIỆU
 data = pd.read_csv('./Data/cleanedData/cleaned_data_new.csv')
 avg_price_by_ward = data.groupby('Xã/Phường')['Mức giá'].mean().reset_index()
@@ -77,6 +98,7 @@ global_colormap = cm.LinearColormap(
     vmin=min_price,  # Giá trị nhỏ nhất
     vmax=max_price   # Giá trị lớn nhất
 )
+
 # Tạo thư mục lưu file HTML nếu chưa tồn tại
 output_dir = './HighchartsProject/html/data_for_map/'
 os.makedirs(output_dir, exist_ok=True)
@@ -88,8 +110,10 @@ district_names = hanoi_map['NAME_2'].unique()
 for district_name in district_names:
     try:
         district_map = hanoi_map[hanoi_map['NAME_2'] == district_name].to_crs(epsg=4326)
+        file_path = f'{output_dir}{normalize_name(district_name)}.html'
         map_output = create_district_map(district_map, avg_price_by_ward, global_colormap)
-        map_output.save(f'{output_dir}{normalize_name(district_name)}.html')
+        map_output.save(file_path)
+        insert_css(file_path)  # Chèn CSS để thanh màu nằm dọc
         print(f"Thành công: {district_name}")
     except Exception as e:
         print(f"Lỗi với {district_name}: {e}")

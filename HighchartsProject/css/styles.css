@@ -17,8 +17,8 @@ body {
   height: 80%;
   background-color: #0f0f0f;
   position: absolute;
-  left: 640px;
-  top: 100px;
+  left: 700px;
+  top: 130px;
   opacity: 0.6;
 }
 
@@ -45,8 +45,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  top: 15%;
-  left: -50%;
+  top: 14%;
+  left: -45%;
   z-index: 3;
 }
 
@@ -66,8 +66,8 @@ body {
   position: absolute;
   width: 46%;
   height: 21%;
-  left: 665px;
-  bottom: 500px;
+  left: 730px;
+  bottom: 564px;
   transition: transform 0.5s;
   transform: translateX(150%);
   background-color: #f9f9f9;
@@ -103,8 +103,8 @@ body {
 /* Thông tin chi tiết */
 #words-title {
   position: absolute;
-  left: 900px;
-  bottom: 650px;
+  left: 970px;
+  bottom: 750px;
   width: 400px;
   height: 40px;
   font-size: 20px;
@@ -220,7 +220,7 @@ body {
   width: 45%;
   height: 20%;
   left: 49%;
-  bottom: 500px;
+  bottom: 580px;
   border-radius: 10px;
   border-style: solid;
   border-color: #000;
@@ -230,8 +230,8 @@ body {
 /* Bình luận */
 .comment {
   position: absolute;
-  left: 700px;
-  bottom: 430px;
+  left: 750px;
+  bottom: 500px;
   width: 600px;
   height: 60px;
   overflow: hidden;

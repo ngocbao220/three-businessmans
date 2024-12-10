@@ -66,7 +66,7 @@ function see_deeply() {
     district_map.style.width = "15%";
     district_map.style.height = "30%";
 
-    district_map.style.transform = "translateX(-270px) translateY(-300px)";
+    district_map.style.transform = "translateX(-293px) translateY(-368px)";
 
     // Thay đổi nút
     document.getElementById("eye").style.opacity = 0.5;
@@ -77,7 +77,7 @@ function see_deeply() {
     district_map.style.width = "40%";
     district_map.style.height = "80%";
 
-    district_map.style.transform = "translateX(-49%) translateY(-305px)";
+    district_map.style.transform = "translateX(-49%) translateY(-355px)";
 
     // Thay đổi nút
     document.getElementById("eye").style.opacity = 1;

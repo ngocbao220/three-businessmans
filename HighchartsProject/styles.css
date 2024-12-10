@@ -59,7 +59,7 @@ body {
   width: 40%;
   height: 20%;
   left: 53%;
-  bottom:900px;
+  bottom:930px;
   border-radius: 10px;
   border-style: solid;
   border-color: #000;
@@ -68,7 +68,7 @@ body {
 
 #heat_title_2 {
   position: relative;
-  top: -890px;
+  top: -910px;
   left: 25%;
   margin-top: 3px;
   font-size: 20px;
@@ -86,7 +86,7 @@ body {
   position: absolute;
   border-radius: 10px;
   border-width: 5px;
-  top: 35%;
+  top: 37%;
   left: 53%;
   z-index: 1;
 }

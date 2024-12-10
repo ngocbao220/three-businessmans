@@ -80,7 +80,9 @@ export function makeSegmentPrice(
                 if (id == "segment1") {
                   let newSrc = `data_for_map/number_of_segment/${clickedSegment}.html`;
                   makeSegmentCount(type, clickedPricetype, name, true, 0, 0, 100, 50, "segment-count");
-                  
+                  makeStdDevChart(type, name, clickedSegment, true, 0, 0, 100, 50, "stddev");
+                  makeVarianceChart(type, name, clickedSegment, true, 0, 0, 100, 50, "variance");
+
                   const iframe = document.querySelector(".Hanoimap2"); // Lấy iframe qua class hoặc id
                   if (iframe) {
                       iframe.src = newSrc;
@@ -837,6 +839,7 @@ export function makeAveragePriceChart(
 export function makeStdDevChart(
   type,
   name,
+  segmentPrice,
   menu = false,
   left = 0,
   bottom = 0,
@@ -844,8 +847,7 @@ export function makeStdDevChart(
   height = 60,  // mặc định 60% chiều cao
   id
 ) {
-  const stddevPath = `../Data/Json/Std_And_Variance/Std/${type}/${name}.json`;
-
+  const stddevPath = `../Data/Json/Std_And_Variance/Std/${type}/${name}/${segmentPrice}.json`;
   fetch(stddevPath)
     .then((response) => response.json())
     .then((stddevData) => {
@@ -910,6 +912,7 @@ export function makeStdDevChart(
 export function makeVarianceChart(
   type,
   name,
+  segmentPrice,
   menu = false,
   left = 0,
   bottom = 0,
@@ -917,7 +920,7 @@ export function makeVarianceChart(
   height = 60,  // mặc định 60% chiều cao
   id
 ) {
-  const variancePath = `../Data/Json/Std_And_Variance/Variance/${type}/${name}.json`;
+  const variancePath = `../Data/Json/Std_And_Variance/Variance/${type}/${name}/${segmentPrice}.json`;
 
   fetch(variancePath)
     .then((response) => response.json())

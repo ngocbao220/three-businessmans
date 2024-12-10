@@ -4,6 +4,7 @@ import unicodedata
 import statistics
 import re
 import json
+import os
 
 dataArea = pd.read_csv('./Data/cleanedData/cleaned_data_new.csv')
 dataProject = pd.read_csv('./Data/cleanedData/cleaned_data_project.csv')
@@ -31,14 +32,14 @@ def normalize_name(area_name):
 
 
 class VariabilityPrice():
-    def __init__(self, type, name, time) :
+    def __init__(self, type, name, time, type_segment) :
         self.type = type
         self.name = name
         self.time = time
-
+        self.type_segment = type_segment
         self.standard_deviation = {}
         self.variance = {}
-
+        
         if type == 'area' :
             self.data = dataArea[dataArea['Quận/Huyện'] == name]
         elif type == 'project' :
@@ -46,6 +47,22 @@ class VariabilityPrice():
         
         if name == 'Hà Nội':
             self.data = dataArea
+
+        if type_segment == 'under_50':
+            min_price = 0
+            max_price = 50
+        if type_segment == 'between_50_100':
+            min_price = 50
+            max_price = 100
+        if type_segment == 'between_100_150':
+            min_price = 150
+            max_price = 100
+        if type_segment == 'between_150_200':
+            min_price = 150
+            max_price = 200
+        if type_segment == 'over_200':
+            min_price = 200
+            max_price = 1000000000
 
         if self.time == 'M':
             self.dictPrice = {'Giá T10/22': [], 'Giá T11/22': [], 'Giá T12/22': [],
@@ -59,7 +76,12 @@ class VariabilityPrice():
                             'Giá T10/24': []
                             }
             self.dataPrice = pd.read_csv(f'./Data/priceData/{type}/month_price.csv')
-            self.data = self.data[self.data['Mã lịch sử giá'] == 'M']
+            self.data = self.data[
+                (self.data['Mã lịch sử giá'] == 'M') &
+                (self.data['Mức giá'] >= min_price) &
+                (self.data['Mức giá'] < max_price)
+            ]
+
             self.dataPrice['index'] = self.dataPrice['index'].astype(int)
 
         else:
@@ -68,7 +90,12 @@ class VariabilityPrice():
                             'Giá Q2/24': [], 'Giá Q3/24': [], 'Giá Q4/24': []
                             }
             self.dataPrice = pd.read_csv(f'./Data/priceData/{type}/quarter_price.csv')
-            self.data = self.data[self.data['Mã lịch sử giá'] == 'Q']
+            self.data = self.data[
+                (self.data['Mã lịch sử giá'] == 'Q') &
+                (self.data['Mức giá'] >= min_price) &
+                (self.data['Mức giá'] < max_price)
+            ]
+
             self.dataPrice['index'] = self.dataPrice['index'].astype(int)
 
         self.firstIndex = self.data.index[0]
@@ -97,10 +124,10 @@ class VariabilityPrice():
 
     def toJson(self):
         self.caculate()
-        with open(f"./Data/Json/Std_And_Variance/Std/{self.type}/{normalize_name(self.name)}.json", "w") as f:
+        with open(f"./Data/Json/Std_And_Variance/Std/{self.type}/{normalize_name(self.name)}/{self.type_segment}.json", "w") as f:
             json.dump(self.standard_deviation, f)
 
-        with open(f"./Data/Json/Std_And_Variance/Variance/{self.type}/{normalize_name(self.name)}.json", "w") as f:
+        with open(f"./Data/Json/Std_And_Variance/Variance/{self.type}/{normalize_name(self.name)}/{self.type_segment}.json", "w") as f:
             json.dump(self.variance, f)
 
 
@@ -114,23 +141,35 @@ districts_hanoi = [
 
 project_names = dataProject['Tên dự án'].drop_duplicates().to_list()
 
-for area_name in districts_hanoi:
-    try:
-        sPA = VariabilityPrice('area', area_name, 'M')
-        sPA.toJson()
-        print('Thành công : ', area_name)
-    except Exception as e:
-        print('Lỗi: ', e)
-        print('Không thành công : ', area_name)
+segmentPrices = {'under_50', 'between_50_100', 'between_100_150', 'between_150_200', 'over_200'}
+
+# for area_name in districts_hanoi:
+#     districtPath1 = f'./Data/Json/Std_And_Variance/Std/area/{normalize_name(area_name)}'
+#     os.makedirs(districtPath1, exist_ok=True)
+#     districtPath2 = f'./Data/Json/Std_And_Variance/Variance/area/{normalize_name(area_name)}'
+#     os.makedirs(districtPath2, exist_ok=True)
+#     for segmentPrice in segmentPrices:
+#         try:
+#             sPA = VariabilityPrice('area', area_name, 'M', segmentPrice)
+#             sPA.toJson()
+#             print('Thành công : ', area_name)
+#         except Exception as e:
+#             print('Lỗi: ', e)
+#             print('Không thành công : ', area_name)
 
 for project_name in project_names:
-    try:
-        sPP = VariabilityPrice('project', project_name, 'M')
-        sPP.toJson()
-        print('Thành công : ', project_name)
-    except Exception as e:
-        print('Lỗi: ', e)
-        print('Không thành công : ', project_name)
+    Path1 = f'./Data/Json/Std_And_Variance/Std/project/{normalize_name(project_name)}'
+    os.makedirs(Path1, exist_ok=True)
+    Path2 = f'./Data/Json/Std_And_Variance/Variance/project/{normalize_name(project_name)}'
+    os.makedirs(Path2, exist_ok=True)
+    for segmentPrice in segmentPrices:
+        try:
+            sPP = VariabilityPrice('project', project_name, 'M', segmentPrice)
+            sPP.toJson()
+            print('Thành công : ', project_name)
+        except Exception as e:
+            print('Lỗi: ', e)
+            print('Không thành công : ', project_name)
 
 
 

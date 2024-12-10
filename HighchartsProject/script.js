@@ -13,13 +13,11 @@ import { set_Scene } from "./events.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Gọi các hàm để tạo các biểu đồ
-  makeSegmentPrice("area", "ha_noi", false, 0, 0, 96.3, 95, "segment1");
-
+  
   // Hàm vẽ biểu đồ cho StdDev và Variance
   function drawStdAndVarChart(district) {
     // Thực hiện gọi các hàm vẽ biểu đồ với tham số quận huyện
-    makeStdDevChart("area", district, false, 0, 0, 96.3, 95, "stddev");
-    makeVarianceChart("area", district, false, 0, 0, 96.3, 95, "variance");
+    makeSegmentPrice("area", district, false, 0, 0, 96.3, 95, "segment1");
   }
 
   // Lắng nghe sự kiện thay đổi giá trị quận huyện

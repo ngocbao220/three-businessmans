@@ -1,9 +1,9 @@
 {
     "type_name": "Trang trại, khu nghỉ dưỡng",
-    "under_50": 80.0,
+    "under_50": 85.0,
     "between_50_100": 0.0,
-    "between_100_150": 13.333333333333334,
-    "between_150_200": 6.666666666666667,
+    "between_100_150": 10.0,
+    "between_150_200": 5.0,
     "between_200_250": 0.0,
     "between_250_300": 0.0,
     "over_300": 0.0

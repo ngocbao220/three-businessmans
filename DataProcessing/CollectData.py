@@ -9,7 +9,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 import csv
-import json
 
 # Chắc chắn là thư mục data tồn tại
 if not os.path.exists('Data'):
@@ -21,12 +20,12 @@ data_new_Path = 'Data/originalData/data_original_new.csv'
 data_Project_new_Path = 'Data/originalData/data_project_new.csv'
 
 # Tạo trình điều khiển Chrome
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()))
 
 # Tạo 1 dataframe chứa các cột của data
-'''df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Phân loại', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
-df.to_csv(data_new_Path, mode='a', index=False, encoding='utf-8-sig')
-df.to_csv(data_Project_new_Path, mode='a', index=False, encoding='utf-8-sig')'''
+df = pd.DataFrame(columns=['Xã/Phường', 'Quận/Huyện', 'Tỉnh/Thành phố', 'Chủ đầu tư','Tên dự án', 'Phân loại', 'Diện tích', 'Mức giá', 'Số phòng ngủ', 'Số toilet', 'Pháp lý', 'Nội thất', 'Mặt tiền', 'Hướng nhà', 'Hướng ban công', 'Thông tin khác', 'Lịch sử giá', 'Khoảng giá'])
+df.to_csv(data_new_Path, mode = 'a', index = False, encoding = 'utf-8-sig')
+df.to_csv(data_Project_new_Path, mode ='a', index = False, encoding = 'utf-8-sig')
 
 project_name_dict = {}
 
@@ -39,6 +38,7 @@ try:
     # Chờ load xong trang
     wait = WebDriverWait(driver, 10)
 
+
     # Hàm ấnh nút lịch sử giá
     def click_price_history_button():        
         try:
@@ -49,11 +49,12 @@ try:
             print("Không tìm thấy nút lịch sử giá.")
             return 0
         
+
     # Hàm lấy tên dự án vào 1 dict
     def get_project_data_dict():
         project_column = 'Tên dự án'
         fields = ['Lịch sử giá', 'Khoảng giá']
-        with open(data_new_Path, mode='r', encoding='utf-8') as file:
+        with open(data_new_Path, mode = 'r', encoding = 'utf-8') as file:
             reader = csv.DictReader(file)
             for row in reader:
                 project_name = row[project_column]
@@ -61,6 +62,7 @@ try:
                     # Lấy giá trị từ các cột cụ thể
                     project_name_dict[project_name] = {field: row[field] for field in fields}
         
+
     # Hàm lấy lịch sử giá, trả về lịch sử giá và lịch sử khoảng giá
     def get_price_history():
         try:
@@ -113,6 +115,7 @@ try:
                     "Không có dữ liệu lịch sử khoảng giá"
                     )
         
+
     # Hàm lấy thông tin bất động sản
     def get_property_details(classify_property_link):
         try:
@@ -131,6 +134,7 @@ try:
             commune_ward = area_parts[-3] if len(area_parts) >= 2 else "Không tìm thấy"
             district = area_parts[-2] if len(area_parts) >= 2 else "Không tìm thấy"
             province_city = area_parts[-1] if len(area_parts) >= 2 else "Không tìm thấy"
+
             if classify_property_link not in ['ban-nha-rieng-', 'ban-nha-mat-pho-', 'ban-dat-', 'ban-kho-nha-xuong-']:
                 try:
                     wait.until(EC.presence_of_element_located((By.CLASS_NAME, 're__ldp-project-info')))
@@ -206,6 +210,7 @@ try:
             # Kiểm tra xem tên dự án đã tồn tại hay chưa
             if project_name not in project_name_dict or project_name == 'Không có thông tin' or project_name == 'Đang cập nhật':
                 #print('Dự án mới:' + project_name)
+
                 # Kiểm tra xem có nút lịch sử giá hay không và lấy lịch sử giá
                 if (click_price_history_button()):
                     try:
@@ -214,7 +219,7 @@ try:
                         
                         # Cuộn trang đến tab để đảm bảo phần tử này hiển thị trên màn hình
                         driver.execute_script("arguments[0].scrollIntoView(true);", two_years_tab)
-                        time.sleep(1)  # Đợi một chút sau khi cuộn
+                        time.sleep(1)  
 
                         # Kiểm tra xem tab đã được chọn chưa, nếu chưa thì click vào
                         if 're__tab-box--active' not in two_years_tab.get_attribute('class'):
@@ -222,7 +227,7 @@ try:
                             # Sử dụng JavaScriptExecutor để click nếu thao tác click bình thường không thành công
                             two_years_tab.click()
                             #print("Đã chuyển sang tab '2 năm'")
-                        time.sleep(1)  # Đợi một chút sau khi nhấp vào tab
+                        time.sleep(1) 
 
                         # Gọi hàm để lấy giá và khoảng giá trong lịch sử
                         get_price_history_data = get_price_history()
@@ -259,10 +264,6 @@ try:
                 'Khoảng giá': price_spread_history
             }])
 
-            ''' In từng lịch sử giá từng tháng
-            for col in price_history.split("; "):
-                print(col) '''
-
             # Ghi dữ liệu vào file CSV
             if (investor_name != "Không có thông tin"):
                 # File CSV dự án và có lịch sử giá
@@ -273,6 +274,7 @@ try:
         except Exception as e:
             print(f"Lỗi khi lấy thông tin bất động sản")
 
+
     # Hàm duyệt trang
     def navigate_pagination():
         
@@ -280,11 +282,12 @@ try:
 
         number_of_pages = 1
         ''' ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong', 
-        cg,đd,hm
         'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 
         'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa'] '''
+        
         ''' ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']'''
-        areas = ['gia-lam', 'dong-anh']
+
+        areas = ['ba-dinh', 'hoan-kiem', 'tay-ho', 'long-bien', 'cau-giay', 'dong-da', 'hai-ba-trung', 'hoang-mai', 'thanh-xuan', 'ha-dong', 'bac-tu-liem', 'nam-tu-liem', 'son-tay', 'ba-vi', 'chuong-my', 'dan-phuong', 'dong-anh', 'gia-lam', 'hoai-duc', 'me-linh', 'my-duc', 'phu-xuyen', 'phuc-tho', 'quoc-oai', 'soc-son', 'thach-that', 'thanh-oai', 'thanh-tri', 'thuong-tin', 'ung-hoa']
         classify_links = ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-', 'ban-nha-biet-thu-lien-ke-', 'ban-nha-mat-pho-', 'ban-shophouse-nha-pho-thuong-mai-', 'ban-dat-nen-du-an-', 'ban-dat-', 'ban-trang-trai-khu-nghi-duong-', 'ban-condotel-', 'ban-kho-nha-xuong-', 'ban-loai-bat-dong-san-khac-']
         count_of_data = 0
 
@@ -292,17 +295,6 @@ try:
             for classify_link in classify_links:
                 count_of_data = 0
                 number_of_pages = 1
-
-                '''if area == 'hoang-mai':
-                    if classify_link in ['ban-can-ho-chung-cu-', 'ban-can-ho-chung-cu-mini-', 'ban-nha-rieng-']:
-                        continue'''
-
-                '''if (area, classify_link) in pivot_df.index:
-                    # Lấy số lượng tương ứng
-                    current_data = pivot_df.loc[(area, classify_link), 'Số lượng']
-                else:
-                    # Nếu không có trong DataFrame, số lượng là 0
-                    current_data = 0'''
 
                 url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)
 
@@ -336,15 +328,13 @@ try:
 
                             count_of_data += 1
 
-                        print('Số lượng dữ liệu: ', count_of_data)
+                        #print('Số lượng dữ liệu: ', count_of_data)
 
                         if count_of_data >= int(total_property * 0.7):
                             print("Quá số lượng")
                             break
 
                         number_of_pages += 1
-                        if classify_link == 'ban-dat-' and number_of_pages == 34:
-                            break
 
                         try:
                             url_page =  'https://batdongsan.com.vn/' + classify_link + area + '/p' + str(number_of_pages)

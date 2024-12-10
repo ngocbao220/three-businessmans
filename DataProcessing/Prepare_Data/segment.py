@@ -207,40 +207,40 @@ for type_segment in segment:
         except Exception as e:
             print('Lỗi: ', e)
             print('Không thành công : ', area_name)
-    # for project_name in project_names:
-    #     try:
-    #         sPP = countSegment(type_segment, project_name)
-    #         sPP.toJson()
-    #         print('Thành công : ', project_name)
-    #     except Exception as e:
-    #         print('Lỗi: ', e)
-    #         print('Không thành công : ', project_name)
+    for project_name in project_names:
+        try:
+            sPP = countSegment(type_segment, project_name)
+            sPP.toJson()
+            print('Thành công : ', project_name)
+        except Exception as e:
+            print('Lỗi: ', e)
+            print('Không thành công : ', project_name)
 
 
-# for area_name in districts_hanoi:
-#     try:
-#         sPA = segmentPriceOfArea(area_name)
-#         sPA.toJson()
-#         print('Thành công : ', area_name)
-#     except Exception as e:
-#         print('Lỗi: ', e)
-#         print('Không thành công : ', area_name)
+for area_name in districts_hanoi:
+    try:
+        sPA = segmentPriceOfArea(area_name)
+        sPA.toJson()
+        print('Thành công : ', area_name)
+    except Exception as e:
+        print('Lỗi: ', e)
+        print('Không thành công : ', area_name)
 
-# for project_name in project_names:
-#     try:
-#         sPP = segmentPriceOfProject(project_name)
-#         sPP.toJson()
-#         print('Thành công : ', project_name)
-#     except Exception as e:
-#         print('Lỗi: ', e)
-#         print('Không thành công : ', project_name)
+for project_name in project_names:
+    try:
+        sPP = segmentPriceOfProject(project_name)
+        sPP.toJson()
+        print('Thành công : ', project_name)
+    except Exception as e:
+        print('Lỗi: ', e)
+        print('Không thành công : ', project_name)
 
-# for type in property_types:
-#     try:
-#         sPT = segmentPriceOfType(type)
-#         sPT.toJson()
-#         print('Thành công : ', type)
-#     except Exception as e:
-#         print('Lỗi: ', e)
-#         print('Không thành công : ', type)
+for type in property_types:
+    try:
+        sPT = segmentPriceOfType(type)
+        sPT.toJson()
+        print('Thành công : ', type)
+    except Exception as e:
+        print('Lỗi: ', e)
+        print('Không thành công : ', type)
 

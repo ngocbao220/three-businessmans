@@ -59,7 +59,7 @@ body {
   width: 40%;
   height: 20%;
   left: 53%;
-  bottom:870px;
+  bottom:890px;
   border-radius: 10px;
   border-style: solid;
   border-color: #000;
@@ -86,7 +86,7 @@ body {
   position: absolute;
   border-radius: 10px;
   border-width: 5px;
-  top: 33%;
+  top: 38%;
   left: 53%;
   z-index: 1;
 }
@@ -96,7 +96,7 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  top: 105%; 
+  top: 110%; 
   left: 35%;
 }
 

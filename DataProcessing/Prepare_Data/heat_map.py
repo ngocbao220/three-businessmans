@@ -24,7 +24,7 @@ def add_colormap_to_layer(gdf, column, map_obj, layer_name, tooltip_fields, tool
         gdf,
         name=layer_name,  # Đặt tên lớp
         style_function=lambda feature: {
-            'fillColor': colormap(feature['properties'][column]) if feature['properties'][column] else 'lightblue',
+            'fillColor': colormap(feature['properties'][column]) if feature['properties'][column] else 'white',
             'color': 'black',
             'weight': 1,
             'fillOpacity': 0.6,

@@ -40,7 +40,6 @@ class Predictor:
     def plotData(self):
         plt.figure(figsize=(13, 6))
         plt.plot(self.time, self.data['Price'], color='blue')
-        plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Mức giá")
         plt.xticks(fontsize=8)
@@ -60,7 +59,6 @@ class Predictor:
         plt.annotate('', xy=(x_values.iloc[-1], y_values.iloc[-1]), xytext=(x_values.iloc[0], y_values.iloc[0]),
                      arrowprops=dict(facecolor='yellow', width=2, headwidth=10),
                      label="Mũi tên")
-        plt.title("Biểu đồ biến động giá tại " + self.area)
         plt.xlabel("Mốc thời gian")
         plt.ylabel("Giá nhà")
         plt.xticks(fontsize=8)
@@ -73,3 +71,20 @@ class Predictor:
         self.learn()
         self.plotData()
         self.plotRegression()
+
+time = ['T10/22', 'T11/22', 'T12/22', 'T1/23', 'T2/23', 'T3/23', 'T4/23', 'T5/23', 
+'T6/23', 'T7/23', 'T8/23', 'T9/23', 'T10/23', 'T11/23', 'T12/23', 'T1/24', 
+'T2/24', 'T3/24', 'T4/24', 'T5/24', 'T6/24', 'T7/24', 'T8/24', 'T9/24', 'T10/24']
+
+price = [100.0, 98.0, 113.1, 104.5, 110.3, 105.2, 103.8, 100.0, 108.2, 106.4, 
+110.6, 108.5, 121.8, 108.2, 114.7, 114.9, 108.3, 116.9, 140.0, 136.4, 
+150.0, 148.0, 154.5, 161.1, 159.1]
+
+
+p = Predictor(time, price)
+p.standar()
+p.learn()
+p.plotData()
+p.plotRegression()
+
+print(p.prediction())

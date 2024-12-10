@@ -42,7 +42,7 @@ def create_district_map(district_map, avg_price_by_ward, colormap):
     folium.GeoJson(
         district_map,
         style_function=lambda feature: {
-            'fillColor': colormap(feature['properties']['Mức giá']) if feature['properties']['Mức giá'] else 'lightblue',
+            'fillColor': colormap(feature['properties']['Mức giá']) if feature['properties']['Mức giá'] else 'white',
             'color': 'black',
             'weight': 1,
             'fillOpacity': 0.6,
@@ -67,9 +67,10 @@ def insert_css(file_path):
     custom_css = """
     <style>
         .legend {
-            position: relative;
-            transform: translate(-50%, -50%);
-            z-index = 10;
+          position: relative;
+          transform: rotate(-90deg) translate(-60%, 580%);
+          transform-origin: center;
+          z-index: 10;
         }
     </style>
     """

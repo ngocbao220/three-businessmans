@@ -3,6 +3,6 @@ from "./eventForChart.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   update_list_chart('area','ha_noi');
-  setTimeout(set_Event(), 1000);
-  setTimeout(get_info_of_iframe(), 1000);
+  setTimeout(set_Event(), 2000);
+  setTimeout(get_info_of_iframe(), 2000);
 });
